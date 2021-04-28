@@ -13,7 +13,7 @@ function App() {
     
     <Router>
       
-      {/* <RecipeReviewCard/> */}
+      
       <Switch>
       <Route path='/' exact component ={Home}/>
       <Route path='/home'  component ={Home}/>
