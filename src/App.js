@@ -7,10 +7,10 @@ import ContactUs from './Components/Pages/contact';
 import About from './Components/Pages/about';
 
  import NavbarMenu from './Components/Navbar/NavbarMenu';
- import MediaCard from '../src/Components/slider/slider';
+ import MediaCard from './Components/Cards/cards';
  import Image from '../src/Images/bg-image.jpg';
- import Banner from '../src/Components/Backgroundimage/backGroundImage';
- 
+ import BackGroundImage from '../src/Components/Backgroundimage/backGroundImage';
+ import Footer from './Components/Footer/footer';
 
 
 
@@ -19,8 +19,13 @@ function App() {
     
     <Router>
       <NavbarMenu/>
-      <Banner/>
+      <BackGroundImage/>
       <MediaCard/>
+      <MediaCard/>
+      <MediaCard/>
+      <MediaCard/>
+      <Footer/>
+      {/* <RecipeReviewCard/> */}
       <Switch>
       <Route path='/' exact component ={Home}/>
       <Route path='/home'  component ={Home}/>

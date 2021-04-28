@@ -10,7 +10,7 @@ export const Home = () => {
         height: '90vh'
     }}
     >
-    <h1>Home is here</h1>
+   
 
             
         </div>
