@@ -8,9 +8,9 @@ export default function BackGroundImage() {
     <Carousel
       autoPlay
       infiniteLoop
-      showThumbs={true}>
+      showThumbs={false}>
         <div >
-          <img  src="src/images/backgroundimage.jpg" height="500px" width="100%" />
+          <img  src="Images/backgroundimage.jpg" height="500px" width="100%" />
           </div>
       </Carousel>
   )
