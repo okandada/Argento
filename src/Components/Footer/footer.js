@@ -1,14 +1,5 @@
-// import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/CardHeader";
-import CssBaseline from "@material-ui/core/CssBaseline";
+
 import Grid from "@material-ui/core/Grid";
-import StarIcon from "@material-ui/icons/StarBorder";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
@@ -49,19 +40,19 @@ function Footer() {
     }));
     const footers = [
         {
-          title: 'Company',
-          description: ['Team', 'History', 'Contact us', 'Locations'],
+          title: 'Häufige Fragen',
+          description: ['Bestellprozess', 'Zahlungsweise', 'Versand', 'Sicherheit', 'Umtausch & Reklamation'],
         },
         {
-          title: 'Features',
-          description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one'],
+          title: 'Über uns',
+          description: [' Kontakt', 'Impressum', 'Datenschutz', 'AGB'],
         },
         {
-          title: 'Resources',
-          description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
+          title: 'Top Themen',
+          description: ['Tips', 'Sparplan', 'Newsletter', 'Partner'],
         },
         {
-          title: 'Legal',
+          title: 'Social Media',
           description: ['Privacy policy', 'Terms of use'],
         },
       ];
@@ -100,4 +91,4 @@ function Footer() {
   );
 }
 
-// export default Copyright;
+
