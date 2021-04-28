@@ -1,15 +1,23 @@
 import React from 'react'
 
+import NavbarMenu from '../Navbar/NavbarMenu';
+ import MediaCard from '../Cards/cards';
+ import Image from '../../Images/bg-image.jpg';
+ import BackGroundImage from '../Backgroundimage/backGroundImage';
+ import Footer from '../../Components/Footer/footer';
+
+
 
 export const Home = () => {
     return (
-        <div
-        style = {{ display: 'flex' ,
-        justifyContent: 'center',
-        alighIntems: 'center',
-        height: '90vh'
-    }}
-    >
+        <div>
+            <NavbarMenu/>
+      <BackGroundImage/>
+      <MediaCard/>
+      <MediaCard/>
+      <MediaCard/>
+      <MediaCard/>
+      <Footer/>
    
 
             
