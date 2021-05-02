@@ -1,16 +1,12 @@
-import React from 'react'
-
-
+import React from 'react';
+import BackGroundImage from '../Backgroundimage/backGroundImage';
 export const About = () => {
     return (
-        <div
-        style={{ display: 'flex' ,
-        justifyContent: 'center',
-        alighIntems: 'center',
-        height: '90vh'
-    }}
-    >
-    <h1> about page</h1>
+        <div>
+        
+  
+   <BackGroundImage/>
+   
 
             
         </div>

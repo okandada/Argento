@@ -5,7 +5,8 @@ import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+// import logo from "../../Images/logo.png";
 
 function Footer() {
     return (
@@ -64,10 +65,11 @@ function Footer() {
           <React.Fragment>
 
 <Container maxWidth="md" component="footer" className={classes.footer}>
+             {/* <img src={logo}  className={classes.logo} /> */}
         <Grid container spacing={4} justify="space-evenly">
           {footers.map((footer) => (
             <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="textPrimary" gutterBottom>
+              <Typography variant="h6"  gutterBottom>
                 {footer.title}
               </Typography>
               <ul>

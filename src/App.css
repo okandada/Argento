@@ -1,10 +1,60 @@
-@import url('http://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url("http://fonts.googleapis.com/css2?family=Sora&display=swap");
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Barlow;
+  color: white;
+}
 
-*{
-    box-sizing: border-box ;
-    margin: 0;
-    padding: 0;
-    font-family: 'Sora',Sans serif;
-    
+/* Main body */
+body {
+    /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+  background-image: url(../src/Images/textureImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bodyComponentLayout{
+  margin-inline-start: 7%;
+    margin-inline-end: 7%;
+}
+/* Navigation css*/
+.MuiAppBar-positionStatic.MuiAppBar-positionStatic {
+  background-color: transparent;
+}
+
+h1 {
+  padding: 15px;
+}
+
+h6{
+    color: darkgoldenrod;
+}
+
+/* Button css*/
+
+.MuiButton-root.MuiButton-root {
+  height: 36px;
+  margin: 3px 3px 3px 31px;
+  font-weight: 500;
+  font-stretch: semi-condensed;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* footer+/ css*/
+.makeStyles-footer-8.makeStyles-footer-8 {
+  border-top: 1px solid #ffffff;
+}
+.MuiTypography-colorTextSecondary.MuiTypography-colorTextSecondary {
+  color: #ffffff;
+}
+.MuiPaper-root.MuiPaper-root {
+  background-color: black;
 }

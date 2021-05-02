@@ -31,8 +31,8 @@ export default function MediaCard() {
       />
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image="Images/backgroundimage.jpg"
+          title="abc"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

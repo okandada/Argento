@@ -5,28 +5,23 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import logo from "../../Images/logo.png";
+import '../../App.css';
+import logo from "../../Images/logo.png"
+//  import logo from "/images/Fotos/logo.png";
 import LocalGroceryStoreIcon from "@material-ui/icons/LocalGroceryStore";
+// import Paper from 'material-ui/Paper';
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
+  
   root: {
     flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
   },
-  logo: {
-    maxWidth: '25%' ,
-    marginRight: '10px',
-    height: '80px',
-    width: '12%'
-  }
-  
+ 
 }));
 
 export default function NavbarMenu() {
@@ -34,9 +29,12 @@ export default function NavbarMenu() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      {/* <img src= '/public/Images/Fotos/textureImage.jpg'/> */}
+      <AppBar position="static" className={classes.BackgroundColor}>
         <Toolbar>
-        <img src={logo}  className={classes.logo} />
+        {/* <img src="/public/Images/Fotos/logo.png"  className={classes.logo} /> */}
+        <img style=    {{width: '337.4px',
+    height: '80px'}} src={logo}/>
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -44,16 +42,17 @@ export default function NavbarMenu() {
             aria-label="menu"
           ></IconButton>
           <Typography variant="h6" className={classes.title}></Typography>
-          <Button component={Link} to="/home">
+          <Button component={Link} to="/home" >
             Home
           </Button>
-          <Button component={Link} to="/about">
+          <Button component={Link} to="/about" >
             About
           </Button>
-          <Button component={Link} to="/contact">
+          <Button component={Link} to="/contact" >
             Contact us
           </Button>
-          <LocalGroceryStoreIcon />
+          <Button> <LocalGroceryStoreIcon /></Button >
+         
         </Toolbar>
       </AppBar>
     </div>
