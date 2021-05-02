@@ -6,17 +6,21 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import React, { Component } from 'react';
+import FacebookIcon from "../../Images/Facebook_Icon.svg";
+
 // import logo from "../../Images/logo.png";
 
 function Footer() {
     return (
       <Typography variant="body2" color="textSecondary" align="center">
-        {'Copyright © '}
-        <Link color="inherit" href="https://material-ui.com/">
-          Your Website
-        </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
+        {' © '}
+        {new Date().getFullYear() }
+        {''}
+      
+        <Link style={{color:'#ecbd46'}} href="PM argento arum" color='h6' aria-label='all'>
+          PM Argento Aurum
+        </Link>{' | All Rights Reserved '}
+        
       </Typography>
     );
   }
@@ -54,7 +58,12 @@ function Footer() {
         },
         {
           title: 'Social Media',
-          description: ['Privacy policy', 'Terms of use'],
+          description: [<img src={FacebookIcon}  height='40px'></img>,
+          <img src={FacebookIcon}  height='40px'></img>,
+          <img src={FacebookIcon}  height='40px'></img>,
+          <img src={FacebookIcon}  height='40px'></img>,
+        
+        ],
         },
       ];
 
@@ -69,7 +78,7 @@ function Footer() {
         <Grid container spacing={4} justify="space-evenly">
           {footers.map((footer) => (
             <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6"  gutterBottom>
+              <Typography variant="h6" color="h6" gutterBottom>
                 {footer.title}
               </Typography>
               <ul>

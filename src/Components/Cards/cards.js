@@ -19,19 +19,20 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+export default function MediaCard(props) {
   const classes = useStyles();
-
+ 
   return (
+    
     <Card className={classes.root}>
       <CardActionArea>
         <CardHeader
-        title="Zum falschen Zeitpunkt"
+        title={props.title}
       
       />
         <CardMedia
           className={classes.media}
-          image="Images/backgroundimage.jpg"
+          image={props.url}
           title="abc"
         />
         <CardContent>
@@ -39,8 +40,7 @@ export default function MediaCard() {
           
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+           {props.text}
           </Typography>
         </CardContent>
       </CardActionArea>

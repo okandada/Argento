@@ -31,7 +31,8 @@ h1 {
 }
 
 h6{
-    color: darkgoldenrod;
+   /* color: darkgoldenrod;  */
+     color:  #ecbd46;
 }
 
 /* Button css*/
