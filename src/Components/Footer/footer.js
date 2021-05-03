@@ -7,6 +7,9 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import React, { Component } from 'react';
 import FacebookIcon from "../../Images/Facebook_Icon.svg";
+import InstaIcon from "../../Images/Insta_Icon.svg";
+import Linkedln from "../../Images/LinkedIn_Icon.svg";
+import Xing from "../../Images/Xing_Icon.svg";
 
 // import logo from "../../Images/logo.png";
 
@@ -58,10 +61,21 @@ function Footer() {
         },
         {
           title: 'Social Media',
-          description: [<img src={FacebookIcon}  height='40px'></img>,
-          <img src={FacebookIcon}  height='40px'></img>,
-          <img src={FacebookIcon}  height='40px'></img>,
-          <img src={FacebookIcon}  height='40px'></img>,
+          description: [
+            <div display='flex'>
+            <span  >
+          <img src={FacebookIcon} height="40px" ></img>
+          </span>
+          <span style={{paddingInlineEnd: '7px'}}>
+          <img src={InstaIcon} width="25px" height='40px'></img>
+          </span>
+          <span style={{paddingInlineEnd: '8px'}}>
+          <img src={Linkedln} width="25px" height='40px'></img>
+          </span>
+          <span style={{paddingInlineEnd: '10px'}}>
+          <img src={Xing} width="25px" height='40px'></img>
+          </span>
+          </div>
         
         ],
         },

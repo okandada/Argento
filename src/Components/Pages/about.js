@@ -1,8 +1,9 @@
 import React from 'react';
 import BackGroundImage from '../Backgroundimage/backGroundImage';
 import styled from 'styled-components'
-import BackgroundImage from "../../Images/AdobeStock_237533217.png";
+import AdobeStock_1 from "../../Images/AdobeStock_1.png";
 import YellowStroke from "../../Images/YellowStroke.svg";
+import AdobeStock_2 from "../../Images/AdobeStock_2.png";
 import { Container } from '@material-ui/core';
 
 export const About = () => {
@@ -23,7 +24,7 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummynibh
 </p>
 </Container>
 <Container  className='container'>
-    <img src={BackgroundImage}></img>
+    <img src={AdobeStock_2}></img>
 </Container>
 
 </AboutCarddiv>
@@ -32,7 +33,7 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummynibh
 <AboutCarddiv    style={{ marginTop: '70px'} }>
 
 <Container style={{paddingLeft:'12px'}} className='container'>
-    <img src={BackgroundImage}></img>
+    <img src={AdobeStock_1}></img>
 </Container>
 
 <Container style={{marginLeft:'20px'}}className='container'>
