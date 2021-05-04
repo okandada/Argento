@@ -11,7 +11,7 @@ export const Home = () => {
     <div>
       <BackGroundImage />
       <span>
-        <h1>Gold and Silber Kaufen& </h1>
+        <h1>Gold &  Silber Kaufen</h1>
       </span>
       <CardGrid images={Images} />
       <span>

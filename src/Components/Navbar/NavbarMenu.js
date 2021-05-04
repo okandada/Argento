@@ -32,9 +32,12 @@ export default function NavbarMenu() {
       {/* <img src= '/public/Images/Fotos/textureImage.jpg'/> */}
       <AppBar position="static" className={classes.BackgroundColor}>
         <Toolbar>
-        {/* <img src="/public/Images/Fotos/logo.png"  className={classes.logo} /> */}
+        <Link to="/home">
         <img style=    {{width: '337.4px',
     height: '80px'}} src={logo}/>
+</Link>
+        
+        
           <IconButton
             edge="start"
             className={classes.menuButton}
