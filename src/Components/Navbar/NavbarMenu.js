@@ -6,9 +6,9 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import "../../App.css";
-import logo from "../../Images/logo.png";
+import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 //  import logo from "/images/Fotos/logo.png";
-import LocalGroceryStoreIcon from "@material-ui/icons/LocalGroceryStore";
+import ShoppingCart_icon from "../../Images/ÜberUns/Desktop/SVG/ShoppingCart_icon.svg";
 // import Paper from 'material-ui/Paper';
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -30,7 +30,11 @@ export default function NavbarMenu() {
       <AppBar position="static" className={classes.BackgroundColor}>
         <Toolbar>
           <Link to="/home">
-            <img style={{ width: "337.4px", height: "80px" }} src={logo} />
+            <img
+              style={{ width: "337.4px", height: "80px" }}
+              src={logo}
+              alt=""
+            />
           </Link>
 
           <IconButton
@@ -51,7 +55,7 @@ export default function NavbarMenu() {
           </Button>
           <Button>
             {" "}
-            <LocalGroceryStoreIcon />
+            <img src={ShoppingCart_icon} alt="" />
           </Button>
         </Toolbar>
       </AppBar>

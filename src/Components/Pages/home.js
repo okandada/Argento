@@ -1,17 +1,16 @@
 import React from "react";
 import NavbarMenu from "../Navbar/NavbarMenu";
-import BackGroundImage from "../Backgroundimage/backGroundImage";
+
 import Footer from "../../Components/Footer/footer";
 import CardGrid from "../Cards/cardGrid";
 import OutlinedCard from "../Cards/outlineCard";
-import BackgroundImage from "../../Images/Hero.png";
+import BackgroundImageDesktop from "../../Images/ÜberUns/Desktop/Fotos/BackgroundImageDesktop.png";
 
 export const Home = () => {
   return (
     <div>
-      <BackGroundImage />
       <span>
-        <h1>Gold &  Silber Kaufen</h1>
+        <h1>Gold & Silber Kaufen</h1>
       </span>
       <CardGrid images={Images} />
       <span>
@@ -27,22 +26,22 @@ export const Home = () => {
 
 const Images = [
   {
-    url: BackgroundImage,
+    url: BackgroundImageDesktop,
     text: "hello",
     title: "Naeem",
   },
   {
-    url: BackgroundImage,
+    url: BackgroundImageDesktop,
     text: "hello",
     title: "Naeem",
   },
   {
-    url: BackgroundImage,
+    url: BackgroundImageDesktop,
     text: "hello",
     title: "Naeem",
   },
   {
-    url: BackgroundImage,
+    url: BackgroundImageDesktop,
     text: "hello",
     title: "Naeem",
   },
