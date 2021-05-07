@@ -1,19 +1,19 @@
-import React from 'react'
-
+import React from "react";
+import ImageGrid from "../ImageGrid";
 
 export const ContactUs = () => {
-    return (
-        <div
-        style = {{ display: 'flex' ,
-        justifyContent: 'center',
-        alighIntems: 'center',
-        height: '90vh'
-    }}
-    >
-    <h1> Contact  cds Us page</h1>
+  return (
+    <ImageGrid></ImageGrid>
+    //     <div
+    //     style = {{ display: 'flex' ,
+    //     justifyContent: 'center',
+    //     alighIntems: 'center',
+    //     height: '90vh'
+    // }}
+    // >
+    // <h1> Contact  cds Us page</h1>
 
-            
-        </div>
-    );
+    //     </div>
+  );
 };
 export default ContactUs;

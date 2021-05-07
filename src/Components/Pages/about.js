@@ -1,23 +1,64 @@
 import React from "react";
-
+import Grid from "@material-ui/core/Grid";
 import styled from "styled-components";
+import ImageGrid from "../ImageGrid";
 import UnserneTeam1 from "../../Images/ÜberUns/Desktop/Fotos/UnserneTeam1.png";
 import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
 import UnserneTeam2 from "../../Images/ÜberUns/Desktop/Fotos/UnserneTeam2.png";
 import { Container } from "@material-ui/core";
-import UnsernePartner1 from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner1.png";
-import UnsernePartner2 from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner2.png";
-import UnsernePartner3 from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner3.png";
-import UnsernePartner4 from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner4.png";
-
+// import UnsernePartner1Desktop from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner1Desktop.png";
+import UnserneTeam1Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnserneTeam1Mobile.png";
+import UnserneTeam1Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnserneTeam1Tablet.png";
+import UnserneTeam2Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnserneTeam2Mobile.png";
+import UnserneTeam2Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnserneTeam2Tablet.png";
+// import UnsernePartner1Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner1Mobile.png";
+// import UnsernePartner1Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner1Tablet.png";
+// import UnsernePartner2Desktop from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner2Desktop.png";
+// import UnsernePartner2Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner2Mobile.png";
+// import UnsernePartner2Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner2Tablet.png";
+// import UnsernePartner3Desktop from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner3Desktop.png";
+// import UnsernePartner3Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner3Mobile.png";
+// import UnsernePartner3Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner3Tablet.png";
+// import UnsernePartner4Desktop from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner4Desktop.png";
+// import UnsernePartner4Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner4Mobile.png";
+// import UnsernePartner4Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner4Tablet.png";
 export const About = () => {
   return (
     <div>
       <AboutCarddiv>
         <Container className="container">
           <h1 className="title">Unser Team</h1>
-          <div className="dash"></div>
-          <p>
+          <div className="dash">
+            <img src={YellowStroke} alt="" />
+          </div>
+          {/* ...unserne team layout start   text1*/}
+          <p className="desktop">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+            elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
+            adipiscing elit, sed diam nonummynibh
+          </p>
+          <p className="mobile">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+            elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
+            adipiscing elit, sed diam nonummynibh
+          </p>
+          <p className="IpadPro">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -31,23 +72,61 @@ export const About = () => {
             adipiscing elit, sed diam nonummynibh
           </p>
         </Container>
+        {/* ...unserne team layout start  img 1*/}
         <Container className="container">
-          <img
-            src={UnserneTeam1}
-            height="300px"
-            maxWidth="fit-content"
-            alt=""
-          />
+          <div>
+            <img
+              src={UnserneTeam1}
+              height="100%"
+              width="100%"
+              alt=""
+              className="desktop image"
+            />
+          </div>
+          <div>
+            <img
+              src={UnserneTeam1Mobile}
+              height="100%"
+              width="100%"
+              alt=""
+              className="mobile"
+            />
+          </div>
+          <div>
+            <img
+              src={UnserneTeam1Tablet}
+              height="100%"
+              width="100%"
+              alt=""
+              className="IpadPro"
+            />
+          </div>
         </Container>
       </AboutCarddiv>
 
+      {/* ...unserne team layout start img 2 */}
       <AboutCarddiv style={{ marginTop: "70px" }}>
         <Container style={{ paddingLeft: "12px" }} className="container">
           <img
             src={UnserneTeam2}
-            height="300px"
-            maxWidth="fit-content"
+            height="inherit"
+            width="inherit"
             alt=""
+            className="desktop"
+          />
+          <img
+            src={UnserneTeam2Mobile}
+            height="inherit"
+            width="inherit"
+            alt=""
+            className="mobile"
+          />
+          <img
+            src={UnserneTeam2Tablet}
+            height="inherit"
+            width="inherit"
+            alt=""
+            className="IpadPro"
           />
         </Container>
 
@@ -59,7 +138,8 @@ export const About = () => {
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>
-          <p>
+          {/* ...unserne team layout start text2 */}
+          <p className="desktop">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -72,36 +152,47 @@ export const About = () => {
             elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
             adipiscing elit, sed diam nonummynibh
           </p>
+          <p className="mobile">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+            elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
+            adipiscing elit, sed diam nonummynibh
+          </p>
+          <p className="IpadPro">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+            elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
+            adipiscing elit, sed diam nonummynibh
+          </p>
+          <p className="IpadQuer">Ipad quer</p>
         </Container>
       </AboutCarddiv>
-      <AboutCarddiv
-        style={{
-          marginLeft: "-325px",
-          marginTop: "-2000px",
-          marginBottom: "-200px",
-        }}
-      >
-        <Container className="container">
+      {/* ...unserne team layout ends... */}
+
+      {/* ...unserne partner layout start */}
+      <AboutCarddiv style={{ padding: "25px" }}>
+        <div style={{ height: "fit-content" }} className="container">
           <h1 className="title">Unsere Partner</h1>
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>
-        </Container>
+        </div>
       </AboutCarddiv>
-      <div display="flex">
-        <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={UnsernePartner1} height="200px" alt="" />
-        </span>
-        <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={UnsernePartner2} height="200px" alt="" />
-        </span>
-        <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={UnsernePartner3} height="200px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={UnsernePartner4} height="200px" alt="" />
-        </span>
-      </div>
+      <ImageGrid className="desktop"></ImageGrid>
     </div>
   );
 };
@@ -110,13 +201,16 @@ export default About;
 
 const AboutCarddiv = styled.div`
   width: 100%;
-  margin: -13px;
   display: inline-flex;
   padding-top: 30px;
+
+  @media (max-width: 375px) {
+    display: block};
   .container {
-    width: 50%;
     overflow: hidden;
-    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
   }
   .title {
     padding: 0px;
@@ -126,5 +220,8 @@ const AboutCarddiv = styled.div`
   .dash {
     width: 14%;
     margin-top: -20px;
+  }
+  .image {
+    max-height: 350px;
   }
 `;

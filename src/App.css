@@ -59,38 +59,77 @@ h6 {
 .MuiPaper-root.MuiPaper-root {
   background-color: black;
 }
-
-/* media querry*/
-
-.Ipad,
-.Mobile {
+.IpadPro,
+.mobile,
+.IpadQuer {
   display: none;
 }
 
+/* media querry*/
+
+@media (max-width: 1366px) {
+  .desktop,
+  .mobile,
+  .IpadQuer {
+    display: none;
+  }
+  .IpadPro {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .desktop,
+  .mobile,
+  .IpadPro {
+    display: none;
+  }
+  .IpadQuer {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .desktop,
+  .IpadPro,
+  .IpadQuer {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+/* 
+.IpadPro {
+  display: none;
+}
 @media (max-width: 768px) {
-  .Desktop,
-  .Mobile {
-    display: none;
-  }
-  .Ipad {
+  .IpadPro {
     display: block;
   }
 }
-@media (max-width: 500px) {
-  .Desktop,
-  .Ipad {
+.IpadProQuerf {
+  display: none;
+}
+@media (max-width: 992px) {
+  .IpadProQuerf {
     display: none;
   }
-  .Mobile {
-    display: block;
-  }
 }
-@media (max-width: 500px) {
-  .Desktop,
-  .Ipad {
+
+.desktop {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .desktop {
     display: none;
   }
-  .Mobile {
+}
+
+.mobile {
+  display: block;
+}
+@media (max-width: 480px) {
+  .mobile {
     display: block;
   }
-}
+} */

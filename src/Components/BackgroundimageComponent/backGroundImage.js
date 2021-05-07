@@ -9,19 +9,23 @@ import "../../App.css";
 
 export default function BgImageComponent() {
   return (
-    <div>
+    <div style={{ marginInline: "7%" }}>
       <img
         src={BackgroundImageDesktop}
-        height="500px"
         width="100%"
         alt=""
-        className="Desktop"
+        className="desktop"
         text="unserne leider schaft"
       />
 
-      <img src={BackgroundImageTabletHoch} className="Ipad" alt="" />
-      <img src={BackgroundImageMobile} className="Mobile" alt="" />
-      <img src={BackgroundImageQuer} className="Mobile" alt="" />
+      <img
+        src={BackgroundImageTabletHoch}
+        width="100%"
+        className="IpadPro"
+        alt=""
+      />
+      <img src={BackgroundImageMobile} width="100%" className="mobile" alt="" />
+      {/* <img src={BackgroundImageQuer} className="IpadProQuerf" alt="" /> */}
     </div>
 
     // <Carousel
