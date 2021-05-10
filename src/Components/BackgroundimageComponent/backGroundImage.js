@@ -24,6 +24,7 @@ export default function BgImageComponent() {
         className="IpadPro"
         alt=""
       />
+      <img src={BackgroundImageQuer} width="100%" className="IpadQuer" alt="" />
       <img src={BackgroundImageMobile} width="100%" className="mobile" alt="" />
       {/* <img src={BackgroundImageQuer} className="IpadProQuerf" alt="" /> */}
     </div>

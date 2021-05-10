@@ -7,11 +7,25 @@ import About from "./Components/Pages/about";
 import NavbarMenu from "../src/Components/Navbar/NavbarMenu";
 import Footer from "../src/Components/Footer/footer";
 import BgImageComponent from "./Components/BackgroundimageComponent/backGroundImage";
+import NavBarMobileMenu from "../src/Components/NavBarMobile/navBarMobile";
 function App() {
   return (
     <div>
       <Router>
-        <NavbarMenu />
+        <dive className={" IpadPro"}>
+          <NavbarMenu />
+        </dive>
+        <dive className={" desktop"}>
+          <NavbarMenu />
+        </dive>
+        <dive className={" IpadQuer"}>
+          <NavbarMenu />
+        </dive>
+
+        <div className={"mobile"}>
+          <NavBarMobileMenu />
+        </div>
+
         <BgImageComponent />
         <div className="bodyComponentLayout">
           <Switch>

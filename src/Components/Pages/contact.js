@@ -1,9 +1,13 @@
 import React from "react";
 import ImageGrid from "../ImageGrid";
+import NavBarMobileMenu from "../NavBarMobile/navBarMobile";
 
 export const ContactUs = () => {
   return (
-    <ImageGrid></ImageGrid>
+    <div>
+      <ImageGrid></ImageGrid>
+    </div>
+
     //     <div
     //     style = {{ display: 'flex' ,
     //     justifyContent: 'center',

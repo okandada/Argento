@@ -11,17 +11,8 @@ import UnserneTeam1Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnserneTe
 import UnserneTeam1Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnserneTeam1Tablet.png";
 import UnserneTeam2Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnserneTeam2Mobile.png";
 import UnserneTeam2Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnserneTeam2Tablet.png";
-// import UnsernePartner1Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner1Mobile.png";
-// import UnsernePartner1Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner1Tablet.png";
-// import UnsernePartner2Desktop from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner2Desktop.png";
-// import UnsernePartner2Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner2Mobile.png";
-// import UnsernePartner2Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner2Tablet.png";
-// import UnsernePartner3Desktop from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner3Desktop.png";
-// import UnsernePartner3Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner3Mobile.png";
-// import UnsernePartner3Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner3Tablet.png";
-// import UnsernePartner4Desktop from "../../Images/ÜberUns/Desktop/Fotos/UnsernePartner4Desktop.png";
-// import UnsernePartner4Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnsernePartner4Mobile.png";
-// import UnsernePartner4Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnsernePartner4Tablet.png";
+import UnserneTeam1Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam1Quer.png";
+import UnserneTeam2Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam2Quer.png";
 export const About = () => {
   return (
     <div>
@@ -71,6 +62,19 @@ export const About = () => {
             elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
             adipiscing elit, sed diam nonummynibh
           </p>
+          <p className="IpadQuer">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+            elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
+            adipiscing elit, sed diam nonummynibh
+          </p>
         </Container>
         {/* ...unserne team layout start  img 1*/}
         <Container className="container">
@@ -100,6 +104,13 @@ export const About = () => {
               alt=""
               className="IpadPro"
             />
+            <img
+              src={UnserneTeam1Quer}
+              height="100%"
+              width="100%"
+              alt=""
+              className="IpadQuer"
+            />
           </div>
         </Container>
       </AboutCarddiv>
@@ -128,13 +139,20 @@ export const About = () => {
             alt=""
             className="IpadPro"
           />
+          <img
+            src={UnserneTeam2Quer}
+            height="inherit"
+            width="inherit"
+            alt=""
+            className="IpadQuer"
+          />
         </Container>
 
         <Container
           style={{ marginLeft: "20px", marginBottom: "-500px" }}
           className="container"
         >
-          <h1 className="title">Unser Team</h1>
+          <h1 className="title">Warum Argento Aurum</h1>
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>
@@ -178,7 +196,19 @@ export const About = () => {
             elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
             adipiscing elit, sed diam nonummynibh
           </p>
-          <p className="IpadQuer">Ipad quer</p>
+          <p className="IpadQuer">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
+            elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
+            adipiscing elit, sed diam nonummynibh
+          </p>
         </Container>
       </AboutCarddiv>
       {/* ...unserne team layout ends... */}
