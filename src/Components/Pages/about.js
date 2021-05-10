@@ -13,6 +13,7 @@ import UnserneTeam2Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnserneTe
 import UnserneTeam2Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnserneTeam2Tablet.png";
 import UnserneTeam1Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam1Quer.png";
 import UnserneTeam2Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam2Quer.png";
+import "../../App.css";
 export const About = () => {
   return (
     <div>
@@ -216,7 +217,7 @@ export const About = () => {
       {/* ...unserne partner layout start */}
       <AboutCarddiv style={{ padding: "25px" }}>
         <div style={{ height: "fit-content" }} className="container">
-          <h1 className="title">Unsere Partner</h1>
+          {/* <h1 className="title">Unsere Partner</h1> */}
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>
@@ -247,11 +248,5 @@ const AboutCarddiv = styled.div`
     margin-top: 0px;
   }
 
-  .dash {
-    width: 14%;
-    margin-top: -20px;
-  }
-  .image {
-    max-height: 350px;
-  }
+ 
 `;

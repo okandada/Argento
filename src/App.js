@@ -12,15 +12,15 @@ function App() {
   return (
     <div>
       <Router>
-        <dive className={" IpadPro"}>
+        <div className={" IpadPro"}>
           <NavbarMenu />
-        </dive>
-        <dive className={" desktop"}>
+        </div>
+        <div className={" desktop"}>
           <NavbarMenu />
-        </dive>
-        <dive className={" IpadQuer"}>
+        </div>
+        <div className={" IpadQuer"}>
           <NavbarMenu />
-        </dive>
+        </div>
 
         <div className={"mobile"}>
           <NavBarMobileMenu />

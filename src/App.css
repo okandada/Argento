@@ -39,7 +39,6 @@ h6 {
 
 .MuiButton-root.MuiButton-root {
   height: 36px;
-  margin: 3px 3px 3px 31px;
   font-weight: 500;
   font-stretch: semi-condensed;
   font-style: normal;
@@ -63,6 +62,13 @@ h6 {
 .mobile,
 .IpadQuer {
   display: none;
+}
+.dash {
+  width: 14%;
+  margin-top: -20px;
+}
+.image {
+  max-height: 350px;
 }
 
 /* media querry*/
@@ -97,39 +103,3 @@ h6 {
     display: block;
   }
 }
-
-/* 
-.IpadPro {
-  display: none;
-}
-@media (max-width: 768px) {
-  .IpadPro {
-    display: block;
-  }
-}
-.IpadProQuerf {
-  display: none;
-}
-@media (max-width: 992px) {
-  .IpadProQuerf {
-    display: none;
-  }
-}
-
-.desktop {
-  display: none;
-}
-@media (max-width: 1024px) {
-  .desktop {
-    display: none;
-  }
-}
-
-.mobile {
-  display: block;
-}
-@media (max-width: 480px) {
-  .mobile {
-    display: block;
-  }
-} */

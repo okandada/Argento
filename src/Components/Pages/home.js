@@ -1,49 +1,53 @@
 import React from "react";
-import NavbarMenu from "../Navbar/NavbarMenu";
-
-import Footer from "../../Components/Footer/footer";
 import CardGrid from "../Cards/cardGrid";
-import OutlinedCard from "../Cards/outlineCard";
-import BackgroundImageDesktop from "../../Images/ÜberUns/Desktop/Fotos/BackgroundImageDesktop.png";
+import BuyGoldNr1 from "../../Images/Home/Desktop/Fotos/BuyGoldNr1.png";
+import BuySilverNr2 from "../../Images/Home/Desktop/Fotos/BuySilverNr2.png";
+import BuyGoldNr3 from "../../Images/Home/Desktop/Fotos/BuyGoldNr3.png";
+import BuyGoldNr4 from "../../Images/Home/Desktop/Fotos/BuyGoldNr4.png";
+import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
+import { Container } from "@material-ui/core";
 
 export const Home = () => {
   return (
     <div>
-      <span>
-        <h1>Gold & Silber Kaufen</h1>
-      </span>
+      <h1>
+        Gold & Silber Kaufen
+        <div className="dash">
+          <img src={YellowStroke} alt="" />
+        </div>
+      </h1>
+
       <CardGrid images={Images} />
+      <h1>
+        Aktuelle Ankaufkurse
+        <div className="dash">
+          <img src={YellowStroke} alt="" />
+        </div>
+      </h1>
       <span>
         <h1>Hilfen & Tipps zum Edelmeatllaukf</h1>
       </span>
-      {/* <OutlinedCard/>
-      <OutlinedCard/>
-      <OutlinedCard/>
-      <OutlinedCard/> */}
     </div>
   );
 };
 
 const Images = [
   {
-    url: BackgroundImageDesktop,
-    text: "hello",
-    title: "Naeem",
+    url: BuyGoldNr1,
+
+    text: "Unze Gold",
   },
   {
-    url: BackgroundImageDesktop,
-    text: "hello",
-    title: "Naeem",
+    url: BuySilverNr2,
+    text: "Unze Gold",
   },
   {
-    url: BackgroundImageDesktop,
+    url: BuyGoldNr3,
     text: "hello",
-    title: "Naeem",
   },
   {
-    url: BackgroundImageDesktop,
+    url: BuyGoldNr4,
     text: "hello",
-    title: "Naeem",
   },
 ];
 export default Home;

@@ -20,7 +20,6 @@ export default function NavBarMobileMenu() {
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
-        display
       >
         Open Menu
       </Button>
