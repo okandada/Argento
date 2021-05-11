@@ -1,65 +1,54 @@
-// import React from "react";
-// import Card from "../Cards/cards";
-// import { Grid } from "@material-ui/core";
-// import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { Grid, Card, CardHeader } from "@material-ui/core/";
 
-// import "../../App.css";
-// import Box from "@material-ui/core/Box";
-// const useStyles = makeStyles({
-//   marginTop: "20px",
-// });
-// const defaultProps = {
-//   m: 2,
-//   borderColor: "#ecbd46",
-//   border: "3px solid",
-// };
-// export default function CardGrid(props) {
-//   const classes = useStyles();
-//   const bull = <span className={classes.bullet}>1 Unze Gold</span>;
-//   const HilfecardImage = props.HilfenTipsCardText;
-//   var rows = [];
-//   for (var i = 0; i < HilfecardImage.length; i++) {
-//     rows.push(
-//       <Box
-//         display="flex"
-//         key={i}
-//         justifyContent="center"
-//         item
-//         xs={12}
-//         sm={6}
-//         md={3}
-//       >
-//         <Box border={1} {...defaultProps}>
-//           <Grid>
-//             <Card text={HilfecardImage[i].text} />
-//           </Grid>
-//         </Box>
-//       </Box>
-//     );
-//   }
-//   const HilfenTipsCardText = [
-//     {
-//       text: "Unze Gold",
-//     },
-//     {
-//       text: "Unze Gold",
-//     },
-//     {
-//       text: "hello",
-//     },
-//     {
-//       text: "hello",
-//     },
-//   ];
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    padding: theme.spacing(2),
+  },
+}));
 
-//   return (
-//     <Grid
-//       container
-//       spacing={4}
-//       className={classes.gridContainer}
-//       justify="center"
-//     >
-//       {rows.map((row) => row)}
-//     </Grid>
-//   );
-// }
+export default function AltCard() {
+  const classes = useStyles();
+  const data = [
+    {
+      header: "1. gold zukunft",
+      text: "sds sdsds",
+    },
+    {
+      header: "2. Kleine Goldmünzen und Goldbarren kaufen",
+      text: "text 2 will come here",
+    },
+    {
+      header: "3. Zu große Goldbarren kaufen",
+      text: "text 3 will come here",
+    },
+    {
+      header: "4. Zu günstig Gold kaufen wollen",
+      text: "text 4 will come here",
+    },
+  ];
+  return (
+    <div className={classes.root}>
+      <Grid
+        container
+        spacing={2}
+        direction="row"
+        justify="flex-start"
+        alignItems="flex-start"
+      >
+        {data.map((elem) => (
+          <Grid item xs={12} sm={6} md={3} key={data.indexOf(elem)}>
+            <Card>
+              <CardHeader
+                title={`header : ${elem.header}`}
+                subheader={`text : ${elem.text}`}
+              />
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </div>
+  );
+}

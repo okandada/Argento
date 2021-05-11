@@ -5,9 +5,9 @@ import BuySilverNr2 from "../../Images/Home/Desktop/Fotos/BuySilverNr2.png";
 import BuyGoldNr3 from "../../Images/Home/Desktop/Fotos/BuyGoldNr3.png";
 import BuyGoldNr4 from "../../Images/Home/Desktop/Fotos/BuyGoldNr4.png";
 import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
-// import HilfeCardGrid from "../../Components/Cards/hilfenTipsCard";
-// import HilfenTipsCardText from "../Cards/hilfenTipsCard";
-
+import Newsletter from "../../Images/Home/Desktop/Fotos/Newsletter.png";
+import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop.png";
+import AltCard from "../../Components/Cards/hilfenTipsCard";
 export const Home = () => {
   return (
     <div>
@@ -17,18 +17,37 @@ export const Home = () => {
           <img src={YellowStroke} alt="" />
         </div>
       </h1>
-
       <CardGrid images={Images} />
       <h1>
         Aktuelle Ankaufkurse
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
-        {/* <HilfeCardGrid HilfecardImage={HilfenTipsCardText} /> */}
+        <container>
+          <div>
+            <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
+          </div>
+        </container>
       </h1>
-      <span>
-        <h1>Hilfen & Tipps zum Edelmeatllaukf</h1>
-      </span>
+      {/* <OutlinedCard /> */}
+      <h1>
+        Hilfen & Tipps zum Edelmeatllaukf
+        <div className="dash">
+          <img src={YellowStroke} alt="" />
+        </div>
+      </h1>
+      <AltCard />
+      <h1>
+        Newsletter
+        <div className="dash">
+          <img src={YellowStroke} alt="" />
+        </div>
+        <container>
+          <div>
+            <img src={Newsletter} height="100%" width="100%" alt="" />
+          </div>
+        </container>
+      </h1>
     </div>
   );
 };
