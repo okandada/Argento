@@ -5,7 +5,8 @@ import BuySilverNr2 from "../../Images/Home/Desktop/Fotos/BuySilverNr2.png";
 import BuyGoldNr3 from "../../Images/Home/Desktop/Fotos/BuyGoldNr3.png";
 import BuyGoldNr4 from "../../Images/Home/Desktop/Fotos/BuyGoldNr4.png";
 import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
-import { Container } from "@material-ui/core";
+// import HilfeCardGrid from "../../Components/Cards/hilfenTipsCard";
+// import HilfenTipsCardText from "../Cards/hilfenTipsCard";
 
 export const Home = () => {
   return (
@@ -23,6 +24,7 @@ export const Home = () => {
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
+        {/* <HilfeCardGrid HilfecardImage={HilfenTipsCardText} /> */}
       </h1>
       <span>
         <h1>Hilfen & Tipps zum Edelmeatllaukf</h1>

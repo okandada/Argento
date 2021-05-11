@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../Cards/cards";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { PinDropSharp } from "@material-ui/icons";
 import "../../App.css";
 import Box from "@material-ui/core/Box";
 const useStyles = makeStyles({
@@ -42,8 +41,6 @@ export default function CardGrid(props) {
   }
 
   return (
-    // <Box display="flex" justifyContent="center">
-    //   <Box border={1} {...defaultProps} />
     <Grid
       container
       spacing={4}
@@ -52,6 +49,5 @@ export default function CardGrid(props) {
     >
       {rows.map((row) => row)}
     </Grid>
-    // </Box>
   );
 }

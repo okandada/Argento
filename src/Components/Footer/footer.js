@@ -4,7 +4,7 @@ import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-import React, { Component } from "react";
+import React from "react";
 import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
 import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
 import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
