@@ -2,7 +2,8 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-
+import MobileMenu from "../../Images/ÜberUns/Smartphone/SVG/MobileMenu.svg";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function NavBarMobileMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -15,13 +16,17 @@ export default function NavBarMobileMenu() {
   };
 
   return (
-    <div>
+    <div style={{ float: "right" }}>
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
       >
-        Open Menu
+        <img
+          style={{ width: "30px", height: "22px" }}
+          src={MobileMenu}
+          alt=""
+        />
       </Button>
       <Menu
         id="simple-menu"
@@ -30,9 +35,15 @@ export default function NavBarMobileMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Home</MenuItem>
-        <MenuItem onClick={handleClose}>Contact Us</MenuItem>
-        <MenuItem onClick={handleClose}>About us</MenuItem>
+        <MenuItem component={Link} to="/home" onClick={handleClose}>
+          Home
+        </MenuItem>
+        <MenuItem component={Link} to="/contact" onClick={handleClose}>
+          Contact Us
+        </MenuItem>
+        <MenuItem component={Link} to="/about" onClick={handleClose}>
+          About us
+        </MenuItem>
       </Menu>
     </div>
   );
