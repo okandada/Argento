@@ -1,0 +1,30 @@
+.text-items {
+  margin-top: 35px;
+}
+.container-text {
+  position: relative;
+}
+.Image-item {
+  padding: 10px;
+}
+.first-title {
+  font-size: 0.6em;
+}
+
+.sub-title {
+  font-size: 0.4em;
+  color: rgb(164, 164, 164);
+}
+.price-field {
+  background-color: rgb(39 35 35 / 75%);
+  margin-top: 20px;
+  text-align: center;
+  padding: 6px;
+}
+
+.price-field-subtitle-left {
+  float: left;
+}
+.price-field-subtitle-right {
+  float: right;
+}

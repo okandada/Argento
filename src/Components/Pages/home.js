@@ -1,13 +1,21 @@
 import React from "react";
 import CardGrid from "../Cards/cardGrid";
-import BuyGoldNr1 from "../../Images/Home/Desktop/Fotos/BuyGoldNr1.png";
-import BuySilverNr2 from "../../Images/Home/Desktop/Fotos/BuySilverNr2.png";
-import BuyGoldNr3 from "../../Images/Home/Desktop/Fotos/BuyGoldNr3.png";
-import BuyGoldNr4 from "../../Images/Home/Desktop/Fotos/BuyGoldNr4.png";
+import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.png";
+import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.png";
+import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.png";
+import BuyGoldDesktop4 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop4.png";
 import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
-import Newsletter from "../../Images/Home/Desktop/Fotos/Newsletter.png";
+import NewsletterDesktop from "../../Images/Home/Desktop/Fotos/NewsletterDesktop.png";
+import NewsletterMobile from "../../Images/Home/Smartphone/Fotos/NewsletterMobile.png";
+import NewsletterIpad from "../../Images/Home/Tablet Hoch/Fotos/NewsletterIpad.png";
+import NewsletterQuer from "../../Images/Home/Tablet Quer/Fotos/NewsletterQuer.png";
 import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop.png";
+import GOldCourseMobile from "../../Images/Home/Smartphone/Fotos/GOldCourseMobile.png";
+import GOldCourseIpad from "../../Images/Home/Tablet Hoch/Fotos/GOldCourseIpad.png";
+import GOldCourseQuer from "../../Images/Home/Tablet Quer/Fotos/GoldCourseQuer.png";
 import AltCard from "../../Components/Cards/hilfenTipsCard";
+import "./home.css";
+import GoldPrice from "../GolgPrice/GoldPrice";
 export const Home = () => {
   return (
     <div>
@@ -23,12 +31,62 @@ export const Home = () => {
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
-        <container>
-          <div>
-            <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
-          </div>
-        </container>
       </h1>
+      <container>
+        <div className="container-text">
+          <img
+            src={GOldCourseDesktop}
+            className="desktop"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+          <div className="text-price">
+            <GoldPrice
+              firstTitle="Goldpreis in Euro"
+              subTitle="je Feinunze(31,103g)"
+              price="1.449.68 EUR"
+              price_subtitle_left="-0.75%"
+              price_subtitle_right="-10.28 Euro"
+            ></GoldPrice>
+            <GoldPrice
+              firstTitle="Goldpreis in Euro"
+              subTitle="je Feinunze(31,103g)"
+              price="1.449.68 EUR"
+              price_subtitle_left="-0.75%"
+              price_subtitle_right="-10.28 Euro"
+            ></GoldPrice>
+          </div>
+        </div>
+        <div>
+          <img
+            src={GOldCourseMobile}
+            className="mobile"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src={GOldCourseIpad}
+            className="IpadPro"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src={GOldCourseQuer}
+            className="IpadQuer"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+        </div>
+      </container>
+
       {/* <OutlinedCard /> */}
       <h1>
         Hilfen & Tipps zum Edelmeatllaukf
@@ -44,7 +102,34 @@ export const Home = () => {
         </div>
         <container>
           <div>
-            <img src={Newsletter} height="100%" width="100%" alt="" />
+            <img
+              src={NewsletterDesktop}
+              className="desktop"
+              height="100%"
+              width="100%"
+              alt=""
+            />
+            <img
+              src={NewsletterMobile}
+              className="mobile"
+              height="100%"
+              width="100%"
+              alt=""
+            />
+            <img
+              src={NewsletterIpad}
+              className="IpadPro"
+              height="100%"
+              width="100%"
+              alt=""
+            />
+            <img
+              src={NewsletterQuer}
+              className="IpadQuer"
+              height="100%"
+              width="100%"
+              alt=""
+            />
           </div>
         </container>
       </h1>
@@ -54,20 +139,20 @@ export const Home = () => {
 
 const Images = [
   {
-    url: BuyGoldNr1,
+    url: BuyGoldDesktop1,
 
     text: "Unze Gold",
   },
   {
-    url: BuySilverNr2,
+    url: BuyGoldDesktop2,
     text: "Unze Gold",
   },
   {
-    url: BuyGoldNr3,
+    url: BuyGoldDesktop3,
     text: "hello",
   },
   {
-    url: BuyGoldNr4,
+    url: BuyGoldDesktop4,
     text: "hello",
   },
 ];

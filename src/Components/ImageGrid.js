@@ -20,7 +20,7 @@ export default function ImageGrid() {
   return (
     <Grid container spacing={0}>
       <Grid container justify="center" style={{ padding: "15px" }} spacing={0}>
-        <Grid item lg={3} md={6} sm={12}>
+        <Grid item lg={3} md={6} sm={6} xs={6}>
           <div>
             <img
               src={UnsernePartner1Desktop}
@@ -54,7 +54,7 @@ export default function ImageGrid() {
           </div>
         </Grid>
 
-        <Grid item lg={3} md={6} sm={12}>
+        <Grid item lg={3} md={6} sm={6} xs={6}>
           <div>
             <img
               src={UnsernePartner2Desktop}
@@ -87,7 +87,7 @@ export default function ImageGrid() {
             {/* <img src={UnsernePartnerQuer1} height="200px" alt="" /> */}
           </div>
         </Grid>
-        <Grid item lg={3} md={6} sm={12}>
+        <Grid item lg={3} md={6} sm={6} xs={6}>
           <div>
             <img
               src={UnsernePartner3Desktop}
@@ -120,7 +120,7 @@ export default function ImageGrid() {
             {/* <img src={UnsernePartnerQuer1} height="200px" alt="" /> */}
           </div>
         </Grid>
-        <Grid item lg={3} md={6} sm={12}>
+        <Grid item lg={3} md={6} sm={6} xs={6}>
           <div>
             <img
               src={UnsernePartner4Desktop}

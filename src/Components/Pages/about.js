@@ -13,6 +13,7 @@ import UnserneTeam2Mobile from "../../Images/ÜberUns/Smartphone/Fotos/UnserneTe
 import UnserneTeam2Tablet from "../../Images/ÜberUns/TabletHoch/Fotos/UnserneTeam2Tablet.png";
 import UnserneTeam1Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam1Quer.png";
 import UnserneTeam2Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam2Quer.png";
+import Title from "../Title/title";
 import "../../App.css";
 export const About = () => {
   return (
@@ -121,20 +122,21 @@ export const About = () => {
           <img src={YellowStroke} alt="" />
         </div>
       </div>
-      <p className="mobile">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-        zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
-        dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy Lorem
-        ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
-        nonummynibh
-      </p>
-
+      <div>
+        <p className="mobile">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+          nonummy Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
+          diam nonummynibh
+        </p>
+      </div>
       {/* ...unserne team layout start img 2 */}
       <AboutCarddiv style={{ marginTop: "70px" }}>
         <Container style={{ paddingLeft: "12px" }} className="container">
@@ -168,16 +170,11 @@ export const About = () => {
           />
         </Container>
 
-        <Container
-          style={{ marginLeft: "20px", marginBottom: "-500px" }}
-          className="container"
-        >
-          <div className="IpadPro desktop IpadQuer">
-            <h1 className="title">Warum Argento Aurum</h1>
-            <div className="dash">
-              <img src={YellowStroke} alt="" />
-            </div>
-          </div>
+        <Container style={{ marginLeft: "20px" }} className="container">
+          {" "}
+          <Title class="desktop" name="Warum Argento Aurum" />
+          <Title class="IpadPro" name="Warum Argento Aurum" />
+          <Title class="IpadQuer" name="Warum Argento Aurum" />
           {/* ...unserne team layout start text2 */}
           <p className="desktop">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -192,7 +189,6 @@ export const About = () => {
             elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
             adipiscing elit, sed diam nonummynibh
           </p>
-
           <p className="IpadPro">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -224,15 +220,16 @@ export const About = () => {
       {/* ...unserne team layout ends... */}
 
       {/* ...unserne partner layout start */}
+
       <AboutCarddiv style={{ padding: "25px" }}>
-        <div style={{ height: "fit-content" }} className="container">
+        <Container style={{ marginLeft: "20px" }} className="container">
           <h1 className="title">Unsere Partner</h1>
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>
-        </div>
+        </Container>
       </AboutCarddiv>
-      <ImageGrid className="desktop"></ImageGrid>
+      <ImageGrid></ImageGrid>
     </div>
   );
 };
