@@ -8,6 +8,7 @@ import NavbarMenu from "../src/Components/Navbar/NavbarMenu";
 import Footer from "../src/Components/Footer/footer";
 import BgImageComponent from "./Components/BackgroundimageComponent/backGroundImage";
 import NavBarMobileMenu from "../src/Components/NavBarMobile/navBarMobile";
+import DatenSchutz from "./Components/Pages/datenSchutz";
 function App() {
   return (
     <div>
@@ -32,7 +33,8 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/contact" component={ContactUs} />
+
+            <Route path="/datenSchutz" component={DatenSchutz} />
           </Switch>
         </div>
         <Footer />

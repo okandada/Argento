@@ -16,6 +16,7 @@ export default function BgImageComponent() {
         alt=""
         className="desktop"
         text="unserne leider schaft"
+        style={{ text: "unserne leider schaft" }}
       />
 
       <img

@@ -83,7 +83,7 @@ export const About = () => {
             <img
               src={UnserneTeam1}
               height="100%"
-              width="100%"
+              width="inherit"
               alt=""
               className="desktop image"
             />
@@ -92,7 +92,7 @@ export const About = () => {
             <img
               src={UnserneTeam1Mobile}
               height="100%"
-              width="100%"
+              width="inherit"
               alt=""
               className="mobile"
             />
@@ -101,20 +101,39 @@ export const About = () => {
             <img
               src={UnserneTeam1Tablet}
               height="100%"
-              width="100%"
+              width="inherit"
               alt=""
               className="IpadPro"
             />
             <img
               src={UnserneTeam1Quer}
               height="100%"
-              width="100%"
+              width="inherit"
               alt=""
               className="IpadQuer"
             />
           </div>
         </Container>
       </AboutCarddiv>
+      <div className="mobile">
+        <h1 className="title">Warum Argento Aurum</h1>
+        <div className="dash">
+          <img src={YellowStroke} alt="" />
+        </div>
+      </div>
+      <p className="mobile">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+        eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+        zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
+        dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy Lorem
+        ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+        nonummynibh
+      </p>
 
       {/* ...unserne team layout start img 2 */}
       <AboutCarddiv style={{ marginTop: "70px" }}>
@@ -153,9 +172,11 @@ export const About = () => {
           style={{ marginLeft: "20px", marginBottom: "-500px" }}
           className="container"
         >
-          <h1 className="title">Warum Argento Aurum</h1>
-          <div className="dash">
-            <img src={YellowStroke} alt="" />
+          <div className="IpadPro desktop IpadQuer">
+            <h1 className="title">Warum Argento Aurum</h1>
+            <div className="dash">
+              <img src={YellowStroke} alt="" />
+            </div>
           </div>
           {/* ...unserne team layout start text2 */}
           <p className="desktop">
@@ -171,19 +192,7 @@ export const About = () => {
             elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
             adipiscing elit, sed diam nonummynibh
           </p>
-          <p className="mobile">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-            facilisis at vero eros et accumsan et iusto odio dignissim qui
-            blandit praesent luptatum zzril delenit augue duis dolore te feugait
-            nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
-            elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
-            adipiscing elit, sed diam nonummynibh
-          </p>
+
           <p className="IpadPro">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -217,7 +226,7 @@ export const About = () => {
       {/* ...unserne partner layout start */}
       <AboutCarddiv style={{ padding: "25px" }}>
         <div style={{ height: "fit-content" }} className="container">
-          {/* <h1 className="title">Unsere Partner</h1> */}
+          <h1 className="title">Unsere Partner</h1>
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>

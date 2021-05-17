@@ -34,6 +34,10 @@ h6 {
   /* color: darkgoldenrod;  */
   color: #ecbd46;
 }
+h3 {
+  /* color: darkgoldenrod;  */
+  color: #ecbd46;
+}
 
 /* Button css*/
 
@@ -47,13 +51,14 @@ h6 {
   text-align: left;
   color: #ffffff;
 }
-.MuiTypography-body2..MuiTypography-body2 {
+.MuiTypography-body2.MuiTypography-body2 {
   color: "#a4a4a4";
 }
 /* footer+/ css*/
 .makeStyles-footer-8.makeStyles-footer-8 {
   border-top: 1px solid #ffffff;
 }
+
 .MuiTypography-colorTextSecondary.MuiTypography-colorTextSecondary {
   color: #ffffff;
 }
@@ -74,7 +79,12 @@ h6 {
 }
 
 /* media querry*/
-
+.textHeaderColor {
+  color: rgb 236 189 70;
+}
+/* .textColor {
+  color: white;
+} */
 @media (max-width: 1366px) {
   .desktop,
   .mobile,

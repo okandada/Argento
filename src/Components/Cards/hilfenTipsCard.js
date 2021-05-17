@@ -4,6 +4,8 @@ import { Grid, Card, CardHeader } from "@material-ui/core/";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import { Height } from "@material-ui/icons";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -20,19 +22,20 @@ export default function AltCard() {
   const data = [
     {
       header: "1. gold zukunft",
-      text: "text 1 will come here ",
+      text: "Gold wird 23 Stunden am Tag auf der ganzen Welt gehandelt. Sie können also rund um die Uhr das glänzende Edelmetall erwerben. Wichtig dabei ist, nicht nur auf den Preis zu achten, sondern auch auf den Zeitpunkt. Beachten Sie die Öffnungs- und Arbeitszeiten der Händler. Bestellen Sie außerhalb dieser Zeiten besteht immer ein Kursrisikio, da keine Absicherung vorliegt. Es könnte Ihnen bei einigen Händlern der unbekannte Preis vom nächsten Tag berechnet werden. Andere Händler agieren anders…",
     },
     {
       header: "2. Kleine Goldmünzen und Goldbarren kaufen",
-      text: "text 2 will come here ",
+      text: "Goldbarren und Goldmünzen gibt es in unterschiedlichen Größen. Doch welche Größe ist die richtige? Für jede Gewichtseinheit fallen unterschiedlich hohe Prägekosten an, die in den Verkaufspreis mit eingerechnet sind. Für kleine Goldbarren sowie –münzen werden prozentual höhere Aufschläge bezogen auf den reinen Materialwert berechnet, als für große…. ",
     },
     {
       header: "3. Zu große Goldbarren kaufen",
-      text: "text 3 will come here dsfasffadf sdasdasdsadafsdaffdsf asdfsdafdsfdaf",
+      text: "Einen großen Goldbarren, wie etwa 1 kg Gold, kann man nur ganz oder gar nicht verkaufen. Daher empfiehlt es sich lieber beispielsweise in 10 Stück 100 Gramm Goldbarren oder in 30 1-Unzen-Goldmünzen zu investieren. Der Preisunterschied ist gering, jedoch sind Sie flexibel was Teilkäufe angeht.",
     },
     {
       header: "4. Zu günstig Gold kaufen wollen",
-      text: "text 4 will come here aDaaDSADADA  ADADDadA",
+
+      text: "Wer zu billig kauft, kauft zwei Mal.“ Doch bei Gold haben Sie keine zweite Chance. Das Edelmetall wird immer zu marktgerechten Preisen gehandelt. Finden Sie also ein wahres Schnäppchen im Internet, können Sie sich eins sicher ein: Da stimmt etwas nicht. Eventuell kann es sich hierbei sogar um Fälschungen handeln. Ihr Geld ist weg und Sie haben kein brauchbares Gold erhalten.",
     },
   ];
   return (
@@ -47,10 +50,14 @@ export default function AltCard() {
         {data.map((elem) => (
           <Grid item xs={12} sm={6} md={3} key={data.indexOf(elem.text)}>
             <Box border={1} {...defaultProps}>
-              <Card>
+              <Card style={{ overflowY: "scroll", height: "290px" }}>
                 <CardHeader subheader={` ${elem.header}`} />
                 <CardContent>
-                  <Typography variant="body2" component="p">
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    style={{ color: "#a4a4a4" }}
+                  >
                     {` ${elem.text}`}
                   </Typography>
                 </CardContent>
