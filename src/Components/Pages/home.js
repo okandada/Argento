@@ -15,6 +15,7 @@ import GOldCourseIpad from "../../Images/Home/Tablet Hoch/Fotos/GOldCourseIpad.p
 import GOldCourseQuer from "../../Images/Home/Tablet Quer/Fotos/GoldCourseQuer.png";
 import AltCard from "../../Components/Cards/hilfenTipsCard";
 import "./home.css";
+import NewsLetter from "../Newsletter/NewsLetter";
 import GoldPrice from "../GolgPrice/GoldPrice";
 export const Home = () => {
   return (
@@ -100,39 +101,51 @@ export const Home = () => {
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
-        <container>
-          <div>
-            <img
-              src={NewsletterDesktop}
-              className="desktop"
-              height="100%"
-              width="100%"
-              alt=""
-            />
-            <img
-              src={NewsletterMobile}
-              className="mobile"
-              height="100%"
-              width="100%"
-              alt=""
-            />
-            <img
-              src={NewsletterIpad}
-              className="IpadPro"
-              height="100%"
-              width="100%"
-              alt=""
-            />
-            <img
-              src={NewsletterQuer}
-              className="IpadQuer"
-              height="100%"
-              width="100%"
-              alt=""
-            />
-          </div>
-        </container>
       </h1>
+      <container>
+        <div className="container-text">
+          <img
+            src={NewsletterDesktop}
+            className="desktop"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+          <div className="text-price">
+            <NewsLetter
+              firstTitle="Abonniere unseren Newsletter"
+              subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
+            ></NewsLetter>
+          </div>
+        </div>
+        <div>
+          <img
+            src={NewsletterMobile}
+            className="mobile"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src={NewsletterIpad}
+            className="IpadPro"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src={NewsletterQuer}
+            className="IpadQuer"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+        </div>
+      </container>
     </div>
   );
 };
