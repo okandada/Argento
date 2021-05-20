@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
   InputBase: {
     border: "1px solid white",
   },
+  buttonstyle: {
+    width: "80%",
+  },
 }));
 export default function NewsLetter(props) {
   const classes = useStyles();
@@ -29,26 +32,43 @@ export default function NewsLetter(props) {
     <div className="text-items">
       <div className="first-title">{props.firstTitle}</div>
       <div className="sub-title">{props.subTitle}</div>
-      <span className="sub-title price-field-subtitle-left ">
-        {props.price_subtitle_left}
-      </span>
-      <div className="newsletter-input-field ">
-        <form className={classes.root} noValidate autoComplete="off">
-          <TextField
-            id="outlined-basic"
-            label="E-MAIL-AdRESS"
-            variant="outlined"
-          />
-        </form>
-        <Checkbox
-          checked={checked}
-          onChange={handleChange}
-          inputProps={{ "aria-label": "primary checkbox" }}
+      <form noValidate autoComplete="off">
+        {/* <TextField
+          className="newsletter-text"
+          id="outlined-basic"
+          label="Outlined"
+          variant="outlined"
+        /> */}
+        <TextField
+          className="newsletter-textfield"
+          id="outlined-basic"
+          placeholder="E-MAIL-Adresse"
+          variant="outlined"
         />
-        <Button variant="contained" color="white" href="#contained-buttons">
+        <div>
+          <Checkbox
+            className="newsLetter-checkbox"
+            checked={checked}
+            onChange={handleChange}
+            labelPlacement="end"
+            inputProps={{ "aria-label": "primary checkbox" }}
+          />
+          <span>
+            Ich bin mit den allgemeinen Datenschutzbestimmungen und den
+            Teilnahmebedingungen einverstanden
+          </span>
+        </div>
+
+        <Button
+          className="newsLetter-btn"
+          variant="contained"
+          color="white"
+          href="#contained-buttons"
+        >
           <h6>NewsLetter Anmeldung</h6>
         </Button>
-      </div>
+      </form>
     </div>
+    // </div>
   );
 }

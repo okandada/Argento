@@ -1,5 +1,5 @@
 .text-items {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 .container-text {
   position: relative;
@@ -8,11 +8,11 @@
   padding: 10px;
 }
 .first-title {
-  font-size: 0.6em;
+  font-size: 1.4em;
 }
 
 .sub-title {
-  font-size: 0.4em;
+  font-size: 0.8em;
   color: rgb(164, 164, 164);
 }
 .price-field {

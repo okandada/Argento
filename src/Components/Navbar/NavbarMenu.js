@@ -39,12 +39,12 @@ export default function NavbarMenu() {
 
           <IconButton
             edge="start"
-            className={classes.menuButton}
+            className={classes.toggleDrawer}
             color="inherit"
             aria-label="menu"
           ></IconButton>
           <Typography variant="h6" className={classes.title}></Typography>
-          <Button component={Link} to="/home">
+          <Button component={Link} to="">
             Home
           </Button>
           <Button component={Link} to="/about">

@@ -9,7 +9,7 @@ import Box from "@material-ui/core/Box";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
   },
 }));
 const defaultProps = {

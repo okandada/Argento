@@ -17,9 +17,16 @@ import AltCard from "../../Components/Cards/hilfenTipsCard";
 import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
 import GoldPrice from "../GolgPrice/GoldPrice";
+import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
+import {
+  cartBgImage,
+  BgImage,
+} from "../../Components/ConditionalRendering/Rendering";
+
 export const Home = () => {
   return (
     <div>
+      <BgImageComponent bgImage={BgImage} />
       <h1>
         Gold & Silber Kaufen
         <div className="dash">
@@ -51,9 +58,9 @@ export const Home = () => {
               price_subtitle_right="-10.28 Euro"
             ></GoldPrice>
             <GoldPrice
-              firstTitle="Goldpreis in Euro"
-              subTitle="je Feinunze(31,103g)"
-              price="1.449.68 EUR"
+              firstTitle="Goldpreis in Silber"
+              subTitle="je Feinunze (31,103g)"
+              price="21,21 EUR"
               price_subtitle_left="-0.75%"
               price_subtitle_right="-10.28 Euro"
             ></GoldPrice>

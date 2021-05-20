@@ -15,9 +15,15 @@ import UnserneTeam1Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam
 import UnserneTeam2Quer from "../../Images/ÜberUns/TabletQuer/Fotos/UnserneTeam2Quer.png";
 import Title from "../Title/title";
 import "../../App.css";
+import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
+import {
+  cartBgImage,
+  BgImage,
+} from "../../Components/ConditionalRendering/Rendering";
 export const About = () => {
   return (
     <div>
+      <BgImageComponent bgImage={BgImage} />
       <AboutCarddiv>
         <Container className="container">
           <h1 className="title">Unser Team</h1>
@@ -221,14 +227,18 @@ export const About = () => {
 
       {/* ...unserne partner layout start */}
 
-      <AboutCarddiv style={{ padding: "25px" }}>
+      {/* <AboutCarddiv style={{ padding: "25px" }}>
         <Container style={{ marginLeft: "20px" }} className="container">
           <h1 className="title">Unsere Partner</h1>
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>
         </Container>
-      </AboutCarddiv>
+      </AboutCarddiv> */}
+      <h1 className="title">Unserne Partner</h1>
+      <div className="dash">
+        <img src={YellowStroke} alt="" />
+      </div>
       <ImageGrid></ImageGrid>
     </div>
   );

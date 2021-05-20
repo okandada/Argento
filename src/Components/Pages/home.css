@@ -3,11 +3,20 @@
   top: 0px;
   right: 3%;
   width: 22%;
+  height: 100%;
 }
-.newsletter-input-field {
+.newsletter-textfield {
+  width: fit-content !important;
+  margin: 16px 0px !important;
+  width: 100% !important;
+}
+/* .newsletter-textfield:hover {
+  border-color: 2px solid green !important;
+} */
+/* .newsletter-input-field {
   margin-top: 10px;
   padding: 10px;
-}
+} */
 /* input email label class*/
 .MuiInputLabel-outlined.MuiInputLabel-shrink.MuiInputLabel-outlined.MuiInputLabel-shrink {
   color: #ecbd46;
@@ -16,8 +25,7 @@
 .MuiOutlinedInput-input.MuiOutlinedInput-input {
   color: #ecbd46;
   padding: 1px 1px;
-  border: outset;
-  max-width: 115%;
+  border: 1px solid #fff;
   height: 2em;
   background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
@@ -35,7 +43,16 @@
   color: #ecbd46;
   text-align: end !important;
 }
-.MuiFormControl-root.MuiFormControl-root {
+/* .MuiFormControl-root.MuiFormControl-root {
   margin-left: -10px;
   margin-right: 50px;
+} */
+.newsLetter-checkbox {
+  float: left;
+  padding-left: 0 !important;
+}
+.newsLetter-btn {
+  width: 100% !important;
+  position: absolute !important;
+  bottom: 22px !important;
 }
