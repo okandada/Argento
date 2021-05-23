@@ -1,13 +1,21 @@
 import React from "react";
-import BackGroundKasse from "./UnsernShop";
-
+import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
+import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
 import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.png";
 function UnsernShop() {
   return (
     <div>
-      <BackGroundKasse />
-      <p>this is unser shop page</p>
-      <img src={BuyGoldDesktop1} height="100%" width="100%" alt="" />
+      <div>
+        <BgImageComponent bgImage={cartBgImage} />
+        <h2>hello from unsern shop 1</h2>
+      </div>
+      <div className=" UnsernImage">
+        <img src={BuyGoldDesktop1} width="100%" className="desktop" alt="" />
+        <img src={BuyGoldDesktop1} width="100%" className="mobile" alt="" />
+        <img src={BuyGoldDesktop1} width="100%" className="IpadPro" alt="" />
+        <img src={BuyGoldDesktop1} width="100%" className="IpadQuer" alt="" />
+        <div>dsdas</div>
+      </div>
     </div>
   );
 }

@@ -18,10 +18,29 @@ import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
 import GoldPrice from "../GolgPrice/GoldPrice";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import {
-  cartBgImage,
-  BgImage,
-} from "../../Components/ConditionalRendering/Rendering";
+import { BgImage } from "../../Components/ConditionalRendering/Rendering";
+import MediaCard from "../Cards/cards";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 export const Home = () => {
   return (
@@ -34,6 +53,20 @@ export const Home = () => {
         </div>
       </h1>
       <CardGrid images={Images} />
+      {/* <Carousel responsive={responsive}>
+        <div>
+          <MediaCard images={Images} />
+        </div>
+        <div>
+          <MediaCard images={Images} />
+        </div>
+        <div>
+          <MediaCard images={Images} />
+        </div>
+        <div>
+          <MediaCard images={Images} />
+        </div>
+      </Carousel> */}
       <h1>
         Aktuelle Ankaufkurse
         <div className="dash">
@@ -94,7 +127,6 @@ export const Home = () => {
           />
         </div>
       </container>
-
       {/* <OutlinedCard /> */}
       <h1>
         Hilfen & Tipps zum Edelmeatllaukf

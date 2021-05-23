@@ -5,52 +5,57 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    width: 460,
+    height: 460,
   },
   media: {
-    height: 140,
+    height: 210,
+    margin: 8,
   },
 });
 
 export default function MediaCard(props) {
+  // const [state, setState] = React.useState({});
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>1 Unze Gold</span>;
-  const bull2 = <span className={classes.bullet}>1.560,42 EUR</span>;
+  const bull = <span>1 Unze Gold</span>;
+  const bull2 = <span>1.560,42 EUR</span>;
   return (
-    <div style={{ margin: "0px" }}>
-      <Card className={classes.root}>
+    <div className={classes.root}>
+      <Card>
         <CardActionArea>
           <CardMedia className={classes.media} image={props.url} title="abc" />
-          <CardContent>
-            <Typography variant="h5" component="h2">
+          <CardContent style={{ padding: "0 16px 0 16px" }}>
+            <Typography
+              variant="h3"
+              gutterBottom
+              style={{ paddingBottom: "25px" }}
+            >
               {bull}
             </Typography>
-
-            <Typography variant="body2" component="p">
-              Feinheit: 999,9/1000 Feingold
-              <br />
-              {'"Herkunftsland: Schweiz / Deutschland"'}
-            </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h4" gutterBottom>
               {bull2}
             </Typography>
-            <Typography variant="body2" component="p" size="large">
+            <Typography variant="caption" display="block" gutterBottom>
               zzgl. Versandkosten Lieferzeit: 4-7 Tage
             </Typography>
           </CardContent>
+          <CardActions>
+            <Button
+              size="large"
+              style={{ background: "white" }}
+              fullWidth={true}
+            >
+              <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
+                jetzt endecken
+              </span>
+            </Button>
+          </CardActions>
         </CardActionArea>
-        <CardActions>
-          <Button size="large" style={{ background: "white" }} fullWidth={true}>
-            <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
-              jetzt endecken
-            </span>
-          </Button>
-        </CardActions>
       </Card>
     </div>
   );

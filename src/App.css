@@ -27,7 +27,14 @@ body {
 }
 
 h1 {
-  padding: 15px;
+  padding: 8px;
+  font-size: 5.3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+p {
+  font-size: 1em;
 }
 
 h6 {
@@ -38,6 +45,9 @@ h6 {
 h3 {
   /* color: darkgoldenrod;  */
   color: #ecbd46;
+}
+h4 {
+  font-size: 2.5em;
 }
 
 /* */
@@ -113,8 +123,18 @@ h3 {
   .IpadPro,
   .IpadQuer {
     display: none;
+    font-size: 2px;
   }
   .mobile {
     display: block;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2.25em;
+  }
+  p {
+    font-size: 1.5em;
   }
 }
