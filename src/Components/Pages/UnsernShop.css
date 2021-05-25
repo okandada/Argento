@@ -1,4 +1,21 @@
 .UnsernImage {
-  width: 450px;
+  /* width: 450px; */
   height: 330px;
+}
+.UnzeGoldtextdiv {
+  padding-left: 20px;
+  margin-top: -15px;
+}
+#wrapper {
+  display: flex;
+  justify-content: stretch;
+}
+
+.textPrice {
+  float: left;
+
+  size: 54px;
+}
+.BeschreibungButton {
+  background-color: #ecbd46;
 }

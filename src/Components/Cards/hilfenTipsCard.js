@@ -4,12 +4,13 @@ import { Grid, Card, CardHeader } from "@material-ui/core/";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+
 // import { Height } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: theme.spacing(1),
+    padding: theme.spacing(0),
   },
 }));
 const defaultProps = {
@@ -17,7 +18,7 @@ const defaultProps = {
   borderColor: "#ecbd46",
   border: "3px solid",
 };
-export default function AltCard() {
+export default function AltCard(props) {
   const classes = useStyles();
   const data = [
     {
@@ -38,11 +39,12 @@ export default function AltCard() {
       text: "Wer zu billig kauft, kauft zwei Mal.“ Doch bei Gold haben Sie keine zweite Chance. Das Edelmetall wird immer zu marktgerechten Preisen gehandelt. Finden Sie also ein wahres Schnäppchen im Internet, können Sie sich eins sicher ein: Da stimmt etwas nicht. Eventuell kann es sich hierbei sogar um Fälschungen handeln. Ihr Geld ist weg und Sie haben kein brauchbares Gold erhalten.",
     },
   ];
+
   return (
     <div className={classes.root}>
       <Grid
         container
-        spacing={2}
+        spacing={0}
         direction="row"
         justify="flex-start"
         alignItems="flex-start"
@@ -52,16 +54,8 @@ export default function AltCard() {
             <Box border={1} {...defaultProps}>
               <Card style={{ overflowY: "scroll", height: "290px" }}>
                 <CardHeader subheader={` ${elem.header}`} />
-                <CardContent>
-                  <Typography
-                    variant="body2"
-                    component="p"
-                    style={{ color: "#a4a4a4" }}
-                  >
-                    {` ${elem.text}`}
-                  </Typography>
-                </CardContent>
-              </Card>{" "}
+                <CardContent>{` ${elem.text}`}</CardContent>
+              </Card>
             </Box>
           </Grid>
         ))}

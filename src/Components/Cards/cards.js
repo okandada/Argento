@@ -8,16 +8,13 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    width: 460,
-    height: 460,
+    "& > *": {
+      margin: theme.spacing(1),
+    },
   },
-  media: {
-    height: 210,
-    margin: 8,
-  },
-});
+}));
 
 export default function MediaCard(props) {
   // const [state, setState] = React.useState({});
@@ -27,7 +24,7 @@ export default function MediaCard(props) {
   return (
     <div className={classes.root}>
       <Card>
-        <CardActionArea>
+        <CardActionArea style={{ color: "black" }}>
           <CardMedia className={classes.media} image={props.url} title="abc" />
           <CardContent style={{ padding: "0 16px 0 16px" }}>
             <Typography
@@ -37,7 +34,7 @@ export default function MediaCard(props) {
             >
               {bull}
             </Typography>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h3" gutterBottom>
               {bull2}
             </Typography>
             <Typography variant="caption" display="block" gutterBottom>

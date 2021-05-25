@@ -20,13 +20,15 @@ import {
   cartBgImage,
   BgImage,
 } from "../../Components/ConditionalRendering/Rendering";
+import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export const About = () => {
   return (
     <div>
       <BgImageComponent bgImage={BgImage} />
       <AboutCarddiv>
         <Container className="container">
-          <h1 className="title">Unser Team</h1>
+          <h2 className="title">Unser Team</h2>
           <div className="dash">
             <img src={YellowStroke} alt="" />
           </div>
@@ -90,7 +92,7 @@ export const About = () => {
             <img
               src={UnserneTeam1}
               height="100%"
-              width="inherit"
+              width="100%"
               alt=""
               className="desktop image"
             />
@@ -99,7 +101,7 @@ export const About = () => {
             <img
               src={UnserneTeam1Mobile}
               height="100%"
-              width="inherit"
+              width="100"
               alt=""
               className="mobile"
             />
@@ -108,14 +110,14 @@ export const About = () => {
             <img
               src={UnserneTeam1Tablet}
               height="100%"
-              width="inherit"
+              width="100"
               alt=""
               className="IpadPro"
             />
             <img
               src={UnserneTeam1Quer}
               height="100%"
-              width="inherit"
+              width="100%"
               alt=""
               className="IpadQuer"
             />
@@ -123,7 +125,7 @@ export const About = () => {
         </Container>
       </AboutCarddiv>
       <div className="mobile">
-        <h1 className="title">Warum Argento Aurum</h1>
+        <h2 className="title">Warum Argento Aurum</h2>
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
@@ -145,39 +147,38 @@ export const About = () => {
       </div>
       {/* ...unserne team layout start img 2 */}
       <AboutCarddiv style={{ marginTop: "70px" }}>
-        <Container style={{ paddingLeft: "12px" }} className="container">
+        <Container className="container">
           <img
             src={UnserneTeam2}
-            height="inherit"
-            width="inherit"
+            height="100%"
+            width="100%"
             alt=""
             className="desktop"
           />
           <img
             src={UnserneTeam2Mobile}
-            height="inherit"
-            width="inherit"
+            height="100%"
+            width="100%"
             alt=""
             className="mobile"
           />
           <img
             src={UnserneTeam2Tablet}
-            height="inherit"
-            width="inherit"
+            height="100%"
+            width="100%"
             alt=""
             className="IpadPro"
           />
           <img
             src={UnserneTeam2Quer}
-            height="inherit"
-            width="inherit"
+            height="100%"
+            width="100%"
             alt=""
             className="IpadQuer"
           />
         </Container>
 
-        <Container style={{ marginLeft: "20px" }} className="container">
-          {" "}
+        <Container className="container">
           <Title class="desktop" name="Warum Argento Aurum" />
           <Title class="IpadPro" name="Warum Argento Aurum" />
           <Title class="IpadQuer" name="Warum Argento Aurum" />
@@ -235,11 +236,19 @@ export const About = () => {
           </div>
         </Container>
       </AboutCarddiv> */}
-      <h1 className="title">Unserne Partner</h1>
-      <div className="dash">
+
+      <h2 className="title">Unserne Partner</h2>
+      <div className="dash" style={{ width: "7%" }}>
         <img src={YellowStroke} alt="" />
       </div>
       <ImageGrid></ImageGrid>
+      <Link to="/home">
+        <img
+          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
+          src={logo}
+          alt=""
+        />
+      </Link>
     </div>
   );
 };
@@ -250,6 +259,8 @@ const AboutCarddiv = styled.div`
   width: 100%;
   display: inline-flex;
   padding-top: 30px;
+  column-gap: 20px;
+
 
   @media (max-width: 375px) {
     display: block};

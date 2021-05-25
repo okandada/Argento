@@ -16,6 +16,7 @@ import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import NativeSelect from "@material-ui/core/NativeSelect";
+import color from "material-ui/colors/amber";
 
 function Footer() {
   return (
@@ -62,49 +63,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const footers = [
-  {
-    title: "Häufige Fragen",
-    description: [
-      "Bestellprozess",
-      "Zahlungsweise",
-      "Versand",
-      "Sicherheit",
-      "Umtausch & Reklamation",
-    ],
-  },
 
-  {
-    title: "Über uns",
-    description: [" Kontakt", "Impressum", "Datenschutz", "AGB"],
-  },
-  {
-    title: "Top Themen",
-    description: ["Tips", "Sparplan", "Newsletter", "Partner"],
-  },
-  {
-    title: "Social Media",
-    description: [
-      <div display="flex">
-        <span>
-          <img src={FbDesktop} height="40px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "7px" }}>
-          <img src={InstaDesktop} width="25px" height="40px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "8px" }}>
-          <img src={LinkedlnDesktop} width="25px" height="40px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={XingDesktop} width="25px" height="40px" alt=""></img>
-        </span>
-      </div>,
-    ],
-    s,
-  },
-];
-
-export default function MobileFooter() {
+export default function MobileFooterTest() {
   const classes = useStyles();
   const handleChange = (event) => {
     const name = event.target.name;
@@ -121,35 +81,54 @@ export default function MobileFooter() {
 
   return (
     <div>
-      <React.Fragment>
-        <Container maxWidth="md" component="footer" className={classes.footer}>
-          <Grid container spacing={4} justify="space-evenly">
-            {footers.map((footer) => (
-              <Grid item xs={6} sm={3} key={footer.title}>
-                <Typography variant="h6" color="h6" gutterBottom>
-                  {footer.title}
-                </Typography>
-                <ul>
-                  {footer.description.map((item) => (
-                    <li key={item}>
-                      <Link href="#" variant="subtitle1" color="textSecondary">
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </Grid>
-            ))}
-          </Grid>
-          <Box mt={5}>
-            <Footer />
-          </Box>
-        </Container>
-        {/* End footer */}
-      </React.Fragment>
-
       <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="age-native-simple">Age</InputLabel>
+        <InputLabel htmlFor="age-native-simple">
+          <p style={{ color: "red", backgroundColor: "blue" }}>Age</p>
+        </InputLabel>
+        <Select
+          native
+          value={state.age}
+          onChange={handleChange}
+          inputProps={{
+            name: "age",
+            id: "age-native-simple",
+          }}
+        >
+          <option aria-label="mobile" value="" />
+          <option value={10} style={{ color: "red", backgroundColor: "blue" }}>
+            Ten
+          </option>
+          <option value={20}>Twenty</option>
+          <option value={30}>Thirty</option>
+        </Select>
+        <Select
+          native
+          value={state.age}
+          onChange={handleChange}
+          inputProps={{
+            name: "age",
+            id: "age-native-simple",
+          }}
+        >
+          <option aria-label="None" value="" />
+          <option value={10}>Ten</option>
+          <option value={20}>Twenty</option>
+          <option value={30}>Thirty</option>
+        </Select>
+        <Select
+          native
+          value={state.age}
+          onChange={handleChange}
+          inputProps={{
+            name: "age",
+            id: "age-native-simple",
+          }}
+        >
+          <option aria-label="None" value="" />
+          <option value={10}>Ten</option>
+          <option value={20}>Twenty</option>
+          <option value={30}>Thirty</option>
+        </Select>
         <Select
           native
           value={state.age}

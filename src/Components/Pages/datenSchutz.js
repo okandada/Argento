@@ -4,7 +4,8 @@ import {
   cartBgImage,
   BgImage,
 } from "../../Components/ConditionalRendering/Rendering";
-
+import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export const DatenSchutz = () => {
   return (
     <div>
@@ -82,6 +83,13 @@ export const DatenSchutz = () => {
         nur mit Ihrer Einwilligung, die Sie mit Wirkung für die Zukunft
         jederzeit widerrufen können.
       </p>
+      <Link to="/home">
+        <img
+          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
+          src={logo}
+          alt=""
+        />
+      </Link>
     </div>
   );
 };

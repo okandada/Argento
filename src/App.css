@@ -18,8 +18,7 @@ body {
 }
 
 .bodyComponentLayout {
-  margin-inline-start: 7%;
-  margin-inline-end: 7%;
+  margin-inline: 5.5%;
 }
 /* Navigation css*/
 .MuiAppBar-positionStatic.MuiAppBar-positionStatic {
@@ -27,11 +26,10 @@ body {
 }
 
 h1 {
-  padding: 8px;
-  font-size: 5.3em;
+  font-size: 5.3125em;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 3.3125em;
 }
 p {
   font-size: 1em;
@@ -39,15 +37,17 @@ p {
 
 h6 {
   /* color: darkgoldenrod;  */
-  color: #ecbd46;
+
   margin: 0px;
 }
 h3 {
   /* color: darkgoldenrod;  */
+  font-size: 40px;
   color: #ecbd46;
 }
 h4 {
-  font-size: 2.5em;
+  font-size: 1.5em;
+  color: #ecbd46;
 }
 
 /* */
@@ -55,7 +55,6 @@ h4 {
 /* Button css*/
 
 .MuiButton-root.MuiButton-root {
-  height: 36px;
   font-weight: 500;
   font-stretch: semi-condensed;
   font-style: normal;
@@ -85,7 +84,7 @@ h4 {
 }
 .dash {
   width: 14%;
-  margin-top: -20px;
+  margin-top: -40px;
 }
 .image {
   max-height: 350px;

@@ -19,7 +19,12 @@ import UnsernePartnerQuer4 from "../../src/Images/ÜberUns/TabletQuer/Fotos/Unse
 export default function ImageGrid() {
   return (
     <Grid container spacing={0}>
-      <Grid container justify="center" style={{ padding: "15px" }} spacing={0}>
+      <Grid
+        container
+        justify="center"
+        style={{ paddingTop: "15px" }}
+        spacing={0}
+      >
         <Grid item lg={3} md={6} sm={6} xs={6}>
           <div>
             <img

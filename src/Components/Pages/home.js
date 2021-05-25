@@ -7,72 +7,52 @@ import BuyGoldDesktop4 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop4.png
 import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
 import NewsletterDesktop from "../../Images/Home/Desktop/Fotos/NewsletterDesktop.png";
 import NewsletterMobile from "../../Images/Home/Smartphone/Fotos/NewsletterMobile.png";
-import NewsletterIpad from "../../Images/Home/Tablet Hoch/Fotos/NewsletterIpad.png";
-import NewsletterQuer from "../../Images/Home/Tablet Quer/Fotos/NewsletterQuer.png";
+import NewsletterIpad from "../../Images/Home/TabletHoch/Fotos/NewsletterIpad.png";
+import NewsletterQuer from "../../Images/Home/TabletQuer/Fotos/NewsletterQuer.png";
 import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop.png";
 import GOldCourseMobile from "../../Images/Home/Smartphone/Fotos/GOldCourseMobile.png";
-import GOldCourseIpad from "../../Images/Home/Tablet Hoch/Fotos/GOldCourseIpad.png";
-import GOldCourseQuer from "../../Images/Home/Tablet Quer/Fotos/GoldCourseQuer.png";
+import GOldCourseIpad from "../../Images/Home/TabletHoch/Fotos/GOldCourseIpad.png";
+import GOldCourseQuer from "../../Images/Home/TabletQuer/Fotos/GoldCourseQuer.png";
 import AltCard from "../../Components/Cards/hilfenTipsCard";
+import BuyGoldMobile1 from "../../Images/Home/Smartphone/Fotos/BuyGoldMobile1.png";
+import BuyGoldPad1 from "../../Images/Home/TabletHoch/Fotos/BuyGoldIpad1.png";
+import BuyGoldQuer1 from "../../Images/Home/TabletQuer/Fotos/BuyGoldQuer1.png";
 import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
 import GoldPrice from "../GolgPrice/GoldPrice";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { BgImage } from "../../Components/ConditionalRendering/Rendering";
 import MediaCard from "../Cards/cards";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
-
+import { Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// const useStyles = makeStyles({
+//   marginTop: "20px",
+// });
+// const defaultProps = {
+//   m: 2,
+//   borderColor: "#ecbd46",
+//   border: "3px solid",
+// };
 export const Home = () => {
+  // const classes = useStyles();
   return (
     <div>
       <BgImageComponent bgImage={BgImage} />
-      <h1>
+      <h2>
         Gold & Silber Kaufen
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
-      </h1>
+      </h2>
       <CardGrid images={Images} />
-      {/* <Carousel responsive={responsive}>
-        <div>
-          <MediaCard images={Images} />
-        </div>
-        <div>
-          <MediaCard images={Images} />
-        </div>
-        <div>
-          <MediaCard images={Images} />
-        </div>
-        <div>
-          <MediaCard images={Images} />
-        </div>
-      </Carousel> */}
-      <h1>
+      <h2>
         Aktuelle Ankaufkurse
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
-      </h1>
+      </h2>
       <container>
         <div className="container-text">
           <img
@@ -128,19 +108,19 @@ export const Home = () => {
         </div>
       </container>
       {/* <OutlinedCard /> */}
-      <h1>
+      <h2>
         Hilfen & Tipps zum Edelmeatllaukf
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
-      </h1>
+      </h2>
       <AltCard />
-      <h1>
+      <h2>
         Newsletter
         <div className="dash">
           <img src={YellowStroke} alt="" />
         </div>
-      </h1>
+      </h2>
       <container>
         <div className="container-text">
           <img
@@ -185,6 +165,13 @@ export const Home = () => {
           />
         </div>
       </container>
+      <Link to="/home">
+        <img
+          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
+          src={logo}
+          alt=""
+        />
+      </Link>
     </div>
   );
 };

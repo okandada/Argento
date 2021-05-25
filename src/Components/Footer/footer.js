@@ -22,7 +22,7 @@ function Footer() {
       <Link
         style={{ color: "#ecbd46" }}
         href="PM argento arum"
-        color="h6"
+        color="h3"
         aria-label="all"
       >
         PM Argento Aurum
@@ -100,7 +100,7 @@ export default function Pricing() {
         <Grid container spacing={4} justify="space-evenly">
           {footers.map((footer) => (
             <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="h6" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 {footer.title}
               </Typography>
               <ul>
