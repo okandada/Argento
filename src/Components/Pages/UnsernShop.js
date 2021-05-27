@@ -48,7 +48,6 @@ function UnsernShop() {
         </Container>
 
         <Container style={{ marginLeft: "20px" }} className="container">
-          {" "}
           <div className="UnzeGoldtextdiv">
             <h2 style={{ margin: "0px" }}>{heading}</h2>
             <h4 style={{ margin: "0px" }}> </h4>
