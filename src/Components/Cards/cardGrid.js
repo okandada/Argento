@@ -94,6 +94,5 @@ export default function CardGrid(props) {
     >
       {rows.slice(0, 5).map((row) => row)}
     </Carousel>
-    /* </Grid> */
   );
 }

@@ -16,7 +16,6 @@ import Select from "@material-ui/core/Select";
 import Button from "@material-ui/core/Button";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import NativeSelect from "@material-ui/core/NativeSelect";
-import color from "material-ui/colors/amber";
 
 function Footer() {
   return (

@@ -14,6 +14,7 @@ import { UnsernShop2 } from "./Components/Pages/unsernShop2";
 
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
+import ImpressumPage from "./Components/Pages/Impressum";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path="/UnsernShop" component={UnsernShop} />
             <Route path="/unsernShop2" component={UnsernShop2} />
             <Route path="/test" component={MobileFooterTest} />
+            <Route path="/Impressum" component={ImpressumPage} />
           </Switch>
         </div>
 

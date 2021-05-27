@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,7 +26,7 @@ export default function MediaCard(props) {
     <div className={classes.root}>
       <Card>
         <CardActionArea style={{ color: "black" }}>
-          <CardMedia className={classes.media} image={props.url} title="abc" />
+          <CardMedia className={classes.media} images={props.url} title="abc" />
           <CardContent style={{ padding: "0 16px 0 16px" }}>
             <Typography
               variant="h3"
@@ -43,6 +44,8 @@ export default function MediaCard(props) {
           </CardContent>
           <CardActions>
             <Button
+              component={Link}
+              to="/UnsernShop"
               size="large"
               style={{ background: "white" }}
               fullWidth={true}

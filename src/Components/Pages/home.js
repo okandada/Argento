@@ -14,9 +14,6 @@ import GOldCourseMobile from "../../Images/Home/Smartphone/Fotos/GOldCourseMobil
 import GOldCourseIpad from "../../Images/Home/TabletHoch/Fotos/GOldCourseIpad.png";
 import GOldCourseQuer from "../../Images/Home/TabletQuer/Fotos/GoldCourseQuer.png";
 import AltCard from "../../Components/Cards/hilfenTipsCard";
-import BuyGoldMobile1 from "../../Images/Home/Smartphone/Fotos/BuyGoldMobile1.png";
-import BuyGoldPad1 from "../../Images/Home/TabletHoch/Fotos/BuyGoldIpad1.png";
-import BuyGoldQuer1 from "../../Images/Home/TabletQuer/Fotos/BuyGoldQuer1.png";
 import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
 import GoldPrice from "../GolgPrice/GoldPrice";
