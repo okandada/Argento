@@ -3,14 +3,11 @@ import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Box from "@material-ui/core/Box";
 import React from "react";
 import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
 import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
 import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
 import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
-
-// import logo from "../../Images/logo.png";
 
 function Footer() {
   return (
@@ -96,7 +93,6 @@ export default function Pricing() {
   return (
     <React.Fragment>
       <Container maxWidth="md" component="footer" className={classes.footer}>
-        {/* <img src={logo}  className={classes.logo} /> */}
         <Grid container spacing={4} justify="space-evenly">
           {footers.map((footer) => (
             <Grid item xs={6} sm={3} key={footer.title}>
@@ -115,9 +111,6 @@ export default function Pricing() {
             </Grid>
           ))}
         </Grid>
-        <Box mt={5}>
-          <Footer />
-        </Box>
       </Container>
       {/* End footer */}
     </React.Fragment>

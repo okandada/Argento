@@ -3,14 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
 import Button from "@material-ui/core/Button";
-import {
-  createStyles,
-  fade,
-  Theme,
-  ThemeProvider,
-  withStyles,
-  createMuiTheme,
-} from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 const ValidationTextField = withStyles({
   root: {
     "& input": {

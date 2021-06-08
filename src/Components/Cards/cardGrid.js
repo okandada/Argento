@@ -42,16 +42,19 @@ const responsive = {
 const useStyles = makeStyles({
   marginTop: "20px",
 });
+
 const defaultProps = {
   m: 2,
   borderColor: "#ecbd46",
   border: "3px solid",
 };
+
 export default function CardGrid(props) {
   const classes = useStyles();
   const cardImages = props.images;
-  var rows = [];
 
+  console.log("props", props);
+  var rows = [];
   for (var i = 0; i < cardImages.length; i++) {
     rows.push(
       <Box
@@ -65,6 +68,7 @@ export default function CardGrid(props) {
       >
         <Box border={1} {...defaultProps}>
           <Grid>
+            {/* loading card component */}
             <Card
               title={cardImages[i].title}
               url={cardImages[i].url}
@@ -81,7 +85,7 @@ export default function CardGrid(props) {
     //   spacing={4}
     //   className={classes.gridContainer}
     //   justify="center"
-    // >
+    // ></Grid>
     <Carousel
       ssr
       partialVisbile

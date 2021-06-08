@@ -13,27 +13,16 @@ import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop
 import GOldCourseMobile from "../../Images/Home/Smartphone/Fotos/GOldCourseMobile.png";
 import GOldCourseIpad from "../../Images/Home/TabletHoch/Fotos/GOldCourseIpad.png";
 import GOldCourseQuer from "../../Images/Home/TabletQuer/Fotos/GoldCourseQuer.png";
-import AltCard from "../../Components/Cards/hilfenTipsCard";
+import HilfenTipsCard from "../../Components/Cards/hilfenTipsCard";
 import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
 import GoldPrice from "../GolgPrice/GoldPrice";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { BgImage } from "../../Components/ConditionalRendering/Rendering";
-import MediaCard from "../Cards/cards";
-import { Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-// const useStyles = makeStyles({
-//   marginTop: "20px",
-// });
-// const defaultProps = {
-//   m: 2,
-//   borderColor: "#ecbd46",
-//   border: "3px solid",
-// };
+import { BrowserRouter as Link } from "react-router-dom";
+
 export const Home = () => {
-  // const classes = useStyles();
   return (
     <div>
       <BgImageComponent bgImage={BgImage} />
@@ -44,6 +33,7 @@ export const Home = () => {
         </div>
       </h2>
       <CardGrid images={Images} />
+
       <h2>
         Aktuelle Ankaufkurse
         <div className="dash">
@@ -111,7 +101,7 @@ export const Home = () => {
           <img src={YellowStroke} alt="" />
         </div>
       </h2>
-      <AltCard />
+      <HilfenTipsCard />
       <h2>
         Newsletter
         <div className="dash">

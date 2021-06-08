@@ -71,6 +71,11 @@ h4 {
   border-top: 1px solid #ffffff;
 }
 
+/* used for the height of text field for message in contact us page */
+/* .MuiOutlinedInput-root.MuiOutlinedInput-root {
+  height: 262px;
+} */
+
 .MuiTypography-colorTextSecondary.MuiTypography-colorTextSecondary {
   color: #ffffff;
 }

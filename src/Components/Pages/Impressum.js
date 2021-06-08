@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
+import { cartBgImage } from "../ConditionalRendering/Rendering";
+import { BrowserRouter as Link } from "react-router-dom";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 
 export default class ImpressumPage extends Component {
@@ -11,7 +11,8 @@ export default class ImpressumPage extends Component {
         <BgImageComponent bgImage={cartBgImage} />
         <div>
           <h3>Argento Aurum</h3>
-          Hohenzollernring 48 50667 Köln
+          Hohenzollernring 48
+          <br /> 50667 Köln
         </div>
         <div>
           <h3>Kontakt</h3>

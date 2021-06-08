@@ -15,7 +15,7 @@ const defaultProps = {
   borderColor: "#ecbd46",
   border: "3px solid",
 };
-export default function AltCard(props) {
+export default function HilfenTipsCard(props) {
   const classes = useStyles();
   const data = [
     {

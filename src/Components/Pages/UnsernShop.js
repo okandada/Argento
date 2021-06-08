@@ -8,13 +8,8 @@ import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import { Container, makeStyles } from "@material-ui/core";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import {
-  createMuiTheme,
-  responsiveFontSizes,
-  MuiThemeProvider,
-  Typography,
-} from "@material-ui/core";
+import { BrowserRouter as Link } from "react-router-dom";
+import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
 import MobileFooter from "../NavBarMobile/navBarMobile";
 
 let theme = createMuiTheme();
@@ -32,7 +27,6 @@ const defaultProps = {
 };
 
 function UnsernShop() {
-  const classes = useStyles();
   return (
     <div>
       <div>

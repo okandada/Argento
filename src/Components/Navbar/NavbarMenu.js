@@ -55,7 +55,7 @@ export default function NavbarMenu() {
           </Button>
           <Button>
             {" "}
-            <img src={ShoppingCart_icon} alt="" />
+            <img src={ShoppingCart_icon} alt="/about" to="/about" />
           </Button>
         </Toolbar>
       </AppBar>

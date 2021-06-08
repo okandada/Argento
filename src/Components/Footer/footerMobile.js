@@ -1,49 +1,16 @@
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
-import Box from "@material-ui/core/Box";
 import React from "react";
-import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
-import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
-import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
-import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
-import Button from "@material-ui/core/Button";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import NativeSelect from "@material-ui/core/NativeSelect";
+import { makeStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import ListSubheader from "@material-ui/core/ListSubheader";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import Collapse from "@material-ui/core/Collapse";
+import ExpandLess from "@material-ui/icons/ExpandLess";
+import ExpandMore from "@material-ui/icons/ExpandMore";
+import { BrowserRouter as Link } from "react-router-dom";
+import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 
-function Footer() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {" © "}
-      {new Date().getFullYear()}
-      {""}
-
-      <Link
-        style={{ color: "#ecbd46" }}
-        href="PM argento arum"
-        color="h6"
-        aria-label="all"
-      >
-        PM Argento Aurum
-      </Link>
-      {" | All Rights Reserved "}
-    </Typography>
-  );
-}
 const useStyles = makeStyles((theme) => ({
-  "@global": {
-    ul: {
-      margin: 0,
-      padding: 0,
-      listStyle: "none",
-    },
-  },
   formControl: {
     margin: theme.spacing(1),
     minWidth: 120,
@@ -51,120 +18,223 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
-  footer: {
-    borderTop: `1px solid ${theme.palette.divider}`,
-    marginTop: theme.spacing(8),
-    paddingTop: theme.spacing(3),
-    paddingBottom: theme.spacing(3),
-    [theme.breakpoints.up("sm")]: {
-      paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(6),
-    },
-  },
 }));
-const footers = [
-  {
-    title: "Häufige Fragen",
-    description: [
-      "Bestellprozess",
-      "Zahlungsweise",
-      "Versand",
-      "Sicherheit",
-      "Umtausch & Reklamation",
-    ],
-  },
 
-  {
-    title: "Über uns",
-    description: [" Kontakt", "Impressum", "Datenschutz", "AGB"],
-  },
-  {
-    title: "Top Themen",
-    description: ["Tips", "Sparplan", "Newsletter", "Partner"],
-  },
-  {
-    title: "Social Media",
-    description: [
-      <div display="flex">
-        <span>
-          <img src={FbDesktop} height="40px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "7px" }}>
-          <img src={InstaDesktop} width="25px" height="40px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "8px" }}>
-          <img src={LinkedlnDesktop} width="25px" height="40px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={XingDesktop} width="25px" height="40px" alt=""></img>
-        </span>
-      </div>,
-    ],
-    s,
-  },
-];
-
-export default function MobileFooter() {
+function FooterMobile() {
   const classes = useStyles();
-  const handleChange = (event) => {
-    const name = event.target.name;
-    setState({
-      ...state,
-      [name]: event.target.value,
-    });
+  const [haufigenOpen, haufigensetOpen] = React.useState(false);
+  const [uberUnsOpen, uberUnsSetOpen] = React.useState(false);
+  const [topmenOpen, topMenSetOpen] = React.useState(false);
+
+  const handleClickHaufigeFragen = () => {
+    haufigensetOpen(!haufigenOpen);
   };
-
-  const [state, setState] = React.useState({
-    age: "",
-    name: "hai",
-  });
-
+  const handleClickUberUns = () => {
+    uberUnsSetOpen(!uberUnsOpen);
+  };
+  const handleClickTopThemen = () => {
+    topMenSetOpen(!topmenOpen);
+  };
   return (
     <div>
-      <React.Fragment>
-        <Container maxWidth="md" component="footer" className={classes.footer}>
-          <Grid container spacing={4} justify="space-evenly">
-            {footers.map((footer) => (
-              <Grid item xs={6} sm={3} key={footer.title}>
-                <Typography variant="h6" color="h6" gutterBottom>
-                  {footer.title}
-                </Typography>
-                <ul>
-                  {footer.description.map((item) => (
-                    <li key={item}>
-                      <Link href="#" variant="subtitle1" color="textSecondary">
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </Grid>
-            ))}
-          </Grid>
-          <Box mt={5}>
-            <Footer />
-          </Box>
-        </Container>
-        {/* End footer */}
-      </React.Fragment>
-
-      <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="age-native-simple">Age</InputLabel>
-        <Select
-          native
-          value={state.age}
-          onChange={handleChange}
-          inputProps={{
-            name: "age",
-            id: "age-native-simple",
-          }}
+      <Link to="/home">
+        <img
+          style={{ width: "225px", height: "51.3px", marginTop: "180px" }}
+          src={logo}
+          alt=""
+        />
+      </Link>
+      <List
+        style={{ marginTop: "-29px" }}
+        component="nav"
+        aria-labelledby="nested-list-subheader"
+        subheader={
+          <ListSubheader component="div" id="nested-list-subheader">
+            Nested List Items
+          </ListSubheader>
+        }
+        className={classes.root}
+      >
+        <ListItem
+          button
+          onClick={handleClickHaufigeFragen}
+          style={{ borderBottom: "1px solid" }}
         >
-          <option aria-label="None" value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option>
-        </Select>
-      </FormControl>
+          {/* <ListItemIcon></ListItemIcon> */}
+          <ListItemText style={{ fontSize: "19px" }} primary="Häufige Fragen" />
+          {haufigenOpen ? <ExpandLess /> : <ExpandMore />}
+        </ListItem>
+        <Collapse
+          in={haufigenOpen}
+          timeout="auto"
+          unmountOnExit
+          style={{ borderBottom: "1px solid" }}
+        >
+          <List component="div" disablePadding>
+            <ListItem
+              button
+              className={classes.nested}
+              style={{ borderBottom: "1px solid" }}
+            >
+              {/* <ListItemIcon></ListItemIcon> */}
+              <ListItemText primary="Bestellprozess" />
+            </ListItem>
+            <ListItem
+              button
+              className={classes.nested}
+              style={{ borderBottom: "1px solid" }}
+            >
+              {/* <ListItemIcon></ListItemIcon> */}
+              <ListItemText primary="Zahlungsweise" />
+            </ListItem>
+            <ListItem
+              button
+              className={classes.nested}
+              style={{ borderBottom: "1px solid" }}
+            >
+              {/* <ListItemIcon></ListItemIcon> */}
+              <ListItemText primary="Versand" />
+            </ListItem>
+            <ListItem
+              button
+              className={classes.nested}
+              style={{ borderBottom: "1px solid" }}
+            >
+              {/* <ListItemIcon></ListItemIcon> */}
+              <ListItemText primary="Sicherheit" />
+            </ListItem>
+            <ListItem button className={classes.nested}>
+              {/* <ListItemIcon></ListItemIcon> */}
+              <ListItemText primary="Umtausch & Reklamation" />
+            </ListItem>
+          </List>
+        </Collapse>
+      </List>
+
+      <div>
+        <List
+          style={{ marginTop: "-25px" }}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+          subheader={
+            <ListSubheader component="div" id="nested-list-subheader">
+              Nested List Items
+            </ListSubheader>
+          }
+          className={classes.root}
+        >
+          <ListItem
+            button
+            onClick={handleClickUberUns}
+            style={{ borderBottom: "1px solid" }}
+          >
+            {/* <ListItemIcon></ListItemIcon> */}
+            <ListItemText style={{ fontSize: "19px" }} primary="Über uns" />
+            {uberUnsOpen ? <ExpandLess /> : <ExpandMore />}
+          </ListItem>
+          <Collapse
+            in={uberUnsOpen}
+            timeout="auto"
+            unmountOnExit
+            style={{ borderBottom: "1px solid" }}
+          >
+            <List component="div" disablePadding>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Kontakt" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes.nested}
+                component="a"
+                href="/home"
+                style={{ borderBottom: "1px solid" }}
+              >
+                <ListItemText primary="Impressum" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Datenschutz" />
+              </ListItem>
+              <ListItem button className={classes.nested}>
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="AGB" />
+              </ListItem>
+            </List>
+          </Collapse>
+        </List>
+      </div>
+      <div>
+        <List
+          style={{ marginTop: "-25px" }}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+          subheader={
+            <ListSubheader component="div" id="nested-list-subheader">
+              Nested List Items
+            </ListSubheader>
+          }
+          className={classes.root}
+        >
+          <ListItem
+            button
+            onClick={handleClickTopThemen}
+            style={{ borderBottom: "1px solid" }}
+          >
+            {/* <ListItemIcon></ListItemIcon> */}
+            <ListItemText style={{ fontSize: "19px" }} primary="Top Themen" />
+            {topmenOpen ? <ExpandLess /> : <ExpandMore />}
+          </ListItem>
+          <Collapse
+            in={topmenOpen}
+            timeout="auto"
+            unmountOnExit
+            style={{ borderBottom: "1px solid" }}
+          >
+            <List component="div" disablePadding>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Tips" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes.nested}
+                component="a"
+                href="/home"
+                style={{ borderBottom: "1px solid" }}
+              >
+                <ListItemText primary="Sparplan" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Newsletter" />
+              </ListItem>
+              <ListItem button className={classes.nested}>
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Partner" />
+              </ListItem>
+            </List>
+          </Collapse>
+        </List>
+      </div>
     </div>
   );
 }
+
+export default FooterMobile;

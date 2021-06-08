@@ -14,7 +14,11 @@ import { UnsernShop2 } from "./Components/Pages/unsernShop2";
 
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
-import ImpressumPage from "./Components/Pages/Impressum";
+import ImpressumPage from "./Components/Pages/impressum";
+import WarenKorb from "./Components/Pages/WarenKob";
+import Test from "./Components/Pages/test";
+import SimpleSelect from "./Components/Pages/test2";
+import FooterMobile from "./Components/Footer/footerMobile";
 
 function App() {
   return (
@@ -44,11 +48,18 @@ function App() {
             <Route path="/UnsernShop" component={UnsernShop} />
             <Route path="/unsernShop2" component={UnsernShop2} />
             <Route path="/test" component={MobileFooterTest} />
-            <Route path="/Impressum" component={ImpressumPage} />
+            <Route path="/impressum" component={ImpressumPage} />
+            <Route path="/WarenKob" component={WarenKorb} />
+            <Route path="/test" component={Test} />
+            <Route path="/test2" component={SimpleSelect} />
           </Switch>
         </div>
-
-        <Footer />
+        <div className="desktop IpadPro IpadQuer">
+          <Footer />
+        </div>
+        <div className="mobile">
+          <FooterMobile />
+        </div>
       </Router>
     </ThemeProvider>
   );
