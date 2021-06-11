@@ -1,9 +1,11 @@
 .text-price {
   position: absolute;
   top: 0px;
-  right: 3%;
-  width: 22%;
+  right: 0;
+  width: 25%;
   height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .newsletter-textfield {
   width: fit-content !important;
@@ -52,7 +54,7 @@
   padding-left: 0 !important;
 }
 .newsLetter-btn {
-  width: 100% !important;
+  width: 80% !important;
   position: absolute !important;
   bottom: 22px !important;
 }

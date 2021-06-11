@@ -7,24 +7,15 @@ import Carousel from "react-multi-carousel";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 2,
-    partialVisibilityGutter: 150, // this is needed to tell the amount of px that should be visible.
+    items: 3,
+    partialVisibilityGutter: 50, // this is needed to tell the amount of px that should be visible.
   },
   medium: {
     breakpoint: { max: 1025, min: 800 },
     items: 1,
     partialVisibilityGutter: 350, // this is needed to tell the amount of px that should be visible.
   },
-  // me: {
-  //   breakpoint: { max: 1486, min: 1100 },
-  //   items: 2,
-  //   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
-  // },
-  // medum: {
-  //   breakpoint: { max: 1486, min: 1100 },
-  //   items: 2,
-  //   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
-  // },
+
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 1,
@@ -41,12 +32,14 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: theme.spacing(0),
+    display: "flex",
   },
 }));
 const defaultProps = {
   m: 2,
   borderColor: "#ecbd46",
   border: "3px solid",
+  height: "375px",
 };
 
 export default function HilfenTipsCard(props) {
@@ -72,46 +65,36 @@ export default function HilfenTipsCard(props) {
   ];
 
   return (
-    // <div className={classes.root}>
-    //   <Grid
-    //     container
-    //     spacing={0}
-    //     direction="row"
-    //     justify="flex-start"
-    //     alignItems="flex-start"
-    //   >
-    <div className={classes.root}>
-      <Carousel
-        ssr
-        partialVisbile
-        itemClass="image-item"
-        responsive={responsive}
-        container
-        spacing={4}
-        className={classes.gridContainer}
-        justify="center"
-      >
-        {data.map((elem) => (
-          <Grid item xs={12} sm={6} md={3} key={data.indexOf(elem.text)}>
-            <Box border={1} {...defaultProps} style={{ width: "100%" }}>
-              <Card
-                style={{
-                  overflowY: "scroll",
-                  height: "100%",
-                }}
-              >
-                <CardHeader
-                  style={{ fontSize: "40px" }}
-                  subheader={` ${elem.header}`}
-                />
-                <CardContent
-                  style={{ color: "#a4a4a4" }}
-                >{` ${elem.text}`}</CardContent>
-              </Card>
-            </Box>
-          </Grid>
-        ))}
-      </Carousel>
-    </div>
+    <Carousel
+      ssr
+      partialVisbile
+      itemClass="image-item"
+      responsive={responsive}
+      container
+      spacing={4}
+      className={classes.gridContainer}
+      justify="center"
+    >
+      {data.slice(0, 5).map((elem) => (
+        <Grid key={data.indexOf(elem.text)}>
+          <Box border={1} {...defaultProps}>
+            <Card
+              style={{
+                overflowY: "auto",
+                height: "100%",
+              }}
+            >
+              <CardHeader
+                style={{ fontSize: "40px" }}
+                subheader={` ${elem.header}`}
+              />
+              <CardContent
+                style={{ color: "#a4a4a4" }}
+              >{` ${elem.text}`}</CardContent>
+            </Card>
+          </Box>
+        </Grid>
+      ))}
+    </Carousel>
   );
 }

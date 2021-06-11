@@ -26,7 +26,7 @@ export default function MediaCard(props) {
     <div className={classes.root}>
       <Card>
         <CardActionArea style={{ color: "black" }}>
-          <img alt="" src={props.url} />
+          <img alt="" width="100%" src={props.url} />
           <CardContent style={{ padding: "0 16px 0 16px" }}>
             <Typography
               variant="h3"

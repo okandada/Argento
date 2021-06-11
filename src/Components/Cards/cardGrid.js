@@ -10,8 +10,8 @@ import Carousel from "react-multi-carousel";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 2,
-    partialVisibilityGutter: 150, // this is needed to tell the amount of px that should be visible.
+    items: 3,
+    partialVisibilityGutter: 60, // this is needed to tell the amount of px that should be visible.
   },
   medium: {
     breakpoint: { max: 1025, min: 800 },

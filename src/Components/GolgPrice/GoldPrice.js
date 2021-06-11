@@ -7,7 +7,7 @@ export default function GoldPrice(props) {
       <div className="first-title">{props.firstTitle}</div>
       <div className="sub-title">{props.subTitle}</div>
       <div className="price-field">
-        <h6>{props.price}</h6>
+        <h6 style={{ fontSize: "20px" }}>{props.price}</h6>
       </div>
       <span className="sub-title price-field-subtitle-left ">
         {props.price_subtitle_left}

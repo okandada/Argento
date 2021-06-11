@@ -35,7 +35,7 @@ export const Home = () => {
         </div>
       </h2>
       <container>
-        <div className="container-text">
+        <div style={{ height: "460px" }} className="container-text">
           <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
           <div className="text-price">
             <GoldPrice
@@ -69,25 +69,22 @@ export const Home = () => {
           <img src={YellowStroke} alt="" />
         </div>
       </h2>
-      <container style={{ maxWidth: "1000px" }}>
-        <div
-          className="container-text"
-          style={{ maxWidth: "1000px", float: "left" }}
-        >
+      <container>
+        <div className="container-text">
           <img
             src={NewsletterDesktop}
             style={{ height: "400px", width: "100%" }}
             alt=""
           />
-        </div>
-        <div
-          className="text-price"
-          style={{ height: "400px", width: "20%", float: "right" }}
-        >
-          <NewsLetter
-            firstTitle="Abonniere unseren Newsletter"
-            subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
-          ></NewsLetter>
+          <div
+            className="text-price"
+            style={{ height: "400px", width: "25%", float: "right" }}
+          >
+            <NewsLetter
+              firstTitle="Abonniere unseren Newsletter"
+              subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
+            ></NewsLetter>
+          </div>
         </div>
       </container>
       {/* <FooterDesktop /> */}
