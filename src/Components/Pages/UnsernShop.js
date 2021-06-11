@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
-import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.png";
+import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
 import "./UnsernShop.css";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
@@ -10,7 +10,6 @@ import { Container, makeStyles } from "@material-ui/core";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 import { BrowserRouter as Link } from "react-router-dom";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
-import MobileFooter from "../NavBarMobile/navBarMobile";
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -35,10 +34,7 @@ function UnsernShop() {
 
       <AboutCarddiv style={{ marginTop: "70px" }}>
         <Container style={{ paddingLeft: "12px" }} className="container">
-          <img src={BuyGoldDesktop1} className="desktop UnsernImage" alt="" />
-          <img src={BuyGoldDesktop1} width="100%" className="mobile" alt="" />
-          <img src={BuyGoldDesktop1} width="100%" className="IpadPro" alt="" />
-          <img src={BuyGoldDesktop1} width="100%" className="IpadQuer" alt="" />
+          <img src={BuyGoldDesktop1} alt="" />
         </Container>
 
         <Container style={{ marginLeft: "20px" }} className="container">
@@ -117,14 +113,13 @@ function UnsernShop() {
           berechnet, als für große….
         </p>
       </Box>
-      <Link to="/home">
+      {/* <Link to="/home">
         <img
           style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
           src={logo}
           alt=""
         />
-      </Link>
-      <MobileFooter />
+      </Link> */}
     </div>
 
     // </div>

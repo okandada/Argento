@@ -58,18 +58,6 @@ export default function NewsLetter(props) {
       <div className="first-title">{props.firstTitle}</div>
       <div className="sub-title">{props.subTitle}</div>
       <form className={classes.root} noValidate autoComplete="off">
-        {/* <TextField
-          className="newsletter-text"
-          id="outlined-basic"
-          label="Outlined"
-          variant="outlined"
-        /> */}
-        {/* <TextField
-          id="outlined-basic"
-          label="E-MAIL-Adresse"
-          variant="outlined"
-          color="primary"
-        /> */}
         <ValidationTextField
           className="newsletter-textfield"
           InputLabelProps={{

@@ -1,240 +1,132 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListSubheader from "@material-ui/core/ListSubheader";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import Collapse from "@material-ui/core/Collapse";
-import ExpandLess from "@material-ui/icons/ExpandLess";
-import ExpandMore from "@material-ui/icons/ExpandMore";
-import { BrowserRouter as Link } from "react-router-dom";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
+import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.jpg";
+import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
+import BuyGoldDesktop4 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop4.jpg";
+import CardCrousalImage from "../Pages/test";
+import "../../App.css";
+import Box from "@material-ui/core/Box";
+import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+import Card from "../Cards/cards";
+// const responsive = {
+//   desktop: {
+//     breakpoint: { max: 3000, min: 1024 },
+//     items: 2,
+//     partialVisibilityGutter: 150, // this is needed to tell the amount of px that should be visible.
+//   },
+//   medium: {
+//     breakpoint: { max: 1025, min: 800 },
+//     items: 1,
+//     partialVisibilityGutter: 350, // this is needed to tell the amount of px that should be visible.
+//   },
+// me: {
+//   breakpoint: { max: 1486, min: 1100 },
+//   items: 2,
+//   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
+// },
+// medum: {
+//   breakpoint: { max: 1486, min: 1100 },
+//   items: 2,
+//   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
+// },
+// tablet: {
+// breakpoint: { max: 1024, min: 464 },
+// items: 1,
+// partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+//   },
+//   mobile: {
+//     breakpoint: { max: 464, min: 0 },
+//     items: 1,
+//     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+//   },
+// };
 
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   marginTop: "20px",
+//   root: {
+//     flexGrow: 1,
+//   },
+//   paper: {
+//     padding: theme.spacing(2),
+//     textAlign: "center",
+//     color: theme.palette.text.secondary,
+//   },
+// }));
+// const defaultProps = {
+//   m: 2,
+//   borderColor: "#ecbd46",
+//   border: "3px solid",
+// };
 
-function Test() {
-  const classes = useStyles();
-  const [haufigenOpen, haufigensetOpen] = React.useState(false);
-  const [uberUnsOpen, uberUnsSetOpen] = React.useState(false);
-  const [topmenOpen, topMenSetOpen] = React.useState(false);
+// export const TestGrid = (props) => {
+//   const images = this.props.Images;
+//   const classes = useStyles();
+//   // const CardCrousalImage = images;
 
-  const handleClickHaufigeFragen = () => {
-    haufigensetOpen(!haufigenOpen);
-  };
-  const handleClickUberUns = () => {
-    uberUnsSetOpen(!uberUnsOpen);
-  };
-  const handleClickTopThemen = () => {
-    topMenSetOpen(!topmenOpen);
-  };
-  return (
-    <div>
-      <Link to="/home">
-        <img
-          style={{ width: "225px", height: "51.3px", marginTop: "180px" }}
-          src={logo}
-          alt=""
-        />
-      </Link>
-      <List
-        style={{ marginTop: "-29px" }}
-        component="nav"
-        aria-labelledby="nested-list-subheader"
-        subheader={
-          <ListSubheader component="div" id="nested-list-subheader">
-            Nested List Items
-          </ListSubheader>
-        }
-        className={classes.root}
-      >
-        <ListItem
-          button
-          onClick={handleClickHaufigeFragen}
-          style={{ borderBottom: "1px solid" }}
-        >
-          {/* <ListItemIcon></ListItemIcon> */}
-          <ListItemText style={{ fontSize: "19px" }} primary="Häufige Fragen" />
-          {haufigenOpen ? <ExpandLess /> : <ExpandMore />}
-        </ListItem>
-        <Collapse
-          in={haufigenOpen}
-          timeout="auto"
-          unmountOnExit
-          style={{ borderBottom: "1px solid" }}
-        >
-          <List component="div" disablePadding>
-            <ListItem
-              button
-              className={classes.nested}
-              style={{ borderBottom: "1px solid" }}
-            >
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Bestellprozess" />
-            </ListItem>
-            <ListItem
-              button
-              className={classes.nested}
-              style={{ borderBottom: "1px solid" }}
-            >
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Zahlungsweise" />
-            </ListItem>
-            <ListItem
-              button
-              className={classes.nested}
-              style={{ borderBottom: "1px solid" }}
-            >
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Versand" />
-            </ListItem>
-            <ListItem
-              button
-              className={classes.nested}
-              style={{ borderBottom: "1px solid" }}
-            >
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Sicherheit" />
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Umtausch & Reklamation" />
-            </ListItem>
-          </List>
-        </Collapse>
-      </List>
+//   var rows = [];
+//   for (var i = 0; i < images.length; i++) {
+//     rows.push(
+//       <Box
+//         display="flex"
+//         key={i}
+//         justifyContent="center"
+//         item
+//         xs={12}
+//         sm={6}
+//         md={3}
+//       >
+//         <Box border={1} {...defaultProps}>
+//           <Grid>
+//             {/* loading card component */}
+//             <Card
+//               title={images[i].title}
+//               url={images[i].url}
+//               text={images[i].text}
+//             />
+//           </Grid>
+//         </Box>
+//       </Box>
+//     );
 
-      <div>
-        <List
-          style={{ marginTop: "-25px" }}
-          component="nav"
-          aria-labelledby="nested-list-subheader"
-          subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-              Nested List Items
-            </ListSubheader>
-          }
-          className={classes.root}
-        >
-          <ListItem
-            button
-            onClick={handleClickUberUns}
-            style={{ borderBottom: "1px solid" }}
-          >
-            {/* <ListItemIcon></ListItemIcon> */}
-            <ListItemText style={{ fontSize: "19px" }} primary="Über uns" />
-            {uberUnsOpen ? <ExpandLess /> : <ExpandMore />}
-          </ListItem>
-          <Collapse
-            in={uberUnsOpen}
-            timeout="auto"
-            unmountOnExit
-            style={{ borderBottom: "1px solid" }}
-          >
-            <List component="div" disablePadding>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Kontakt" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                component="a"
-                href="/home"
-                style={{ borderBottom: "1px solid" }}
-              >
-                <ListItemText primary="Impressum" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Datenschutz" />
-              </ListItem>
-              <ListItem button className={classes.nested}>
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="AGB" />
-              </ListItem>
-            </List>
-          </Collapse>
-        </List>
-      </div>
-      <div>
-        <List
-          style={{ marginTop: "-25px" }}
-          component="nav"
-          aria-labelledby="nested-list-subheader"
-          subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-              Nested List Items
-            </ListSubheader>
-          }
-          className={classes.root}
-        >
-          <ListItem
-            button
-            onClick={handleClickTopThemen}
-            style={{ borderBottom: "1px solid" }}
-          >
-            {/* <ListItemIcon></ListItemIcon> */}
-            <ListItemText style={{ fontSize: "19px" }} primary="Top Themen" />
-            {topmenOpen ? <ExpandLess /> : <ExpandMore />}
-          </ListItem>
-          <Collapse
-            in={topmenOpen}
-            timeout="auto"
-            unmountOnExit
-            style={{ borderBottom: "1px solid" }}
-          >
-            <List component="div" disablePadding>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Tips" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                component="a"
-                href="/home"
-                style={{ borderBottom: "1px solid" }}
-              >
-                <ListItemText primary="Sparplan" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Newsletter" />
-              </ListItem>
-              <ListItem button className={classes.nested}>
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Partner" />
-              </ListItem>
-            </List>
-          </Collapse>
-        </List>
-      </div>
-    </div>
-  );
-}
+//     return (
+//       <Carousel
+//         ssr
+//         partialVisbile
+//         itemClass="image-item"
+//         responsive={responsive}
+//         container
+//         spacing={4}
+//         className={classes.gridContainer}
+//         justify="center"
+//       >
+//         {rows.slice(0, 5).map((row) => row)}
+//       </Carousel>
 
-export default Test;
+export const TestGrid = (props) => {
+  return <div></div>;
+
+  // const Images = [
+  //   {
+  //     url: BuyGoldDesktop1,
+
+  //     text: "Unze Gold",
+  //   },
+  //   {
+  //     url: BuyGoldDesktop2,
+  //     text: "Unze Gold",
+  //   },
+  //   {
+  //     url: BuyGoldDesktop3,
+  //     text: "hello",
+  //   },
+  //   {
+  //     url: BuyGoldDesktop4,
+  //     text: "hello",
+  //   },
+  // ];
+};
+export default TestGrid;

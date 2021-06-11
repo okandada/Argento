@@ -16,19 +16,6 @@ function WarenKorb() {
       <div>
         <BgImageComponent bgImage={cartBgImage} />
       </div>
-
-      <div>
-        {/* <Main products={products}></Main> */}
-        {/* <Basket></Basket> */}
-      </div>
-
-      <Link to="/home">
-        <img
-          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
-          src={logo}
-          alt=""
-        />
-      </Link>
     </div>
   );
 }

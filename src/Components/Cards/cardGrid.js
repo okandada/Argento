@@ -52,8 +52,6 @@ const defaultProps = {
 export default function CardGrid(props) {
   const classes = useStyles();
   const cardImages = props.images;
-
-  console.log("props", props);
   var rows = [];
   for (var i = 0; i < cardImages.length; i++) {
     rows.push(

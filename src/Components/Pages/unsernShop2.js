@@ -1,5 +1,4 @@
 import React from "react";
-
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
 export const UnsernShop2 = () => {

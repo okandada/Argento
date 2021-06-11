@@ -1,3 +1,4 @@
+import React from "react";
 import BackgroundImageDesktop from "../../Images/ÜberUns/Desktop/Fotos/BackgroundImageDesktop.png";
 import BackgroundImageMobile from "../../Images/ÜberUns/Smartphone/Fotos/BackgroundImageMobile.png";
 import BackgroundImageTabletHoch from "../../Images/ÜberUns/TabletHoch/Fotos/BackgroundImageTabletHoch.png";
@@ -6,7 +7,7 @@ import bgImageDesktopShop from "../../Images/OurShopProdukt/Desktop/Fotos/bgImag
 import bgImageMobileShop from "../../Images/OurShopProdukt/Mobile/Fotos/bgImageMobileShop.png";
 import bgImageIpadProShop from "../../Images/OurShopProdukt/Tablet/Fotos/bgImageIpadProShop.png";
 import bgImageQuerShop from "../../Images/OurShopProdukt/Tablet Quer/Fotos/bgImageQuerShop.png";
-import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.png";
+import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
 function BackGroundKasse() {
   return (
     <div>

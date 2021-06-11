@@ -5,7 +5,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
 import { withStyles } from "@material-ui/core/styles";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 const ValidationTextField = withStyles({
   root: {
@@ -126,13 +126,6 @@ export const ContactUs = (props) => {
           id="validation-outlined-input"
         />
       </div>
-      <Link to="/home">
-        <img
-          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
-          src={logo}
-          alt=""
-        />
-      </Link>
     </div>
   );
 };

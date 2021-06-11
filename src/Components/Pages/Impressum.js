@@ -26,13 +26,13 @@ export default class ImpressumPage extends Component {
           Registernummer: XXXXXXX <br />
           Ust.-ID-Nr.: XXXXXXXXXXX
         </div>
-        <Link to="/home">
+        {/* <Link to="/home">
           <img
             style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
             src={logo}
             alt=""
           />
-        </Link>
+        </Link> */}
       </div>
     );
   }

@@ -44,194 +44,198 @@ function FooterMobile() {
           alt=""
         />
       </Link>
-      <List
-        style={{ marginTop: "-29px" }}
-        component="nav"
-        aria-labelledby="nested-list-subheader"
-        subheader={
-          <ListSubheader component="div" id="nested-list-subheader">
-            Nested List Items
-          </ListSubheader>
-        }
-        className={classes.root}
-      >
-        <ListItem
-          button
-          onClick={handleClickHaufigeFragen}
-          style={{ borderBottom: "1px solid" }}
+      <div style={{ paddingLeft: "35px", paddingRight: "45px" }}>
+        <List
+          style={{ marginTop: "-29px" }}
+          component="nav"
+          aria-labelledby="nested-list-subheader"
+          subheader={
+            <ListSubheader component="div" id="nested-list-subheader">
+              Nested List Items
+            </ListSubheader>
+          }
+          className={classes.root}
         >
-          {/* <ListItemIcon></ListItemIcon> */}
-          <ListItemText style={{ fontSize: "19px" }} primary="Häufige Fragen" />
-          {haufigenOpen ? <ExpandLess /> : <ExpandMore />}
-        </ListItem>
-        <Collapse
-          in={haufigenOpen}
-          timeout="auto"
-          unmountOnExit
-          style={{ borderBottom: "1px solid" }}
-        >
-          <List component="div" disablePadding>
+          <ListItem
+            button
+            onClick={handleClickHaufigeFragen}
+            style={{ borderBottom: "1px solid" }}
+          >
+            {/* <ListItemIcon></ListItemIcon> */}
+            <ListItemText
+              style={{ fontSize: "19px" }}
+              primary="Häufige Fragen"
+            />
+            {haufigenOpen ? <ExpandLess /> : <ExpandMore />}
+          </ListItem>
+          <Collapse
+            in={haufigenOpen}
+            timeout="auto"
+            unmountOnExit
+            style={{ borderBottom: "1px solid" }}
+          >
+            <List component="div" disablePadding>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Bestellprozess" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Zahlungsweise" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Versand" />
+              </ListItem>
+              <ListItem
+                button
+                className={classes.nested}
+                style={{ borderBottom: "1px solid" }}
+              >
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Sicherheit" />
+              </ListItem>
+              <ListItem button className={classes.nested}>
+                {/* <ListItemIcon></ListItemIcon> */}
+                <ListItemText primary="Umtausch & Reklamation" />
+              </ListItem>
+            </List>
+          </Collapse>
+        </List>
+        <div>
+          <List
+            style={{ marginTop: "-25px" }}
+            component="nav"
+            aria-labelledby="nested-list-subheader"
+            subheader={
+              <ListSubheader component="div" id="nested-list-subheader">
+                Nested List Items
+              </ListSubheader>
+            }
+            className={classes.root}
+          >
             <ListItem
               button
-              className={classes.nested}
+              onClick={handleClickUberUns}
               style={{ borderBottom: "1px solid" }}
             >
               {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Bestellprozess" />
+              <ListItemText style={{ fontSize: "19px" }} primary="Über uns" />
+              {uberUnsOpen ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
-            <ListItem
-              button
-              className={classes.nested}
+            <Collapse
+              in={uberUnsOpen}
+              timeout="auto"
+              unmountOnExit
               style={{ borderBottom: "1px solid" }}
             >
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Zahlungsweise" />
-            </ListItem>
-            <ListItem
-              button
-              className={classes.nested}
-              style={{ borderBottom: "1px solid" }}
-            >
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Versand" />
-            </ListItem>
-            <ListItem
-              button
-              className={classes.nested}
-              style={{ borderBottom: "1px solid" }}
-            >
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Sicherheit" />
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              {/* <ListItemIcon></ListItemIcon> */}
-              <ListItemText primary="Umtausch & Reklamation" />
-            </ListItem>
+              <List component="div" disablePadding>
+                <ListItem
+                  button
+                  className={classes.nested}
+                  style={{ borderBottom: "1px solid" }}
+                >
+                  {/* <ListItemIcon></ListItemIcon> */}
+                  <ListItemText primary="Kontakt" />
+                </ListItem>
+                <ListItem
+                  button
+                  className={classes.nested}
+                  component="a"
+                  href="/home"
+                  style={{ borderBottom: "1px solid" }}
+                >
+                  <ListItemText primary="Impressum" />
+                </ListItem>
+                <ListItem
+                  button
+                  className={classes.nested}
+                  style={{ borderBottom: "1px solid" }}
+                >
+                  {/* <ListItemIcon></ListItemIcon> */}
+                  <ListItemText primary="Datenschutz" />
+                </ListItem>
+                <ListItem button className={classes.nested}>
+                  {/* <ListItemIcon></ListItemIcon> */}
+                  <ListItemText primary="AGB" />
+                </ListItem>
+              </List>
+            </Collapse>
           </List>
-        </Collapse>
-      </List>
-
-      <div>
-        <List
-          style={{ marginTop: "-25px" }}
-          component="nav"
-          aria-labelledby="nested-list-subheader"
-          subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-              Nested List Items
-            </ListSubheader>
-          }
-          className={classes.root}
-        >
-          <ListItem
-            button
-            onClick={handleClickUberUns}
-            style={{ borderBottom: "1px solid" }}
+        </div>
+        <div>
+          <List
+            style={{ marginTop: "-25px" }}
+            component="nav"
+            aria-labelledby="nested-list-subheader"
+            subheader={
+              <ListSubheader component="div" id="nested-list-subheader">
+                Nested List Items
+              </ListSubheader>
+            }
+            className={classes.root}
           >
-            {/* <ListItemIcon></ListItemIcon> */}
-            <ListItemText style={{ fontSize: "19px" }} primary="Über uns" />
-            {uberUnsOpen ? <ExpandLess /> : <ExpandMore />}
-          </ListItem>
-          <Collapse
-            in={uberUnsOpen}
-            timeout="auto"
-            unmountOnExit
-            style={{ borderBottom: "1px solid" }}
-          >
-            <List component="div" disablePadding>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Kontakt" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                component="a"
-                href="/home"
-                style={{ borderBottom: "1px solid" }}
-              >
-                <ListItemText primary="Impressum" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Datenschutz" />
-              </ListItem>
-              <ListItem button className={classes.nested}>
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="AGB" />
-              </ListItem>
-            </List>
-          </Collapse>
-        </List>
-      </div>
-      <div>
-        <List
-          style={{ marginTop: "-25px" }}
-          component="nav"
-          aria-labelledby="nested-list-subheader"
-          subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-              Nested List Items
-            </ListSubheader>
-          }
-          className={classes.root}
-        >
-          <ListItem
-            button
-            onClick={handleClickTopThemen}
-            style={{ borderBottom: "1px solid" }}
-          >
-            {/* <ListItemIcon></ListItemIcon> */}
-            <ListItemText style={{ fontSize: "19px" }} primary="Top Themen" />
-            {topmenOpen ? <ExpandLess /> : <ExpandMore />}
-          </ListItem>
-          <Collapse
-            in={topmenOpen}
-            timeout="auto"
-            unmountOnExit
-            style={{ borderBottom: "1px solid" }}
-          >
-            <List component="div" disablePadding>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Tips" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                component="a"
-                href="/home"
-                style={{ borderBottom: "1px solid" }}
-              >
-                <ListItemText primary="Sparplan" />
-              </ListItem>
-              <ListItem
-                button
-                className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
-              >
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Newsletter" />
-              </ListItem>
-              <ListItem button className={classes.nested}>
-                {/* <ListItemIcon></ListItemIcon> */}
-                <ListItemText primary="Partner" />
-              </ListItem>
-            </List>
-          </Collapse>
-        </List>
+            <ListItem
+              button
+              onClick={handleClickTopThemen}
+              style={{ borderBottom: "1px solid" }}
+            >
+              {/* <ListItemIcon></ListItemIcon> */}
+              <ListItemText style={{ fontSize: "19px" }} primary="Top Themen" />
+              {topmenOpen ? <ExpandLess /> : <ExpandMore />}
+            </ListItem>
+            <Collapse
+              in={topmenOpen}
+              timeout="auto"
+              unmountOnExit
+              style={{ borderBottom: "1px solid" }}
+            >
+              <List component="div" disablePadding>
+                <ListItem
+                  button
+                  className={classes.nested}
+                  style={{ borderBottom: "1px solid" }}
+                >
+                  {/* <ListItemIcon></ListItemIcon> */}
+                  <ListItemText primary="Tips" />
+                </ListItem>
+                <ListItem
+                  button
+                  className={classes.nested}
+                  component="a"
+                  href="/home"
+                  style={{ borderBottom: "1px solid" }}
+                >
+                  <ListItemText primary="Sparplan" />
+                </ListItem>
+                <ListItem
+                  button
+                  className={classes.nested}
+                  style={{ borderBottom: "1px solid" }}
+                >
+                  {/* <ListItemIcon></ListItemIcon> */}
+                  <ListItemText primary="Newsletter" />
+                </ListItem>
+                <ListItem button className={classes.nested}>
+                  {/* <ListItemIcon></ListItemIcon> */}
+                  <ListItemText primary="Partner" />
+                </ListItem>
+              </List>
+            </Collapse>
+          </List>
+        </div>
       </div>
     </div>
   );

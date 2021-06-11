@@ -1,18 +1,12 @@
 import React from "react";
 import CardGrid from "../Cards/cardGrid";
-import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.png";
-import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.png";
-import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.png";
-import BuyGoldDesktop4 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop4.png";
+import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
+import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.jpg";
+import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
+import BuyGoldDesktop4 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop4.jpg";
 import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
-import NewsletterDesktop from "../../Images/Home/Desktop/Fotos/NewsletterDesktop.png";
-import NewsletterMobile from "../../Images/Home/Smartphone/Fotos/NewsletterMobile.png";
-import NewsletterIpad from "../../Images/Home/TabletHoch/Fotos/NewsletterIpad.png";
-import NewsletterQuer from "../../Images/Home/TabletQuer/Fotos/NewsletterQuer.png";
-import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop.png";
-import GOldCourseMobile from "../../Images/Home/Smartphone/Fotos/GOldCourseMobile.png";
-import GOldCourseIpad from "../../Images/Home/TabletHoch/Fotos/GOldCourseIpad.png";
-import GOldCourseQuer from "../../Images/Home/TabletQuer/Fotos/GoldCourseQuer.png";
+import NewsletterDesktop from "../../Images/Home/Desktop/Fotos/NewsletterDesktop.jpg";
+import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop.jpg";
 import HilfenTipsCard from "../../Components/Cards/hilfenTipsCard";
 import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
@@ -21,7 +15,7 @@ import BgImageComponent from "../../Components/BackgroundimageComponent/backGrou
 import { BgImage } from "../../Components/ConditionalRendering/Rendering";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 import { BrowserRouter as Link } from "react-router-dom";
-
+import FooterDesktop from "../Footer/footer";
 export const Home = () => {
   return (
     <div>
@@ -42,13 +36,7 @@ export const Home = () => {
       </h2>
       <container>
         <div className="container-text">
-          <img
-            src={GOldCourseDesktop}
-            className="desktop"
-            height="100%"
-            width="100%"
-            alt=""
-          />
+          <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
           <div className="text-price">
             <GoldPrice
               firstTitle="Goldpreis in Euro"
@@ -66,33 +54,6 @@ export const Home = () => {
             ></GoldPrice>
           </div>
         </div>
-        <div>
-          <img
-            src={GOldCourseMobile}
-            className="mobile"
-            height="100%"
-            width="100%"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src={GOldCourseIpad}
-            className="IpadPro"
-            height="100%"
-            width="100%"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src={GOldCourseQuer}
-            className="IpadQuer"
-            height="100%"
-            width="100%"
-            alt=""
-          />
-        </div>
       </container>
       {/* <OutlinedCard /> */}
       <h2>
@@ -108,57 +69,36 @@ export const Home = () => {
           <img src={YellowStroke} alt="" />
         </div>
       </h2>
-      <container>
-        <div className="container-text">
+      <container style={{ maxWidth: "1000px" }}>
+        <div
+          className="container-text"
+          style={{ maxWidth: "1000px", float: "left" }}
+        >
           <img
             src={NewsletterDesktop}
-            className="desktop"
-            height="100%"
-            width="100%"
-            alt=""
-          />
-          <div className="text-price">
-            <NewsLetter
-              firstTitle="Abonniere unseren Newsletter"
-              subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
-            ></NewsLetter>
-          </div>
-        </div>
-        <div>
-          <img
-            src={NewsletterMobile}
-            className="mobile"
-            height="100%"
-            width="100%"
+            style={{ height: "400px", width: "100%" }}
             alt=""
           />
         </div>
-        <div>
-          <img
-            src={NewsletterIpad}
-            className="IpadPro"
-            height="100%"
-            width="100%"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            src={NewsletterQuer}
-            className="IpadQuer"
-            height="100%"
-            width="100%"
-            alt=""
-          />
+        <div
+          className="text-price"
+          style={{ height: "400px", width: "20%", float: "right" }}
+        >
+          <NewsLetter
+            firstTitle="Abonniere unseren Newsletter"
+            subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
+          ></NewsLetter>
         </div>
       </container>
-      <Link to="/home">
+      {/* <FooterDesktop /> */}
+
+      {/* <Link to="/home">
         <img
           style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
           src={logo}
           alt=""
         />
-      </Link>
+      </Link> */}
     </div>
   );
 };

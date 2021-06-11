@@ -1,6 +1,6 @@
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
+import { BrowserRouter as Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import React from "react";
@@ -8,7 +8,7 @@ import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
 import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
 import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
 import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
-
+import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 function Footer() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -87,11 +87,19 @@ const footers = [
   },
 ];
 
-export default function Pricing() {
+export default function FooterDesktop() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
+      <Link to="/home">
+        <img
+          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
+          src={logo}
+          alt=""
+        />
+      </Link>
+
       <Container maxWidth="md" component="footer" className={classes.footer}>
         <Grid container spacing={4} justify="space-evenly">
           {footers.map((footer) => (

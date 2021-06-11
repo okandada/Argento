@@ -5,13 +5,11 @@ import Home from "./Components/Pages/home";
 import ContactUs from "./Components/Pages/contact";
 import About from "./Components/Pages/about";
 import NavbarMenu from "../src/Components/Navbar/NavbarMenu";
-import Footer from "../src/Components/Footer/footer";
 import NavBarMobileMenu from "../src/Components/NavBarMobile/navBarMobile";
 import DatenSchutz from "./Components/Pages/datenSchutz";
 import UnsernShop from "./Components/Pages/UnsernShop";
 import MobileFooterTest from "./Components/Pages/test";
 import { UnsernShop2 } from "./Components/Pages/unsernShop2";
-
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 import ImpressumPage from "./Components/Pages/impressum";
@@ -19,7 +17,8 @@ import WarenKorb from "./Components/Pages/WarenKob";
 import Test from "./Components/Pages/test";
 import SimpleSelect from "./Components/Pages/test2";
 import FooterMobile from "./Components/Footer/footerMobile";
-
+import FooterDesktop from "../src/Components/Footer/footer";
+import test2 from "./Components/Pages/test2";
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -51,11 +50,14 @@ function App() {
             <Route path="/impressum" component={ImpressumPage} />
             <Route path="/WarenKob" component={WarenKorb} />
             <Route path="/test" component={Test} />
-            <Route path="/test2" component={SimpleSelect} />
+            <Route path="/test2" component={test2} />
           </Switch>
         </div>
-        <div className="desktop IpadPro IpadQuer">
-          <Footer />
+        <div className=" IpadPro  IpadQuer  ">
+          <FooterDesktop />
+        </div>
+        <div className=" desktop  ">
+          <FooterDesktop />
         </div>
         <div className="mobile">
           <FooterMobile />

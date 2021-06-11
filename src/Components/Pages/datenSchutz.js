@@ -83,13 +83,13 @@ export const DatenSchutz = () => {
         nur mit Ihrer Einwilligung, die Sie mit Wirkung für die Zukunft
         jederzeit widerrufen können.
       </p>
-      <Link to="/home">
+      {/* <Link to="/home">
         <img
           style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
           src={logo}
           alt=""
         />
-      </Link>
+      </Link> */}
     </div>
   );
 };
