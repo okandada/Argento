@@ -80,17 +80,17 @@ export default function NewsLetter(props) {
             Teilnahmebedingungen einverstanden
           </span>
         </div>
-
-        <Button
-          className="newsLetter-btn"
-          variant="contained"
-          color="white"
-          href="#contained-buttons"
-        >
-          <h6>NewsLetter Anmeldung</h6>
-        </Button>
+        <div class="newsLetter-last-button">
+          <Button
+            className="newsLetter-btn"
+            variant="contained"
+            color="white"
+            href="#contained-buttons"
+          >
+            <h6>NewsLetter Anmeldung</h6>
+          </Button>
+        </div>
       </form>
     </div>
-    // </div>
   );
 }

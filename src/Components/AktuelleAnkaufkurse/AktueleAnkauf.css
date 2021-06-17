@@ -9,8 +9,13 @@
 }
 .first-title {
   font-size: 2.4em;
+  width: 308px;
 }
-
+@media (max-width: 600px) {
+  .first-title {
+    width: inherit;
+  }
+}
 .sub-title {
   font-size: 0.8em;
   color: rgb(164, 164, 164);

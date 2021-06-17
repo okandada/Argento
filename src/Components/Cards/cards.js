@@ -6,7 +6,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
+import { Button } from "@material-ui/core";
 import { BrowserRouter as Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -43,19 +43,17 @@ export default function MediaCard(props) {
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button
-            component={Link}
-            to="/UnsernShop"
-            size="large"
-            style={{ background: "white" }}
-            fullWidth={true}
-          >
-            <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
-              jetzt endecken
-            </span>
-          </Button>
-        </CardActions>
+
+        <Button
+          to="/UnsernShop"
+          size="large"
+          style={{ background: "white" }}
+          fullWidth={true}
+        >
+          <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
+            jetzt endecken
+          </span>
+        </Button>
       </Card>
     </div>
   );

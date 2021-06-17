@@ -1,7 +1,7 @@
 import React from "react";
-import "./gold-price.css";
+import "./AktueleAnkauf.css";
 
-export default function GoldPrice(props) {
+export default function AktueleAnkauf(props) {
   return (
     <div className="text-items">
       <div className="first-title">{props.firstTitle}</div>

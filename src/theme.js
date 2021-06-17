@@ -34,6 +34,7 @@ const theme = createMuiTheme({
       },
       fullWidth: {
         maxWidth: "435px",
+        backgroundColor: "white",
       },
     },
   },

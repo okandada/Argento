@@ -10,12 +10,14 @@ import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop
 import HilfenTipsCard from "../../Components/Cards/hilfenTipsCard";
 import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
-import GoldPrice from "../GolgPrice/GoldPrice";
+import AktueleAnkauf from "../AktuelleAnkaufkurse/AktueleAnkauf";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { BgImage } from "../../Components/ConditionalRendering/Rendering";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 import { BrowserRouter as Link } from "react-router-dom";
 import FooterDesktop from "../Footer/footer";
+import NewsLetterMob from "../Newsletter/NewsLetterMob";
+import AktueleAnkaufMob from "../AktuelleAnkaufkurse/AktueleAnkaufMob";
 export const Home = () => {
   return (
     <div>
@@ -35,26 +37,68 @@ export const Home = () => {
         </div>
       </h2>
       <container>
-        <div style={{ height: "460px" }} className="container-text">
-          <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
+        <div className="container-text">
+          <img src={GOldCourseDesktop} height="460px" width="100%" alt="" />
           <div className="text-price">
-            <GoldPrice
+            <AktueleAnkauf
               firstTitle="Goldpreis in Euro"
               subTitle="je Feinunze(31,103g)"
               price="1.449.68 EUR"
               price_subtitle_left="-0.75%"
               price_subtitle_right="-10.28 Euro"
-            ></GoldPrice>
-            <GoldPrice
+            ></AktueleAnkauf>
+            <AktueleAnkauf
               firstTitle="Goldpreis in Silber"
               subTitle="je Feinunze (31,103g)"
               price="21,21 EUR"
               price_subtitle_left="-0.75%"
               price_subtitle_right="-10.28 Euro"
-            ></GoldPrice>
+            ></AktueleAnkauf>
           </div>
         </div>
       </container>
+      {/* <container className="IpadPro  IpadQuer ">
+        <div style={{ height: "460px" }} className="container-text">
+          <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
+          <div className="text-price">
+            <AktueleAnkauf
+              firstTitle="Goldpreis in Euro"
+              subTitle="je Feinunze(31,103g)"
+              price="1.449.68 EUR"
+              price_subtitle_left="-0.75%"
+              price_subtitle_right="-10.28 Euro"
+            ></AktueleAnkauf>
+            <AktueleAnkauf
+              firstTitle="Goldpreis in Silber"
+              subTitle="je Feinunze (31,103g)"
+              price="21,21 EUR"
+              price_subtitle_left="-0.75%"
+              price_subtitle_right="-10.28 Euro"
+            ></AktueleAnkauf>
+          </div>
+        </div>
+      </container> */}
+      {/* <container className="mobile">
+        <div style={{ height: "460px" }} className="container-text">
+          <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
+          <div className="text-price">
+            <AktueleAnkaufMob
+              firstTitle="Goldpreis in Euro"
+              subTitle="je Feinunze(31,103g)"
+              price="1.449.68 EUR"
+              price_subtitle_left="-0.75%"
+              price_subtitle_right="-10.28 Euro"
+            ></AktueleAnkaufMob>
+            <AktueleAnkaufMob
+              firstTitle="Goldpreis in Silber"
+              subTitle="je Feinunze (31,103g)"
+              price="21,21 EUR"
+              price_subtitle_left="-0.75%"
+              price_subtitle_right="-10.28 Euro"
+            ></AktueleAnkaufMob>
+          </div>
+        </div>
+      </container> */}
       {/* <OutlinedCard /> */}
       <h2>
         Hilfen & Tipps zum Edelmeatllaukf
@@ -69,7 +113,25 @@ export const Home = () => {
           <img src={YellowStroke} alt="" />
         </div>
       </h2>
+      {/* <div className="mobile">
+      <NewsLetterMob />
+      </div> */}
       <container>
+        <div className="container-text">
+          <img
+            src={NewsletterDesktop}
+            style={{ height: "400px", width: "100%" }}
+            alt=""
+          />
+          <div className="text-price">
+            <NewsLetter
+              firstTitle="Abonniere unseren Newsletter"
+              subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
+            ></NewsLetter>
+          </div>
+        </div>
+      </container>
+      {/* <container className=" desktop">
         <div className="container-text">
           <img
             src={NewsletterDesktop}
@@ -86,7 +148,7 @@ export const Home = () => {
             ></NewsLetter>
           </div>
         </div>
-      </container>
+      </container> */}
       {/* <FooterDesktop /> */}
 
       {/* <Link to="/home">

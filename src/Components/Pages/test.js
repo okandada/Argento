@@ -1,132 +1,120 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
-import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.jpg";
-import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
-import BuyGoldDesktop4 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop4.jpg";
-import CardCrousalImage from "../Pages/test";
-import "../../App.css";
+import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-import "react-multi-carousel/lib/styles.css";
-import Carousel from "react-multi-carousel";
-import Card from "../Cards/cards";
-// const responsive = {
-//   desktop: {
-//     breakpoint: { max: 3000, min: 1024 },
-//     items: 2,
-//     partialVisibilityGutter: 150, // this is needed to tell the amount of px that should be visible.
-//   },
-//   medium: {
-//     breakpoint: { max: 1025, min: 800 },
-//     items: 1,
-//     partialVisibilityGutter: 350, // this is needed to tell the amount of px that should be visible.
-//   },
-// me: {
-//   breakpoint: { max: 1486, min: 1100 },
-//   items: 2,
-//   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
-// },
-// medum: {
-//   breakpoint: { max: 1486, min: 1100 },
-//   items: 2,
-//   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
-// },
-// tablet: {
-// breakpoint: { max: 1024, min: 464 },
-// items: 1,
-// partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-//   },
-//   mobile: {
-//     breakpoint: { max: 464, min: 0 },
-//     items: 1,
-//     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-//   },
-// };
+import React, { Component } from "react";
+import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
+import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
+import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
+import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
+import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 
-// const useStyles = makeStyles((theme) => ({
-//   marginTop: "20px",
-//   root: {
-//     flexGrow: 1,
-//   },
-//   paper: {
-//     padding: theme.spacing(2),
-//     textAlign: "center",
-//     color: theme.palette.text.secondary,
-//   },
-// }));
-// const defaultProps = {
-//   m: 2,
-//   borderColor: "#ecbd46",
-//   border: "3px solid",
-// };
+function Footer() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {"Copyright © "}
+      <Link
+        color="inherit"
+        href="https://material-ui.com/"
+        style={{ color: "#ecbd46" }}
+      >
+        PM Argento Aurum
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
+const useStyles = makeStyles((theme) => ({
+  "@global": {
+    ul: {
+      margin: 0,
+      padding: 0,
+      listStyle: "none",
+    },
+  },
+  footer: {
+    borderTop: `1px solid ${theme.palette.divider}`,
+    marginTop: theme.spacing(8),
+    paddingTop: theme.spacing(3),
+    paddingBottom: theme.spacing(3),
+    [theme.breakpoints.up("sm")]: {
+      paddingTop: theme.spacing(6),
+      paddingBottom: theme.spacing(6),
+    },
+  },
+}));
+const footers = [
+  {
+    title: "Häufige Fragen",
+    description: [
+      "Bestellprozess",
+      "Zahlungsweise",
+      "Versand",
+      "Sicherheit",
+      "Umtausch & Reklamation",
+    ],
+  },
+  {
+    title: "Über uns",
+    description: [" Kontakt", "Impressum", "Datenschutz", "AGB"],
+  },
+  {
+    title: "Top Themen",
+    description: ["Tips", "Sparplan", "Newsletter", "Partner"],
+  },
+  {
+    title: "Social Media",
+    description: [
+      <div display="flex">
+        <span>
+          <img src={FbDesktop} height="40px" alt="/about" to="/about"></img>
+        </span>
+        <span style={{ paddingInlineEnd: "7px" }}>
+          <img src={InstaDesktop} width="25px" height="40px" alt=""></img>
+        </span>
+        <span style={{ paddingInlineEnd: "8px" }}>
+          <img src={LinkedlnDesktop} width="25px" height="40px" alt=""></img>
+        </span>
+        <span style={{ paddingInlineEnd: "10px" }}>
+          <img src={XingDesktop} width="25px" height="40px" alt=""></img>
+        </span>
+      </div>,
+    ],
+  },
+];
 
-// export const TestGrid = (props) => {
-//   const images = this.props.Images;
-//   const classes = useStyles();
-//   // const CardCrousalImage = images;
+export default function Pricing() {
+  const classes = useStyles();
 
-//   var rows = [];
-//   for (var i = 0; i < images.length; i++) {
-//     rows.push(
-//       <Box
-//         display="flex"
-//         key={i}
-//         justifyContent="center"
-//         item
-//         xs={12}
-//         sm={6}
-//         md={3}
-//       >
-//         <Box border={1} {...defaultProps}>
-//           <Grid>
-//             {/* loading card component */}
-//             <Card
-//               title={images[i].title}
-//               url={images[i].url}
-//               text={images[i].text}
-//             />
-//           </Grid>
-//         </Box>
-//       </Box>
-//     );
-
-//     return (
-//       <Carousel
-//         ssr
-//         partialVisbile
-//         itemClass="image-item"
-//         responsive={responsive}
-//         container
-//         spacing={4}
-//         className={classes.gridContainer}
-//         justify="center"
-//       >
-//         {rows.slice(0, 5).map((row) => row)}
-//       </Carousel>
-
-export const TestGrid = (props) => {
-  return <div></div>;
-
-  // const Images = [
-  //   {
-  //     url: BuyGoldDesktop1,
-
-  //     text: "Unze Gold",
-  //   },
-  //   {
-  //     url: BuyGoldDesktop2,
-  //     text: "Unze Gold",
-  //   },
-  //   {
-  //     url: BuyGoldDesktop3,
-  //     text: "hello",
-  //   },
-  //   {
-  //     url: BuyGoldDesktop4,
-  //     text: "hello",
-  //   },
-  // ];
-};
-export default TestGrid;
+  return (
+    <React.Fragment>
+      <Container maxWidth="md" component="footer" className={classes.footer}>
+        <Grid container spacing={4} justify="space-evenly">
+          {footers.map((footer) => (
+            <Grid item xs={6} sm={3} key={footer.title}>
+              <Typography variant="h4" gutterBottom>
+                {footer.title}
+              </Typography>
+              <ul>
+                {footer.description.map((item) => (
+                  <li key={item}>
+                    <Link href="#" variant="subtitle1" color="textSecondary">
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </Grid>
+          ))}
+        </Grid>
+        <Box mt={5}>
+          <Footer />
+        </Box>
+      </Container>
+      {/* End footer */}
+    </React.Fragment>
+  );
+}

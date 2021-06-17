@@ -1,30 +1,29 @@
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import { BrowserRouter as Link } from "react-router-dom";
+import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import React from "react";
+import Box from "@material-ui/core/Box";
+import React, { Component } from "react";
 import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
 import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
 import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
 import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+
 function Footer() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {" © "}
-      {new Date().getFullYear()}
-      {""}
-
+      {"Copyright © "}
       <Link
+        color="inherit"
+        href="https://material-ui.com/"
         style={{ color: "#ecbd46" }}
-        href="PM argento arum"
-        color="h3"
-        aria-label="all"
       >
         PM Argento Aurum
-      </Link>
-      {" | All Rights Reserved "}
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
     </Typography>
   );
 }
@@ -71,7 +70,7 @@ const footers = [
     description: [
       <div display="flex">
         <span>
-          <img src={FbDesktop} height="40px" alt=""></img>
+          <img src={FbDesktop} height="40px" alt="/about" to="/about"></img>
         </span>
         <span style={{ paddingInlineEnd: "7px" }}>
           <img src={InstaDesktop} width="25px" height="40px" alt=""></img>
@@ -87,19 +86,11 @@ const footers = [
   },
 ];
 
-export default function FooterDesktop() {
+export default function Pricing() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
-      <Link to="/home">
-        <img
-          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
-          src={logo}
-          alt=""
-        />
-      </Link>
-
       <Container maxWidth="md" component="footer" className={classes.footer}>
         <Grid container spacing={4} justify="space-evenly">
           {footers.map((footer) => (
@@ -119,8 +110,10 @@ export default function FooterDesktop() {
             </Grid>
           ))}
         </Grid>
+        <Box mt={5}>
+          <Footer />
+        </Box>
       </Container>
-      {/* End footer */}
     </React.Fragment>
   );
 }

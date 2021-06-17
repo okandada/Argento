@@ -14,9 +14,9 @@ const responsive = {
     partialVisibilityGutter: 60, // this is needed to tell the amount of px that should be visible.
   },
   medium: {
-    breakpoint: { max: 1025, min: 800 },
-    items: 1,
-    partialVisibilityGutter: 350, // this is needed to tell the amount of px that should be visible.
+    breakpoint: { max: 1023, min: 600 },
+    items: 3,
+    // this is needed to tell the amount of px that should be visible.
   },
   // me: {
   //   breakpoint: { max: 1486, min: 1100 },
@@ -28,13 +28,11 @@ const responsive = {
   //   items: 2,
   //   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
   // },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-    // partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-  },
+
+  // partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 599, min: 0 },
     items: 1,
     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
   },

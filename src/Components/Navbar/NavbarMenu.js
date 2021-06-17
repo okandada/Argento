@@ -36,27 +36,21 @@ export default function NavbarMenu() {
               alt=""
             />
           </Link>
-
-          <IconButton
-            edge="start"
-            className={classes.toggleDrawer}
-            color="inherit"
-            aria-label="menu"
-          ></IconButton>
-          <Typography variant="h6" className={classes.title}></Typography>
-          <Button component={Link} to="">
-            Home
-          </Button>
-          <Button component={Link} to="/about">
-            About
-          </Button>
-          <Button component={Link} to="/contact">
-            Contact us
-          </Button>
-          <Button>
-            {" "}
-            <img src={ShoppingCart_icon} alt="/about" to="/about" />
-          </Button>
+          <div style={{ width: "100%", textAlign: "end" }}>
+            <Button component={Link} to="">
+              Home
+            </Button>
+            <Button component={Link} to="/about">
+              About
+            </Button>
+            <Button component={Link} to="/contact">
+              Contact us
+            </Button>
+            <Button>
+              {" "}
+              <img src={ShoppingCart_icon} alt="/about" to="/about" />
+            </Button>
+          </div>
         </Toolbar>
       </AppBar>
     </div>
