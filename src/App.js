@@ -46,7 +46,7 @@ function App() {
             <Route path="/datenSchutz" component={DatenSchutz} />
             <Route path="/UnsernShop" component={UnsernShop} />
             <Route path="/unsernShop2" component={UnsernShop2} />
-            <Route path="/test" component={MobileFooterTest} />
+            <Route path="/test" component={Test} />
             <Route path="/impressum" component={ImpressumPage} />
             <Route path="/WarenKob" component={WarenKorb} />
             <Route path="/test" component={Test} />

@@ -10,7 +10,9 @@ export const DatenSchutz = () => {
   return (
     <div>
       <BgImageComponent bgImage={cartBgImage} />
-      <h3>Zweck und Rechtsgrundlage der Datenverarbeitung </h3>
+      <h3 style={{ fontFamily: "TGL0-1451Engschrift" }}>
+        Zweck und Rechtsgrundlage der Datenverarbeitung
+      </h3>
       <p>
         Wir speichern Ihre Daten nur zur Erfüllung Ihrer Anfragen, Erfüllung und
         Abwicklung der Verträge und zu eigenen Werbezwecken. Die Verarbeitung
@@ -25,30 +27,33 @@ export const DatenSchutz = () => {
         Dritte erfolgt nicht.
       </p>
       <p>
-        <h3>Webanalyse mit Google Analytics</h3> Diese Website benutzt Google
-        Analytics, einen Webanalysedienst der Google Inc. („Google“). Google
-        Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer
-        gespeichert werden und die eine Analyse der Benutzung der Website durch
-        Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre
-        Benutzung dieser Website werden in der Regel an einen Server von Google
-        in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der
-        IP-Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google
-        jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in
-        anderen Vertragsstaaten des Abkommens über den Europäischen
-        Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle
-        IP-Adresse an einen Server von Google in den USA übertragen und dort
-        gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese
-        Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um
-        Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit
-        der Websitenutzung und der Internetnutzung verbundene Dienstleistungen
-        gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google
-        Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit
-        anderen Daten von Google zusammengeführt. Sie können die Speicherung der
-        Cookies durch eine entsprechende Einstellung Ihrer Software verhindern;
-        wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls
-        nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen
-        können. Sie können darüber hinaus die Erfassung der durch das Cookie
-        erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer
+        <h3 style={{ fontFamily: "TGL0-1451Engschrift" }}>
+          Webanalyse mit Google Analytics
+        </h3>{" "}
+        Diese Website benutzt Google Analytics, einen Webanalysedienst der
+        Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“,
+        Textdateien, die auf Ihrem Computer gespeichert werden und die eine
+        Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den
+        Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden
+        in der Regel an einen Server von Google in den USA übertragen und dort
+        gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser
+        Webseite, wird Ihre IP-Adresse von Google jedoch innerhalb von
+        Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten
+        des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur
+        in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google
+        in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser
+        Website wird Google diese Informationen benutzen, um Ihre Nutzung der
+        Website auszuwerten, um Reports über die Websiteaktivitäten
+        zusammenzustellen und um weitere mit der Websitenutzung und der
+        Internetnutzung verbundene Dienstleistungen gegenüber dem
+        Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von
+        Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von
+        Google zusammengeführt. Sie können die Speicherung der Cookies durch
+        eine entsprechende Einstellung Ihrer Software verhindern; wir weisen Sie
+        jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht
+        sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.
+        Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten
+        und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer
         IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google
         verhindern, indem sie das unter dem folgenden Link
         (http://tools.google.com/dlpage/gaoptout?hl=de) verfügbare
@@ -61,16 +66,18 @@ export const DatenSchutz = () => {
         Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.
       </p>
       <p>
-        <h3>Verwendung von Cookies</h3> Verwendung von Cookies Auf unserer
-        Website verwenden wir Session-Cookies, um Ihnen die Nutzung unserer
-        Webseiten zu erleichtern. Dabei handelt es sich um kleine Textdateien,
-        welche für die Dauer Ihres Besuchs auf unsere Webseite auf Ihrer
-        Festplatte gespeichert und abhängig von der Einstellung Ihres
-        Browser-Programms beim Beenden des Browsers wieder gelöscht werden. Das
-        Speichern von Cookies kann in den Einstellungen Ihres Browsers
-        ausgeschaltet oder deaktiviert werden. Session-Cookies werden
-        automatisch gelöscht wenn Sie Ihren Browser schließen.
-        Persistent-Cookies überdauern das Schließen des Browsers.
+        <h3 style={{ fontFamily: "TGL0-1451Engschrift" }}>
+          Verwendung von Cookies
+        </h3>{" "}
+        Verwendung von Cookies Auf unserer Website verwenden wir
+        Session-Cookies, um Ihnen die Nutzung unserer Webseiten zu erleichtern.
+        Dabei handelt es sich um kleine Textdateien, welche für die Dauer Ihres
+        Besuchs auf unsere Webseite auf Ihrer Festplatte gespeichert und
+        abhängig von der Einstellung Ihres Browser-Programms beim Beenden des
+        Browsers wieder gelöscht werden. Das Speichern von Cookies kann in den
+        Einstellungen Ihres Browsers ausgeschaltet oder deaktiviert werden.
+        Session-Cookies werden automatisch gelöscht wenn Sie Ihren Browser
+        schließen. Persistent-Cookies überdauern das Schließen des Browsers.
         Datenverarbeitung zu Werbezwecken Wir nutzen Ihre Daten nur für eigene
         Werbezwecke. Wir möchten Sie über neue Produkte, unsere
         Serviceleistungen sowie interessante Veranstaltungen informieren. Daher

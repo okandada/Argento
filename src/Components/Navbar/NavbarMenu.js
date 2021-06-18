@@ -47,7 +47,6 @@ export default function NavbarMenu() {
               Contact us
             </Button>
             <Button>
-              {" "}
               <img src={ShoppingCart_icon} alt="/about" to="/about" />
             </Button>
           </div>

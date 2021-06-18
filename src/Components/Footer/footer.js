@@ -10,7 +10,7 @@ import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
 import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
 import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
-
+import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -90,30 +90,37 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <Container maxWidth="md" component="footer" className={classes.footer}>
-        <Grid container spacing={4} justify="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h4" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="textSecondary">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-        <Box mt={5}>
-          <Footer />
-        </Box>
-      </Container>
-    </React.Fragment>
+    <div>
+      <div>
+        <NavLink to="/about">
+          <img style={{ width: "337.4px", height: "80px" }} src={logo} alt="" />
+        </NavLink>
+      </div>
+      <React.Fragment>
+        <Container maxWidth="md" component="footer" className={classes.footer}>
+          <Grid container spacing={4} justify="space-evenly">
+            {footers.map((footer) => (
+              <Grid item xs={6} sm={3} key={footer.title}>
+                <Typography variant="h4" gutterBottom>
+                  {footer.title}
+                </Typography>
+                <ul>
+                  {footer.description.map((item) => (
+                    <li key={item}>
+                      <Link href="#" variant="subtitle1" color="textSecondary">
+                        {item}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </Grid>
+            ))}
+          </Grid>
+          <Box mt={5}>
+            <Footer />
+          </Box>
+        </Container>
+      </React.Fragment>
+    </div>
   );
 }
