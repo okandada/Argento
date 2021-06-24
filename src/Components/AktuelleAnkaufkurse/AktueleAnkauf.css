@@ -1,5 +1,12 @@
+.h5 {
+  font-family: TGL0-1451Engschrift !important;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 0px;
+}
 .text-items {
-  margin-top: 20px;
+  margin-top: 12px;
+  margin-bottom: 80px;
 }
 .container-text {
   position: relative;
@@ -8,8 +15,8 @@
   padding: 10px;
 }
 .first-title {
-  font-size: 2.4em;
-  width: 308px;
+  font-size: 1.7em;
+  /* width: 308px; */
 }
 @media (max-width: 600px) {
   .first-title {
@@ -18,6 +25,7 @@
 }
 .sub-title {
   font-size: 0.8em;
+  padding-top: 4px;
   color: rgb(164, 164, 164);
 }
 .price-field {
@@ -29,7 +37,9 @@
 
 .price-field-subtitle-left {
   float: left;
+  padding-top: 6px;
 }
 .price-field-subtitle-right {
   float: right;
+  padding-top: 6px;
 }

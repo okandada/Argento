@@ -1,0 +1,7 @@
+.textStyle {
+  font-family: Barlow;
+  color: var(--greyish);
+}
+.marginBottom {
+  margin-bottom: 34px;
+}

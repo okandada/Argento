@@ -1,13 +1,15 @@
 import React from "react";
 import "./AktueleAnkauf.css";
+import Typography from "@material-ui/core/Typography";
 
 export default function AktueleAnkauf(props) {
   return (
     <div className="text-items">
-      <div className="first-title">{props.firstTitle}</div>
-      <div className="sub-title">{props.subTitle}</div>
+      <Typography variant="h4">{props.firstTitle}</Typography>
+      <Typography variant="subtitle1">{props.subTitle}</Typography>
+      {/* <div className="sub-title">{props.subTitle}</div> */}
       <div className="price-field">
-        <h6 style={{ fontSize: "20px" }}>{props.price}</h6>
+        <Typography variant="body2">{props.price}</Typography>
       </div>
       <span className="sub-title price-field-subtitle-left ">
         {props.price_subtitle_left}

@@ -1,31 +1,17 @@
-import React, { useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import Select from "@material-ui/core/Select";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
-import { BrowserRouter as Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import React from "react";
+// import { makeStyles } from "@material-ui/core/styles";
 import Client from "shopify-buy";
 import { Component } from "react";
 
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  },
-}));
-
-// export default function SimpleSelect() {
-//   const classes = useStyles();
-//   const [age, setAge] = React.useState("");
-
-//   const handleChange = (event) => {
-//     setAge(event.target.value);
-//   };
+// const useStyles = makeStyles((theme) => ({
+//   formControl: {
+//     margin: theme.spacing(1),
+//     minWidth: 120,
+//   },
+//   selectEmpty: {
+//     marginTop: theme.spacing(2),
+//   },
+// }));
 
 export default class test2 extends Component {
   constructor() {
@@ -39,12 +25,14 @@ export default class test2 extends Component {
 
   componentDidMount() {
     const client = Client.buildClient({
-      domain: "okandada.myshopify.com",
-      storefrontAccessToken: "6ecf9f92e7a9925d555671493c2b364f",
+      // domain: "okandada.myshopify.com",
+      domain: "abcstorexzy.myshopify.com",
+      storefrontAccessToken: "fbcf4074a7fa618e9117864b59654e48",
     });
 
     client.product.fetchAll().then((products) => {
       // Do something with the products
+      console.log(products);
       this.setState({
         isfinsihed: true,
         check: "sdadasssss",
@@ -69,7 +57,9 @@ export default class test2 extends Component {
               <li>
                 <a
                   href={
-                    "https://okandada.myshopify.com/products/" + product.handle
+                    // "https://okandada.myshopify.com/products/" + product.handle
+                    "https://abcstorexzy.myshopify.com/products/" +
+                    product.handle
                   }
                 >
                   {product.title}

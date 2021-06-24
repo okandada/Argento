@@ -8,18 +8,20 @@ import NavbarMenu from "../src/Components/Navbar/NavbarMenu";
 import NavBarMobileMenu from "../src/Components/NavBarMobile/navBarMobile";
 import DatenSchutz from "./Components/Pages/datenSchutz";
 import UnsernShop from "./Components/Pages/UnsernShop";
-import MobileFooterTest from "./Components/Pages/test";
 import { UnsernShop2 } from "./Components/Pages/unsernShop2";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 import ImpressumPage from "./Components/Pages/impressum";
 import WarenKorb from "./Components/Pages/WarenKob";
 import Test from "./Components/Pages/test";
-import SimpleSelect from "./Components/Pages/test2";
 import FooterMobile from "./Components/Footer/footerMobile";
 import FooterDesktop from "../src/Components/Footer/footer";
 import test2 from "./Components/Pages/test2";
+import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
+
 function App() {
+  // let theme = createMuiTheme();
+  // theme = responsiveFontSizes(theme);
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -53,10 +55,10 @@ function App() {
             <Route path="/test2" component={test2} />
           </Switch>
         </div>
-        <div className=" IpadPro  IpadQuer  ">
+        <div className=" IpadPro  IpadQuer">
           <FooterDesktop />
         </div>
-        <div className=" desktop  ">
+        <div className="desktop">
           <FooterDesktop />
         </div>
         <div className="mobile">

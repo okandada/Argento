@@ -1,19 +1,13 @@
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import React from "react";
-import {
-  cartBgImage,
-  BgImage,
-} from "../../Components/ConditionalRendering/Rendering";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
+
 export const DatenSchutz = () => {
   return (
     <div>
       <BgImageComponent bgImage={cartBgImage} />
-      <h3 style={{ fontFamily: "TGL0-1451Engschrift" }}>
-        Zweck und Rechtsgrundlage der Datenverarbeitung
-      </h3>
-      <p>
+      <h3>Zweck und Rechtsgrundlage der Datenverarbeitung</h3>
+      <p style={{ wordBreak: "break-word" }}>
         Wir speichern Ihre Daten nur zur Erfüllung Ihrer Anfragen, Erfüllung und
         Abwicklung der Verträge und zu eigenen Werbezwecken. Die Verarbeitung
         erfolgt auf Basis der aktuellen Datenschutzgesetze. Wenn Sie eine
@@ -26,10 +20,8 @@ export const DatenSchutz = () => {
         des Vertrages sowie zu eigenen Werbezwecken. Eine Weitergabe an sonstige
         Dritte erfolgt nicht.
       </p>
-      <p>
-        <h3 style={{ fontFamily: "TGL0-1451Engschrift" }}>
-          Webanalyse mit Google Analytics
-        </h3>{" "}
+      <p style={{ wordBreak: "break-word" }}>
+        <h3>Webanalyse mit Google Analytics</h3>
         Diese Website benutzt Google Analytics, einen Webanalysedienst der
         Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“,
         Textdateien, die auf Ihrem Computer gespeichert werden und die eine
@@ -65,10 +57,8 @@ export const DatenSchutz = () => {
         Code „gat._anonymizeIp();“ erweitert wurde, um eine anonymisierte
         Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.
       </p>
-      <p>
-        <h3 style={{ fontFamily: "TGL0-1451Engschrift" }}>
-          Verwendung von Cookies
-        </h3>{" "}
+      <p style={{ wordBreak: "break-word" }}>
+        <h3>Verwendung von Cookies</h3>
         Verwendung von Cookies Auf unserer Website verwenden wir
         Session-Cookies, um Ihnen die Nutzung unserer Webseiten zu erleichtern.
         Dabei handelt es sich um kleine Textdateien, welche für die Dauer Ihres

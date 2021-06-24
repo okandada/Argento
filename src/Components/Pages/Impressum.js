@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
 import { cartBgImage } from "../ConditionalRendering/Rendering";
-import { BrowserRouter as Link } from "react-router-dom";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+import Typography from "@material-ui/core/Typography";
 
 export default class ImpressumPage extends Component {
   render() {
@@ -10,21 +9,28 @@ export default class ImpressumPage extends Component {
       <div>
         <BgImageComponent bgImage={cartBgImage} />
         <div>
-          <h3>Argento Aurum</h3>
-          Hohenzollernring 48
-          <br /> 50667 Köln
+          <Typography variant="h4">Argento Aurum</Typography>
+          <Typography variant="body2">
+            Hohenzollernring 48
+            <br /> 50667 Köln
+          </Typography>
         </div>
         <div>
-          <h3>Kontakt</h3>
-          Telefon: +49 (0) 2175 - 37 3841 <br /> Telefon: +49 (0) 2175 - 37 3841
-          <br />
-          Internet: www.argentoaurum.com <br />
-          E-Mail: info@argentoaurum.com <br />
-          <h3>Kontakt</h3>
-          Sitz der Gesellschaft: Köln
-          <br /> Registergericht: XXXXXXXX <br />
-          Registernummer: XXXXXXX <br />
-          Ust.-ID-Nr.: XXXXXXXXXXX
+          <Typography variant="h4">Kontakt</Typography>
+          <Typography variant="h5">
+            Telefon: +49 (0) 2175 - 37 3841 <br /> Telefon: +49 (0) 2175 - 37
+            3841
+            <br />
+            Internet: www.argentoaurum.com <br />
+            E-Mail: info@argentoaurum.com <br />
+          </Typography>
+          <Typography variant="h4">Kontakt</Typography>
+          <Typography variant="h5">
+            Sitz der Gesellschaft: Köln
+            <br /> Registergericht: XXXXXXXX <br />
+            Registernummer: XXXXXXX <br />
+            Ust.-ID-Nr.: XXXXXXXXXXX
+          </Typography>
         </div>
         {/* <Link to="/home">
           <img

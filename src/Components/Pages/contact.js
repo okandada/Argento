@@ -5,30 +5,32 @@ import Checkbox from "@material-ui/core/Checkbox";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
 import { withStyles } from "@material-ui/core/styles";
-import { BrowserRouter as Link } from "react-router-dom";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+
+import TextareaAutosize from "@material-ui/core/TextareaAutosize";
+// import { BrowserRouter as Link } from "react-router-dom";
+// import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 const ValidationTextField = withStyles({
   root: {
     "& input": {
       color: "#ecbd46",
     },
     "& input:valid + fieldset": {
-      borderColor: "white",
-      borderWidth: 2,
-      color: "white",
+      borderColor: "#ffffff",
+      // borderWidth: 2,
+      color: "#ffffff",
       width: "100%",
     },
 
     "& input:invalid + fieldset": {
       borderColor: "red",
-      borderWidth: 2,
+      // borderWidth: 2,
     },
     "& input:valid:focus + fieldset": {
-      borderLeftWidth: 6,
+      // borderLeftWidth: 6,
       padding: "4px !important", // override inline-style
     },
-    "&:hover": {
-      borderColor: "white !important",
+    "& input:hover": {
+      borderColor: "#ffffff !important",
     },
   },
 })(TextField);
@@ -40,14 +42,20 @@ const useStyles = makeStyles((theme) => ({
       width: "25ch",
     },
   },
+  input: {
+    "&::placeholder": {
+      fontStyle: "italic",
+      color: "orange",
+    },
+  },
   color: {
-    color: "white",
+    color: "#ffffff",
   },
   TextField: {
-    border: "1px solid white",
+    border: "1px solid #ffffff",
   },
   InputBase: {
-    border: "1px solid white",
+    border: "1px solid #ffffff",
   },
   buttonstyle: {},
 }));
@@ -65,7 +73,7 @@ export const ContactUs = (props) => {
 
       <div>
         <h2>Kontaktformular</h2>
-        <div style={{ width: "23%" }}>
+        <div className="field3">
           <ValidationTextField
             className="newsletter-textfield"
             InputLabelProps={{
@@ -80,7 +88,7 @@ export const ContactUs = (props) => {
               className="newsLetter-checkbox"
               checked={checked}
               onChange={handleChange}
-              labelPlacement="end"
+              labelplacement="end"
               inputProps={{ "aria-label": "primary checkbox" }}
             />
             <p style={{ color: "#a4a4a4" }}>
@@ -90,8 +98,8 @@ export const ContactUs = (props) => {
           </div>
         </div>
       </div>
-      <div style={{ display: "Inline-flex", width: "100%" }}>
-        <div style={{ width: "23%" }}>
+      <div className="contactField">
+        <div className="field1">
           <ValidationTextField
             className="newsletter-textfield"
             InputLabelProps={{
@@ -102,7 +110,7 @@ export const ContactUs = (props) => {
             id="validation-outlined-input"
           />
         </div>
-        <div style={{ width: "23%", marginInline: "50px" }}>
+        <div className="field2">
           <ValidationTextField
             className="newsletter-textfield"
             InputLabelProps={{
@@ -114,15 +122,32 @@ export const ContactUs = (props) => {
           />
         </div>
       </div>
-      <div style={{ width: "50%" }}>
+      <div className="mutliLine-msg">
+        {/* <TextareaAutosize
+          aria-label="minimum height"
+          className="newsletter-textfield"
+          InputProps={{
+            classes: { input: classes.input },
+          }}
+          style={{
+            backgroundColor: "transparent",
+            border: "2px solid #ffffff",
+            color: "#ecbd46",
+            fontSize: "20px",
+          }}
+          rowsMin={8}
+          placeholder="Messages"
+        /> */}
+
         <ValidationTextField
           className="newsletter-textfield"
           InputLabelProps={{
             style: { color: "#ecbd46" },
           }}
+          multiline
+          rows={4}
           label="**Nachricht "
           variant="outlined"
-          borderColor="white"
           id="validation-outlined-input"
         />
       </div>

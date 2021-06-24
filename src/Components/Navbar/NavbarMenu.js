@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import "../../App.css";
+import "../Footer/footer.css";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 //  import logo from "/images/Fotos/logo.png";
 import ShoppingCart_icon from "../../Images/ÜberUns/Desktop/SVG/ShoppingCart_icon.svg";
@@ -29,24 +30,35 @@ export default function NavbarMenu() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.BackgroundColor}>
         <Toolbar>
-          <Link to="/home">
-            <img
-              style={{ width: "337.4px", height: "80px" }}
-              src={logo}
-              alt=""
-            />
-          </Link>
+          <div>
+            <Link to="/home">
+              <div className="logo-m-Size">
+                <img
+                  style={{ width: "100%", height: "100%" }}
+                  src={logo}
+                  alt=""
+                />
+              </div>
+            </Link>
+          </div>
           <div style={{ width: "100%", textAlign: "end" }}>
             <Button component={Link} to="">
-              Home
+              <Typography variant="h4">Home</Typography>
             </Button>
             <Button component={Link} to="/about">
-              About
+              <Typography variant="h4">Über uns</Typography>
             </Button>
             <Button component={Link} to="/contact">
-              Contact us
+              <Typography variant="h4">Kontakt</Typography>
             </Button>
+            {/* <Button component={Link} to="/impressum">
+              Impressum
+            </Button>
+            <Button component={Link} to="/datenSchutz">
+              Daten Schutz
+            </Button> */}
             <Button>
+              {" "}
               <img src={ShoppingCart_icon} alt="/about" to="/about" />
             </Button>
           </div>

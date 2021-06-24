@@ -4,29 +4,119 @@
   right: 0;
 
   height: 100%;
+  width: 360px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-@media (max-width: 600px) {
-  .text-price {
-    position: relative;
-  }
-  .newsLetter-last-button {
-    margin-top: 50px !important;
-  }
-}
-.newsletter-textfield {
-  width: fit-content !important;
-  margin: 16px 0px !important;
-  width: 100% !important;
+.response-img {
+  width: 13%;
+  /* max-width: 167px; */
+  height: auto;
 }
 .newsLetter-checkbox {
   float: left;
   padding-left: 0 !important;
 }
 .newsLetter-btn {
-  width: 80% !important;
-  position: absolute !important;
-  bottom: 22px !important;
+  width: 100% !important;
+  margin-top: 140px !important;
+  /* position: absolute !important;
+  bottom: 22px !important; */
+}
+
+img {
+  object-fit: cover;
+}
+.newsletter-textfield {
+  width: fit-content !important;
+  margin: 16px 0px !important;
+  width: 100% !important;
+
+  border: 2px solid #ffffff !important;
+}
+.newsletter-textfield:hover {
+  border: 2px solid #ffffff !important;
+}
+
+.contactField {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.mutliLine-msg {
+  width: 52%;
+}
+.field1 {
+  width: 24%;
+}
+.field3 {
+  width: 24%;
+}
+.field2 {
+  width: 24%;
+  margin-left: 50px;
+}
+@media (max-width: 840px) {
+  .mutliLine-msg {
+    width: 100%;
+  }
+}
+@media (max-width: 1219px) {
+  .field1 {
+    width: 35%;
+  }
+  .field3 {
+    width: 35%;
+  }
+  .field2 {
+    width: 35%;
+    margin-left: 25px;
+  }
+  .mutliLine-msg {
+    width: 72.5%;
+  }
+}
+@media (max-width: 785px) {
+  .field1 {
+    width: 45%;
+  }
+  .field3 {
+    width: 45%;
+  }
+  .field2 {
+    width: 45%;
+    margin-left: 15px;
+  }
+  .mutliLine-msg {
+    width: 92.5%;
+  }
+}
+@media (max-width: 575px) {
+  .field1 {
+    width: 100%;
+  }
+  .field3 {
+    width: 100%;
+  }
+  .field2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .mutliLine-msg {
+    width: 100%;
+  }
+  .contactField {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .text-price {
+    position: relative;
+    width: 100%;
+    padding: 0 !important;
+  }
+  .newsLetter-last-button {
+    margin-top: 50px !important;
+  }
 }

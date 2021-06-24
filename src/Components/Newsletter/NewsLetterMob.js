@@ -9,7 +9,7 @@ import { TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
-import "./NewsLetterMob.css";
+
 const ValidationTextField = withStyles({
   root: {
     "& > *": {
@@ -17,22 +17,22 @@ const ValidationTextField = withStyles({
     },
   },
   color: {
-    color: "white",
+    color: "#ffffff",
   },
   TextField: {
-    border: "1px solid white",
+    border: "1px solid #ffffff",
   },
   InputBase: {
-    border: "1px solid white",
+    border: "1px solid #ffffff",
   },
   buttonstyle: {},
   "& input": {
     color: "#ecbd46",
   },
   "& input:valid + fieldset": {
-    borderColor: "white",
+    borderColor: "#ffffff",
     borderWidth: 2,
-    color: "white",
+    color: "#ffffff",
     width: "100%",
   },
 
@@ -45,7 +45,7 @@ const ValidationTextField = withStyles({
     padding: "4px !important", // override inline-style
   },
   "&:hover": {
-    borderColor: "white !important",
+    borderColor: "#ffffff !important",
   },
 })(TextField);
 const useStyles = makeStyles(() => ({
@@ -70,12 +70,16 @@ export const NewsLetterMob = () => {
       <div>
         <Card className={classes.root}>
           <CardMedia className={classes.media} image={NewsletterDesktop} />
-          <typography>
-            <h5>Abonniere unseren Newsletter</h5>
+          <Typography variant="h4">Abonniere unseren Newsletter</Typography>
+          <Typography variant="subtitle1">
+            Erfahre als erster von neuen Produkten, Tipps und Ideen!
+          </Typography>
+          {/* <typography>
+            <h5></h5>
             <h6 className="text">
               Erfahre als erster von neuen Produkten, Tipps und Ideen!
             </h6>
-          </typography>
+          </typography> */}
           <form className={classes.root} noValidate autoComplete="off">
             <ValidationTextField
               className="newsletter-textfield-mob"
@@ -91,7 +95,7 @@ export const NewsLetterMob = () => {
                 className="newsLetter-checkbox-mob"
                 checked={checked}
                 onChange={handleChange}
-                labelPlacement="end"
+                labelplacement="end"
                 inputProps={{ "aria-label": "primary checkbox" }}
               />
               <span>
@@ -103,7 +107,7 @@ export const NewsLetterMob = () => {
             <Button
               className="newsLetter-btn-mob"
               variant="contained"
-              color="white"
+              color="#ffffff"
               href="#contained-buttons"
             >
               <h6 className="buttonText">NewsLetter Anmeldung</h6>

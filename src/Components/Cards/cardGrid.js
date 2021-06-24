@@ -76,12 +76,6 @@ export default function CardGrid(props) {
     );
   }
   return (
-    // <Grid
-    //   container
-    //   spacing={4}
-    //   className={classes.gridContainer}
-    //   justify="center"
-    // ></Grid>
     <Carousel
       ssr
       partialVisbile

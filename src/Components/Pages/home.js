@@ -1,4 +1,5 @@
 import React from "react";
+import { Heading } from "../Pages/heading";
 import CardGrid from "../Cards/cardGrid";
 import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
 import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.jpg";
@@ -13,151 +14,65 @@ import NewsLetter from "../Newsletter/NewsLetter";
 import AktueleAnkauf from "../AktuelleAnkaufkurse/AktueleAnkauf";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { BgImage } from "../../Components/ConditionalRendering/Rendering";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
-import { BrowserRouter as Link } from "react-router-dom";
-import FooterDesktop from "../Footer/footer";
-import NewsLetterMob from "../Newsletter/NewsLetterMob";
-import AktueleAnkaufMob from "../AktuelleAnkaufkurse/AktueleAnkaufMob";
+
 export const Home = () => {
   return (
     <div>
       <BgImageComponent bgImage={BgImage} />
-      <h2>
-        Gold & Silber Kaufen
-        <div className="dash">
-          <img src={YellowStroke} alt="" />
-        </div>
-      </h2>
+      <Heading size="h2" Text=" Gold & Silber Kaufen"></Heading>
+
       <CardGrid images={Images} />
 
-      <h2>
-        Aktuelle Ankaufkurse
-        <div className="dash">
-          <img src={YellowStroke} alt="" />
+      <Heading size="h2" Text=" Aktuelle Ankaufkurse"></Heading>
+
+      {/* <Container> */}
+      <div className="container-text">
+        <img
+          src={GOldCourseDesktop}
+          style={{ maxHeight: "460px", width: "100%" }}
+          alt=""
+        />
+        <div className="text-price">
+          <AktueleAnkauf
+            firstTitle="Goldpreis in Euro"
+            subTitle="je Feinunze(31,103g)"
+            price="1.449.68 EUR"
+            price_subtitle_left="-0.75%"
+            price_subtitle_right="-10.28 Euro"
+          ></AktueleAnkauf>
+          <AktueleAnkauf
+            firstTitle="Goldpreis in Silber"
+            subTitle="je Feinunze (31,103g)"
+            price="21,21 EUR"
+            price_subtitle_left="-0.75%"
+            price_subtitle_right="-10.28 Euro"
+          ></AktueleAnkauf>
         </div>
-      </h2>
-      <container>
-        <div className="container-text">
-          <img src={GOldCourseDesktop} height="460px" width="100%" alt="" />
-          <div className="text-price">
-            <AktueleAnkauf
-              firstTitle="Goldpreis in Euro"
-              subTitle="je Feinunze(31,103g)"
-              price="1.449.68 EUR"
-              price_subtitle_left="-0.75%"
-              price_subtitle_right="-10.28 Euro"
-            ></AktueleAnkauf>
-            <AktueleAnkauf
-              firstTitle="Goldpreis in Silber"
-              subTitle="je Feinunze (31,103g)"
-              price="21,21 EUR"
-              price_subtitle_left="-0.75%"
-              price_subtitle_right="-10.28 Euro"
-            ></AktueleAnkauf>
-          </div>
-        </div>
-      </container>
-      {/* <container className="IpadPro  IpadQuer ">
-        <div style={{ height: "460px" }} className="container-text">
-          <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
-          <div className="text-price">
-            <AktueleAnkauf
-              firstTitle="Goldpreis in Euro"
-              subTitle="je Feinunze(31,103g)"
-              price="1.449.68 EUR"
-              price_subtitle_left="-0.75%"
-              price_subtitle_right="-10.28 Euro"
-            ></AktueleAnkauf>
-            <AktueleAnkauf
-              firstTitle="Goldpreis in Silber"
-              subTitle="je Feinunze (31,103g)"
-              price="21,21 EUR"
-              price_subtitle_left="-0.75%"
-              price_subtitle_right="-10.28 Euro"
-            ></AktueleAnkauf>
-          </div>
-        </div>
-      </container> */}
-      {/* <container className="mobile">
-        <div style={{ height: "460px" }} className="container-text">
-          <img src={GOldCourseDesktop} height="100%" width="100%" alt="" />
-          <div className="text-price">
-            <AktueleAnkaufMob
-              firstTitle="Goldpreis in Euro"
-              subTitle="je Feinunze(31,103g)"
-              price="1.449.68 EUR"
-              price_subtitle_left="-0.75%"
-              price_subtitle_right="-10.28 Euro"
-            ></AktueleAnkaufMob>
-            <AktueleAnkaufMob
-              firstTitle="Goldpreis in Silber"
-              subTitle="je Feinunze (31,103g)"
-              price="21,21 EUR"
-              price_subtitle_left="-0.75%"
-              price_subtitle_right="-10.28 Euro"
-            ></AktueleAnkaufMob>
-          </div>
-        </div>
-      </container> */}
+      </div>
+      {/* </Container> */}
       {/* <OutlinedCard /> */}
-      <h2>
-        Hilfen & Tipps zum Edelmeatllaukf
-        <div className="dash">
-          <img src={YellowStroke} alt="" />
-        </div>
-      </h2>
+      <Heading size="h2" Text=" Hilfen & Tipps zum Edelmeatllaukf"></Heading>
+
       <HilfenTipsCard />
-      <h2>
-        Newsletter
-        <div className="dash">
-          <img src={YellowStroke} alt="" />
-        </div>
-      </h2>
+      <Heading size="h2" Text=" Newsletter"></Heading>
       {/* <div className="mobile">
       <NewsLetterMob />
       </div> */}
-      <container>
-        <div className="container-text">
-          <img
-            src={NewsletterDesktop}
-            style={{ height: "400px", width: "100%" }}
-            alt=""
-          />
-          <div className="text-price">
-            <NewsLetter
-              firstTitle="Abonniere unseren Newsletter"
-              subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
-            ></NewsLetter>
-          </div>
-        </div>
-      </container>
-      {/* <container className=" desktop">
-        <div className="container-text">
-          <img
-            src={NewsletterDesktop}
-            style={{ height: "400px", width: "100%" }}
-            alt=""
-          />
-          <div
-            className="text-price"
-            style={{ height: "400px", width: "25%", float: "right" }}
-          >
-            <NewsLetter
-              firstTitle="Abonniere unseren Newsletter"
-              subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
-            ></NewsLetter>
-          </div>
-        </div>
-      </container> */}
-      {/* <FooterDesktop /> */}
-
-      {/* <Link to="/home">
+      {/* <Container> */}
+      <div className="container-text">
         <img
-          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
-          src={logo}
+          src={NewsletterDesktop}
+          style={{ maxHeight: "460px", width: "100%" }}
           alt=""
         />
-      </Link> */}
+        <div className="text-price">
+          <NewsLetter
+            firstTitle="Abonniere unseren Newsletter"
+            subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
+          ></NewsLetter>
+        </div>
+      </div>
+      {/* </Container> */}
     </div>
   );
 };

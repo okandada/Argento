@@ -2,13 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { Button } from "@material-ui/core";
-import { BrowserRouter as Link } from "react-router-dom";
-
+import { withStyles } from "@material-ui/core/styles";
+import "./card.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
@@ -16,43 +14,45 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+const TextTypography = withStyles({
+  root: {
+    color: "#a4a4a4",
+  },
+})(Typography);
 
 export default function MediaCard(props) {
   // const [state, setState] = React.useState({});
   const classes = useStyles();
-  const bull = <span>1 Unze Gold</span>;
-  const bull2 = <span>1.560,42 EUR</span>;
+  const bull = "1 Unze Gold";
+  const bull2 = "1.560,42 EUR";
   return (
     <div className={classes.root}>
       <Card>
-        <CardActionArea style={{ color: "black" }}>
+        <CardActionArea>
           <img alt="" width="100%" src={props.url} />
-          <CardContent style={{ padding: "0 16px 0 16px" }}>
-            <Typography
-              variant="h3"
-              gutterBottom
-              style={{ paddingBottom: "25px" }}
-            >
-              {bull}
+          <CardContent style={{ padding: "0" }}>
+            <Typography variant="h4" gutterBottom>
+              <div style={{ marginBottom: "32px" }}>{bull}</div>
             </Typography>
-            <Typography variant="h3" gutterBottom>
+            <Typography variant="h4" gutterBottom>
               {bull2}
             </Typography>
-            <Typography variant="caption" display="block" gutterBottom>
+            <Typography variant="subtitle1" gutterBottom>
               zzgl. Versandkosten Lieferzeit: 4-7 Tage
             </Typography>
           </CardContent>
         </CardActionArea>
 
         <Button
-          to="/UnsernShop"
-          size="large"
-          style={{ background: "white" }}
+          // to="https://abcstorexzy.myshopify.com/products/gold1"
+          href="https://abcstorexzy.myshopify.com/products/gold1"
+          style={{ background: "#ffffff" }}
           fullWidth={true}
         >
-          <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
+          <Typography variant="button"> jetzt endecken</Typography>
+          {/* <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
             jetzt endecken
-          </span>
+          </span> */}
         </Button>
       </Card>
     </div>

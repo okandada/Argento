@@ -3,8 +3,7 @@
   height: 330px;
 }
 .UnzeGoldtextdiv {
-  padding-left: 20px;
-  margin-top: -15px;
+  float: left;
 }
 #wrapper {
   display: flex;
@@ -13,9 +12,14 @@
 
 .textPrice {
   float: left;
-
   size: 54px;
 }
 .BeschreibungButton {
   background-color: #ecbd46;
+}
+.buttonTextColor {
+  color: #c28c02 !important ;
+  background-color: #ffffff;
+  width: 219px;
+  height: 44px;
 }

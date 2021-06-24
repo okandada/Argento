@@ -7,8 +7,6 @@ import "./UnsernShop.css";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 import { Container, makeStyles } from "@material-ui/core";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
-import { BrowserRouter as Link } from "react-router-dom";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
 
 let theme = createMuiTheme();
@@ -33,8 +31,12 @@ function UnsernShop() {
       </div>
 
       <AboutCarddiv style={{ marginTop: "70px" }}>
-        <Container style={{ paddingLeft: "12px" }} className="container">
-          <img src={BuyGoldDesktop1} alt="" />
+        <Container className="container">
+          <img
+            style={{ height: "100%", width: "100%" }}
+            src={BuyGoldDesktop1}
+            alt=""
+          />
         </Container>
 
         <Container style={{ marginLeft: "20px" }} className="container">
@@ -44,66 +46,62 @@ function UnsernShop() {
             <p style={{ margin: "0px", color: "#a4a4a4" }}>
               Feinheit: 999,9/1000 Feingold
             </p>
-            <p style={{ margin: "0px", color: "#a4a4a4" }}>
+            <p style={{ color: "#a4a4a4" }}>
               Herkunftsland: Schweiz / Deutschland
             </p>
             <div textPrice>
-              <h2 style={{ marginBottom: "0px" }}>1.560,41 EUR</h2>
-              <p style={{ margin: "0px", color: "#a4a4a4" }}>
+              <h2 style={{ margiBottom: "0px" }}>1.560,41 EUR</h2>
+              <p style={{ color: "#a4a4a4" }}>
                 zzgl. Versandkosten Lieferzeit: 4-7 Tage
               </p>
             </div>
           </div>
-          <Button
-            style={{
-              background: "#000000",
-              border: "2px solid white",
-              marginTop: "10px",
-              marginBottom: "10px",
-            }}
-            fullWidth={true}
-          >
-            Menge
-          </Button>
-          <br />
-          <Button
-            style={{
-              background: "white",
-              marginTop: "10px",
-              marginBottom: "10px",
-            }}
-            fullWidth={true}
-          >
-            <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
-              In den Warenkorb
-            </span>
-          </Button>
+          <div>
+            <Button
+              style={{
+                background: "#000000",
+                border: "2px solid #ffffff",
+
+                marginBottom: "20px",
+                height: "50px",
+                maxWidth: "100%",
+              }}
+              fullWidth={true}
+            >
+              <span style={{ color: '"#a4a4a4"' }}>Menge</span>
+            </Button>
+            <br />
+            <Button
+              style={{
+                background: "#ffffff",
+                height: "50px",
+                maxWidth: "100%",
+              }}
+              fullWidth={true}
+            >
+              <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
+                In den Warenkorb
+              </span>
+            </Button>
+          </div>
         </Container>
       </AboutCarddiv>
 
-      {/* <Typography variant="h2">{heading}</Typography>
-              <Typography variant="h4">{text}</Typography>
-              <Typography variant="h4">{text1}</Typography>
-            </div>
-            */}
       <div>
         <Button
           style={{ backgroundColor: "#ecbd46", width: "219px", height: "44px" }}
         >
           Beschreibung
         </Button>
-        <Button
-          style={{
-            color: "#c28c02",
-            backgroundColor: "#ffffff",
-            width: "219px",
-            height: "44px",
-          }}
-        >
+        <Button InputLabelProps={{ className: "buttonTextColor" }}>
           Eigenschaften
         </Button>
       </div>
-      <Box style={{ height: "220px" }} border={1} {...defaultProps}>
+      <Box
+        style={{ height: "220px", overflow: "auto" }}
+        border={1}
+        {...defaultProps}
+      >
         <p style={{ color: "#a4a4a4", float: "left", width: "50%" }}>
           Goldbarren und Goldmünzen gibt es in unterschiedlichen Größen. Doch
           welche Größe ist die richtige? Für jede Gewichtseinheit fallen
@@ -113,16 +111,7 @@ function UnsernShop() {
           berechnet, als für große….
         </p>
       </Box>
-      {/* <Link to="/home">
-        <img
-          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
-          src={logo}
-          alt=""
-        />
-      </Link> */}
     </div>
-
-    // </div>
   );
 }
 

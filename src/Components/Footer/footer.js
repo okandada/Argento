@@ -4,13 +4,14 @@ import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-import React, { Component } from "react";
+import React from "react";
 import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
 import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
 import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
 import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 import { NavLink } from "react-router-dom";
+import "./footer.css";
 function Footer() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -21,7 +22,7 @@ function Footer() {
         style={{ color: "#ecbd46" }}
       >
         PM Argento Aurum
-      </Link>{" "}
+      </Link>
       {new Date().getFullYear()}
       {"."}
     </Typography>
@@ -69,17 +70,17 @@ const footers = [
     title: "Social Media",
     description: [
       <div display="flex">
-        <span>
-          <img src={FbDesktop} height="40px" alt="/about" to="/about"></img>
-        </span>
         <span style={{ paddingInlineEnd: "7px" }}>
-          <img src={InstaDesktop} width="25px" height="40px" alt=""></img>
+          <img src={InstaDesktop} width="25px" alt=""></img>
         </span>
         <span style={{ paddingInlineEnd: "8px" }}>
-          <img src={LinkedlnDesktop} width="25px" height="40px" alt=""></img>
+          <img src={LinkedlnDesktop} width="25px" alt=""></img>
         </span>
         <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={XingDesktop} width="25px" height="40px" alt=""></img>
+          <img src={XingDesktop} width="25px" alt=""></img>
+        </span>
+        <span>
+          <img src={FbDesktop} width="25%" alt="/about"></img>
         </span>
       </div>,
     ],
@@ -90,10 +91,12 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div style={{ margin: "43px 80px" }}>
       <div>
-        <NavLink to="/about">
-          <img style={{ width: "337.4px", height: "80px" }} src={logo} alt="" />
+        <NavLink to="/home">
+          <div className="logoSize">
+            <img src={logo} alt="" />
+          </div>
         </NavLink>
       </div>
       <React.Fragment>
@@ -102,12 +105,12 @@ export default function Pricing() {
             {footers.map((footer) => (
               <Grid item xs={6} sm={3} key={footer.title}>
                 <Typography variant="h4" gutterBottom>
-                  {footer.title}
+                  <span style={{ color: "#ecbd46" }}> {footer.title}</span>
                 </Typography>
-                <ul>
+                <ul style={{ lineHeight: "28px" }}>
                   {footer.description.map((item) => (
                     <li key={item}>
-                      <Link href="#" variant="subtitle1" color="textSecondary">
+                      <Link href="#" variant="body1" color="textSecondary">
                         {item}
                       </Link>
                     </li>

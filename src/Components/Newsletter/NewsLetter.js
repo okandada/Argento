@@ -4,15 +4,17 @@ import { TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import "./NewsLetter.css";
 const ValidationTextField = withStyles({
   root: {
     "& input": {
       color: "#ecbd46",
     },
     "& input:valid + fieldset": {
-      borderColor: "white",
+      borderColor: "#ffffff",
       borderWidth: 2,
-      color: "white",
+      color: "#ffffff",
       width: "100%",
     },
 
@@ -25,7 +27,7 @@ const ValidationTextField = withStyles({
       padding: "4px !important", // override inline-style
     },
     "&:hover": {
-      borderColor: "white !important",
+      borderColor: "#ffffff !important",
     },
   },
 })(TextField);
@@ -37,13 +39,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   color: {
-    color: "white",
+    color: "#ffffff",
   },
   TextField: {
-    border: "1px solid white",
+    border: "1px solid #ffffff",
   },
   InputBase: {
-    border: "1px solid white",
+    border: "1px solid #ffffff",
   },
   buttonstyle: {},
 }));
@@ -55,8 +57,10 @@ export default function NewsLetter(props) {
   };
   return (
     <div className="text-items">
-      <div className="first-title">{props.firstTitle}</div>
-      <div className="sub-title">{props.subTitle}</div>
+      <Typography variant="h4">{props.firstTitle}</Typography>
+      <Typography variant="subtitle1">{props.subTitle}</Typography>
+      {/* <div className="first-title">{props.firstTitle}</div>
+      <div className="sub-title">{props.subTitle}</div> */}
       <form className={classes.root} noValidate autoComplete="off">
         <ValidationTextField
           className="newsletter-textfield"
@@ -67,28 +71,36 @@ export default function NewsLetter(props) {
           variant="outlined"
           id="validation-outlined-input"
         />
-        <div>
-          <Checkbox
-            className="newsLetter-checkbox"
-            checked={checked}
-            onChange={handleChange}
-            labelPlacement="end"
-            inputProps={{ "aria-label": "primary checkbox" }}
-          />
-          <span>
+        <div style={{ width: "100%", margin: 0 }}>
+          <div>
+            <Checkbox
+              className="newsLetter-checkbox"
+              checked={checked}
+              onChange={handleChange}
+              labelplacement="end"
+              inputProps={{ "aria-label": "primary checkbox" }}
+            />
+            <Typography variant="subtitle1">
+              Ich bin mit den allgemeinen Datenschutzbestimmungen und den
+              Teilnahmebedingungen einverstanden
+            </Typography>
+          </div>
+          {/* <small>
             Ich bin mit den allgemeinen Datenschutzbestimmungen und den
             Teilnahmebedingungen einverstanden
-          </span>
-        </div>
-        <div class="newsLetter-last-button">
-          <Button
-            className="newsLetter-btn"
-            variant="contained"
-            color="white"
-            href="#contained-buttons"
-          >
-            <h6>NewsLetter Anmeldung</h6>
-          </Button>
+          </small> */}
+
+          {/* <div className="newsLetter-last-button"> */}
+          <div className="newsletter_button">
+            <Button
+              // to="https://abcstorexzy.myshopify.com/products/gold1"
+              href="https://abcstorexzy.myshopify.com/products/gold1"
+              style={{ background: "#ffffff" }}
+              fullWidth={true}
+            >
+              <Typography variant="button"> NewsLetter Anmeldung</Typography>
+            </Button>
+          </div>
         </div>
       </form>
     </div>

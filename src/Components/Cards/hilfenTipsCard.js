@@ -4,30 +4,37 @@ import { Grid, Card, CardHeader } from "@material-ui/core/";
 import CardContent from "@material-ui/core/CardContent";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-multi-carousel";
+import Typography from "@material-ui/core/Typography";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    partialVisibilityGutter: 50, // this is needed to tell the amount of px that should be visible.
+    partialVisibilityGutter: 60, // this is needed to tell the amount of px that should be visible.
   },
   medium: {
-    breakpoint: { max: 1025, min: 800 },
-    items: 1,
-    partialVisibilityGutter: 350, // this is needed to tell the amount of px that should be visible.
+    breakpoint: { max: 1023, min: 600 },
+    items: 3,
+    // this is needed to tell the amount of px that should be visible.
+  },
+  // me: {
+  //   breakpoint: { max: 1486, min: 1100 },
+  //   items: 2,
+  //   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
+  // },
+  medum: {
+    breakpoint: { max: 1486, min: 600 },
+    items: 2,
+    partialVisibilityGutter: 20, // this is needed to tell the amount of px that should be visible.
   },
 
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-    // partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-  },
+  // partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 599, min: 0 },
     items: 1,
     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
   },
 };
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -46,7 +53,7 @@ export default function HilfenTipsCard(props) {
   const classes = useStyles();
   const data = [
     {
-      header: "1. gold zukunft",
+      header: "1. Zum falschen Zeitpunkt kaufen",
       text: "Gold wird 23 Stunden am Tag auf der ganzen Welt gehandelt. Sie können also rund um die Uhr das glänzende Edelmetall erwerben. Wichtig dabei ist, nicht nur auf den Preis zu achten, sondern auch auf den Zeitpunkt. Beachten Sie die Öffnungs- und Arbeitszeiten der Händler. Bestellen Sie außerhalb dieser Zeiten besteht immer ein Kursrisikio, da keine Absicherung vorliegt. Es könnte Ihnen bei einigen Händlern der unbekannte Preis vom nächsten Tag berechnet werden. Andere Händler agieren anders…",
     },
     {
@@ -84,13 +91,18 @@ export default function HilfenTipsCard(props) {
                 height: "100%",
               }}
             >
-              <CardHeader
-                style={{ fontSize: "40px" }}
+              {/* <CardHeader
+                style={{ fontSize: "30px", fontFamily: "TGL0-1451Engschrift" }}
                 subheader={` ${elem.header}`}
-              />
-              <CardContent
-                style={{ color: "#a4a4a4" }}
-              >{` ${elem.text}`}</CardContent>
+              /> */}
+              <CardContent>
+                <Typography gutterBottom variant="h4">
+                  {` ${elem.header}`}
+                </Typography>
+                <Typography gutterBottom variant="body1">
+                  {` ${elem.text}`}
+                </Typography>
+              </CardContent>
             </Card>
           </Box>
         </Grid>

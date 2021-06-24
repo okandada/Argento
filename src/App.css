@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   font-family: Barlow;
-  color: white;
+  color: #ffffff;
 }
 
 /* Main body */
@@ -25,7 +25,7 @@ body {
   background-color: transparent;
 }
 
-h1 {
+/* h1 {
   font-size: 5.3125em;
 }
 h2 {
@@ -33,29 +33,29 @@ h2 {
 }
 p {
   font-size: 1em;
-}
+} */
 
-h6 {
-  /* color: darkgoldenrod;  */
-
+/* h6 { */
+/* color: darkgoldenrod;  */
+/* font-size: 1.3em;
   margin: 0px;
-}
-h3 {
-  /* color: darkgoldenrod;  */
-  font-size: 40px;
+} */
+/* h3 { */
+/* color: darkgoldenrod;  */
+/* font-size: 40px;
   color: #ecbd46;
-  font-family: "TGL0-1451Engschrift";
-}
-h4 {
+  font-family: TGL0-1451Engschrift;
+} */
+/* h4 {
   font-size: 1.5em;
   color: #ecbd46;
-}
+} */
 
 /* */
 
 /* Button css*/
 
-.MuiButton-root.MuiButton-root {
+/* .MuiButton-root.MuiButton-root {
   font-weight: 500;
   font-stretch: semi-condensed;
   font-style: normal;
@@ -63,20 +63,31 @@ h4 {
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
-}
-.MuiTypography-body2.MuiTypography-body2 {
+} */
+/* .MuiTypography-body2.MuiTypography-body2 {
   color: "#a4a4a4";
-}
+} */
 /* footer+/ css*/
-.makeStyles-footer-8.makeStyles-footer-8 {
+/* .makeStyles-footer-8.makeStyles-footer-8 {
   border-top: 1px solid #ffffff;
-}
+} */
 
 /* used for the height of text field for message in contact us page */
 /* .MuiOutlinedInput-root.MuiOutlinedInput-root {
   height: 262px;
 } */
 
+/* background image sytles */
+.img-container {
+  position: relative;
+  text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
 .MuiTypography-colorTextSecondary.MuiTypography-colorTextSecondary {
   color: #ffffff;
 }
@@ -92,17 +103,23 @@ h4 {
   width: 14%;
   margin-top: -40px;
 }
+.bottom-yellow-line-margin {
+  margin-top: -15px;
+}
 .image {
   max-height: 350px;
+}
+.responsive {
+  width: 34%;
+  /* max-width: 167px; */
+  height: auto;
 }
 
 /* media querry*/
 .textHeaderColor {
   color: rgb 236 189 70;
 }
-/* .textColor {
-  color: white;
-} */
+
 @media (max-width: 1366px) {
   .desktop,
   .mobile,
@@ -112,10 +129,10 @@ h4 {
   .IpadPro {
     display: block;
   }
-  p {
+  /* p {
     font-size: 1.5em;
     font-family: Barlow;
-  }
+  } */
 }
 @media (max-width: 1024px) {
   .desktop,
@@ -126,22 +143,22 @@ h4 {
   .IpadQuer {
     display: block;
   }
-  p {
+  /* p {
     font-size: 1.5em;
     font-family: Barlow;
-  }
+  } */
 }
-@media (max-width: 375px) {
+@media (max-width: 497px) {
   .desktop,
   .IpadPro,
   .IpadQuer {
     display: none;
-    font-size: 2px;
+    /* font-size: 2px; */
   }
   .mobile {
     display: block;
   }
-  h1 {
+  /* h1 {
     font-size: 2.5em;
   }
   h2 {
@@ -150,5 +167,5 @@ h4 {
   p {
     font-size: 1.5em;
     font-family: Barlow;
-  }
+  } */
 }

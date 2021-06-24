@@ -9,6 +9,7 @@ import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import { BrowserRouter as Link } from "react-router-dom";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+import "./footer.css";
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -39,7 +40,8 @@ function FooterMobile() {
     <div>
       <Link to="/home">
         <img
-          style={{ width: "225px", height: "51.3px", marginTop: "180px" }}
+          className="logoSize"
+          style={{ width: "225px", height: "51.3px" }}
           src={logo}
           alt=""
         />
