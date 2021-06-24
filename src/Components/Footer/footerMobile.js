@@ -65,7 +65,7 @@ function FooterMobile() {
           >
             {/* <ListItemIcon></ListItemIcon> */}
             <ListItemText
-              style={{ fontSize: "19px" }}
+              style={{ colore: "white" }}
               primary="Häufige Fragen"
             />
             {haufigenOpen ? <ExpandLess /> : <ExpandMore />}
@@ -90,7 +90,6 @@ function FooterMobile() {
                 className={classes.nested}
                 style={{ borderBottom: "1px solid" }}
               >
-                {/* <ListItemIcon></ListItemIcon> */}
                 <ListItemText primary="Zahlungsweise" />
               </ListItem>
               <ListItem
@@ -98,7 +97,6 @@ function FooterMobile() {
                 className={classes.nested}
                 style={{ borderBottom: "1px solid" }}
               >
-                {/* <ListItemIcon></ListItemIcon> */}
                 <ListItemText primary="Versand" />
               </ListItem>
               <ListItem
@@ -106,7 +104,6 @@ function FooterMobile() {
                 className={classes.nested}
                 style={{ borderBottom: "1px solid" }}
               >
-                {/* <ListItemIcon></ListItemIcon> */}
                 <ListItemText primary="Sicherheit" />
               </ListItem>
               <ListItem button className={classes.nested}>
@@ -156,17 +153,17 @@ function FooterMobile() {
                   button
                   className={classes.nested}
                   component="a"
-                  href="/home"
+                  href="/impressum"
                   style={{ borderBottom: "1px solid" }}
                 >
                   <ListItemText primary="Impressum" />
                 </ListItem>
                 <ListItem
                   button
+                  href="/datenSchutz"
                   className={classes.nested}
                   style={{ borderBottom: "1px solid" }}
                 >
-                  {/* <ListItemIcon></ListItemIcon> */}
                   <ListItemText primary="Datenschutz" />
                 </ListItem>
                 <ListItem button className={classes.nested}>

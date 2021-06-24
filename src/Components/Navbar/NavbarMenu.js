@@ -51,12 +51,12 @@ export default function NavbarMenu() {
             <Button component={Link} to="/contact">
               <Typography variant="h4">Kontakt</Typography>
             </Button>
-            {/* <Button component={Link} to="/impressum">
+            <Button component={Link} to="/impressum">
               Impressum
             </Button>
             <Button component={Link} to="/datenSchutz">
               Daten Schutz
-            </Button> */}
+            </Button>
             <Button>
               {" "}
               <img src={ShoppingCart_icon} alt="/about" to="/about" />

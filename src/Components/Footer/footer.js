@@ -51,20 +51,33 @@ const footers = [
   {
     title: "Häufige Fragen",
     description: [
-      "Bestellprozess",
-      "Zahlungsweise",
-      "Versand",
-      "Sicherheit",
-      "Umtausch & Reklamation",
+      { name: "Bestellprozess", url: "http://localhost:3000/datenSchutz" },
+      { name: "Zahlungsweise", url: "http://localhost:3000/impressum" },
+      { name: "Versand", url: "http://localhost:3000/impressum" },
+      { name: "Sicherheit", url: "http://localhost:3000/impressum" },
+      {
+        name: "Umtausch & Reklamation",
+        url: "http://localhost:3000/impressum",
+      },
     ],
   },
   {
     title: "Über uns",
-    description: [" Kontakt", "Impressum", "Datenschutz", "AGB"],
+    description: [
+      { name: " Kontakt", url: "http://localhost:3000/datenSchutz" },
+      { name: "Impressum", url: "http://localhost:3000/impressum" },
+      { name: "Datenschutz", url: "http://localhost:3000/datenSchutz" },
+      { name: "AGB", url: "http://localhost:3000/impressum" },
+    ],
   },
   {
     title: "Top Themen",
-    description: ["Tips", "Sparplan", "Newsletter", "Partner"],
+    description: [
+      { name: " Tips", url: "http://localhost:3000/datenSchutz" },
+      { name: "Sparplan", url: "http://localhost:3000/impressum" },
+      { name: "Newsletter", url: "http://localhost:3000/impressum" },
+      { name: "Partner", url: "http://localhost:3000/impressum" },
+    ],
   },
   {
     title: "Social Media",
@@ -110,8 +123,12 @@ export default function Pricing() {
                 <ul style={{ lineHeight: "28px" }}>
                   {footer.description.map((item) => (
                     <li key={item}>
-                      <Link href="#" variant="body1" color="textSecondary">
-                        {item}
+                      <Link
+                        href={item.url}
+                        variant="body1"
+                        color="textSecondary"
+                      >
+                        {item.name}
                       </Link>
                     </li>
                   ))}
