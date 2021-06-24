@@ -6,3 +6,10 @@
     display: none !important;
   }
 }
+.extraTextHideMobileView {
+}
+@media (max-width: 500px) {
+  .extraTextHideMobileView {
+    display: none !important;
+  }
+}

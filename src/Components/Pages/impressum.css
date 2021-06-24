@@ -1,0 +1,22 @@
+.headerStyle {
+  color: #ecbd46 !important;
+  font-family: TGL0-1451Engschrift !important;
+  font-size: 2.3rem !important;
+}
+.text-Styling {
+  color: #ffffff !important;
+  font-family: Barlow !important;
+  font-size: 1.25rem !important;
+}
+@media (max-width: 575px) {
+  .headerStyle {
+    color: #ecbd46 !important;
+    font-family: TGL0-1451Engschrift !important;
+    font-size: 1.85rem !important;
+  }
+  .text-Styling {
+    color: #ffffff !important;
+    font-family: Barlow !important;
+    font-size: 1rem !important;
+  }
+}

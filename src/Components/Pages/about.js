@@ -58,12 +58,12 @@ export const About = () => {
         </p>
       </div>
 
-      <AboutCarddiv style={{ marginTop: "70px" }}>
+      <AboutCarddiv style={{ marginTop: "0px" }}>
         <Container className="container">
           <img src={UnserneTeam2} height="100%" width="100%" alt="" />
         </Container>
 
-        <Container className="container mobileview">
+        <Container className="container mobileview extraTextHideMobileView">
           <Heading
             size="h2"
             padding="0px"
@@ -99,7 +99,7 @@ const AboutCarddiv = styled.div`
   column-gap: 20px;
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 497px) {
     display: block};
   .container {
     overflow: hidden;

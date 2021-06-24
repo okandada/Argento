@@ -1,13 +1,22 @@
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import React from "react";
 import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
+import "./datenSchutz.css";
 
 export const DatenSchutz = () => {
   return (
     <div>
       <BgImageComponent bgImage={cartBgImage} />
-      <h3>Zweck und Rechtsgrundlage der Datenverarbeitung</h3>
-      <p style={{ wordBreak: "break-word" }}>
+      <h3
+        className="headerText"
+        style={{ color: "#ecbd46", fontSize: "1.7rem" }}
+      >
+        Zweck und Rechtsgrundlage der Datenverarbeitung
+      </h3>
+      <p
+        className="paraText"
+        style={{ wordBreak: "break-word", fontSize: "1.5rem" }}
+      >
         Wir speichern Ihre Daten nur zur Erfüllung Ihrer Anfragen, Erfüllung und
         Abwicklung der Verträge und zu eigenen Werbezwecken. Die Verarbeitung
         erfolgt auf Basis der aktuellen Datenschutzgesetze. Wenn Sie eine
@@ -20,8 +29,17 @@ export const DatenSchutz = () => {
         des Vertrages sowie zu eigenen Werbezwecken. Eine Weitergabe an sonstige
         Dritte erfolgt nicht.
       </p>
-      <p style={{ wordBreak: "break-word" }}>
-        <h3>Webanalyse mit Google Analytics</h3>
+
+      <h3
+        className="headerText"
+        style={{ color: "#ecbd46", fontSize: "1.7rem" }}
+      >
+        Webanalyse mit Google Analytics
+      </h3>
+      <p
+        className="paraText"
+        style={{ wordBreak: "break-word", fontSize: "1.5rem" }}
+      >
         Diese Website benutzt Google Analytics, einen Webanalysedienst der
         Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“,
         Textdateien, die auf Ihrem Computer gespeichert werden und die eine
@@ -57,8 +75,17 @@ export const DatenSchutz = () => {
         Code „gat._anonymizeIp();“ erweitert wurde, um eine anonymisierte
         Erfassung von IP-Adressen (sog. IP-Masking) zu gewährleisten.
       </p>
-      <p style={{ wordBreak: "break-word" }}>
-        <h3>Verwendung von Cookies</h3>
+
+      <h3
+        className="headerText"
+        style={{ color: "#ecbd46", fontSize: "1.7rem" }}
+      >
+        Verwendung von Cookies
+      </h3>
+      <p
+        className="paraText"
+        style={{ wordBreak: "break-word", fontSize: "1.5rem" }}
+      >
         Verwendung von Cookies Auf unserer Website verwenden wir
         Session-Cookies, um Ihnen die Nutzung unserer Webseiten zu erleichtern.
         Dabei handelt es sich um kleine Textdateien, welche für die Dauer Ihres
