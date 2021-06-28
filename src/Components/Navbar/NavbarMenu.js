@@ -4,7 +4,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
 import "../../App.css";
 import "../Footer/footer.css";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
@@ -12,7 +11,7 @@ import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 import ShoppingCart_icon from "../../Images/ÜberUns/Desktop/SVG/ShoppingCart_icon.svg";
 // import Paper from 'material-ui/Paper';
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,12 +50,7 @@ export default function NavbarMenu() {
             <Button component={Link} to="/contact">
               <Typography variant="h4">Kontakt</Typography>
             </Button>
-            <Button component={Link} to="/impressum">
-              Impressum
-            </Button>
-            <Button component={Link} to="/datenSchutz">
-              Daten Schutz
-            </Button>
+
             <Button>
               {" "}
               <img src={ShoppingCart_icon} alt="/about" to="/about" />

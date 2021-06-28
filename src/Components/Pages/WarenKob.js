@@ -1,6 +1,6 @@
 import React from "react";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
+
 // import data from "../Kart/ProductData";
 
 function WarenKorb() {
@@ -8,7 +8,7 @@ function WarenKorb() {
   return (
     <div>
       <div>
-        <BgImageComponent bgImage={cartBgImage} />
+        <BgImageComponent />
       </div>
     </div>
   );

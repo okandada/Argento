@@ -1,12 +1,11 @@
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import React from "react";
-import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
 import "./datenSchutz.css";
 
 export const DatenSchutz = () => {
   return (
     <div>
-      <BgImageComponent bgImage={cartBgImage} />
+      <BgImageComponent />
       <h3
         className="headerText"
         style={{ color: "#ecbd46", fontSize: "1.7rem" }}

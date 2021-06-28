@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Card, CardHeader } from "@material-ui/core/";
+import { Grid, Card } from "@material-ui/core/";
 import CardContent from "@material-ui/core/CardContent";
 import Box from "@material-ui/core/Box";
 import Carousel from "react-multi-carousel";
@@ -91,12 +91,12 @@ export default function HilfenTipsCard(props) {
                 height: "100%",
               }}
             >
-              {/* <CardHeader
-                style={{ fontSize: "30px", fontFamily: "TGL0-1451Engschrift" }}
-                subheader={` ${elem.header}`}
-              /> */}
               <CardContent>
-                <Typography gutterBottom variant="h4">
+                <Typography
+                  gutterBottom
+                  variant="h4"
+                  style={{ fontFamily: "TGL0-1451Engschrift;" }}
+                >
                   {` ${elem.header}`}
                 </Typography>
                 <Typography gutterBottom variant="body1">

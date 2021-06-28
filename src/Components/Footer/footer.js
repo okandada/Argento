@@ -15,16 +15,16 @@ import "./footer.css";
 function Footer() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
+      {" © "}
+      {new Date().getFullYear()}
       <Link
         color="inherit"
         href="https://material-ui.com/"
-        style={{ color: "#ecbd46" }}
+        style={{ color: "#ecbd46", marginLeft: "2px" }}
       >
         PM Argento Aurum
       </Link>
-      {new Date().getFullYear()}
-      {"."}
+      {"| All Rights Reserved "}
     </Typography>
   );
 }

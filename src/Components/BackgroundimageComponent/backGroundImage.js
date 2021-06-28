@@ -3,6 +3,7 @@ import "../../App.css";
 import { Component } from "react";
 import Typography from "@material-ui/core/Typography";
 import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
+import BackgroundImageDesktop from "../../Images/Home/Desktop/Fotos/BackgroundImageDesktop.jpg";
 export class BgImageComponent extends Component {
   constructor(props) {
     super();
@@ -10,10 +11,11 @@ export class BgImageComponent extends Component {
 
   render() {
     return (
-      <div class="img-container">
+      <div className="img-container">
         <img
-          src={this.props.bgImage.DeskTopImage}
+          src={BackgroundImageDesktop}
           width="100%"
+          height="100%"
           alt=""
           text="unserne leider schaft"
           style={{ text: "unserne leider schaft" }}
@@ -29,32 +31,6 @@ export class BgImageComponent extends Component {
             </Typography>
           </div>
         </div>
-
-        {/* <img
-          src={this.props.bgImage.IpadImage}
-          width="100%"
-          className="IpadPro"
-          alt=""
-        />
-        <img
-          src={this.props.bgImage.IpadQuerImage}
-          width="100%"
-          className="IpadQuer"
-          alt=""
-        />
-        <img
-          src={this.props.bgImage.MobileImage}
-          width="100%"
-          className="mobile"
-          alt=""
-        /> */}
-        {/* images for the unser shop */}
-        {/* <img
-          src={this.props.UnserShopImages.DeskTopImagekasseShop}
-          width="100%"
-          className="mobile"
-          alt=""
-        /> */}
       </div>
     );
   }

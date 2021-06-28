@@ -17,7 +17,6 @@ import Test from "./Components/Pages/test";
 import FooterMobile from "./Components/Footer/footerMobile";
 import FooterDesktop from "../src/Components/Footer/footer";
 import test2 from "./Components/Pages/test2";
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 function App() {
   // let theme = createMuiTheme();

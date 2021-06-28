@@ -86,7 +86,7 @@ export default function CardGrid(props) {
       className={classes.gridContainer}
       justify="center"
     >
-      {rows.slice(0, 5).map((row) => row)}
+      {rows.map((row) => row)}
     </Carousel>
   );
 }

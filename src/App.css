@@ -3,8 +3,6 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  font-family: Barlow;
-  color: #ffffff;
 }
 
 /* Main body */
@@ -17,6 +15,9 @@ body {
   background-size: cover;
 }
 
+p {
+  color: #ffffff;
+}
 .bodyComponentLayout {
   margin-inline: 5.5%;
 }
@@ -25,66 +26,15 @@ body {
   background-color: transparent;
 }
 
-/* h1 {
-  font-size: 5.3125em;
-}
-h2 {
-  font-size: 3.3125em;
-}
-p {
-  font-size: 1em;
-} */
-
-/* h6 { */
-/* color: darkgoldenrod;  */
-/* font-size: 1.3em;
-  margin: 0px;
-} */
-/* h3 { */
-/* color: darkgoldenrod;  */
-/* font-size: 40px;
-  color: #ecbd46;
-  font-family: TGL0-1451Engschrift;
-} */
-/* h4 {
-  font-size: 1.5em;
-  color: #ecbd46;
-} */
-
-/* */
-
-/* Button css*/
-
-/* .MuiButton-root.MuiButton-root {
-  font-weight: 500;
-  font-stretch: semi-condensed;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
-} */
-/* .MuiTypography-body2.MuiTypography-body2 {
-  color: "#a4a4a4";
-} */
-/* footer+/ css*/
-/* .makeStyles-footer-8.makeStyles-footer-8 {
-  border-top: 1px solid #ffffff;
-} */
-
-/* used for the height of text field for message in contact us page */
-/* .MuiOutlinedInput-root.MuiOutlinedInput-root {
-  height: 262px;
-} */
-
 /* background image sytles */
 .img-container {
   position: relative;
   text-align: center;
 }
+
 .centered {
   position: absolute;
-  top: 30%;
+  top: 22%;
   left: 25%;
   transform: translate(-50%, -50%);
 }
@@ -158,14 +108,7 @@ p {
   .mobile {
     display: block;
   }
-  /* h1 {
-    font-size: 2.5em;
+  .img-container {
+    height: 600px;
   }
-  h2 {
-    font-size: 2.25em;
-  }
-  p {
-    font-size: 1.5em;
-    font-family: Barlow;
-  } */
 }

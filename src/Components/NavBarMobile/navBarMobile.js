@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MobileMenu from "../../Images/ÜberUns/Smartphone/SVG/MobileMenu.svg";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 export default function NavBarMobileMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -48,12 +48,6 @@ export default function NavBarMobileMenu() {
         </MenuItem>
         <MenuItem component={Link} to="/about" onClick={handleClose}>
           About us
-        </MenuItem>
-        <MenuItem component={Link} to="/impressum" onClick={handleClose}>
-          Impressum
-        </MenuItem>
-        <MenuItem component={Link} to="/datenSchutz" onClick={handleClose}>
-          Daten Schutz
         </MenuItem>
       </Menu>
     </div>

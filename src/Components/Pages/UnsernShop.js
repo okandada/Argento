@@ -1,22 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
 import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
 import "./UnsernShop.css";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
-import { Container, makeStyles } from "@material-ui/core";
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
 const heading = "1 Unze Gold ";
-const text = "Feinheit: 999,9/1000 Feingold";
-const text1 = "Herkunftsland: Schweiz / Deutschland";
-const digitHeading = "1.560,41 EUR";
 
-const useStyles = makeStyles({});
 const defaultProps = {
   // m: 2,
   borderColor: "#ecbd46",
@@ -27,7 +19,7 @@ function UnsernShop() {
   return (
     <div>
       <div>
-        <BgImageComponent bgImage={cartBgImage} />
+        <BgImageComponent />
       </div>
 
       <AboutCarddiv style={{ marginTop: "70px" }}>

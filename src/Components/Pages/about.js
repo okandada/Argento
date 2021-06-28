@@ -3,19 +3,16 @@ import styled from "styled-components";
 import ImageGrid from "../ImageGrid";
 // import UnserneTeam1 from "../../Images/ÜberUns/Desktop/Fotos/UnserneTeam1.png";
 import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
-import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
 import UnserneTeam2 from "../../Images/ÜberUns/Desktop/Fotos/UnserneTeam2.png";
 import { Container } from "@material-ui/core";
 import "../../App.css";
 import "./aboutUs.css";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import { BgImage } from "../../Components/ConditionalRendering/Rendering";
-import Title from "../Title/title";
 import { Heading } from "../Pages/heading";
 export const About = () => {
   return (
     <div>
-      <BgImageComponent bgImage={BgImage} />
+      <BgImageComponent />
       <AboutCarddiv>
         <Container className="container">
           <Heading size="h2" padding="0px" Text=" Unser Team"></Heading>

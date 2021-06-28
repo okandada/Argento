@@ -38,8 +38,10 @@
 .price-field-subtitle-left {
   float: left;
   padding-top: 6px;
+  font-family: Barlow;
 }
 .price-field-subtitle-right {
   float: right;
   padding-top: 6px;
+  font-family: Barlow;
 }

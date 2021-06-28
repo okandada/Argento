@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Collapse from "@material-ui/core/Collapse";
 import ExpandLess from "@material-ui/icons/ExpandLess";
@@ -52,18 +53,18 @@ function FooterMobile() {
           component="nav"
           aria-labelledby="nested-list-subheader"
           subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-              Nested List Items
-            </ListSubheader>
+            <ListSubheader
+              component="div"
+              id="nested-list-subheader"
+            ></ListSubheader>
           }
           className={classes.root}
         >
           <ListItem
             button
             onClick={handleClickHaufigeFragen}
-            style={{ borderBottom: "1px solid" }}
+            style={{ borderBottom: "1px solid #707070" }}
           >
-            {/* <ListItemIcon></ListItemIcon> */}
             <ListItemText
               style={{ colore: "white" }}
               primary="Häufige Fragen"
@@ -74,13 +75,13 @@ function FooterMobile() {
             in={haufigenOpen}
             timeout="auto"
             unmountOnExit
-            style={{ borderBottom: "1px solid" }}
+            style={{ borderBottom: "1px solid #707070" }}
           >
             <List component="div" disablePadding>
               <ListItem
                 button
                 className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
+                style={{ borderBottom: "1px solid #707070" }}
               >
                 {/* <ListItemIcon></ListItemIcon> */}
                 <ListItemText primary="Bestellprozess" />
@@ -88,21 +89,21 @@ function FooterMobile() {
               <ListItem
                 button
                 className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
+                style={{ borderBottom: "1px solid #707070" }}
               >
                 <ListItemText primary="Zahlungsweise" />
               </ListItem>
               <ListItem
                 button
                 className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
+                style={{ borderBottom: "1px solid #707070" }}
               >
                 <ListItemText primary="Versand" />
               </ListItem>
               <ListItem
                 button
                 className={classes.nested}
-                style={{ borderBottom: "1px solid" }}
+                style={{ borderBottom: "1px solid #707070" }}
               >
                 <ListItemText primary="Sicherheit" />
               </ListItem>
@@ -120,7 +121,7 @@ function FooterMobile() {
             aria-labelledby="nested-list-subheader"
             subheader={
               <ListSubheader component="div" id="nested-list-subheader">
-                Nested List Items
+                .
               </ListSubheader>
             }
             className={classes.root}
@@ -128,7 +129,7 @@ function FooterMobile() {
             <ListItem
               button
               onClick={handleClickUberUns}
-              style={{ borderBottom: "1px solid" }}
+              style={{ borderBottom: "1px solid #707070" }}
             >
               {/* <ListItemIcon></ListItemIcon> */}
               <ListItemText style={{ fontSize: "19px" }} primary="Über uns" />
@@ -138,13 +139,13 @@ function FooterMobile() {
               in={uberUnsOpen}
               timeout="auto"
               unmountOnExit
-              style={{ borderBottom: "1px solid" }}
+              style={{ borderBottom: "1px solid #707070" }}
             >
               <List component="div" disablePadding>
                 <ListItem
                   button
                   className={classes.nested}
-                  style={{ borderBottom: "1px solid" }}
+                  style={{ borderBottom: "1px solid #707070" }}
                 >
                   {/* <ListItemIcon></ListItemIcon> */}
                   <ListItemText primary="Kontakt" />
@@ -154,7 +155,7 @@ function FooterMobile() {
                   className={classes.nested}
                   component="a"
                   href="/impressum"
-                  style={{ borderBottom: "1px solid" }}
+                  style={{ borderBottom: "1px solid #707070" }}
                 >
                   <ListItemText primary="Impressum" />
                 </ListItem>
@@ -162,7 +163,7 @@ function FooterMobile() {
                   button
                   href="/datenSchutz"
                   className={classes.nested}
-                  style={{ borderBottom: "1px solid" }}
+                  style={{ borderBottom: "1px solid #707070" }}
                 >
                   <ListItemText primary="Datenschutz" />
                 </ListItem>
@@ -181,7 +182,7 @@ function FooterMobile() {
             aria-labelledby="nested-list-subheader"
             subheader={
               <ListSubheader component="div" id="nested-list-subheader">
-                Nested List Items
+                .
               </ListSubheader>
             }
             className={classes.root}
@@ -189,7 +190,7 @@ function FooterMobile() {
             <ListItem
               button
               onClick={handleClickTopThemen}
-              style={{ borderBottom: "1px solid" }}
+              style={{ borderBottom: "1px solid #707070" }}
             >
               {/* <ListItemIcon></ListItemIcon> */}
               <ListItemText style={{ fontSize: "19px" }} primary="Top Themen" />
@@ -199,13 +200,13 @@ function FooterMobile() {
               in={topmenOpen}
               timeout="auto"
               unmountOnExit
-              style={{ borderBottom: "1px solid" }}
+              style={{ borderBottom: "1px solid #707070" }}
             >
               <List component="div" disablePadding>
                 <ListItem
                   button
                   className={classes.nested}
-                  style={{ borderBottom: "1px solid" }}
+                  style={{ borderBottom: "1px solid #707070" }}
                 >
                   {/* <ListItemIcon></ListItemIcon> */}
                   <ListItemText primary="Tips" />
@@ -215,14 +216,14 @@ function FooterMobile() {
                   className={classes.nested}
                   component="a"
                   href="/home"
-                  style={{ borderBottom: "1px solid" }}
+                  style={{ borderBottom: "1px solid #707070" }}
                 >
                   <ListItemText primary="Sparplan" />
                 </ListItem>
                 <ListItem
                   button
                   className={classes.nested}
-                  style={{ borderBottom: "1px solid" }}
+                  style={{ borderBottom: "1px solid #707070" }}
                 >
                   {/* <ListItemIcon></ListItemIcon> */}
                   <ListItemText primary="Newsletter" />

@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
-import { cartBgImage } from "../ConditionalRendering/Rendering";
 import Typography from "@material-ui/core/Typography";
 import "./impressum.css";
 export default class ImpressumPage extends Component {
   render() {
     return (
       <div>
-        <BgImageComponent bgImage={cartBgImage} />
+        <BgImageComponent />
         <div>
           <Typography className="headerStyle">Argento Aurum</Typography>
           <Typography className="text-Styling">

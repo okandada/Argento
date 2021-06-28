@@ -5,7 +5,6 @@ import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg
 import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.jpg";
 import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
 import BuyGoldDesktop4 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop4.jpg";
-import YellowStroke from "../../Images/ÜberUns/Desktop/SVG/YellowStroke.svg";
 import NewsletterDesktop from "../../Images/Home/Desktop/Fotos/NewsletterDesktop.jpg";
 import GOldCourseDesktop from "../../Images/Home/Desktop/Fotos/GOldCourseDesktop.jpg";
 import HilfenTipsCard from "../../Components/Cards/hilfenTipsCard";
@@ -13,12 +12,11 @@ import "./home.css";
 import NewsLetter from "../Newsletter/NewsLetter";
 import AktueleAnkauf from "../AktuelleAnkaufkurse/AktueleAnkauf";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import { BgImage } from "../../Components/ConditionalRendering/Rendering";
 
 export const Home = () => {
   return (
     <div>
-      <BgImageComponent bgImage={BgImage} />
+      <BgImageComponent />
       <Heading size="h2" Text=" Gold & Silber Kaufen"></Heading>
 
       <CardGrid images={Images} />

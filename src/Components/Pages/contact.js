@@ -1,12 +1,9 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import { cartBgImage } from "../../Components/ConditionalRendering/Rendering";
 import { withStyles } from "@material-ui/core/styles";
 
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 // import { BrowserRouter as Link } from "react-router-dom";
 // import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 const ValidationTextField = withStyles({
@@ -34,33 +31,7 @@ const ValidationTextField = withStyles({
     },
   },
 })(TextField);
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "25ch",
-    },
-  },
-  input: {
-    "&::placeholder": {
-      fontStyle: "italic",
-      color: "orange",
-    },
-  },
-  color: {
-    color: "#ffffff",
-  },
-  TextField: {
-    border: "1px solid #ffffff",
-  },
-  InputBase: {
-    border: "1px solid #ffffff",
-  },
-  buttonstyle: {},
-}));
-export const ContactUs = (props) => {
-  const classes = useStyles();
+export const ContactUs = () => {
   const [checked, setChecked] = React.useState(true);
   const handleChange = (event) => {
     setChecked(event.target.checked);
@@ -68,7 +39,7 @@ export const ContactUs = (props) => {
   return (
     <div>
       <div>
-        <BgImageComponent bgImage={cartBgImage} />
+        <BgImageComponent />
       </div>
 
       <div>

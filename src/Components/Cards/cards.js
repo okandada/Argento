@@ -5,7 +5,6 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { Button } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
 import "./card.css";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,14 +13,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const TextTypography = withStyles({
-  root: {
-    color: "#a4a4a4",
-  },
-})(Typography);
 
 export default function MediaCard(props) {
-  // const [state, setState] = React.useState({});
   const classes = useStyles();
   const bull = "1 Unze Gold";
   const bull2 = "1.560,42 EUR";
@@ -50,9 +43,6 @@ export default function MediaCard(props) {
           fullWidth={true}
         >
           <Typography variant="button"> jetzt endecken</Typography>
-          {/* <span style={{ color: "#c28c02", fontWeight: "bolder" }}>
-            jetzt endecken
-          </span> */}
         </Button>
       </Card>
     </div>
