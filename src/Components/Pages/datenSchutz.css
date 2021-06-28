@@ -1,14 +1,8 @@
+/* @media (max-width: 500px) { */
 .headerText {
+  font-size: 1.25rem !important;
 }
 .paraText {
-}
-@media (max-width: 500px) {
-  .headerText {
-    font-size: 1.25rem !important;
-  }
-  .paraText {
-    font-size: 0.85rem !important;
-    height: 101px !important;
-    overflow: scroll !important;
-  }
+  font-size: 0.85rem !important;
+  /* height: 101px !important; */
 }
