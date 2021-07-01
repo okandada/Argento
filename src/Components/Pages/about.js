@@ -97,7 +97,7 @@ const AboutCarddiv = styled.div`
   column-gap: 20px;
 
 
-  @media (max-width: 497px) {
+  @media (max-width: 600px) {
     display: block};
   .container {
     overflow: hidden;

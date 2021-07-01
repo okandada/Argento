@@ -1,21 +1,21 @@
-import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
+import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
+import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
 import React from "react";
 import "./datenSchutz.css";
 
 export const DatenSchutz = () => {
   return (
     <div>
-      <BgImageComponent />
-      <h3
-        className="headerText"
-        style={{ color: "#ecbd46", fontSize: "1.7rem" }}
-      >
+      <BgImageComponent
+        image={BackgroundImage}
+        DashSize={"35%"}
+        HeadingSize={"h2"}
+        Heading="Datenschutz"
+      />
+      <h3 className="headerText">
         Zweck und Rechtsgrundlage der Datenverarbeitung
       </h3>
-      <p
-        className="paraText"
-        style={{ wordBreak: "break-word", fontSize: "1.5rem" }}
-      >
+      <p className="paraText">
         Wir speichern Ihre Daten nur zur Erfüllung Ihrer Anfragen, Erfüllung und
         Abwicklung der Verträge und zu eigenen Werbezwecken. Die Verarbeitung
         erfolgt auf Basis der aktuellen Datenschutzgesetze. Wenn Sie eine

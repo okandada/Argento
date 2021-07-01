@@ -21,14 +21,14 @@
     font-size: 0.93rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .mobileview {
     display: none !important;
   }
 }
 .extraTextHideMobileView {
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .extraTextHideMobileView {
     display: none !important;
   }
