@@ -7,10 +7,10 @@ export const DatenSchutz = () => {
   return (
     <div>
       <BgImageComponent
-        image={BackgroundImage}
         DashSize={"35%"}
         HeadingSize={"h2"}
         Heading="Datenschutz"
+        imageHeight={"220px"}
       />
       <h3 className="headerText">
         Zweck und Rechtsgrundlage der Datenverarbeitung

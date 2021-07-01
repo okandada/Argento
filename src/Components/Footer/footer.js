@@ -124,17 +124,19 @@ export default function Pricing() {
                   <span style={{ color: "#ecbd46" }}> {footer.title}</span>
                 </Typography>
                 <ul style={{ lineHeight: "28px" }}>
-                  {footer.description.map((item, x) => (
-                    <li key={x}>
-                      <Link
-                        href={item.url}
-                        variant="body1"
-                        color="textSecondary"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
+                  {footer.title === "Social Media"
+                    ? footer.description.map((item) => item)
+                    : footer.description.map((item, x) => (
+                        <li key={x}>
+                          <Link
+                            href={item.url}
+                            variant="body1"
+                            color="textSecondary"
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+                      ))}
                 </ul>
               </Grid>
             ))}

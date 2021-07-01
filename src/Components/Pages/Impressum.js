@@ -11,7 +11,7 @@ export default class ImpressumPage extends Component {
           DashSize={"35%"}
           HeadingSize={"h2"}
           Heading="Impressum"
-          imageHeight={"180px"}
+          imageHeight={"220px"}
         />
 
         <div>

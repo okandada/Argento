@@ -35,13 +35,18 @@ export const ContactUs = () => {
   };
   return (
     <div>
-      <BgImageComponent
+      {/* <BgImageComponent
         image={BackgroundImage}
         DashSize={"33%"}
         HeadingSize={"h2"}
         Heading="Kontakt"
+      /> */}
+      <BgImageComponent
+        DashSize={"33%"}
+        HeadingSize={"h2"}
+        Heading="Kontakt"
+        imageHeight={"220px"}
       />
-
       <div>
         <h2>Kontaktformular</h2>
         <div className="field3">
