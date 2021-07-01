@@ -47,6 +47,7 @@ const defaultProps = {
   borderColor: "#ecbd46",
   border: "3px solid",
   height: "375px",
+  marginLeft: "0px",
 };
 
 export default function HilfenTipsCard(props) {
@@ -99,7 +100,11 @@ export default function HilfenTipsCard(props) {
                 >
                   {` ${elem.header}`}
                 </Typography>
-                <Typography gutterBottom variant="body1">
+                <Typography
+                  gutterBottom
+                  style={{ color: "#a4a4a4" }}
+                  variant="body1"
+                >
                   {` ${elem.text}`}
                 </Typography>
               </CardContent>

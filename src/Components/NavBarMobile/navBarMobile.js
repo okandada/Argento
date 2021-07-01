@@ -2,9 +2,10 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import MobileMenu from "../../Images/ÜberUns/Smartphone/SVG/MobileMenu.svg";
+import MobileMenu from "../../Images/Home/SVG/MobileMenu.svg";
+import logo from "../../Images/Home/Desktop/Fotos/logo.png";
 import { Link } from "react-router-dom";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+
 export default function NavBarMobileMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 

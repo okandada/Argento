@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
+import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
 import Typography from "@material-ui/core/Typography";
 import "./impressum.css";
 export default class ImpressumPage extends Component {
   render() {
     return (
       <div>
-        <BgImageComponent />
+        <BgImageComponent
+          image={BackgroundImage}
+          DashSize={"35%"}
+          HeadingSize={"h2"}
+          Heading="Impressum"
+        />
         <div>
           <Typography className="headerStyle">Argento Aurum</Typography>
           <Typography className="text-Styling">

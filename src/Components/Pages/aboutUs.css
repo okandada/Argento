@@ -1,5 +1,25 @@
+.pFont {
+  font-family: Barlow;
+  font-size: 1.56rem;
+}
+
 .mobileview {
   display: block;
+}
+@media (max-width: 1100px) {
+  .pFont {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 800px) {
+  .pFont {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 490px) {
+  .pFont {
+    font-size: 0.93rem;
+  }
 }
 @media (max-width: 375px) {
   .mobileview {

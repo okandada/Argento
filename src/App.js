@@ -12,15 +12,12 @@ import { UnsernShop2 } from "./Components/Pages/unsernShop2";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 import ImpressumPage from "./Components/Pages/impressum";
-import WarenKorb from "./Components/Pages/WarenKob";
 import Test from "./Components/Pages/test";
 import FooterMobile from "./Components/Footer/footerMobile";
 import FooterDesktop from "../src/Components/Footer/footer";
 import test2 from "./Components/Pages/test2";
 
 function App() {
-  // let theme = createMuiTheme();
-  // theme = responsiveFontSizes(theme);
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -49,19 +46,19 @@ function App() {
             <Route path="/unsernShop2" component={UnsernShop2} />
             <Route path="/test" component={Test} />
             <Route path="/impressum" component={ImpressumPage} />
-            <Route path="/WarenKob" component={WarenKorb} />
             <Route path="/test" component={Test} />
             <Route path="/test2" component={test2} />
           </Switch>
-        </div>
-        <div className=" IpadPro  IpadQuer">
-          <FooterDesktop />
-        </div>
-        <div className="desktop">
-          <FooterDesktop />
-        </div>
-        <div className="mobile">
-          <FooterMobile />
+
+          <div className=" IpadPro  IpadQuer">
+            <FooterDesktop />
+          </div>
+          <div className="desktop">
+            <FooterDesktop />
+          </div>
+          <div className="mobile">
+            <FooterMobile />
+          </div>
         </div>
       </Router>
     </ThemeProvider>

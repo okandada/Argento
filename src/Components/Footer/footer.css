@@ -1,14 +1,26 @@
+.logoMargin {
+  margin: 43px 80px !important;
+}
 .footerMobHeading {
   font-size: "20px !important";
   font-family: " TGL0-1451Engschrift !important";
   color: " #ffffff !important";
 }
-.MuiTypography-body1.MuiTypography-body1 {
-  /* color: red; */
+.f-logo {
+  width: 45%;
+  margin-top: 10%;
+  object-fit: cover;
 }
-@media (max-width: 640px) {
-  .logo-m-Size {
-    width: 120px;
-    height: 100%;
-  }
+.logoSize {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+  /* .logoSize {
+    width: 225px !important;
+    height: 100% !important;
+    margin-top: 60px !important;
+    margin-bottom: 50px !important;
+    margin-left: 29px !important;
+  } */
 }

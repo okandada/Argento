@@ -35,7 +35,7 @@ theme.typography.body1 = {
   fontFamily: "Barlow",
 };
 theme.typography.h1 = {
-  fontSize: "7vw",
+  fontSize: "6vw",
   color: "#ffffff",
   fontFamily: "TGL0-1451Engschrift ",
 };
@@ -58,14 +58,21 @@ theme.typography.h3 = {
 };
 // heading used for card heading and other same sizes
 theme.typography.h4 = {
-  // fontSize: "1.6vw",
   fontSize: "1.5rem",
-  // color: "#ecbd46",
   fontWeight: "Normal",
   color: "#ffffff",
   fontFamily: "TGL0-1451Engschrift ",
-  "@media (max-width:660px)": {
+  "@media (max-width:850px)": {
+    fontSize: "1.3rem",
+  },
+  "@media (max-width:700px)": {
     fontSize: "1.2rem",
+  },
+  "@media (max-width:630px)": {
+    fontSize: "1.1rem",
+  },
+  "@media (max-width:400px)": {
+    fontSize: "1rem",
   },
 };
 theme.typography.h5 = {
@@ -75,6 +82,15 @@ theme.typography.h5 = {
 theme.typography.h6 = {
   fontSize: "1.627rem",
   color: "#ecbd46",
+};
+
+theme.typography.body2 = {
+  // fontSize: "2vw",
+  fontSize: "1.8rem",
+  color: "#ecbd46",
+  "@media (max-width:600px)": {
+    fontSize: "1.4rem",
+  },
 };
 theme.typography.subtitle1 = {
   // fontSize: "0.82vw",
@@ -86,15 +102,6 @@ theme.typography.subtitle1 = {
     fontSize: "0.6rem",
   },
 };
-
-theme.typography.body2 = {
-  // fontSize: "2vw",
-  fontSize: "1.8rem",
-  color: "#ecbd46",
-  "@media (max-width:600px)": {
-    fontSize: "1.4rem",
-  },
-};
 theme.typography.subtitle2 = {
   fontSize: "2.75vw",
   fontFamily: "Barlow",
@@ -104,7 +111,7 @@ theme.typography.subtitle2 = {
 theme.typography.button = {
   fontSize: "1.25rem",
   color: "#ecbd46",
-  fontFamily: "Barlow",
+  fontFamily: "TGL0-1451Engschrift",
   "@media (max-width:660px)": {
     fontSize: "16px",
   },

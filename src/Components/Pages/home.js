@@ -16,7 +16,11 @@ import BgImageComponent from "../../Components/BackgroundimageComponent/backGrou
 export const Home = () => {
   return (
     <div>
-      <BgImageComponent />
+      <BgImageComponent
+        SubHeading={"Die beste Währung in Krisenzeiten"}
+        DashSize={"35%"}
+        Heading="Gold & Silber"
+      />
       <Heading size="h2" Text=" Gold & Silber Kaufen"></Heading>
 
       <CardGrid images={Images} />

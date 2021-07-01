@@ -15,7 +15,8 @@ const responsive = {
   },
   medium: {
     breakpoint: { max: 1023, min: 600 },
-    items: 3,
+    items: 2,
+    partialVisibilityGutter: 30,
     // this is needed to tell the amount of px that should be visible.
   },
   // me: {
@@ -32,7 +33,7 @@ const responsive = {
   // partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
 
   mobile: {
-    breakpoint: { max: 599, min: 0 },
+    breakpoint: { max: 600, min: 0 },
     items: 1,
     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
   },
@@ -42,9 +43,10 @@ const useStyles = makeStyles({
 });
 
 const defaultProps = {
-  m: 2,
+  m: 1,
   borderColor: "#ecbd46",
   border: "3px solid",
+  marginLeft: "0px",
 };
 
 export default function CardGrid(props) {

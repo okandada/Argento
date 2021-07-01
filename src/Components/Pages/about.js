@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ImageGrid from "../ImageGrid";
 // import UnserneTeam1 from "../../Images/ÜberUns/Desktop/Fotos/UnserneTeam1.png";
 import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
-import UnserneTeam2 from "../../Images/ÜberUns/Desktop/Fotos/UnserneTeam2.png";
+import UnserneTeam2 from "../../Images/Home/Desktop/Fotos/UnserneTeam2.jpg";
 import { Container } from "@material-ui/core";
 import "../../App.css";
 import "./aboutUs.css";
@@ -12,12 +12,15 @@ import { Heading } from "../Pages/heading";
 export const About = () => {
   return (
     <div>
-      <BgImageComponent />
+      <BgImageComponent
+        DashSize={"35%"}
+        Heading="Unsere Leidenschaft"
+        SubHeading={"Das Team von Agento Aurum ist..."}
+      />
       <AboutCarddiv>
         <Container className="container">
           <Heading size="h2" padding="0px" Text=" Unser Team"></Heading>
-
-          <p>
+          <p className="pFont">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -40,7 +43,7 @@ export const About = () => {
         <Heading size="h2" padding="10px" Text=" Warum Argento Aurum"></Heading>
       </div>
       <div>
-        <p className="mobile">
+        <p className="mobile pFont">
           mobile Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
           diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
           erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
@@ -66,7 +69,7 @@ export const About = () => {
             padding="0px"
             Text=" Warum Argento Aurum"
           ></Heading>
-          <p>
+          <p className="pFont">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -81,13 +84,11 @@ export const About = () => {
           </p>
         </Container>
       </AboutCarddiv>
-      <Heading size="h2" Text=" Unserne Partner"></Heading>
-      <ImageGrid></ImageGrid>
+      <Heading size="h2" DashSize={"18%"} Text="Unserne Partner"></Heading>
+      <ImageGrid />
     </div>
   );
 };
-
-export default About;
 
 const AboutCarddiv = styled.div`
   width: 100%;
@@ -111,3 +112,5 @@ const AboutCarddiv = styled.div`
 
  
 `;
+
+export default About;

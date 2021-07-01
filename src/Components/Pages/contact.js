@@ -4,8 +4,6 @@ import Checkbox from "@material-ui/core/Checkbox";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { withStyles } from "@material-ui/core/styles";
 
-// import { BrowserRouter as Link } from "react-router-dom";
-// import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
 const ValidationTextField = withStyles({
   root: {
     "& input": {
@@ -94,22 +92,6 @@ export const ContactUs = () => {
         </div>
       </div>
       <div className="mutliLine-msg">
-        {/* <TextareaAutosize
-          aria-label="minimum height"
-          className="newsletter-textfield"
-          InputProps={{
-            classes: { input: classes.input },
-          }}
-          style={{
-            backgroundColor: "transparent",
-            border: "2px solid #ffffff",
-            color: "#ecbd46",
-            fontSize: "20px",
-          }}
-          rowsMin={8}
-          placeholder="Messages"
-        /> */}
-
         <ValidationTextField
           className="newsletter-textfield"
           InputLabelProps={{

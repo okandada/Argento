@@ -1,0 +1,18 @@
+.buttonPadding {
+  padding: 6px 8px !important;
+}
+@media (max-width: 850px) {
+  .buttonPadding {
+    padding: 3px 5px !important;
+  }
+}
+@media (max-width: 730px) {
+  .buttonPadding {
+    padding: 1px 1px !important;
+  }
+}
+@media (max-width: 630px) {
+  .buttonPadding {
+    padding: 2px 2px !important;
+  }
+}

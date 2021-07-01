@@ -5,16 +5,21 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import React from "react";
-import FbDesktop from "../../Images/ÜberUns/Desktop/SVG/FbDesktop.svg";
-import InstaDesktop from "../../Images/ÜberUns/Desktop/SVG/InstaDektop.svg";
-import LinkedlnDesktop from "../../Images/ÜberUns/Desktop/SVG/LinkedInDesktop.svg";
-import XingDesktop from "../../Images/ÜberUns/Desktop/SVG/XingDesktop.svg";
-import logo from "../../Images/ÜberUns/Desktop/Fotos/logo.png";
+import Facebook_Icon from "../../Images/Home/SVG/Facebook_Icon.svg";
+import Insta_Icon from "../../Images/Home/SVG/Insta_Icon.svg";
+import LinkedIn_Icon from "../../Images/Home/SVG/LinkedIn_Icon.svg";
+import Xing_Icon from "../../Images/Home/SVG/Xing_Icon.svg";
+import logo from "../../Images/Home/Desktop/Fotos/logo.png";
 import { NavLink } from "react-router-dom";
 import "./footer.css";
 function Footer() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography
+      variant="body2"
+      color="textSecondary"
+      align="center"
+      style={{ fontFamily: "Barlow" }}
+    >
       {" © "}
       {new Date().getFullYear()}
       <Link
@@ -84,16 +89,16 @@ const footers = [
     description: [
       <div display="flex">
         <span style={{ paddingInlineEnd: "7px" }}>
-          <img src={InstaDesktop} width="25px" alt=""></img>
+          <img src={Insta_Icon} width="25px" alt=""></img>
         </span>
         <span style={{ paddingInlineEnd: "8px" }}>
-          <img src={LinkedlnDesktop} width="25px" alt=""></img>
+          <img src={LinkedIn_Icon} width="25px" alt=""></img>
         </span>
         <span style={{ paddingInlineEnd: "10px" }}>
-          <img src={XingDesktop} width="25px" alt=""></img>
+          <img src={Xing_Icon} width="25px" alt=""></img>
         </span>
         <span>
-          <img src={FbDesktop} width="25%" alt="/about"></img>
+          <img src={Facebook_Icon} width="25%" alt="/about"></img>
         </span>
       </div>,
     ],
@@ -104,12 +109,10 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <div style={{ margin: "43px 80px" }}>
-      <div>
+    <div>
+      <div className="f-logo">
         <NavLink to="/home">
-          <div className="logoSize">
-            <img src={logo} alt="" />
-          </div>
+          <img src={logo} alt="" width="100%" height="100%" />
         </NavLink>
       </div>
       <React.Fragment>

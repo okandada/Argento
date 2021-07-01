@@ -10,7 +10,7 @@ body {
   /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
-  background-image: url(../src/Images/ÜberUns/Desktop//Fotos/textureImage.jpg);
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -34,8 +34,9 @@ p {
 
 .centered {
   position: absolute;
-  top: 22%;
-  left: 25%;
+  top: 35%;
+  padding-inline-start: 50vw;
+  min-width: 90vw;
   transform: translate(-50%, -50%);
 }
 .MuiTypography-colorTextSecondary.MuiTypography-colorTextSecondary {
@@ -98,7 +99,7 @@ p {
     font-family: Barlow;
   } */
 }
-@media (max-width: 497px) {
+@media (max-width: 600px) {
   .desktop,
   .IpadPro,
   .IpadQuer {
