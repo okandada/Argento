@@ -69,7 +69,11 @@ function FooterMobile() {
               style={{ colore: "white" }}
               primary="Häufige Fragen"
             />
-            {haufigenOpen ? <ExpandLess /> : <ExpandMore />}
+            {haufigenOpen ? (
+              <ExpandLess style={{ color: "white" }} />
+            ) : (
+              <ExpandMore style={{ color: "white" }} />
+            )}
           </ListItem>
           <Collapse
             in={haufigenOpen}

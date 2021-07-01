@@ -8,11 +8,12 @@ export default class ImpressumPage extends Component {
     return (
       <div>
         <BgImageComponent
-          image={BackgroundImage}
           DashSize={"35%"}
           HeadingSize={"h2"}
           Heading="Impressum"
+          imageHeight={"180px"}
         />
+
         <div>
           <Typography className="headerStyle">Argento Aurum</Typography>
           <Typography className="text-Styling">

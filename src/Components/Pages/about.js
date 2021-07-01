@@ -84,7 +84,7 @@ export const About = () => {
           </p>
         </Container>
       </AboutCarddiv>
-      <Heading size="h2" DashSize={"18%"} Text="Unserne Partner"></Heading>
+      <Heading size="h2" DashSize={"14%"} Text="Unserne Partner"></Heading>
       <ImageGrid />
     </div>
   );

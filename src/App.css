@@ -15,6 +15,10 @@ body {
   background-size: cover;
 }
 
+.MuiInputBase-root.MuiInputBase-root {
+  color: #ecbd46;
+}
+
 p {
   color: #ffffff;
 }

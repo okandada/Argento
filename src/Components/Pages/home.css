@@ -75,6 +75,8 @@ img {
   }
   .mutliLine-msg {
     width: 72.5%;
+
+    height: 640px;
   }
 }
 @media (max-width: 785px) {

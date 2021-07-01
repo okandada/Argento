@@ -11,7 +11,7 @@ export class BgImageComponent extends Component {
 
   render() {
     return (
-      <div className="img-container">
+      <div style={{ height: this.props.imageHeight }} className="img-container">
         <img
           src={this.props.image ? this.props.image : BackgroundImageDesktop}
           width="100%"
