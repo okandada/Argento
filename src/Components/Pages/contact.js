@@ -1,31 +1,17 @@
 import React from "react";
 import { TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
-import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
+// import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { withStyles } from "@material-ui/core/styles";
 import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
 import "./home.css";
+import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 
 const ValidationTextField = withStyles({
   root: {
     "& input": {
       color: "#ecbd46",
     },
-
-    // "& input:valid + fieldset": {
-    //   borderColor: "#ffffff",
-    //   // borderWidth: 2,
-    //   color: "#ffffff",
-    //   width: "100%",
-    // },
-
-    // "& input:invalid + fieldset": {},
-    // "& input:valid:focus + fieldset": {
-    //   padding: "4px !important",
-    // },
-    // "& input:hover": {
-    //   borderColor: "#ffffff !important",
-    // },
   },
 })(TextField);
 export const ContactUs = () => {
@@ -35,18 +21,13 @@ export const ContactUs = () => {
   };
   return (
     <div>
-      {/* <BgImageComponent
-        image={BackgroundImage}
-        DashSize={"33%"}
-        HeadingSize={"h2"}
-        Heading="Kontakt"
-      /> */}
-      <BgImageComponent
-        DashSize={"33%"}
-        HeadingSize={"h2"}
+      <BgImageComponent2
+        DashSize={"35%"}
+        HeadingSize={"h5"}
         Heading="Kontakt"
         imageHeight={"220px"}
       />
+
       <div>
         <h2>Kontaktformular</h2>
         <div className="field3">

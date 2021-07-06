@@ -11,7 +11,11 @@ import ExpandMore from "@material-ui/icons/ExpandMore";
 import { BrowserRouter as Link } from "react-router-dom";
 import logo from "../../Images/Home/Desktop/Fotos/logo.png";
 import "./footer.css";
-
+import Facebook_Icon2 from "../../Images/Home/SVG/Facebook_Icon2.svg";
+import Insta_Icon from "../../Images/Home/SVG/Insta_Icon.svg";
+import LinkedIn_Icon from "../../Images/Home/SVG/LinkedIn_Icon.svg";
+import Xing_Icon from "../../Images/Home/SVG/Xing_Icon.svg";
+import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
@@ -40,12 +44,12 @@ function FooterMobile() {
   return (
     <div>
       <Link to="/home">
-        <img
+        <div
           className="logoSize"
-          style={{ width: "225px", height: "51.3px" }}
-          src={logo}
-          alt=""
-        />
+          style={{ maxWidth: "225px", maxHeight: "51.3px" }}
+        >
+          <img style={{ width: "100%", height: "100%" }} src={logo} alt="" />
+        </div>
       </Link>
       <div style={{ paddingLeft: "35px", paddingRight: "45px" }}>
         <List
@@ -137,7 +141,11 @@ function FooterMobile() {
             >
               {/* <ListItemIcon></ListItemIcon> */}
               <ListItemText style={{ fontSize: "19px" }} primary="Über uns" />
-              {uberUnsOpen ? <ExpandLess /> : <ExpandMore />}
+              {uberUnsOpen ? (
+                <ExpandLess style={{ color: "white" }} />
+              ) : (
+                <ExpandMore style={{ color: "white" }} />
+              )}
             </ListItem>
             <Collapse
               in={uberUnsOpen}
@@ -148,10 +156,10 @@ function FooterMobile() {
               <List component="div" disablePadding>
                 <ListItem
                   button
+                  href="/contact"
                   className={classes.nested}
                   style={{ borderBottom: "1px solid #707070" }}
                 >
-                  {/* <ListItemIcon></ListItemIcon> */}
                   <ListItemText primary="Kontakt" />
                 </ListItem>
                 <ListItem
@@ -198,7 +206,11 @@ function FooterMobile() {
             >
               {/* <ListItemIcon></ListItemIcon> */}
               <ListItemText style={{ fontSize: "19px" }} primary="Top Themen" />
-              {topmenOpen ? <ExpandLess /> : <ExpandMore />}
+              {topmenOpen ? (
+                <ExpandLess style={{ color: "white" }} />
+              ) : (
+                <ExpandMore style={{ color: "white" }} />
+              )}
             </ListItem>
             <Collapse
               in={topmenOpen}
@@ -240,6 +252,49 @@ function FooterMobile() {
             </Collapse>
           </List>
         </div>
+      </div>
+      <div style={{ display: "flex", margin: "17px 0px 10px 100px" }}>
+        <div style={{ paddingInlineEnd: "8px" }}>
+          <img src={Insta_Icon} width="25px" alt=""></img>
+        </div>
+        <div style={{ paddingInlineEnd: "8px" }}>
+          <img src={LinkedIn_Icon} width="25px" alt=""></img>
+        </div>
+        <div style={{ paddingInlineEnd: "8px" }}>
+          <img src={Xing_Icon} width="25px" alt=""></img>
+        </div>
+        <div style={{ margin: "-10px" }}>
+          <img src={Facebook_Icon2} width="45px" alt="/about"></img>
+        </div>
+      </div>
+      <div>
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          align="center"
+          style={{
+            fontFamily: "Barlow",
+            display: "flex",
+            fontSize: "0.8rem",
+            marginLeft: "50px",
+          }}
+        >
+          {" © "}
+          {new Date().getFullYear()}
+          <Link
+            color="inherit"
+            href="https://material-ui.com/"
+            style={{ color: "#ecbd46", marginLeft: "2px" }}
+          >
+            <Typography
+              variant="body2"
+              style={{ color: "#ecbd46", fontSize: "0.8rem" }}
+            >
+              PM Argento Aurum
+            </Typography>
+          </Link>
+          {"| All Rights Reserved "}
+        </Typography>
       </div>
     </div>
   );

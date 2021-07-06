@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import React from "react";
-import Facebook_Icon from "../../Images/Home/SVG/Facebook_Icon.svg";
+import Facebook_Icon2 from "../../Images/Home/SVG/Facebook_Icon2.svg";
 import Insta_Icon from "../../Images/Home/SVG/Insta_Icon.svg";
 import LinkedIn_Icon from "../../Images/Home/SVG/LinkedIn_Icon.svg";
 import Xing_Icon from "../../Images/Home/SVG/Xing_Icon.svg";
@@ -69,7 +69,7 @@ const footers = [
   {
     title: "Über uns",
     description: [
-      { name: " Kontakt", url: "http://localhost:3000/datenSchutz" },
+      { name: " Kontakt", url: "http://localhost:3000/contact" },
       { name: "Impressum", url: "http://localhost:3000/impressum" },
       { name: "Datenschutz", url: "http://localhost:3000/datenSchutz" },
       { name: "AGB", url: "http://localhost:3000/impressum" },
@@ -87,19 +87,19 @@ const footers = [
   {
     title: "Social Media",
     description: [
-      <div display="flex">
-        <span style={{ paddingInlineEnd: "7px" }}>
+      <div style={{ display: "flex" }}>
+        <div style={{ paddingInlineEnd: "8px" }}>
           <img src={Insta_Icon} width="25px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "8px" }}>
+        </div>
+        <div style={{ paddingInlineEnd: "8px" }}>
           <img src={LinkedIn_Icon} width="25px" alt=""></img>
-        </span>
-        <span style={{ paddingInlineEnd: "10px" }}>
+        </div>
+        <div style={{ paddingInlineEnd: "8px" }}>
           <img src={Xing_Icon} width="25px" alt=""></img>
-        </span>
-        <span>
-          <img src={Facebook_Icon} width="25%" alt="/about"></img>
-        </span>
+        </div>
+        <div style={{ margin: "-10px" }}>
+          <img src={Facebook_Icon2} width="45px" alt="/about"></img>
+        </div>
       </div>,
     ],
   },
@@ -112,7 +112,9 @@ export default function Pricing() {
     <div>
       <div className="f-logo">
         <NavLink to="/home">
+          {/* <div style={{ height: "103px", width: "450px" }}> */}
           <img src={logo} alt="" width="100%" height="100%" />
+          {/* </div> */}
         </NavLink>
       </div>
       <React.Fragment>

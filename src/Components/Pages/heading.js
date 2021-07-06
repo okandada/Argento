@@ -19,7 +19,7 @@ export const Heading = (props) => {
         {props.Text}
         <img
           width={dashSize}
-          style={{ paddingTop: "10px" }}
+          style={{ paddingTop: "7px" }}
           src={YellowStroke}
           alt=""
         />

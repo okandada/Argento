@@ -32,7 +32,7 @@ export default function NavbarMenu() {
         <Toolbar>
           <div>
             <Link to="/home">
-              <div>
+              <div style={{ maxWidth: "347.7px", maxHeight: "80px" }}>
                 <img
                   style={{ width: "100%", height: "100%" }}
                   src={logo}
@@ -43,17 +43,17 @@ export default function NavbarMenu() {
           </div>
           <div style={{ width: "100%", textAlign: "end" }}>
             <Button component={Link} to="">
-              <Typography variant="h4" className="buttonPadding">
+              <Typography variant="h3" className="buttonPadding ">
                 Home
               </Typography>
             </Button>
             <Button component={Link} to="/about">
-              <Typography variant="h4" className="buttonPadding">
+              <Typography variant="h3" className="buttonPadding">
                 Über uns
               </Typography>
             </Button>
             <Button component={Link} to="/contact">
-              <Typography variant="h4" className="buttonPadding">
+              <Typography variant="h3" className="buttonPadding">
                 Kontakt
               </Typography>
             </Button>

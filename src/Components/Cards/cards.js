@@ -42,7 +42,18 @@ export default function MediaCard(props) {
           style={{ background: "#ffffff" }}
           fullWidth={true}
         >
-          <Typography variant="button"> jetzt endecken</Typography>
+          <Typography
+            variant="button"
+            style={{
+              fontFamily: "barlow",
+              fontSize: "25px",
+              fontWeight: "600",
+              fontStretch: "semi-condensed",
+            }}
+          >
+            {" "}
+            jetzt endecken
+          </Typography>
         </Button>
       </Card>
     </div>

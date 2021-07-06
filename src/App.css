@@ -43,6 +43,14 @@ p {
   min-width: 90vw;
   transform: translate(-50%, -50%);
 }
+.centered_2 {
+  position: absolute;
+  top: 35%;
+  padding-inline-start: 50vw;
+  min-width: 90vw;
+  transform: translate(-50%, -50%);
+  font-size: 2.3rem;
+}
 .MuiTypography-colorTextSecondary.MuiTypography-colorTextSecondary {
   color: #ffffff;
 }
@@ -73,6 +81,12 @@ p {
 /* media querry*/
 .textHeaderColor {
   color: rgb 236 189 70;
+}
+@media (max-width: 600px) {
+  .centered {
+    top: 70%;
+    left: 15%;
+  }
 }
 
 @media (max-width: 1366px) {

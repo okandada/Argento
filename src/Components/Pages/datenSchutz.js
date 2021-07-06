@@ -1,14 +1,21 @@
 import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
 import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
+import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 import React from "react";
 import "./datenSchutz.css";
 
 export const DatenSchutz = () => {
   return (
     <div>
-      <BgImageComponent
+      {/* <BgImageComponent
         DashSize={"35%"}
         HeadingSize={"h2"}
+        Heading="Datenschutz"
+        imageHeight={"220px"}
+      /> */}
+      <BgImageComponent2
+        DashSize={"35%"}
+        HeadingSize={"h5"}
         Heading="Datenschutz"
         imageHeight={"220px"}
       />

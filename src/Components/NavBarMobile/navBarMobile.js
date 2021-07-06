@@ -29,7 +29,7 @@ export default function NavBarMobileMenu() {
         onClick={handleClick}
       >
         <img
-          style={{ width: "30px", height: "22px" }}
+          style={{ width: "39px", height: "31px" }}
           src={MobileMenu}
           alt=""
         />
@@ -41,13 +41,28 @@ export default function NavBarMobileMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem component={Link} to="/home" onClick={handleClose}>
+        <MenuItem
+          style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
+          component={Link}
+          to="/home"
+          onClick={handleClose}
+        >
           Home
         </MenuItem>
-        <MenuItem component={Link} to="/contact" onClick={handleClose}>
+        <MenuItem
+          style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
+          component={Link}
+          to="/contact"
+          onClick={handleClose}
+        >
           Contact Us
         </MenuItem>
-        <MenuItem component={Link} to="/about" onClick={handleClose}>
+        <MenuItem
+          style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
+          component={Link}
+          to="/about"
+          onClick={handleClose}
+        >
           About us
         </MenuItem>
       </Menu>

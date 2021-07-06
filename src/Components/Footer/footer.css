@@ -7,9 +7,9 @@
   color: " #ffffff !important";
 }
 .f-logo {
-  width: 45%;
+  max-width: 29.2vw;
+  max-height: 6.7vw;
   margin-top: 10%;
-  object-fit: cover;
 }
 .logoSize {
   margin-top: 60px;

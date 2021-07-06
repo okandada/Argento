@@ -40,8 +40,8 @@ theme.typography.h1 = {
   fontFamily: "TGL0-1451Engschrift ",
 };
 theme.typography.h2 = {
-  fontSize: "4.2vw",
-  // fontSize: "4rem",
+  fontSize: "5vw",
+
   fontWeight: "normal",
   padding: "43px 0",
   color: "#ffffff",
@@ -52,9 +52,26 @@ theme.typography.h2 = {
     padding: "43px 0",
   },
 };
+// used in the navbarmenu button text
 theme.typography.h3 = {
-  fontSize: "2.3vw",
+  fontSize: "1.8rem",
   color: "#ffffff",
+  fontFamily: "Barlow",
+  fontWeight: "500",
+  fontStyle: "normal",
+  objectFit: "contain",
+  "@media (max-width:1025px)": {
+    fontSize: "1.56rem",
+  },
+  "@media (max-width:750px)": {
+    fontSize: "1.3rem",
+  },
+  "@media (max-width:630px)": {
+    fontSize: "1.2rem",
+  },
+  "@media (max-width:400px)": {
+    fontSize: "1.1rem",
+  },
 };
 // heading used for card heading and other same sizes
 theme.typography.h4 = {
@@ -76,8 +93,12 @@ theme.typography.h4 = {
   },
 };
 theme.typography.h5 = {
-  fontSize: "1.43vw",
+  fontSize: "4vw",
   color: "#ffffff",
+  fontFamily: "TGL0-1451Engschrift",
+  "@media (max-width:600px)": {
+    fontSize: "6vw",
+  },
 };
 theme.typography.h6 = {
   fontSize: "1.627rem",

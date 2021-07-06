@@ -3,13 +3,20 @@ import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
 import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
 import Typography from "@material-ui/core/Typography";
 import "./impressum.css";
+import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 export default class ImpressumPage extends Component {
   render() {
     return (
       <div>
-        <BgImageComponent
+        {/* <BgImageComponent
           DashSize={"35%"}
           HeadingSize={"h2"}
+          Heading="Impressum"
+          imageHeight={"220px"}
+        /> */}
+        <BgImageComponent2
+          DashSize={"35%"}
+          HeadingSize={"h5"}
           Heading="Impressum"
           imageHeight={"220px"}
         />

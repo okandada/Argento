@@ -1,5 +1,6 @@
 import React from "react";
 import { Heading } from "../Pages/heading";
+import { Heading_2 } from "../Pages/heading_2";
 import CardGrid from "../Cards/cardGrid";
 import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
 import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.jpg";
@@ -21,11 +22,13 @@ export const Home = () => {
         DashSize={"35%"}
         Heading="Gold & Silber"
       />
-      <Heading size="h2" Text=" Gold & Silber Kaufen"></Heading>
+      {/* <Heading size="h2" Text=" Gold & Silber Kaufen"></Heading> */}
+      <Heading_2 size="h2" Text=" Gold & Silber Kaufen"></Heading_2>
 
       <CardGrid images={Images} />
 
-      <Heading size="h2" Text=" Aktuelle Ankaufkurse"></Heading>
+      {/* <Heading size="h2" Text=" Aktuelle Ankaufkurse"></Heading> */}
+      <Heading_2 size="h2" Text=" Aktuelle Ankaufkurse"></Heading_2>
 
       {/* <Container> */}
       <div className="container-text">
@@ -53,10 +56,15 @@ export const Home = () => {
       </div>
       {/* </Container> */}
       {/* <OutlinedCard /> */}
-      <Heading size="h2" Text=" Hilfen & Tipps zum Edelmeatllaukf"></Heading>
+      {/* <Heading size="h2" Text=" Hilfen & Tipps zum Edelmeatllaukf"></Heading> */}
+      <Heading_2
+        size="h2"
+        Text=" Hilfen & Tipps zum Edelmeatllaukf"
+      ></Heading_2>
 
       <HilfenTipsCard />
-      <Heading size="h2" Text=" Newsletter"></Heading>
+      {/* <Heading size="h2" Text=" Newsletter"></Heading> */}
+      <Heading_2 size="h2" Text=" Newsletter"></Heading_2>
       {/* <div className="mobile">
       <NewsLetterMob />
       </div> */}
