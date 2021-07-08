@@ -134,7 +134,8 @@ theme.typography.button = {
   color: "#ecbd46",
   fontFamily: "TGL0-1451Engschrift",
   "@media (max-width:660px)": {
-    fontSize: "16px",
+    fontSize: "25px",
+    fontWeight: "500",
   },
 };
 export default theme;

@@ -1,6 +1,14 @@
 .menuButtonText {
   font-size: 1.8rem;
 }
+.textureImage_1 {
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  float: right;
+  object-fit: contain;
+  /* transform: rotate(90deg); */
+}
 
 .buttonPadding {
   padding: 6px 8px !important;

@@ -4,15 +4,11 @@ import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 import React from "react";
 import "./datenSchutz.css";
 
-export const DatenSchutz = () => {
+export const DatenSchutz = (props) => {
+  props.setBackGroundCss("DatenSchutzbackgroundGradiant");
+  const [checked, setChecked] = React.useState(true);
   return (
     <div>
-      {/* <BgImageComponent
-        DashSize={"35%"}
-        HeadingSize={"h2"}
-        Heading="Datenschutz"
-        imageHeight={"220px"}
-      /> */}
       <BgImageComponent2
         DashSize={"35%"}
         HeadingSize={"h5"}

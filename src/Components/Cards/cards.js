@@ -46,7 +46,7 @@ export default function MediaCard(props) {
             variant="button"
             style={{
               fontFamily: "barlow",
-              fontSize: "25px",
+              fontSize: "22px",
               fontWeight: "600",
               fontStretch: "semi-condensed",
             }}

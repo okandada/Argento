@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ImageGrid from "../ImageGrid";
-// import UnserneTeam1 from "../../Images/ÜberUns/Desktop/Fotos/UnserneTeam1.png";
 import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
 import UnserneTeam2 from "../../Images/Home/Desktop/Fotos/UnserneTeam2.jpg";
 import { Container } from "@material-ui/core";
@@ -9,7 +8,8 @@ import "../../App.css";
 import "./aboutUs.css";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { Heading } from "../Pages/heading";
-export const About = () => {
+export const About = (props) => {
+  props.setBackGroundCss("AboutbackgroundGradiant");
   return (
     <div>
       <BgImageComponent

@@ -7,12 +7,65 @@
 
 /* Main body */
 body {
-  /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg);
+  margin: 0px;
+  /* background: linear-gradient(
+      217deg,
+      rgb(0, 0, 0),
+      rgba(204, 197, 197, 0) 70.75%
+    ), */
+  /* linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), */
+  /* linear-gradient(336deg, rgba(110, 110, 116, 0.8), rgba(0, 0, 255, 0) 70.71%); */
+  /* background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg); */
+  /* background-repeat: no-repeat;
+  background-position: left top; */
+  /* background-size: cover; */
+  background-color: black;
+}
+
+.HomebackgroundGradiant {
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+
+  background-position: right top 600px, left top 1200px, right bottom 1700px,
+    right top 2600px, left bottom;
+  background-size: 30%, 30%, 30%, 30%, 30%;
+}
+.AboutbackgroundGradiant {
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+  background-repeat: no-repeat;
+
+  background-position: right top 600px, left bottom 600px, left bottom;
+  background-size: 35%, 30%, 30%;
+}
+.ContactbackgroundGradiant {
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+  background-repeat: no-repeat;
+  background-position: top left, left bottom;
+  background-size: 30%, 30%;
+}
+.ImpressumbackgroundGradiant {
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+  background-repeat: no-repeat;
+  background-position: top left, left bottom;
+  background-size: 25%, 28%;
+}
+.DatenSchutzbackgroundGradiant {
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+  background-repeat: no-repeat;
+  background-position: top left, left bottom;
+  background-size: 25%, 28%;
 }
 
 .MuiInputBase-root.MuiInputBase-root {
@@ -43,6 +96,10 @@ p {
   min-width: 90vw;
   transform: translate(-50%, -50%);
 }
+
+.MuiPaper-root.MuiPaper-root.MuiPaper-root.MuiPaper-root {
+  background-color: black;
+}
 .centered_2 {
   position: absolute;
   top: 35%;
@@ -55,7 +112,7 @@ p {
   color: #ffffff;
 }
 .MuiPaper-root.MuiPaper-root {
-  background-color: black;
+  background-color: transparent;
 }
 .IpadPro,
 .mobile,

@@ -8,9 +8,8 @@ import "../../App.css";
 import "./navBarMenu.css";
 import "../Footer/footer.css";
 import logo from "../../Images/Home/Desktop/Fotos/logo.png";
-//  import logo from "/images/Fotos/logo.png";
 import ShoppingCart from "../../Images/Home/SVG/ShoppingCart.svg";
-// import Paper from 'material-ui/Paper';
+import TextureImage from "../../Images/Home/Desktop/Fotos/TextureImage1.png";
 
 import { Link } from "react-router-dom";
 
@@ -30,6 +29,10 @@ export default function NavbarMenu() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.BackgroundColor}>
         <Toolbar>
+          {/* <div className="textureImage1">
+            <img src={TextureImage} />
+          </div> */}
+
           <div>
             <Link to="/home">
               <div style={{ maxWidth: "347.7px", maxHeight: "80px" }}>

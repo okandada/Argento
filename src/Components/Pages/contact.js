@@ -5,7 +5,10 @@ import Checkbox from "@material-ui/core/Checkbox";
 import { withStyles } from "@material-ui/core/styles";
 import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
 import "./home.css";
+import "./contact.css";
 import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
 
 const ValidationTextField = withStyles({
   root: {
@@ -14,13 +17,14 @@ const ValidationTextField = withStyles({
     },
   },
 })(TextField);
-export const ContactUs = () => {
+export const ContactUs = (props) => {
+  props.setBackGroundCss("ContactbackgroundGradiant");
   const [checked, setChecked] = React.useState(true);
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
   return (
-    <div>
+    <div style={{ marginBottom: "140px" }}>
       <BgImageComponent2
         DashSize={"35%"}
         HeadingSize={"h5"}
@@ -29,7 +33,7 @@ export const ContactUs = () => {
       />
 
       <div>
-        <h2>Kontaktformular</h2>
+        <h2 style={{ color: "#ffffff" }}>Kontaktformular</h2>
         <div className="field3">
           <ValidationTextField
             className="newsletter-textfield"
@@ -91,6 +95,25 @@ export const ContactUs = () => {
           label="**Nachricht "
           id="validation-outlined-input"
         />
+        <div className="mobile">
+          <Checkbox
+            className="newsLetter-checkbox"
+            checked={checked}
+            onChange={handleChange}
+            labelplacement="end"
+            inputProps={{ "aria-label": "primary checkbox" }}
+          />
+          <p style={{ color: "#a4a4a4" }}>
+            Ich bin mit den allgemeinen Datenschutzbestimmungen und den
+            Teilnahmebedingungen einverstanden
+          </p>
+        </div>
+        <Button
+          className="buttonstyle"
+          href="https://abcstorexzy.myshopify.com/products/gold1"
+        >
+          <Typography variant="button"> Kontaktieren</Typography>
+        </Button>
       </div>
     </div>
   );

@@ -14,7 +14,8 @@ import NewsLetter from "../Newsletter/NewsLetter";
 import AktueleAnkauf from "../AktuelleAnkaufkurse/AktueleAnkauf";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 
-export const Home = () => {
+export const Home = (props) => {
+  props.setBackGroundCss("HomebackgroundGradiant");
   return (
     <div>
       <BgImageComponent

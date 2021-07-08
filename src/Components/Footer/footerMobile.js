@@ -253,48 +253,50 @@ function FooterMobile() {
           </List>
         </div>
       </div>
-      <div style={{ display: "flex", margin: "17px 0px 10px 100px" }}>
-        <div style={{ paddingInlineEnd: "8px" }}>
-          <img src={Insta_Icon} width="25px" alt=""></img>
-        </div>
-        <div style={{ paddingInlineEnd: "8px" }}>
-          <img src={LinkedIn_Icon} width="25px" alt=""></img>
-        </div>
-        <div style={{ paddingInlineEnd: "8px" }}>
-          <img src={Xing_Icon} width="25px" alt=""></img>
-        </div>
-        <div style={{ margin: "-10px" }}>
-          <img src={Facebook_Icon2} width="45px" alt="/about"></img>
-        </div>
-      </div>
       <div>
-        <Typography
-          variant="body2"
-          color="textSecondary"
-          align="center"
-          style={{
-            fontFamily: "Barlow",
-            display: "flex",
-            fontSize: "0.8rem",
-            marginLeft: "50px",
-          }}
-        >
-          {" © "}
-          {new Date().getFullYear()}
-          <Link
-            color="inherit"
-            href="https://material-ui.com/"
-            style={{ color: "#ecbd46", marginLeft: "2px" }}
+        <div style={{ display: "flex", margin: "17px 0px 10px 100px" }}>
+          <div style={{ paddingInlineEnd: "8px" }}>
+            <img src={Insta_Icon} width="25px" alt=""></img>
+          </div>
+          <div style={{ paddingInlineEnd: "8px" }}>
+            <img src={LinkedIn_Icon} width="25px" alt=""></img>
+          </div>
+          <div style={{ paddingInlineEnd: "8px" }}>
+            <img src={Xing_Icon} width="25px" alt=""></img>
+          </div>
+          <div style={{ margin: "-10px" }}>
+            <img src={Facebook_Icon2} width="45px" alt="/about"></img>
+          </div>
+        </div>
+        <div>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            align="center"
+            style={{
+              fontFamily: "Barlow",
+              display: "flex",
+              fontSize: "0.8rem",
+              marginLeft: "50px",
+            }}
           >
-            <Typography
-              variant="body2"
-              style={{ color: "#ecbd46", fontSize: "0.8rem" }}
+            {" © "}
+            {new Date().getFullYear()}
+            <Link
+              color="inherit"
+              href="https://material-ui.com/"
+              style={{ color: "#ecbd46", marginLeft: "2px" }}
             >
-              PM Argento Aurum
-            </Typography>
-          </Link>
-          {"| All Rights Reserved "}
-        </Typography>
+              <Typography
+                variant="body2"
+                style={{ color: "#ecbd46", fontSize: "0.8rem" }}
+              >
+                PM Argento Aurum
+              </Typography>
+            </Link>
+            {"| All Rights Reserved "}
+          </Typography>
+        </div>
       </div>
     </div>
   );

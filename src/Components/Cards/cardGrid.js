@@ -15,7 +15,7 @@ const responsive = {
   },
   medium: {
     breakpoint: { max: 1023, min: 600 },
-    items: 2,
+    items: 3,
     partialVisibilityGutter: 30,
     // this is needed to tell the amount of px that should be visible.
   },
