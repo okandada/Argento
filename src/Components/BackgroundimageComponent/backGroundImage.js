@@ -12,6 +12,7 @@ export class BgImageComponent extends Component {
   render() {
     return (
       <div style={{ height: this.props.imageHeight }} className="img-container">
+        {/* <div className="HeaderbgTextGradient"> */}
         <img
           src={this.props.image ? this.props.image : BackgroundImageDesktop}
           width="100%"
@@ -20,6 +21,7 @@ export class BgImageComponent extends Component {
           text="unserne leider schaft"
           style={{ text: "unserne leider schaft" }}
         />
+        <div className="HeaderbgTextGradient"></div>
         <div className="centered">
           <div>
             <Heading

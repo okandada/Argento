@@ -34,7 +34,7 @@ export default function NavbarMenu() {
           </div> */}
 
           <div>
-            <Link to="/home">
+            <Link to="/">
               <div style={{ maxWidth: "347.7px", maxHeight: "80px" }}>
                 <img
                   style={{ width: "100%", height: "100%" }}

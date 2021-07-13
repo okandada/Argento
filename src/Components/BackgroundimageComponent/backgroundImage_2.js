@@ -14,12 +14,14 @@ export class BgImageComponent2 extends Component {
       <div style={{ height: this.props.imageHeight }} className="img-container">
         <img
           src={this.props.image ? this.props.image : BackgroundImageDesktop}
+          // className="HeaderbgTextGradient"
           width="100%"
           height="100%"
           alt=""
           text="unserne leider schaft"
           style={{ text: "unserne leider schaft" }}
         />
+        <div className="HeaderbgTextGradient"></div>
         <div className="centered_2">
           <div>
             <Heading

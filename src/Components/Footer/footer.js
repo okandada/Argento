@@ -111,7 +111,7 @@ export default function Pricing() {
   return (
     <div>
       <div className="f-logo">
-        <NavLink to="/home">
+        <NavLink to="/">
           {/* <div style={{ height: "103px", width: "450px" }}> */}
           <img src={logo} alt="" width="100%" height="100%" />
           {/* </div> */}

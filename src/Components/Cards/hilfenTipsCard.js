@@ -9,30 +9,23 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
-    partialVisibilityGutter: 60, // this is needed to tell the amount of px that should be visible.
+    partialVisibilityGutter: 60,
   },
   medium: {
     breakpoint: { max: 1023, min: 600 },
     items: 3,
-    // this is needed to tell the amount of px that should be visible.
   },
-  // me: {
-  //   breakpoint: { max: 1486, min: 1100 },
-  //   items: 2,
-  //   partialVisibilityGutter: 80, // this is needed to tell the amount of px that should be visible.
-  // },
+
   medum: {
     breakpoint: { max: 1486, min: 600 },
     items: 2,
-    partialVisibilityGutter: 20, // this is needed to tell the amount of px that should be visible.
+    partialVisibilityGutter: 20,
   },
-
-  // partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
 
   mobile: {
     breakpoint: { max: 600, min: 0 },
     items: 1,
-    partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+    partialVisibilityGutter: 30,
   },
 };
 const useStyles = makeStyles((theme) => ({
@@ -79,7 +72,6 @@ export default function HilfenTipsCard(props) {
       itemClass="image-item"
       responsive={responsive}
       container
-      spacing={4}
       className={classes.gridContainer}
       justify="center"
     >

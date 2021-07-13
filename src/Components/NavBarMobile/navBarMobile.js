@@ -5,10 +5,15 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MobileMenu from "../../Images/Home/SVG/MobileMenu.svg";
 import logo from "../../Images/Home/Desktop/Fotos/logo.png";
 import { Link } from "react-router-dom";
-
+import { makeStyles } from "@material-ui/core/styles";
+const useStyles = makeStyles({
+  MuiNavColor: {
+    backgroundColor: "#000000",
+  },
+});
 export default function NavBarMobileMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-
+  const classes = useStyles();
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -19,7 +24,7 @@ export default function NavBarMobileMenu() {
 
   return (
     <div>
-      <Link to="/home">
+      <Link to="/">
         <img style={{ width: "120px", height: "100%" }} src={logo} alt="" />
       </Link>
       <Button
@@ -41,30 +46,35 @@ export default function NavBarMobileMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem
-          style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
-          component={Link}
-          to="/home"
-          onClick={handleClose}
-        >
-          Home
-        </MenuItem>
-        <MenuItem
-          style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
-          component={Link}
-          to="/contact"
-          onClick={handleClose}
-        >
-          Contact Us
-        </MenuItem>
-        <MenuItem
-          style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
-          component={Link}
-          to="/about"
-          onClick={handleClose}
-        >
-          About us
-        </MenuItem>
+        <div className={classes.MuiNavColor}>
+          <MenuItem
+            style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
+            component={Link}
+            to="/"
+            onClick={handleClose}
+            className={classes.MuiNavColor}
+          >
+            Home
+          </MenuItem>
+          <MenuItem
+            style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
+            component={Link}
+            to="/contact"
+            onClick={handleClose}
+            className={classes.MuiNavColor}
+          >
+            Contact Us
+          </MenuItem>
+          <MenuItem
+            style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
+            component={Link}
+            to="/about"
+            onClick={handleClose}
+            className={classes.MuiNavColor}
+          >
+            About us
+          </MenuItem>
+        </div>
       </Menu>
     </div>
   );

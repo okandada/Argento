@@ -3,12 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import ListItem from "@material-ui/core/ListItem";
-// import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Collapse from "@material-ui/core/Collapse";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../Images/Home/Desktop/Fotos/logo.png";
 import "./footer.css";
 import Facebook_Icon2 from "../../Images/Home/SVG/Facebook_Icon2.svg";
@@ -23,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
+  },
+  borderline: {
+    borderBottom: "1px solid red",
   },
 }));
 
@@ -43,7 +45,7 @@ function FooterMobile() {
   };
   return (
     <div>
-      <Link to="/home">
+      <Link to="/">
         <div
           className="logoSize"
           style={{ maxWidth: "225px", maxHeight: "51.3px" }}
@@ -51,7 +53,8 @@ function FooterMobile() {
           <img style={{ width: "100%", height: "100%" }} src={logo} alt="" />
         </div>
       </Link>
-      <div style={{ paddingLeft: "35px", paddingRight: "45px" }}>
+      {/* <div style={{ paddingLeft: "35px", paddingRight: "45px" }}> */}
+      <div>
         <List
           style={{ marginTop: "-29px" }}
           component="nav"
@@ -116,7 +119,6 @@ function FooterMobile() {
                 <ListItemText primary="Sicherheit" />
               </ListItem>
               <ListItem button className={classes.nested}>
-                {/* <ListItemIcon></ListItemIcon> */}
                 <ListItemText primary="Umtausch & Reklamation" />
               </ListItem>
             </List>
@@ -136,10 +138,10 @@ function FooterMobile() {
           >
             <ListItem
               button
+              component="a"
               onClick={handleClickUberUns}
               style={{ borderBottom: "1px solid #707070" }}
             >
-              {/* <ListItemIcon></ListItemIcon> */}
               <ListItemText style={{ fontSize: "19px" }} primary="Über uns" />
               {uberUnsOpen ? (
                 <ExpandLess style={{ color: "white" }} />
@@ -147,6 +149,7 @@ function FooterMobile() {
                 <ExpandMore style={{ color: "white" }} />
               )}
             </ListItem>
+
             <Collapse
               in={uberUnsOpen}
               timeout="auto"
@@ -156,6 +159,7 @@ function FooterMobile() {
               <List component="div" disablePadding>
                 <ListItem
                   button
+                  component="a"
                   href="/contact"
                   className={classes.nested}
                   style={{ borderBottom: "1px solid #707070" }}
@@ -173,13 +177,19 @@ function FooterMobile() {
                 </ListItem>
                 <ListItem
                   button
+                  component="a"
                   href="/datenSchutz"
                   className={classes.nested}
                   style={{ borderBottom: "1px solid #707070" }}
                 >
                   <ListItemText primary="Datenschutz" />
                 </ListItem>
-                <ListItem button className={classes.nested}>
+                <ListItem
+                  button
+                  component="a"
+                  href="/"
+                  className={classes.nested}
+                >
                   {/* <ListItemIcon></ListItemIcon> */}
                   <ListItemText primary="AGB" />
                 </ListItem>
@@ -187,6 +197,7 @@ function FooterMobile() {
             </Collapse>
           </List>
         </div>
+        {/* top themen starts from here */}
         <div>
           <List
             style={{ marginTop: "-25px" }}
@@ -254,18 +265,23 @@ function FooterMobile() {
         </div>
       </div>
       <div>
-        <div style={{ display: "flex", margin: "17px 0px 10px 100px" }}>
+        <div style={{ display: "flex", margin: "20px 0px 10px 90px" }}>
           <div style={{ paddingInlineEnd: "8px" }}>
-            <img src={Insta_Icon} width="25px" alt=""></img>
+            <img src={Insta_Icon} width="27.6px" height="27.6" alt=""></img>
           </div>
           <div style={{ paddingInlineEnd: "8px" }}>
-            <img src={LinkedIn_Icon} width="25px" alt=""></img>
+            <img src={LinkedIn_Icon} width="27.6px" height="27.6" alt=""></img>
           </div>
           <div style={{ paddingInlineEnd: "8px" }}>
-            <img src={Xing_Icon} width="25px" alt=""></img>
+            <img src={Xing_Icon} width="27.6px" height="27.6" alt=""></img>
           </div>
           <div style={{ margin: "-10px" }}>
-            <img src={Facebook_Icon2} width="45px" alt="/about"></img>
+            <img
+              src={Facebook_Icon2}
+              width="47.6px"
+              height="47.5"
+              alt="/about"
+            ></img>
           </div>
         </div>
         <div>
@@ -276,8 +292,8 @@ function FooterMobile() {
             style={{
               fontFamily: "Barlow",
               display: "flex",
-              fontSize: "0.8rem",
-              marginLeft: "50px",
+              fontSize: "0.9rem",
+              marginLeft: "15px",
             }}
           >
             {" © "}
@@ -288,13 +304,19 @@ function FooterMobile() {
               style={{ color: "#ecbd46", marginLeft: "2px" }}
             >
               <Typography
-                variant="body2"
-                style={{ color: "#ecbd46", fontSize: "0.8rem" }}
+                style={{
+                  color: "#ecbd46",
+                  fontSize: "0.9rem",
+                  marginLeft: "5px",
+                  marginRight: "5px",
+                }}
               >
                 PM Argento Aurum
               </Typography>
             </Link>
-            {"| All Rights Reserved "}
+            <Typography style={{ fontSize: "0.9rem" }}>
+              {"| All Rights Reserved "}
+            </Typography>
           </Typography>
         </div>
       </div>

@@ -9,7 +9,7 @@ import "./card.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
-      margin: theme.spacing(1),
+      margin: theme.spacing(0.6),
     },
   },
 }));
@@ -23,7 +23,7 @@ export default function MediaCard(props) {
       <Card>
         <CardActionArea>
           <img alt="" width="100%" src={props.url} />
-          <CardContent style={{ padding: "0" }}>
+          <CardContent style={{ padding: "0", backgroundColor: "black" }}>
             <Typography variant="h4" gutterBottom>
               <div style={{ marginBottom: "32px" }}>{bull}</div>
             </Typography>
@@ -51,7 +51,6 @@ export default function MediaCard(props) {
               fontStretch: "semi-condensed",
             }}
           >
-            {" "}
             jetzt endecken
           </Typography>
         </Button>

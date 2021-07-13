@@ -23,51 +23,75 @@ body {
 }
 
 .HomebackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
     url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
     url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
   background-repeat: no-repeat;
 
-  background-position: right top 600px, left top 1200px, right bottom 1700px,
-    right top 2600px, left bottom;
-  background-size: 30%, 30%, 30%, 30%, 30%;
+  background-position: left 70px top, right top 600px, left top 1200px,
+    right bottom 1700px, right top 2850px, left bottom;
+  background-size: 45%, 30%, 30%, 30%, 30%, 30%;
 }
 .AboutbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
   background-repeat: no-repeat;
 
-  background-position: right top 600px, left bottom 600px, left bottom;
-  background-size: 35%, 30%, 30%;
+  background-position: left 70px top, right top 600px, left bottom 600px,
+    left bottom;
+  background-size: 50%, 35%, 30%, 30%;
 }
 .ContactbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
 
   background-repeat: no-repeat;
-  background-position: top left, left bottom;
-  background-size: 30%, 30%;
+  background-position: left 60px top, left bottom;
+  background-size: 40%, 30%;
 }
 .ImpressumbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
 
   background-repeat: no-repeat;
-  background-position: top left, left bottom;
-  background-size: 25%, 28%;
+  background-position: left 65px top, left bottom;
+  background-size: 50%, 28%;
 }
 .DatenSchutzbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
 
   background-repeat: no-repeat;
-  background-position: top left, left bottom;
-  background-size: 25%, 28%;
+  background-position: left 65px top, left bottom;
+  background-size: 50%, 28%;
 }
-
+.HeaderbgTextGradient {
+  position: absolute;
+  width: 55%;
+  top: 0px;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+.HeaderbgTextGradientMob {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0)
+  );
+  width: 235px;
+  height: 684px;
+  margin: 0 17px 0 0;
+  padding: 492px 33px 155px 15px;
+}
 .MuiInputBase-root.MuiInputBase-root {
   color: #ecbd46;
 }
@@ -75,6 +99,9 @@ body {
 p {
   color: #ffffff;
 }
+/* .MuiBox-root-29.MuiBox-root-29 {
+  margin: 8px 16px 8px 0px;
+} */
 .bodyComponentLayout {
   margin-inline: 5.5%;
 }
@@ -82,7 +109,11 @@ p {
 .MuiAppBar-positionStatic.MuiAppBar-positionStatic {
   background-color: transparent;
 }
-
+.MuiList-root {
+  /* background: black; */
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
 /* background image sytles */
 .img-container {
   position: relative;
@@ -98,7 +129,7 @@ p {
 }
 
 .MuiPaper-root.MuiPaper-root.MuiPaper-root.MuiPaper-root {
-  background-color: black;
+  background-color: transparent;
 }
 .centered_2 {
   position: absolute;
@@ -186,5 +217,8 @@ p {
   }
   .img-container {
     height: 600px;
+  }
+  .HeaderbgTextGradient {
+    top: 12px;
   }
 }

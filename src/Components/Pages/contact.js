@@ -40,7 +40,7 @@ export const ContactUs = (props) => {
             InputLabelProps={{
               style: { color: "#ecbd46" },
             }}
-            label="Email Address"
+            label="*E-Mail-Adresse"
             // variant="outlined"
             id="validation-outlined-input"
           />
