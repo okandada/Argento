@@ -1,13 +1,13 @@
 // import React, { Component } from "react";
-import React from "react";
-import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
-import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
+import React, { useEffect } from "react";
 import Typography from "@material-ui/core/Typography";
 import "./impressum.css";
 import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 
 export const ImpressumPage = (props) => {
-  props.setBackGroundCss("ImpressumbackgroundGradiant");
+  useEffect(() => {
+    props.setBackGroundCss("ImpressumbackgroundGradiant");
+  });
 
   return (
     <div>
@@ -41,13 +41,6 @@ export const ImpressumPage = (props) => {
           Ust.-ID-Nr.: XXXXXXXXXXX
         </Typography>
       </div>
-      {/* <Link to="/home">
-          <img
-            style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
-            src={logo}
-            alt=""
-          />
-        </Link> */}
     </div>
   );
 };

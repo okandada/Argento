@@ -68,7 +68,7 @@ export default function HilfenTipsCard(props) {
   return (
     <Carousel
       ssr
-      partialVisbile
+      partialVisible
       itemClass="image-item"
       responsive={responsive}
       container
@@ -88,7 +88,7 @@ export default function HilfenTipsCard(props) {
                 <Typography
                   gutterBottom
                   variant="h4"
-                  style={{ fontFamily: "TGL0-1451Engschrift;" }}
+                  style={{ fontFamily: "TGL0-1451Engschrift" }}
                 >
                   {` ${elem.header}`}
                 </Typography>

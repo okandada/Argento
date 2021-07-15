@@ -9,7 +9,6 @@ import "./navBarMenu.css";
 import "../Footer/footer.css";
 import logo from "../../Images/Home/Desktop/Fotos/logo.png";
 import ShoppingCart from "../../Images/Home/SVG/ShoppingCart.svg";
-import TextureImage from "../../Images/Home/Desktop/Fotos/TextureImage1.png";
 
 import { Link } from "react-router-dom";
 

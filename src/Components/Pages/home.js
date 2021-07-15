@@ -1,6 +1,5 @@
-import React from "react";
-import { Heading } from "../Pages/heading";
-import { Heading_2 } from "../Pages/heading_2";
+import React, { useEffect } from "react";
+import { Heading_2 as Heading2 } from "../Pages/heading_2";
 import CardGrid from "../Cards/cardGrid";
 import BuyGoldDesktop1 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop1.jpg";
 import BuyGoldDesktop2 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop2.jpg";
@@ -15,7 +14,9 @@ import AktueleAnkauf from "../AktuelleAnkaufkurse/AktueleAnkauf";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 
 export const Home = (props) => {
-  props.setBackGroundCss("HomebackgroundGradiant");
+  useEffect(() => {
+    props.setBackGroundCss("HomebackgroundGradiant");
+  });
   return (
     <div>
       <BgImageComponent
@@ -23,15 +24,13 @@ export const Home = (props) => {
         DashSize={"35%"}
         Heading="Gold & Silber"
       />
-      {/* <Heading size="h2" Text=" Gold & Silber Kaufen"></Heading> */}
-      <Heading_2 size="h2" Text=" Gold & Silber Kaufen"></Heading_2>
+
+      <Heading2 size="h2" Text=" Gold & Silber Kaufen"></Heading2>
 
       <CardGrid images={Images} />
 
-      {/* <Heading size="h2" Text=" Aktuelle Ankaufkurse"></Heading> */}
-      <Heading_2 size="h2" Text=" Aktuelle Ankaufkurse"></Heading_2>
+      <Heading2 size="h2" Text="Aktuelle Ankaufkurse"></Heading2>
 
-      {/* <Container> */}
       <div className="container-text">
         <img
           src={GOldCourseDesktop}
@@ -55,17 +54,12 @@ export const Home = (props) => {
           ></AktueleAnkauf>
         </div>
       </div>
-      {/* </Container> */}
-      {/* <OutlinedCard /> */}
-      {/* <Heading size="h2" Text=" Hilfen & Tipps zum Edelmeatllaukf"></Heading> */}
-      <Heading_2
-        size="h2"
-        Text=" Hilfen & Tipps zum Edelmeatllaukf"
-      ></Heading_2>
+
+      <Heading2 size="h2" Text=" Hilfen & Tipps zum Edelmeatllaukf"></Heading2>
 
       <HilfenTipsCard />
       {/* <Heading size="h2" Text=" Newsletter"></Heading> */}
-      <Heading_2 size="h2" Text=" Newsletter"></Heading_2>
+      <Heading2 size="h2" Text=" Newsletter"></Heading2>
       {/* <div className="mobile">
       <NewsLetterMob />
       </div> */}

@@ -1,12 +1,12 @@
-import BgImageComponent from "../BackgroundimageComponent/backGroundImage";
-import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
 import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
-import React from "react";
+import React, { useEffect } from "react";
 import "./datenSchutz.css";
 
 export const DatenSchutz = (props) => {
-  props.setBackGroundCss("DatenSchutzbackgroundGradiant");
-  const [checked, setChecked] = React.useState(true);
+  useEffect(() => {
+    props.setBackGroundCss("DatenSchutzbackgroundGradiant");
+  });
+
   return (
     <div>
       <BgImageComponent2
@@ -109,13 +109,6 @@ export const DatenSchutz = (props) => {
         nur mit Ihrer Einwilligung, die Sie mit Wirkung für die Zukunft
         jederzeit widerrufen können.
       </p>
-      {/* <Link to="/home">
-        <img
-          style={{ width: "337.4px", height: "80px", marginTop: "180px" }}
-          src={logo}
-          alt=""
-        />
-      </Link> */}
     </div>
   );
 };

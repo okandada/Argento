@@ -120,14 +120,16 @@ export default function Pricing() {
       <React.Fragment>
         <Container maxWidth="md" component="footer" className={classes.footer}>
           <Grid container spacing={4} justify="space-evenly">
-            {footers.map((footer) => (
-              <Grid item xs={6} sm={3} key={footer.title}>
+            {footers.map((footer, index) => (
+              <Grid item xs={6} sm={3} key={index}>
                 <Typography variant="h4" gutterBottom>
                   <span style={{ color: "#ecbd46" }}> {footer.title}</span>
                 </Typography>
                 <ul style={{ lineHeight: "28px" }}>
                   {footer.title === "Social Media"
-                    ? footer.description.map((item) => item)
+                    ? footer.description.map((item, index) => (
+                        <li key={index}> {item}</li>
+                      ))
                     : footer.description.map((item, x) => (
                         <li key={x}>
                           <Link

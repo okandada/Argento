@@ -284,7 +284,7 @@ function FooterMobile() {
             ></img>
           </div>
         </div>
-        <div>
+        <div style={{ display: "flex" }}>
           <Typography
             variant="body2"
             color="textSecondary"
@@ -298,25 +298,25 @@ function FooterMobile() {
           >
             {" © "}
             {new Date().getFullYear()}
-            <Link
-              color="inherit"
-              href="https://material-ui.com/"
-              style={{ color: "#ecbd46", marginLeft: "2px" }}
+          </Typography>
+          <Link
+            color="inherit"
+            to="https://material-ui.com/"
+            style={{ color: "#ecbd46", marginLeft: "2px" }}
+          >
+            <Typography
+              style={{
+                color: "#ecbd46",
+                fontSize: "0.9rem",
+                marginLeft: "5px",
+                marginRight: "5px",
+              }}
             >
-              <Typography
-                style={{
-                  color: "#ecbd46",
-                  fontSize: "0.9rem",
-                  marginLeft: "5px",
-                  marginRight: "5px",
-                }}
-              >
-                PM Argento Aurum
-              </Typography>
-            </Link>
-            <Typography style={{ fontSize: "0.9rem" }}>
-              {"| All Rights Reserved "}
+              PM Argento Aurum
             </Typography>
+          </Link>
+          <Typography style={{ fontSize: "0.9rem" }}>
+            {"| All Rights Reserved "}
           </Typography>
         </div>
       </div>

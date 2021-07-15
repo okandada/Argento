@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
 // import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { withStyles } from "@material-ui/core/styles";
-import BackgroundImage from "../../Images/Home/Desktop/Fotos/Hero.png";
 import "./home.css";
 import "./contact.css";
 import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
@@ -18,7 +17,9 @@ const ValidationTextField = withStyles({
   },
 })(TextField);
 export const ContactUs = (props) => {
-  props.setBackGroundCss("ContactbackgroundGradiant");
+  useEffect(() => {
+    props.setBackGroundCss("ContactbackgroundGradiant");
+  });
   const [checked, setChecked] = React.useState(true);
   const handleChange = (event) => {
     setChecked(event.target.checked);
@@ -42,7 +43,7 @@ export const ContactUs = (props) => {
             }}
             label="*E-Mail-Adresse"
             // variant="outlined"
-            id="validation-outlined-input"
+            id="validation-outlined-input1"
           />
           <div>
             <Checkbox
@@ -68,7 +69,7 @@ export const ContactUs = (props) => {
             }}
             label="*Vorname "
             // variant="outlined"
-            id="validation-outlined-input"
+            id="validation-outlined-input2"
           />
         </div>
         <div className="field2">
@@ -79,21 +80,21 @@ export const ContactUs = (props) => {
             }}
             label="*Nachname "
             // variant="outlined"
-            id="validation-outlined-input"
+            id="validation-outlined-input3"
           />
         </div>
       </div>
       <div className="mutliLine-msg">
         <ValidationTextField
           className="newsletter-textfield"
-          size="large"
+          size="medium"
           multiline
           InputLabelProps={{
             style: { color: "#ecbd46" },
           }}
           rows={4}
           label="**Nachricht "
-          id="validation-outlined-input"
+          id="validation-outlined-input4"
         />
         <div className="mobile">
           <Checkbox

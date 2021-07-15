@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useLocation } from "react-router";
 import Home from "./Components/Pages/home";
 import ContactUs from "./Components/Pages/contact";
 import About from "./Components/Pages/about";
@@ -12,7 +11,7 @@ import UnsernShop from "./Components/Pages/UnsernShop";
 import { UnsernShop2 } from "./Components/Pages/unsernShop2";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
-import ImpressumPage from "./Components/Pages/impressum";
+import ImpressumPage from "./Components/Pages/Impressum";
 import Test from "./Components/Pages/test";
 import FooterMobile from "./Components/Footer/footerMobile";
 import FooterDesktop from "../src/Components/Footer/footer";

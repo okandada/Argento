@@ -78,7 +78,7 @@ theme.typography.h4 = {
   fontSize: "1.5rem",
   fontWeight: "Normal",
   color: "#ffffff",
-  fontFamily: "TGL0-1451Engschrift ",
+  fontFamily: "TGL0-1451Engschrift",
   "@media (max-width:850px)": {
     fontSize: "1.3rem",
   },

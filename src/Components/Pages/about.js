@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ImageGrid from "../ImageGrid";
 import BuyGoldDesktop3 from "../../Images/Home/Desktop/Fotos/BuyGoldDesktop3.jpg";
@@ -9,7 +9,9 @@ import "./aboutUs.css";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { Heading } from "../Pages/heading";
 export const About = (props) => {
-  props.setBackGroundCss("AboutbackgroundGradiant");
+  useEffect(() => {
+    props.setBackGroundCss("AboutbackgroundGradiant");
+  });
   return (
     <div>
       <BgImageComponent

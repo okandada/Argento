@@ -5,10 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import BackgroundImageDesktop from "../../Images/Home/Desktop/Fotos/BackgroundImageDesktop.jpg";
 import { Heading } from "../Pages/heading";
 export class BgImageComponent extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div style={{ height: this.props.imageHeight }} className="img-container">

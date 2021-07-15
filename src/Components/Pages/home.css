@@ -62,12 +62,7 @@ img {
     width: 100%;
   }
 }
-/* @media (max-width: 600px) {
-  .mutliLine-msg {
-    width: 100%;
-    height: 180px;
-  }
-} */
+
 @media (max-width: 1219px) {
   .field1 {
     width: 35%;

@@ -41,13 +41,12 @@ export default function CardGrid(props) {
   const classes = useStyles();
   const cardImages = props.images;
   var rows = [];
-  for (var i = 0; i < cardImages.length; i++) {
+  cardImages.map((image, index) =>
     rows.push(
       <Box
         display="flex"
-        key={i}
+        key={index}
         justifyContent="center"
-        item
         xs={12}
         sm={6}
         md={3}
@@ -55,20 +54,17 @@ export default function CardGrid(props) {
         <Box border={1} {...defaultProps}>
           <Grid>
             {/* loading card component */}
-            <Card
-              title={cardImages[i].title}
-              url={cardImages[i].url}
-              text={cardImages[i].text}
-            />
+            <Card url={image.url} text={image.text} />
           </Grid>
         </Box>
       </Box>
-    );
-  }
+    )
+  );
+
   return (
     <Carousel
       ssr
-      partialVisbile
+      partialVisible
       itemClass="image-item"
       responsive={responsive}
       container
