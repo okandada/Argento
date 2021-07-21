@@ -44,25 +44,28 @@ export default function NavbarMenu() {
             </Link>
           </div>
           <div style={{ width: "100%", textAlign: "end" }}>
-            <Button component={Link} to="">
-              <Typography variant="h3" className="buttonPadding ">
-                Home
-              </Typography>
-            </Button>
-            <Button component={Link} to="/about">
-              <Typography variant="h3" className="buttonPadding">
-                Über uns
-              </Typography>
-            </Button>
-            <Button component={Link} to="/contact">
-              <Typography variant="h3" className="buttonPadding">
-                Kontakt
-              </Typography>
-            </Button>
-
-            <Button>
-              <img src={ShoppingCart} alt="/about" to="/about" />
-            </Button>
+            <span>
+              <Button component={Link} to="">
+                <Typography variant="h3" className="buttonPadding ">
+                  Home
+                </Typography>
+              </Button>
+              <Button component={Link} to="/about">
+                <Typography variant="h3" className="buttonPadding">
+                  Über uns
+                </Typography>
+              </Button>
+              <Button component={Link} to="/contact">
+                <Typography variant="h3" className="buttonPadding">
+                  Kontakt
+                </Typography>
+              </Button>
+            </span>
+            <span>
+              <Button>
+                <img src={ShoppingCart} alt="/about" to="/about" />
+              </Button>
+            </span>
           </div>
         </Toolbar>
       </AppBar>

@@ -38,11 +38,11 @@ export const ContactUs = (props) => {
         <div className="field3">
           <ValidationTextField
             className="newsletter-textfield"
+            variant="filled"
             InputLabelProps={{
               style: { color: "#ecbd46" },
             }}
             label="*E-Mail-Adresse"
-            // variant="outlined"
             id="validation-outlined-input1"
           />
           <div>
@@ -51,6 +51,7 @@ export const ContactUs = (props) => {
               checked={checked}
               onChange={handleChange}
               labelplacement="end"
+              variant="filled"
               inputProps={{ "aria-label": "primary checkbox" }}
             />
             <p style={{ color: "#a4a4a4" }}>
@@ -68,7 +69,7 @@ export const ContactUs = (props) => {
               style: { color: "#ecbd46" },
             }}
             label="*Vorname "
-            // variant="outlined"
+            variant="filled"
             id="validation-outlined-input2"
           />
         </div>
@@ -79,7 +80,7 @@ export const ContactUs = (props) => {
               style: { color: "#ecbd46" },
             }}
             label="*Nachname "
-            // variant="outlined"
+            variant="filled"
             id="validation-outlined-input3"
           />
         </div>
@@ -93,6 +94,7 @@ export const ContactUs = (props) => {
             style: { color: "#ecbd46" },
           }}
           rows={4}
+          variant="filled"
           label="**Nachricht "
           id="validation-outlined-input4"
         />

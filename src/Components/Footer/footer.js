@@ -25,7 +25,7 @@ function Footer() {
       <Link
         color="inherit"
         href="https://material-ui.com/"
-        style={{ color: "#ecbd46", marginLeft: "2px" }}
+        style={{ color: "#ecbd46", marginLeft: "9px", marginRight: "9px" }}
       >
         PM Argento Aurum
       </Link>

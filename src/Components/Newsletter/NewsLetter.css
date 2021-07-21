@@ -1,20 +1,39 @@
 .newsletter_button {
-  margin-top: 178px;
+  margin-top: 156px;
+  height: 42px;
 }
-
-/* @media (max-width: 600px) {
+@media (max-width: 1200px) {
   .newsletter_button {
-    margin-top: 20px;
+    margin-top: 46%;
   }
-} */
-
+}
 @media (max-width: 850px) {
   .newsletter_button {
-    margin-top: 30%;
+    margin-top: 46%;
   }
 }
-/* @media (max-width: 850px) {
+@media (max-width: 800px) {
   .newsletter_button {
-    margin-top: 82px;
+    margin-top: 42%;
   }
-} */
+}
+@media (max-width: 750px) {
+  .newsletter_button {
+    margin-top: 38%;
+  }
+}
+@media (max-width: 710px) {
+  .newsletter_button {
+    margin-top: 34%;
+  }
+}
+@media (max-width: 680px) {
+  .newsletter_button {
+    margin-top: 27%;
+  }
+}
+@media (max-width: 650px) {
+  .newsletter_button {
+    margin-top: 24%;
+  }
+}

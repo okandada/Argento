@@ -60,7 +60,7 @@ export const About = (props) => {
         </p>
       </div>
 
-      <AboutCarddiv style={{ marginTop: "0px" }}>
+      <AboutCarddiv>
         <Container className="container">
           <img src={UnserneTeam2} height="100%" width="100%" alt="" />
         </Container>
@@ -86,7 +86,10 @@ export const About = (props) => {
           </p>
         </Container>
       </AboutCarddiv>
-      <Heading size="h2" DashSize={"14%"} Text="Unserne Partner"></Heading>
+      <div style={{ marginTop: "10%" }}>
+        <Heading size="h2" DashSize={"14%"} Text="Unserne Partner"></Heading>
+      </div>
+
       <ImageGrid />
     </div>
   );
@@ -97,7 +100,7 @@ const AboutCarddiv = styled.div`
   display: inline-flex;
   padding-top: 30px;
   column-gap: 20px;
-
+margin-top: 9%;
 
   @media (max-width: 600px) {
     display: block};

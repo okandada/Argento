@@ -31,9 +31,9 @@ body {
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
   background-repeat: no-repeat;
 
-  background-position: left 70px top, right top 600px, left top 1200px,
-    right bottom 1700px, right top 2850px, left bottom;
-  background-size: 45%, 30%, 30%, 30%, 30%, 30%;
+  background-position: left 70px top, right top 530px, left top 1200px,
+    right bottom 1600px, right bottom 370px, left bottom;
+  background-size: 45%, 43%, 30%, 37%, 37%, 30%;
 }
 .AboutbackgroundGradiant {
   background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
@@ -52,7 +52,7 @@ body {
 
   background-repeat: no-repeat;
   background-position: left 60px top, left bottom;
-  background-size: 40%, 30%;
+  background-size: 50%, 30%;
 }
 .ImpressumbackgroundGradiant {
   background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
@@ -192,6 +192,10 @@ p {
   } */
 }
 @media (max-width: 1024px) {
+  .img-container {
+    height: 1196px;
+    padding-inline: 30px;
+  }
   .desktop,
   .mobile,
   .IpadPro {
@@ -206,6 +210,9 @@ p {
   } */
 }
 @media (max-width: 600px) {
+  .img-container {
+    padding-inline: revert;
+  }
   .desktop,
   .IpadPro,
   .IpadQuer {

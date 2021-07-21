@@ -65,10 +65,10 @@ export default function NewsLetter(props) {
         <ValidationTextField
           className="newsletter-textfield"
           InputLabelProps={{
-            style: { color: "#ecbd46" },
+            style: { color: "#ecbd46", height: "50px" },
           }}
           label="Email Address"
-          variant="outlined"
+          variant="filled"
           id="validation-outlined-input"
         />
         <div style={{ width: "100%", margin: 0 }}>
@@ -95,7 +95,7 @@ export default function NewsLetter(props) {
             <Button
               // to="https://abcstorexzy.myshopify.com/products/gold1"
               href="https://abcstorexzy.myshopify.com/products/gold1"
-              style={{ background: "#ffffff" }}
+              style={{ background: "#ffffff", height: "50px" }}
               fullWidth={true}
             >
               <Typography variant="button"> NewsLetter Anmeldung</Typography>
