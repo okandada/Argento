@@ -55,7 +55,7 @@ img {
 }
 .field2 {
   width: 24%;
-  margin-left: 50px;
+  margin-left: 4%;
 }
 @media (max-width: 840px) {
   .mutliLine-msg {
@@ -72,7 +72,7 @@ img {
   }
   .field2 {
     width: 35%;
-    margin-left: 25px;
+    margin-left: 2.5%;
   }
   .mutliLine-msg {
     width: 72.5%;

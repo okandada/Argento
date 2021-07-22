@@ -3,7 +3,26 @@
   width: 280px !important;
   float: right !important;
   margin-bottom: 40px;
+  height: 50px;
 }
+.KontactHeading {
+  font-size: 50px;
+  color: #ffffff;
+  margin-top: 5%;
+  font-family: TGL0-1451Engschrift !important;
+}
+@media (max-width: 1024px) {
+  .KontactHeading {
+    font-size: 55px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .KontactHeading {
+    font-size: 30px !important;
+  }
+}
+
 @media (max-width: 600px) {
   .buttonstyle {
     float: left !important;

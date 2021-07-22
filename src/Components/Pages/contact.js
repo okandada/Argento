@@ -34,8 +34,10 @@ export const ContactUs = (props) => {
       />
 
       <div>
-        <h2 style={{ color: "#ffffff" }}>Kontaktformular</h2>
+        {/* <h2 style={{ color: "#ffffff" }}>Kontaktformular</h2> */}
+        <div className="KontactHeading">Kontaktformular</div>
         <div className="field3">
+          s
           <ValidationTextField
             className="newsletter-textfield"
             variant="filled"

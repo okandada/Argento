@@ -46,14 +46,14 @@ body {
     left bottom;
   background-size: 50%, 35%, 30%, 30%;
 }
-.ContactbackgroundGradiant {
+/* .ContactbackgroundGradiant {
   background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
 
   background-repeat: no-repeat;
   background-position: left 60px top, left bottom;
-  background-size: 50%, 30%;
-}
+  background-size: 60%, 30%;
+} */
 .ImpressumbackgroundGradiant {
   background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
@@ -169,6 +169,48 @@ p {
 /* media querry*/
 .textHeaderColor {
   color: rgb 236 189 70;
+}
+
+@media (max-width: 2500px) {
+  .ContactbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 40%, 30%;
+  }
+}
+@media (max-width: 1050px) {
+  .ContactbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 65%, 45%;
+  }
+}
+@media (max-width: 790px) {
+  .ContactbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left 65px top 140px, left bottom;
+    background-size: 45%, 43%, 50%;
+  }
+}
+@media (max-width: 600px) {
+  .ContactbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 45%, 25%;
+  }
 }
 @media (max-width: 600px) {
   .centered {
