@@ -27,14 +27,14 @@ export const About = (props) => {
     <div>
       <BgImageComponent
         DashSize={"35%"}
-        Heading="Unsere Leidenschaft"
+        Heading={<text>{"Unsere \n Leidenschaft"}</text>}
         SubHeading={"Das Team von Agento Aurum ist..."}
       />
       <AboutCarddiv>
         <Container className="container">
           <Heading
             size="caption"
-            DashSize={"25%"}
+            DashSize={"15%"}
             padding="0px"
             Text=" Unser Team"
           ></Heading>

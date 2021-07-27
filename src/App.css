@@ -33,7 +33,7 @@ body {
 
   background-position: left 70px top, right top 530px, left top 1200px,
     right bottom 1600px, right bottom 370px, left bottom;
-  background-size: 45%, 43%, 30%, 37%, 37%, 30%;
+  background-size: 35%, 43%, 30%, 37%, 37%, 30%;
 }
 .AboutbackgroundGradiant {
   background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
@@ -72,7 +72,7 @@ body {
 }
 .HeaderbgTextGradient {
   position: absolute;
-  width: 55%;
+  width: 70%;
   top: 0px;
   height: 100%;
   background-image: linear-gradient(
@@ -103,7 +103,7 @@ p {
 .bodyComponentLayout {
   /* margin-inline: 5.5%; */
   margin-inline: 75px;
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 /* Navigation css*/
 .MuiAppBar-positionStatic.MuiAppBar-positionStatic {
