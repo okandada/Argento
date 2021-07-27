@@ -16,23 +16,29 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MediaCard(props) {
   const classes = useStyles();
-  const bull = "1 Unze Gold";
-  const bull2 = "1.560,42 EUR";
+  const bull_1 = "1 Unze Gold";
+  const bull_2 = "1.560,42 EUR";
+  const bull_3 = "Feinheit: 999,9/1000 Feingold";
+  const bull_4 = "Herkunftsland: Schweiz / Deutschland";
   return (
     <div className={classes.root}>
       <Card>
         <CardActionArea>
           <img alt="" width="100%" src={props.url} />
           <CardContent style={{ padding: "0", backgroundColor: "black" }}>
-            <Typography variant="h4" gutterBottom>
-              <div style={{ marginBottom: "32px" }}>{bull}</div>
-            </Typography>
-            <Typography variant="h4" gutterBottom>
-              {bull2}
-            </Typography>
-            <Typography variant="subtitle1" gutterBottom>
+            {/* <Typography gutterBottom> */}
+            <div className="bull_1Styling">{bull_1}</div>
+            {/* </Typography> */}
+            <div className="cardText">{bull_3}</div>
+            <div className="cardText">{bull_4}</div>
+            {/* <Typography gutterBottom> */}
+            <div className="bull_2Styling">{bull_2}</div>
+            {/* </Typography>
+            <Typography gutterBottom> */}
+            <div className="cardText">
               zzgl. Versandkosten Lieferzeit: 4-7 Tage
-            </Typography>
+            </div>
+            {/* </Typography> */}
           </CardContent>
         </CardActionArea>
 

@@ -19,11 +19,20 @@ export const Home = (props) => {
   });
   return (
     <div>
-      <BgImageComponent
-        SubHeading={"Die beste Währung in Krisenzeiten"}
-        DashSize={"35%"}
-        Heading="Gold & Silber"
-      />
+      <div>
+        <BgImageComponent
+          SubHeading={"Die beste Währung in Krisenzeiten"}
+          DashSize={"35%"}
+          Heading="Gold & Silber"
+        />
+      </div>
+      {/* <div className="mobilebg">
+        <BgImageComponent
+          SubHeading={"Die beste Währung in Krisenzeiten"}
+          DashSize={"27%"}
+          Heading="Gold & Silber"
+        />
+      </div> */}
 
       <Heading2 size="h2" Text=" Gold & Silber Kaufen"></Heading2>
 

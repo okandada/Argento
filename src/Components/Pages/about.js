@@ -8,6 +8,17 @@ import "../../App.css";
 import "./aboutUs.css";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { Heading } from "../Pages/heading";
+import { withStyles } from "@material-ui/core/styles";
+const headingFOnt = withStyles({
+  root: {
+    "& input": {
+      color: "#ecbd46",
+    },
+    fonts: {
+      size: "85px",
+    },
+  },
+});
 export const About = (props) => {
   useEffect(() => {
     props.setBackGroundCss("AboutbackgroundGradiant");
@@ -21,7 +32,12 @@ export const About = (props) => {
       />
       <AboutCarddiv>
         <Container className="container">
-          <Heading size="h2" padding="0px" Text=" Unser Team"></Heading>
+          <Heading
+            size="caption"
+            DashSize={"25%"}
+            padding="0px"
+            Text=" Unser Team"
+          ></Heading>
           <p className="pFont">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -42,7 +58,12 @@ export const About = (props) => {
         </Container>
       </AboutCarddiv>
       <div className="mobile">
-        <Heading size="h2" padding="10px" Text=" Warum Argento Aurum"></Heading>
+        <Heading
+          size="caption"
+          DashSize={"20%"}
+          padding="10px"
+          Text=" Warum Argento Aurum"
+        ></Heading>
       </div>
       <div>
         <p className="mobile pFont">
@@ -67,18 +88,19 @@ export const About = (props) => {
 
         <Container className="container mobileview extraTextHideMobileView">
           <Heading
-            size="h2"
+            size="caption"
             padding="0px"
+            DashSize={"25%"}
             Text=" Warum Argento Aurum"
           ></Heading>
           <p className="pFont">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-            facilisis at vero eros et accumsan et iusto odio dignissim qui
+            Desktop Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+            nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
             blandit praesent luptatum zzril delenit augue duis dolore te feugait
             nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
             elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer
@@ -87,7 +109,11 @@ export const About = (props) => {
         </Container>
       </AboutCarddiv>
       <div style={{ marginTop: "10%" }}>
-        <Heading size="h2" DashSize={"14%"} Text="Unserne Partner"></Heading>
+        <Heading
+          size="caption"
+          DashSize={"28%"}
+          Text="Unsere Partner"
+        ></Heading>
       </div>
 
       <ImageGrid />
@@ -100,22 +126,19 @@ const AboutCarddiv = styled.div`
   display: inline-flex;
   padding-top: 30px;
   column-gap: 20px;
-margin-top: 9%;
+  margin-top: 9%;
 
   @media (max-width: 600px) {
-    display: block};
+    display: block;
+    margin-top: 0%;
+  }
   .container {
     overflow: hidden;
-    padding-left: 0px;
-    padding-right: 0px;
-}
   }
   .title {
     padding: 0px;
     margin-top: 0px;
   }
-
- 
 `;
 
 export default About;

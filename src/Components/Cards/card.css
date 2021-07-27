@@ -5,3 +5,56 @@
 .marginBottom {
   margin-bottom: 25px;
 }
+
+.bull_1Styling {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-family: TGL0-1451Engschrift;
+}
+.bull_2Styling {
+  font-size: 35px;
+  color: #ffffff;
+  font-family: TGL0-1451Engschrift;
+}
+.cardText {
+  font-size: 14px;
+  margin-top: 0px;
+  color: #a4a4a4;
+  font-family: barlow;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1100px) {
+  .bull_1Styling {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: TGL0-1451Engschrift;
+  }
+  .bull_2Styling {
+    font-size: 28px;
+    color: #ffffff;
+    font-family: TGL0-1451Engschrift;
+    margin: 5px 5px;
+  }
+  .cardText {
+    font-size: 11px;
+  }
+}
+@media (max-width: 600px) {
+  .bull_1Styling {
+    font-size: 21px;
+    color: #ffffff;
+    font-family: TGL0-1451Engschrift;
+  }
+  .bull_2Styling {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: TGL0-1451Engschrift;
+  }
+  .cardText {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}

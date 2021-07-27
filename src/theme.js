@@ -35,9 +35,17 @@ theme.typography.body1 = {
   fontFamily: "Barlow",
 };
 theme.typography.h1 = {
-  fontSize: "6vw",
+  fontSize: "8.7vw",
+  // fontSize: "8.4rem",
   color: "#ffffff",
   fontFamily: "TGL0-1451Engschrift ",
+  // "@media (max-width:600px)": {
+  //   fontSize: "10.5vw",
+  // },
+
+  // fontFamily: "TGL0-1451Engschrift ",
+  // "@media (max-width:600px)": {
+  //   fontSize: "3.75rem",
 };
 theme.typography.h2 = {
   fontSize: "5vw",
@@ -128,7 +136,11 @@ theme.typography.subtitle2 = {
   fontFamily: "Barlow",
   color: "#ffffff",
   fontWeight: "normal",
+  "@media (max-width:660px)": {
+    fontSize: "3vw",
+  },
 };
+
 theme.typography.button = {
   fontSize: "1.25rem",
   color: "#ecbd46",
@@ -136,6 +148,15 @@ theme.typography.button = {
   "@media (max-width:660px)": {
     fontSize: "25px",
     fontWeight: "500",
+  },
+};
+theme.typography.caption = {
+  fontSize: "60px",
+  color: "#ffffff",
+  fontFamily: "TGL0-1451Engschrift",
+  "@media (max-width:660px)": {
+    marginTop: "30px",
+    fontSize: "40px",
   },
 };
 export default theme;

@@ -9,6 +9,24 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   MuiNavColor: {
     backgroundColor: "#000000",
+    minWidth: "92vw",
+    display: "flex",
+    flexDirection: "column",
+    // padding: "18px 0",
+    fontSize: "2.1rem",
+    // minHeight: "100vh",
+  },
+  MenuNavColor: {
+    backgroundColor: "#000000",
+
+    // marginTop: "40px",
+  },
+  menuHeader1: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    // backgroundColor: "#000000",
+    // marginTop: "40px",
   },
 });
 export default function NavBarMobileMenu() {
@@ -25,7 +43,14 @@ export default function NavBarMobileMenu() {
   return (
     <div>
       <Link to="/">
-        <img style={{ width: "120px", height: "100%" }} src={logo} alt="" />
+        <img
+          style={{
+            maxWidth: "195px",
+            maxHeight: "45px",
+          }}
+          src={logo}
+          alt=""
+        />
       </Link>
       <Button
         style={{ float: "right" }}
@@ -44,32 +69,55 @@ export default function NavBarMobileMenu() {
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
+        className={classes.MenuNavColor}
         onClose={handleClose}
       >
         <div className={classes.MuiNavColor}>
+          <div className={classes.menuHeader1}>
+            <Link to="/">
+              <img
+                style={{
+                  maxHeight: "195px",
+                  maxHeight: "45px",
+                  objectFit: "fill",
+                }}
+                src={logo}
+                alt=""
+              />
+            </Link>
+
+            <img
+              style={{ width: "39px", height: "31px", objectFit: "contain" }}
+              src={MobileMenu}
+              alt=""
+              onClick={handleClose}
+            />
+          </div>
           <MenuItem
-            style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
             component={Link}
             to="/"
             onClick={handleClose}
+            selected={true}
             className={classes.MuiNavColor}
+            style={{ padding: "18px 0" }}
           >
             Home
           </MenuItem>
           <MenuItem
-            style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
+            style={{}}
             component={Link}
             to="/contact"
             onClick={handleClose}
             className={classes.MuiNavColor}
+            style={{ padding: "18px 0" }}
           >
             Contact Us
           </MenuItem>
           <MenuItem
-            style={{ fontSize: "1.1rem", fontFamily: "Barlow" }}
             component={Link}
             to="/about"
             onClick={handleClose}
+            style={{ padding: "18px 0" }}
             className={classes.MuiNavColor}
           >
             About us

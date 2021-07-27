@@ -3,7 +3,9 @@
   font-size: 1.56rem;
   font-weight: 400;
 }
-
+.AboutheadingStyle {
+  font-size: 85px;
+}
 .mobileview {
   display: block;
 }

@@ -10,13 +10,13 @@ import "./card.css";
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1025 },
     items: 3,
     partialVisibilityGutter: 50,
   },
   medium: {
-    breakpoint: { max: 1023, min: 600 },
-    items: 3,
+    breakpoint: { max: 1024, min: 600 },
+    items: 2,
     partialVisibilityGutter: 30,
   },
 

@@ -11,14 +11,15 @@ export const Heading = (props) => {
         style={{
           display: "grid",
           padding: props.padding,
-          maxWidth: "646px",
+          // minWidth: "805px",
           textAlign: "left",
         }}
         variant={props.size}
       >
         {props.Text}
         <img
-          width={dashSize}
+          className="dash-width"
+          // width={dashSize}
           style={{ paddingTop: "7px" }}
           src={YellowStroke}
           alt=""

@@ -99,11 +99,11 @@ body {
 p {
   color: #ffffff;
 }
-/* .MuiBox-root-29.MuiBox-root-29 {
-  margin: 8px 16px 8px 0px;
-} */
+
 .bodyComponentLayout {
-  margin-inline: 5.5%;
+  /* margin-inline: 5.5%; */
+  margin-inline: 75px;
+  margin-top: 8px;
 }
 /* Navigation css*/
 .MuiAppBar-positionStatic.MuiAppBar-positionStatic {
@@ -117,15 +117,16 @@ p {
 /* background image sytles */
 .img-container {
   position: relative;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .centered {
   position: absolute;
-  top: 35%;
-  padding-inline-start: 50vw;
+  top: 42%;
+  left: 5%;
+  /* padding-inline-start: 58vw;
   min-width: 90vw;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .MuiPaper-root.MuiPaper-root.MuiPaper-root.MuiPaper-root {
@@ -145,6 +146,7 @@ p {
 .MuiPaper-root.MuiPaper-root {
   background-color: transparent;
 }
+
 .IpadPro,
 .mobile,
 .IpadQuer {
@@ -188,7 +190,7 @@ p {
 
     background-repeat: no-repeat;
     background-position: left 40px top, left bottom;
-    background-size: 65%, 45%;
+    background-size: 65%, 42%;
   }
 }
 @media (max-width: 790px) {
@@ -199,7 +201,7 @@ p {
 
     background-repeat: no-repeat;
     background-position: left 40px top, left 65px top 140px, left bottom;
-    background-size: 45%, 43%, 50%;
+    background-size: 45%, 43%, 47%;
   }
 }
 @media (max-width: 600px) {
@@ -213,10 +215,10 @@ p {
   }
 }
 @media (max-width: 600px) {
-  .centered {
+  /* .centered {
     top: 70%;
     left: 15%;
-  }
+  } */
 }
 
 @media (max-width: 1366px) {
@@ -236,7 +238,10 @@ p {
 @media (max-width: 1024px) {
   .img-container {
     height: 1196px;
-    padding-inline: 30px;
+    /* padding-inline: 30px; */
+  }
+  .centered {
+    top: 60%;
   }
   .desktop,
   .mobile,
@@ -246,14 +251,19 @@ p {
   .IpadQuer {
     display: block;
   }
-  /* p {
-    font-size: 1.5em;
-    font-family: Barlow;
-  } */
+  .bodyComponentLayout {
+    margin-inline: 60px;
+  }
 }
+/* @media (max-width: 830px) {
+  .bodyComponentLayout {
+    padding-inline: 0px;
+  }
+} */
 @media (max-width: 600px) {
   .img-container {
     padding-inline: revert;
+    height: 684px;
   }
   .desktop,
   .IpadPro,
@@ -264,10 +274,29 @@ p {
   .mobile {
     display: block;
   }
-  .img-container {
-    height: 600px;
-  }
-  .HeaderbgTextGradient {
+  /* .bodyComponentLayout {
+    margin-inline: 25px;
+  } */
+  /* .HeaderbgTextGradient {
     top: 12px;
+  } */
+}
+@media (max-width: 768px) {
+  .bodyComponentLayout {
+    margin-inline: 50px;
+  }
+}
+@media (max-width: 2400px) {
+  .bg_screen {
+  }
+}
+@media (max-width: 600px) {
+  .bodyComponentLayout {
+    margin-inline: 25px;
+  }
+  .bg_screen {
+    display: none;
+  }
+  .mobilebg {
   }
 }

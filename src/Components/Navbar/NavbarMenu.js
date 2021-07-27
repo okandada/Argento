@@ -27,14 +27,20 @@ export default function NavbarMenu() {
   return (
     <div className={classes.root}>
       <AppBar position="static" className={classes.BackgroundColor}>
-        <Toolbar>
+        <Toolbar
+          style={{
+            padding: "0",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
           {/* <div className="textureImage1">
             <img src={TextureImage} />
           </div> */}
 
           <div>
             <Link to="/">
-              <div style={{ maxWidth: "347.7px", maxHeight: "80px" }}>
+              <div className="logo-resize">
                 <img
                   style={{ width: "100%", height: "100%" }}
                   src={logo}
@@ -43,29 +49,36 @@ export default function NavbarMenu() {
               </div>
             </Link>
           </div>
-          <div style={{ width: "100%", textAlign: "end" }}>
-            <span>
+          <div className="homeButton">
+            <div className="btn-70-m">
               <Button component={Link} to="">
-                <Typography variant="h3" className="buttonPadding ">
-                  Home
-                </Typography>
+                <Typography variant="h3">Home</Typography>
               </Button>
-              <Button component={Link} to="/about">
-                <Typography variant="h3" className="buttonPadding">
-                  Über uns
-                </Typography>
+            </div>
+            <div className="btn-70-m">
+              <Button
+                component={Link}
+                to="/about"
+                // style={{ padding: "6px 70px" }}
+              >
+                <Typography variant="h3">Über uns</Typography>
               </Button>
+            </div>
+            <div className="btn-6-m">
               <Button component={Link} to="/contact">
-                <Typography variant="h3" className="buttonPadding">
-                  Kontakt
-                </Typography>
+                <Typography variant="h3">Kontakt</Typography>
               </Button>
-            </span>
-            <span>
+            </div>
+            <div className="btn-5-m">
               <Button>
-                <img src={ShoppingCart} alt="/about" to="/about" />
+                <img
+                  src={ShoppingCart}
+                  alt="/about"
+                  to="/about"
+                  className="cart-img"
+                />
               </Button>
-            </span>
+            </div>
           </div>
         </Toolbar>
       </AppBar>

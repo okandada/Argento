@@ -24,6 +24,9 @@
   /* position: absolute !important;
   bottom: 22px !important; */
 }
+.dash-width {
+  width: 35%;
+}
 
 img {
   object-fit: cover;
@@ -112,6 +115,9 @@ img {
   }
 }
 @media (max-width: 600px) {
+  .dash-width {
+    max-width: 100px;
+  }
   .text-price {
     position: relative;
     width: 100%;
@@ -121,6 +127,6 @@ img {
     margin-top: 50px !important;
   }
   .mutliLine-msg {
-    height: 180px;
+    height: 180px !important;
   }
 }
