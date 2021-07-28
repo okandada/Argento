@@ -26,13 +26,6 @@ export const Home = (props) => {
           Heading="Gold & Silber"
         />
       </div>
-      {/* <div className="mobilebg">
-        <BgImageComponent
-          SubHeading={"Die beste Währung in Krisenzeiten"}
-          DashSize={"27%"}
-          Heading="Gold & Silber"
-        />
-      </div> */}
 
       <Heading2 size="h2" Text=" Gold & Silber Kaufen"></Heading2>
 
@@ -45,6 +38,7 @@ export const Home = (props) => {
           src={GOldCourseDesktop}
           style={{ maxHeight: "460px", width: "100%" }}
           alt=""
+          className="imagShadow"
         />
         <div className="text-price">
           <AktueleAnkauf
@@ -78,6 +72,7 @@ export const Home = (props) => {
           src={NewsletterDesktop}
           style={{ maxHeight: "460px", width: "100%" }}
           alt=""
+          className="imagShadow"
         />
         <div className="text-price">
           <NewsLetter

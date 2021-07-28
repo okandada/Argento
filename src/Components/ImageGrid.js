@@ -1,25 +1,10 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-// import UnsernePartner1Desktop from "../../src/Images/ÜberUns/Desktop/Fotos/UnsernePartner1Desktop.png";
-// import UnsernePartner1Mobile from "../../src/Images/ÜberUns/Smartphone/Fotos/UnsernePartner1Mobile.png";
-// import UnsernePartner1Tablet from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer1.png";
-// import UnsernePartnerQuer1 from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer1.png";
-// import UnsernePartner2Desktop from "../../src/Images/ÜberUns/Desktop/Fotos/UnsernePartner2Desktop.png";
-// import UnsernePartner2Mobile from "../../src/Images/ÜberUns/Smartphone/Fotos/UnsernePartner2Mobile.png";
-// import UnsernePartner2Tablet from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer2.png";
-// import UnsernePartnerQuer2 from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer2.png";
-// import UnsernePartner3Desktop from "../../src/Images/ÜberUns/Desktop/Fotos/UnsernePartner3Desktop.png";
-// import UnsernePartner3Mobile from "../../src/Images/ÜberUns/Smartphone/Fotos/UnsernePartner3Mobile.png";
-// import UnsernePartner3Tablet from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer3.png";
-// import UnsernePartnerQuer3 from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer3.png";
-// import UnsernePartner4Desktop from "../../src/Images/ÜberUns/Desktop/Fotos/UnsernePartner4Desktop.png";
-// import UnsernePartner4Mobile from "../../src/Images/ÜberUns/Smartphone/Fotos/UnsernePartner4Mobile.png";
-// import UnsernePartner4Tablet from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer4.png";
-// import UnsernePartnerQuer4 from "../../src/Images/ÜberUns/TabletQuer/Fotos/UnsernePartnerQuer4.png";
 import Partner_1 from "../Images/Home/Desktop/Fotos/Partner_1.jpg";
 import Partner_2 from "../Images/Home/Desktop/Fotos/Partner_2.jpg";
 import Partner_3 from "../Images/Home/Desktop/Fotos/Partner_3.jpg";
 import Partner_4 from "../Images/Home/Desktop/Fotos/Partner_4.jpg";
+import "../App.css";
 export default function ImageGrid() {
   return (
     <Grid container spacing={0}>
@@ -29,36 +14,15 @@ export default function ImageGrid() {
         style={{ paddingTop: "15px" }}
         spacing={2}
       >
-        <Grid item lg={3} md={6} sm={6} xs={6}>
+        <Grid item lg={3} md={6} sm={6} xs={6} className="imagShadow">
           <div>
             <img
               src={Partner_1}
               alt=""
-              //   className="desktop"
+              // className="imagShadow"
               height="100%"
               width="100%"
             />
-            {/* <img
-              src={UnsernePartner1Mobile}
-              height="100%"
-              width="100%"
-              alt=""
-              className="mobile"
-            />
-            <img
-              src={UnsernePartner1Tablet}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadPro"
-            />
-            <img
-              src={UnsernePartnerQuer1}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadQuer"
-            /> */}
           </div>
         </Grid>
 
@@ -69,29 +33,8 @@ export default function ImageGrid() {
               height="100%"
               width="100%"
               alt=""
-              //   className="desktop"
+              // className="imagShadow"
             />
-            {/* <img
-              src={UnsernePartner2Mobile}
-              height="100%"
-              width="100%"
-              alt=""
-              className="mobile"
-            />
-            <img
-              src={UnsernePartner2Tablet}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadPro"
-            />
-            <img
-              src={UnsernePartnerQuer2}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadQuer"
-            /> */}
           </div>
         </Grid>
         <Grid item lg={3} md={6} sm={6} xs={6}>
@@ -101,29 +44,8 @@ export default function ImageGrid() {
               height="100%"
               width="100%"
               alt=""
-              //   className="desktop"
+              // className="imagShadow"
             />
-            {/* <img
-              src={UnsernePartner3Mobile}
-              height="100%"
-              width="100%"
-              alt=""
-              className="mobile"
-            />
-            <img
-              src={UnsernePartner3Tablet}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadPro"
-            />
-            <img
-              src={UnsernePartnerQuer3}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadQuer"
-            /> */}
           </div>
         </Grid>
         <Grid item lg={3} md={6} sm={6} xs={6}>
@@ -133,29 +55,8 @@ export default function ImageGrid() {
               height="100%"
               width="100%"
               alt=""
-              //   className="desktop"
+              // className="imagShadow"
             />
-            {/* <img
-              src={UnsernePartner4Mobile}
-              height="100%"
-              width="100%"
-              alt=""
-              className="mobile"
-            />
-            <img
-              src={UnsernePartner4Tablet}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadPro"
-            />
-            <img
-              src={UnsernePartnerQuer4}
-              height="100%"
-              width="100%"
-              alt=""
-              className="IpadQuer"
-            /> */}
           </div>
         </Grid>
       </Grid>

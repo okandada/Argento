@@ -59,7 +59,7 @@ export default function NavBarMobileMenu() {
         onClick={handleClick}
       >
         <img
-          style={{ width: "39px", height: "31px" }}
+          style={{ width: "45px", height: "33px" }}
           src={MobileMenu}
           alt=""
         />

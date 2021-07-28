@@ -34,7 +34,7 @@ export const About = (props) => {
         <Container className="container">
           <Heading
             size="caption"
-            DashSize={"15%"}
+            DashSize={"22%"}
             padding="0px"
             Text=" Unser Team"
           ></Heading>
@@ -53,11 +53,11 @@ export const About = (props) => {
           </p>
         </Container>
 
-        <Container className="container">
+        <Container className="container imagShadowAbout">
           <img src={BuyGoldDesktop3} height="100%" width="100%" alt="" />
         </Container>
       </AboutCarddiv>
-      <div className="mobile">
+      <div className="mobile imagShadowAbout">
         <Heading
           size="caption"
           DashSize={"20%"}
@@ -82,7 +82,7 @@ export const About = (props) => {
       </div>
 
       <AboutCarddiv>
-        <Container className="container">
+        <Container className="container imagShadowAbout">
           <img src={UnserneTeam2} height="100%" width="100%" alt="" />
         </Container>
 
@@ -111,7 +111,7 @@ export const About = (props) => {
       <div style={{ marginTop: "10%" }}>
         <Heading
           size="caption"
-          DashSize={"28%"}
+          DashSize={"13%"}
           Text="Unsere Partner"
         ></Heading>
       </div>

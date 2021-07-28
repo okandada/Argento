@@ -14,6 +14,7 @@ export class BgImageComponent extends Component {
           width="100%"
           height="100%"
           alt=""
+          className="imagShadow"
           text="unserne leider schaft"
           style={{ text: "unserne leider schaft" }}
         />

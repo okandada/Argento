@@ -6,73 +6,23 @@
 }
 
 /* Main body */
+
 body {
   margin: 0px;
-  /* background: linear-gradient(
-      217deg,
-      rgb(0, 0, 0),
-      rgba(204, 197, 197, 0) 70.75%
-    ), */
-  /* linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), */
-  /* linear-gradient(336deg, rgba(110, 110, 116, 0.8), rgba(0, 0, 255, 0) 70.71%); */
-  /* background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg); */
-  /* background-repeat: no-repeat;
-  background-position: left top; */
-  /* background-size: cover; */
   background-color: black;
 }
 
-.HomebackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
-  background-repeat: no-repeat;
-
-  background-position: left 70px top, right top 530px, left top 1200px,
-    right bottom 1600px, right bottom 370px, left bottom;
-  background-size: 35%, 43%, 30%, 37%, 37%, 30%;
-}
-.AboutbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
-  background-repeat: no-repeat;
-
-  background-position: left 70px top, right top 600px, left bottom 600px,
-    left bottom;
-  background-size: 50%, 35%, 30%, 30%;
-}
-/* .ContactbackgroundGradiant {
+/* .DatenSchutzbackgroundGradiant {
   background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
     url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
 
   background-repeat: no-repeat;
-  background-position: left 60px top, left bottom;
-  background-size: 60%, 30%;
+  background-position: left 65px top, left bottom;
+  background-size: 50%, 28%;
 } */
-.ImpressumbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
-
-  background-repeat: no-repeat;
-  background-position: left 65px top, left bottom;
-  background-size: 50%, 28%;
-}
-.DatenSchutzbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
-
-  background-repeat: no-repeat;
-  background-position: left 65px top, left bottom;
-  background-size: 50%, 28%;
-}
 .HeaderbgTextGradient {
   position: absolute;
-  width: 70%;
+  width: 93%;
   top: 0px;
   height: 100%;
   background-image: linear-gradient(
@@ -117,7 +67,11 @@ p {
 /* background image sytles */
 .img-container {
   position: relative;
+
   /* text-align: center; */
+}
+.imagShadow {
+  box-shadow: 3px 10px 10px 0 rgba(0, 0, 0, 0.75) !important;
 }
 
 .centered {
@@ -146,6 +100,10 @@ p {
 .MuiPaper-root.MuiPaper-root {
   background-color: transparent;
 }
+.MuiContainer-root.MuiContainer-root {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
 .IpadPro,
 .mobile,
@@ -172,6 +130,117 @@ p {
 .textHeaderColor {
   color: rgb 236 189 70;
 }
+.aboutDashResizing {
+}
+/* Home background shadow handeling on different screen sizes */
+.HomebackgroundGradiant {
+  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+  background-repeat: no-repeat;
+
+  background-position: left 70px top, right top 530px, left top 1200px,
+    right bottom 1600px, right bottom 370px, left bottom;
+  background-size: 35%, 43%, 30%, 37%, 37%, 25%;
+}
+/* @media (max-width: 2500px) {
+  .HomebackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 530px, left top 1200px,
+      right bottom 1600px, right bottom 370px, left bottom;
+    background-size: 35%, 43%, 30%, 37%, 37%, 30%;
+  }
+} */
+@media (max-width: 1350px) {
+  .HomebackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 530px, left top 1200px,
+      right bottom 1600px, right bottom 370px, left bottom;
+    background-size: 55%, 43%, 30%, 37%, 37%, 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .HomebackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 920px, left top 1800px,
+      right bottom 1600px, right bottom 370px, left bottom;
+    background-size: 65%, 43%, 30%, 37%, 37%, 30%;
+  }
+}
+@media (max-width: 900px) {
+  .HomebackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 920px, left top 1800px,
+      right bottom 1600px, right bottom 370px, left bottom;
+    background-size: 65%, 45%, 33%, 37%, 37%, 30%;
+  }
+}
+
+@media (max-width: 810px) {
+  .HomebackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 920px, left top 1700px,
+      right bottom 1500px, right bottom 370px, left bottom;
+    background-size: 45%, 48.5%, 40%, 40%, 37%, 20%;
+  }
+}
+@media (max-width: 600px) {
+  .HomebackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 570px, left top 1250px,
+      right bottom 1600px, right bottom 370px, left bottom;
+    background-size: 45%, 43%, 40%, 37%, 37%, 30%;
+  }
+}
+@media (max-width: 400px) {
+  .HomebackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 600px, left top 1200px,
+      right bottom 1600px, right bottom 370px, left bottom;
+    background-size: 45%, 48%, 40%, 37%, 37%, 30%;
+  }
+}
+
+/* contact background shadow handeling on different screen sizes */
 
 @media (max-width: 2500px) {
   .ContactbackgroundGradiant {
@@ -181,6 +250,16 @@ p {
     background-repeat: no-repeat;
     background-position: left 40px top, left bottom;
     background-size: 40%, 30%;
+  }
+}
+@media (max-width: 1350px) {
+  .ContactbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 55%, 42%;
   }
 }
 @media (max-width: 1050px) {
@@ -214,6 +293,250 @@ p {
     background-size: 45%, 25%;
   }
 }
+
+/* about shadow images resizing */
+
+@media (max-width: 2500px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 70px top, right top 600px, left bottom 875px,
+      left bottom;
+    background-size: 40%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1350px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 560px, left bottom 800px,
+      left bottom;
+    background-size: 55%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1280px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 600px, left bottom 1310px,
+      left bottom;
+    background-size: 65%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1180px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 550px, left bottom 1210px,
+      left bottom;
+    background-size: 65%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1030px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 1040px, left bottom 1140px,
+      left bottom;
+    background-size: 65%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 920px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 1040px, left bottom 1085px,
+      left bottom;
+    background-size: 65%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 850px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 1100px, left bottom 1018px,
+      left bottom;
+    background-size: 45%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 715px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 1100px, left bottom 975px,
+      left bottom;
+    background-size: 45%, 35%, 30%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 650px, left bottom 770px,
+      left bottom;
+    background-size: 45%, 35%, 35%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 540px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 650px, left bottom 700px,
+      left bottom;
+    background-size: 45%, 35%, 35%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 380px) {
+  .AboutbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+    background-position: left 40px top, right top 650px, left bottom 660px,
+      left bottom;
+    background-size: 45%, 35%, 35%, 30%;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Impressum shadow images resizing */
+
+@media (max-width: 2500px) {
+  .ImpressumbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 40%, 30%;
+  }
+}
+@media (max-width: 1350px) {
+  .ImpressumbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 55%, 42%;
+  }
+}
+@media (max-width: 1050px) {
+  .ImpressumbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 65%, 42%;
+  }
+}
+@media (max-width: 790px) {
+  .ImpressumbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left 65px top 140px, left bottom;
+    background-size: 45%, 43%, 47%;
+  }
+}
+@media (max-width: 600px) {
+  .ImpressumbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 45%, 25%;
+  }
+}
+
+/* datenschutz shadow images resizing */
+
+@media (max-width: 2500px) {
+  .DatenSchutzbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 40%, 30%;
+  }
+}
+@media (max-width: 1350px) {
+  .DatenSchutzbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 55%, 42%;
+  }
+}
+@media (max-width: 1050px) {
+  .DatenSchutzbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 65%, 42%;
+  }
+}
+@media (max-width: 790px) {
+  .DatenSchutzbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left 65px top 140px, left bottom;
+    background-size: 45%, 43%, 47%;
+  }
+}
+@media (max-width: 600px) {
+  .DatenSchutzbackgroundGradiant {
+    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
+      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left 40px top, left bottom;
+    background-size: 45%, 25%;
+  }
+}
+
 @media (max-width: 600px) {
   /* .centered {
     top: 70%;
@@ -255,11 +578,7 @@ p {
     margin-inline: 60px;
   }
 }
-/* @media (max-width: 830px) {
-  .bodyComponentLayout {
-    padding-inline: 0px;
-  }
-} */
+
 @media (max-width: 600px) {
   .img-container {
     padding-inline: revert;
@@ -269,17 +588,10 @@ p {
   .IpadPro,
   .IpadQuer {
     display: none;
-    /* font-size: 2px; */
   }
   .mobile {
     display: block;
   }
-  /* .bodyComponentLayout {
-    margin-inline: 25px;
-  } */
-  /* .HeaderbgTextGradient {
-    top: 12px;
-  } */
 }
 @media (max-width: 768px) {
   .bodyComponentLayout {

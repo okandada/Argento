@@ -53,8 +53,16 @@ theme.typography.h2 = {
   fontWeight: "normal",
   padding: "43px 0",
   color: "#ffffff",
+  "@media (max-width:800px)": {
+    padding: "23px 0",
+    fontSize: "4.7vw",
+  },
   "@media (max-width:600px)": {
     padding: "23px 0",
+    fontSize: "2.2rem",
+  },
+  "@media (max-width:530px)": {
+    fontSize: "2rem",
   },
   [theme.breakpoints.up("md")]: {
     padding: "43px 0",
@@ -154,9 +162,14 @@ theme.typography.caption = {
   fontSize: "60px",
   color: "#ffffff",
   fontFamily: "TGL0-1451Engschrift",
+  "@media (max-width:1366px)": {
+    fontSize: "2.5rem",
+  },
+  "@media (max-width:1024px)": {
+    fontSize: "2.3rem",
+  },
   "@media (max-width:660px)": {
-    marginTop: "30px",
-    fontSize: "40px",
+    fontSize: "2rem",
   },
 };
 export default theme;
