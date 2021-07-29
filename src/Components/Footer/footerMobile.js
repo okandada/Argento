@@ -265,7 +265,10 @@ function FooterMobile() {
         </div>
       </div>
       <div>
-        <div style={{ display: "flex", margin: "20px 0px 10px 90px" }}>
+        <div
+          className=" socialImages"
+          // style={{ display: "flex", margin: "20px 0px 10px 90px" }}
+        >
           <div style={{ paddingInlineEnd: "8px" }}>
             <img src={Insta_Icon} width="27.6px" height="27.6" alt=""></img>
           </div>
@@ -284,7 +287,7 @@ function FooterMobile() {
             ></img>
           </div>
         </div>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
           <Typography
             variant="body2"
             color="textSecondary"

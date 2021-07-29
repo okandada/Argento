@@ -6,7 +6,7 @@
   height: 50px;
 }
 .KontactHeading {
-  font-size: 50px;
+  font-size: 50px !important;
   color: #ffffff;
   margin-top: 5%;
   font-family: TGL0-1451Engschrift !important;

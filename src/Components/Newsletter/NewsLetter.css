@@ -2,6 +2,27 @@
   margin-top: 156px;
   height: 42px;
 }
+
+.nltextfield {
+  width: fit-content !important;
+  margin: 16px 0px !important;
+  width: 100% !important;
+
+  border: 2px solid #ffffff !important;
+}
+.nltextfield:hover {
+  border: 2px solid #ffffff !important;
+}
+.NLtitle {
+  font-size: 25px !important;
+  font-family: TGL0-1451Engschrift !important;
+}
+@media (max-width: 1366px) {
+  .NLtitle {
+    font-size: 25px !important;
+    font-family: TGL0-1451Engschrift !important;
+  }
+}
 @media (max-width: 1200px) {
   .newsletter_button {
     margin-top: 46%;
@@ -17,9 +38,14 @@
     margin-top: 42%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .newsletter_button {
     margin-top: 38%;
+  }
+}
+@media (max-width: 740px) {
+  .newsletter_button {
+    margin-top: 34%;
   }
 }
 @media (max-width: 710px) {
@@ -27,13 +53,18 @@
     margin-top: 34%;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 690px) {
   .newsletter_button {
-    margin-top: 27%;
+    margin-top: 23%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 660px) {
   .newsletter_button {
-    margin-top: 24%;
+    margin-top: 20%;
+  }
+}
+@media (max-width: 640px) {
+  .newsletter_button {
+    margin-top: 13%;
   }
 }

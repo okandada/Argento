@@ -91,19 +91,19 @@ theme.typography.h3 = {
 };
 // heading used for card heading and other same sizes
 theme.typography.h4 = {
-  fontSize: "1.5rem",
+  fontSize: "2rem",
   fontWeight: "Normal",
   color: "#ffffff",
   fontFamily: "TGL0-1451Engschrift",
   "@media (max-width:850px)": {
-    fontSize: "1.3rem",
+    fontSize: "1.9rem",
   },
   "@media (max-width:700px)": {
-    fontSize: "1.2rem",
+    fontSize: "1.8rem",
   },
-  "@media (max-width:630px)": {
-    fontSize: "1.1rem",
-  },
+  // "@media (max-width:630px)": {
+  //   fontSize: "1.2rem",
+  // },
   "@media (max-width:400px)": {
     fontSize: "1rem",
   },
@@ -155,6 +155,10 @@ theme.typography.button = {
   fontFamily: "TGL0-1451Engschrift",
   "@media (max-width:660px)": {
     fontSize: "25px",
+    fontWeight: "500",
+  },
+  "@media (max-width:330px)": {
+    fontSize: "20px",
     fontWeight: "500",
   },
 };

@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
       width: "25ch",
     },
   },
+
   color: {
     color: "#ffffff",
   },
@@ -57,13 +58,14 @@ export default function NewsLetter(props) {
   };
   return (
     <div className="text-items">
-      <Typography variant="h4">{props.firstTitle}</Typography>
+      <Typography variant="h4">
+        <span className="NLtitle ">{props.firstTitle}</span>
+      </Typography>
       <Typography variant="subtitle1">{props.subTitle}</Typography>
-      {/* <div className="first-title">{props.firstTitle}</div>
-      <div className="sub-title">{props.subTitle}</div> */}
+
       <form className={classes.root} noValidate autoComplete="off">
         <ValidationTextField
-          className="newsletter-textfield"
+          className="nltextfield"
           InputLabelProps={{
             style: { color: "#ecbd46", height: "50px" },
           }}
@@ -85,15 +87,9 @@ export default function NewsLetter(props) {
               Teilnahmebedingungen einverstanden
             </Typography>
           </div>
-          {/* <small>
-            Ich bin mit den allgemeinen Datenschutzbestimmungen und den
-            Teilnahmebedingungen einverstanden
-          </small> */}
 
-          {/* <div className="newsLetter-last-button"> */}
           <div className="newsletter_button">
             <Button
-              // to="https://abcstorexzy.myshopify.com/products/gold1"
               href="https://abcstorexzy.myshopify.com/products/gold1"
               style={{ background: "#ffffff", height: "50px" }}
               fullWidth={true}

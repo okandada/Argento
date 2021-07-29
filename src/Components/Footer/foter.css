@@ -1,0 +1,82 @@
+.logoMargin {
+  margin: 43px 80px !important;
+}
+.footerMobHeading {
+  font-size: "20px !important";
+  font-family: TGL0-1451Engschrift !important;
+  color: " #ffffff !important";
+}
+.f-logo {
+  max-width: 29.2vw;
+  max-height: 6.7vw;
+  margin-top: 10%;
+}
+.foterTitle {
+  font-size: 28px;
+  color: #ecbd46;
+}
+.footerDescription {
+  font-size: 20px;
+  font-weight: 500px;
+}
+.logoSize {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.socialImages {
+  display: flex;
+  margin: 20px 0px 10px 90px;
+  margin: 5px;
+}
+.socialImagesSize {
+  width: 25px;
+}
+.fbImageSize {
+  width: 45px;
+}
+.simgDiv {
+  padding-inline-end: 9px;
+}
+@media (max-width: 1366px) {
+  .foterTitle {
+    font-size: 27px;
+  }
+  .footerDescription {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .foterTitle {
+    font-size: 27px;
+  }
+  .footerDescription {
+    font-size: 17px;
+  }
+}
+@media (max-width: 860px) {
+  .foterTitle {
+    font-size: 22px;
+  }
+  .footerDescription {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .socialImages {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0px 15px 0px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .MuiContainer-maxWidthMd.MuiContainer-maxWidthMd {
+    max-width: 950px;
+  }
+}
+@media (min-width: 860px) {
+  .MuiContainer-maxWidthMd.MuiContainer-maxWidthMd {
+    max-width: 600px;
+  }
+}

@@ -1,5 +1,3 @@
-//
-
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
@@ -89,7 +87,7 @@ const footers = [
   {
     title: "Social Media",
     description: [
-      <div className="mainSocialImg">
+      <div style={{ display: "flex", margin: "20px 0 0 7px" }}>
         <div className="simgDiv">
           <img src={Insta_Icon} className="socialImagesSize" alt=""></img>
         </div>

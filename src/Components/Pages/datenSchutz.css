@@ -1,9 +1,27 @@
 .headerText {
-  font-size: 1.4rem !important;
+  font-size: 35px !important;
   color: #ecbd46;
 }
 .paraText {
-  font-size: 1.18rem !important;
+  font-size: 19px !important;
   font-family: Barlow;
   word-break: break-word;
+}
+@media (max-width: 1366px) {
+  .headerText {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .headerText {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 600px) {
+  .headerText {
+    font-size: 20px !important;
+  }
+  .paraText {
+    font-size: 15px !important;
+  }
 }
