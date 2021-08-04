@@ -73,3 +73,6 @@
     margin-right: -8px;
   }
 }
+.Mui-selected {
+  color: "red" !important;
+}

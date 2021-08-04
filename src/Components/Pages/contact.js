@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import { TextField } from "@material-ui/core";
 import Checkbox from "@material-ui/core/Checkbox";
-// import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { withStyles } from "@material-ui/core/styles";
 import "./home.css";
 import "./contact.css";
 import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-
+import { useForm } from "react-hook-form";
 const ValidationTextField = withStyles({
   root: {
     "& input": {
@@ -20,10 +19,18 @@ export const ContactUs = (props) => {
   useEffect(() => {
     props.setBackGroundCss("ContactbackgroundGradiant");
   });
-  const [checked, setChecked] = React.useState(true);
+  const [checked, setChecked] = React.useState(false);
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+  console.log(watch("example"));
   return (
     <div style={{ marginBottom: "140px" }}>
       <BgImageComponent2
@@ -34,7 +41,6 @@ export const ContactUs = (props) => {
       />
 
       <div>
-        {/* <h2 style={{ color: "#ffffff" }}>Kontaktformular</h2> */}
         <div className="KontactHeading">Kontaktformular</div>
         <div className="field3">
           <ValidationTextField
@@ -82,6 +88,7 @@ export const ContactUs = (props) => {
             }}
             label="*Nachname "
             variant="filled"
+            error
             id="validation-outlined-input3"
           />
         </div>
@@ -114,7 +121,7 @@ export const ContactUs = (props) => {
         </div>
         <Button
           className="buttonstyle"
-          href="https://abcstorexzy.myshopify.com/products/gold1"
+          // href="https://abcstorexzy.myshopify.com/products/gold1"
         >
           <Typography variant="button"> Kontaktieren</Typography>
         </Button>

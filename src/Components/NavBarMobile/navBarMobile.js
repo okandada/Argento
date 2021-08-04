@@ -15,12 +15,17 @@ const useStyles = makeStyles({
     // padding: "18px 0",
     fontSize: "2.1rem",
     // minHeight: "100vh",
+    // "&:hover": {
+    //   color: "red",
+    // },
   },
+
   MenuNavColor: {
     backgroundColor: "#000000",
 
     // marginTop: "40px",
   },
+
   menuHeader1: {
     display: "flex",
     flexDirection: "row",
@@ -77,7 +82,7 @@ export default function NavBarMobileMenu() {
             <Link to="/">
               <img
                 style={{
-                  maxHeight: "195px",
+                  // maxHeight: "195px",
                   maxHeight: "45px",
                   objectFit: "fill",
                 }}
@@ -97,7 +102,6 @@ export default function NavBarMobileMenu() {
             component={Link}
             to="/"
             onClick={handleClose}
-            selected={true}
             className={classes.MuiNavColor}
             style={{ padding: "18px 0" }}
           >

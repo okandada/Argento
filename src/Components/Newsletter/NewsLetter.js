@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function NewsLetter(props) {
   const classes = useStyles();
-  const [checked, setChecked] = React.useState(true);
+  const [checked, setChecked] = React.useState(false);
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };

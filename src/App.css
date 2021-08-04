@@ -22,7 +22,7 @@ body {
 } */
 .HeaderbgTextGradient {
   position: absolute;
-  width: 93%;
+  width: 60%;
   top: 0px;
   height: 100%;
   background-image: linear-gradient(
@@ -130,8 +130,10 @@ p {
 .textHeaderColor {
   color: rgb 236 189 70;
 }
-.aboutDashResizing {
+.MuiSvgIcon-root {
+  color: white;
 }
+
 /* Home background shadow handeling on different screen sizes */
 .HomebackgroundGradiant {
   background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
@@ -611,4 +613,22 @@ p {
   }
   .mobilebg {
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -27,9 +27,10 @@ export const About = (props) => {
     <div>
       <BgImageComponent
         DashSize={"35%"}
-        Heading={"Unsere Leidenschaft"}
+        Heading={["Unsere", <br />, "Leidenschaft"]}
         SubHeading={"Das Team von Agento Aurum ist..."}
       />
+
       <AboutCarddiv>
         <Container className="container">
           <Heading
@@ -67,17 +68,17 @@ export const About = (props) => {
       </div>
       <div>
         <p className="mobile pFont">
-          mobile Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-          diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-          erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-          tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-          consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-          velit esse molestie consequat, vel illum dolore eu feugiat nulla
-          facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-          praesent luptatum zzril delenit augue duis dolore te feugait nulla
-          facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit,
-          sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer adipiscing
-          elit, sed diam nonummynibh
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
+          nonummy Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
+          diam nonummynibh
         </p>
       </div>
 
@@ -94,13 +95,13 @@ export const About = (props) => {
             Text=" Warum Argento Aurum"
           ></Heading>
           <p className="pFont">
-            Desktop Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
-            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-            vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-            nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            facilisis at vero eros et accumsan et iusto odio dignissim qui
             blandit praesent luptatum zzril delenit augue duis dolore te feugait
             nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing
             elit, sed diam nonummy Lorem ipsum dolor sit amet, cons ectetuer

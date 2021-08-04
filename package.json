@@ -15,9 +15,11 @@
     "material-auto-rotating-carousel": "^3.0.2",
     "material-ui": "^0.15.0",
     "material-ui-color": "^1.1.0",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.12.2",
     "react-icon": "^1.0.0",
     "react-icons": "^4.2.0",
     "react-image-gallery": "^1.0.9",
@@ -26,7 +28,7 @@
     "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
     "react-router-scroll": "^0.4.4",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^4.0.3",
     "react-slideshow-image": "^3.4.6",
     "react-swipeable-views": "^0.13.9",
     "shopify-buy": "^2.11.0",
@@ -48,7 +50,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      
       "not op_mini all"
     ],
     "development": [
