@@ -48,7 +48,7 @@ function FooterMobile() {
       <Link to="/">
         <div
           className="logoSize"
-          style={{ maxWidth: "225px", maxHeight: "51.3px" }}
+          style={{ maxWidth: "225px", maxHeight: "51.3px", marginTop: "430px" }}
         >
           <img style={{ width: "100%", height: "100%" }} src={logo} alt="" />
         </div>

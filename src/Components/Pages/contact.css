@@ -5,6 +5,21 @@
   margin-bottom: 40px;
   height: 50px;
 }
+.multiline-textfield {
+  width: fit-content !important;
+  margin: 16px 0px !important;
+  width: 100% !important;
+  height: 260px;
+  border: 2px solid #ffffff !important;
+}
+.checkboxDiv {
+  display: flex;
+  margin-left: -9px;
+}
+.checkboxmobile {
+  margin-left: -10px;
+  display: flex;
+}
 .KontactHeading {
   font-size: 50px !important;
   color: #ffffff;
@@ -31,5 +46,8 @@
     margin-top: 20px !important;
     height: 50px !important;
     font-size: 25px;
+  }
+  .multiline-textfield {
+    height: 315px;
   }
 }

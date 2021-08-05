@@ -17,6 +17,7 @@
 .newsLetter-checkbox {
   float: left;
   padding-left: 0 !important;
+  border-radius: 0px !important;
 }
 .newsLetter-btn {
   width: 100% !important;
@@ -45,16 +46,17 @@ img {
   flex-direction: row;
 }
 .mutliLine-msg {
-  width: 52%;
+  width: 64%;
+  height: 260px;
 }
 .field1 {
-  width: 24%;
+  width: 30%;
 }
 .field3 {
-  width: 24%;
+  width: 30%;
 }
 .field2 {
-  width: 24%;
+  width: 30%;
   margin-left: 4%;
 }
 @media (max-width: 840px) {
@@ -63,19 +65,19 @@ img {
   }
 }
 
-@media (max-width: 1219px) {
+@media (max-width: 1366px) {
   .field1 {
-    width: 35%;
+    width: 40%;
   }
   .field3 {
-    width: 35%;
+    width: 40%;
   }
   .field2 {
-    width: 35%;
+    width: 40%;
     margin-left: 2.5%;
   }
   .mutliLine-msg {
-    width: 72.5%;
+    width: 100%;
   }
 }
 @media (max-width: 785px) {
@@ -90,7 +92,7 @@ img {
     margin-left: 15px;
   }
   .mutliLine-msg {
-    width: 92.5%;
+    width: 100%;
   }
 }
 @media (max-width: 600px) {

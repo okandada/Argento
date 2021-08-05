@@ -12,14 +12,6 @@ body {
   background-color: black;
 }
 
-/* .DatenSchutzbackgroundGradiant {
-  background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
-    url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
-
-  background-repeat: no-repeat;
-  background-position: left 65px top, left bottom;
-  background-size: 50%, 28%;
-} */
 .HeaderbgTextGradient {
   position: absolute;
   width: 60%;
@@ -51,24 +43,19 @@ p {
 }
 
 .bodyComponentLayout {
-  /* margin-inline: 5.5%; */
   margin-inline: 75px;
-  /* margin-top: 8px; */
 }
 /* Navigation css*/
 .MuiAppBar-positionStatic.MuiAppBar-positionStatic {
   background-color: transparent;
 }
 .MuiList-root {
-  /* background: black; */
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
 /* background image sytles */
 .img-container {
   position: relative;
-
-  /* text-align: center; */
 }
 .imagShadow {
   box-shadow: 3px 10px 10px 0 rgba(0, 0, 0, 0.75) !important;
@@ -78,9 +65,6 @@ p {
   position: absolute;
   top: 42%;
   left: 5%;
-  /* padding-inline-start: 58vw;
-  min-width: 90vw;
-  transform: translate(-50%, -50%); */
 }
 
 .MuiPaper-root.MuiPaper-root.MuiPaper-root.MuiPaper-root {
@@ -148,19 +132,7 @@ p {
     right bottom 1600px, right bottom 370px, left bottom;
   background-size: 35%, 43%, 30%, 37%, 37%, 25%;
 }
-/* @media (max-width: 2500px) {
-  .HomebackgroundGradiant {
-    background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
-      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
-      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg),
-      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
-      url(../src/Images/Home/Desktop/Fotos/TextureImage.jpg),
-      url(../src/Images/Home/Desktop/Fotos/TextureImage_Right.jpg);
-    background-position: left 40px top, right top 530px, left top 1200px,
-      right bottom 1600px, right bottom 370px, left bottom;
-    background-size: 35%, 43%, 30%, 37%, 37%, 30%;
-  }
-} */
+
 @media (max-width: 1350px) {
   .HomebackgroundGradiant {
     background-image: url(../src/Images/Home/Desktop/Fotos/TextureImage1.png),
@@ -538,14 +510,16 @@ p {
     background-size: 45%, 25%;
   }
 }
-
-@media (max-width: 600px) {
-  /* .centered {
-    top: 70%;
-    left: 15%;
-  } */
+@media (max-width: 2000px) {
+  .IpadPro,
+  .mobile,
+  .IpadQuer {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
 }
-
 @media (max-width: 1366px) {
   .desktop,
   .mobile,
@@ -555,15 +529,10 @@ p {
   .IpadPro {
     display: block;
   }
-  /* p {
-    font-size: 1.5em;
-    font-family: Barlow;
-  } */
 }
 @media (max-width: 1024px) {
   .img-container {
     height: 1196px;
-    /* padding-inline: 30px; */
   }
   .centered {
     top: 60%;

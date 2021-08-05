@@ -8,6 +8,7 @@ import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { useForm } from "react-hook-form";
+import Testform from "./testForm";
 const ValidationTextField = withStyles({
   root: {
     "& input": {
@@ -52,20 +53,31 @@ export const ContactUs = (props) => {
             label="*E-Mail-Adresse"
             id="validation-outlined-input1"
           />
-          <div>
-            <Checkbox
-              className="newsLetter-checkbox"
+          <div className=" desktop IpadQuer IpadPro">
+            <span className="checkboxDiv ">
+              <Testform />
+              <p style={{ color: "#a4a4a4", marginTop: "7px" }}>
+                Ich bin mit den allgemeinen Datenschutzbestimmungen und den
+                Teilnahmebedingungen einverstanden
+              </p>
+            </span>
+          </div>
+          {/* <div className="checkboxDiv"> */}
+          {/* <Checkbox
               checked={checked}
               onChange={handleChange}
               labelplacement="end"
               variant="filled"
               inputProps={{ "aria-label": "primary checkbox" }}
-            />
-            <p style={{ color: "#a4a4a4" }}>
+            /> */}
+
+          {/* <Testform /> */}
+
+          {/* <p style={{ color: "#a4a4a4", marginTop: "7px" }}>
               Ich bin mit den allgemeinen Datenschutzbestimmungen und den
               Teilnahmebedingungen einverstanden
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="contactField">
@@ -88,14 +100,14 @@ export const ContactUs = (props) => {
             }}
             label="*Nachname "
             variant="filled"
-            error
+            // error
             id="validation-outlined-input3"
           />
         </div>
       </div>
       <div className="mutliLine-msg">
         <ValidationTextField
-          className="newsletter-textfield"
+          className="multiline-textfield"
           size="medium"
           multiline
           InputLabelProps={{
@@ -106,18 +118,14 @@ export const ContactUs = (props) => {
           label="**Nachricht "
           id="validation-outlined-input4"
         />
-        <div className="mobile">
-          <Checkbox
-            className="newsLetter-checkbox"
-            checked={checked}
-            onChange={handleChange}
-            labelplacement="end"
-            inputProps={{ "aria-label": "primary checkbox" }}
-          />
-          <p style={{ color: "#a4a4a4" }}>
-            Ich bin mit den allgemeinen Datenschutzbestimmungen und den
-            Teilnahmebedingungen einverstanden
-          </p>
+        <div className="mobile ">
+          <span className="checkboxmobile ">
+            <Testform />
+            <p style={{ color: "#a4a4a4", marginTop: "7px" }}>
+              Ich bin mit den allgemeinen Datenschutzbestimmungen und den
+              Teilnahmebedingungen einverstanden
+            </p>
+          </span>
         </div>
         <Button
           className="buttonstyle"
