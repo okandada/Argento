@@ -9,8 +9,8 @@
   width: fit-content !important;
   margin: 16px 0px !important;
   width: 100% !important;
-  height: 260px;
-  border: 2px solid #ffffff !important;
+  /* height: 260px; */
+  /* border: 2px solid #ffffff !important; */
 }
 .checkboxDiv {
   display: flex;

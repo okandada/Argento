@@ -9,6 +9,31 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { useForm } from "react-hook-form";
 import Testform from "./testForm";
+import { InputBase } from "@material-ui/core";
+import { Formik, Form, Field } from "formik";
+
+const CssTextField = withStyles({
+  root: {
+    // "& label.Mui-focused": {
+    //   color: "white",
+    // },
+    // "& .MuiInput-underline:after": {
+    //   borderBottomColor: "green",
+    // },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "white",
+      },
+      "&:hover fieldset": {
+        borderColor: "white",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "white",
+      },
+    },
+  },
+})(TextField);
+
 const ValidationTextField = withStyles({
   root: {
     "& input": {
@@ -44,15 +69,26 @@ export const ContactUs = (props) => {
       <div>
         <div className="KontactHeading">Kontaktformular</div>
         <div className="field3">
-          <ValidationTextField
+          <CssTextField
+            required
+            label="E-Mail-Adresse"
+            variant="outlined"
             className="newsletter-textfield"
-            variant="filled"
+            id="custom-css-outlined-input validation-outlined-input1"
+            InputLabelProps={{
+              style: { color: "#ecbd46" },
+            }}
+          />
+          {/* <ValidationTextField
+            required
+            className="newsletter-textfield"
+            variant="outlined"
             InputLabelProps={{
               style: { color: "#ecbd46" },
             }}
             label="*E-Mail-Adresse"
             id="validation-outlined-input1"
-          />
+          /> */}
           <div className=" desktop IpadQuer IpadPro">
             <span className="checkboxDiv ">
               <Testform />
@@ -62,59 +98,43 @@ export const ContactUs = (props) => {
               </p>
             </span>
           </div>
-          {/* <div className="checkboxDiv"> */}
-          {/* <Checkbox
-              checked={checked}
-              onChange={handleChange}
-              labelplacement="end"
-              variant="filled"
-              inputProps={{ "aria-label": "primary checkbox" }}
-            /> */}
-
-          {/* <Testform /> */}
-
-          {/* <p style={{ color: "#a4a4a4", marginTop: "7px" }}>
-              Ich bin mit den allgemeinen Datenschutzbestimmungen und den
-              Teilnahmebedingungen einverstanden
-            </p>
-          </div> */}
         </div>
       </div>
       <div className="contactField">
         <div className="field1">
-          <ValidationTextField
+          <CssTextField
             className="newsletter-textfield"
             InputLabelProps={{
               style: { color: "#ecbd46" },
             }}
             label="*Vorname "
-            variant="filled"
+            variant="outlined"
             id="validation-outlined-input2"
           />
         </div>
         <div className="field2">
-          <ValidationTextField
+          <CssTextField
             className="newsletter-textfield"
             InputLabelProps={{
               style: { color: "#ecbd46" },
             }}
             label="*Nachname "
-            variant="filled"
+            variant="outlined"
             // error
             id="validation-outlined-input3"
           />
         </div>
       </div>
       <div className="mutliLine-msg">
-        <ValidationTextField
+        <CssTextField
           className="multiline-textfield"
           size="medium"
           multiline
           InputLabelProps={{
             style: { color: "#ecbd46" },
           }}
-          rows={4}
-          variant="filled"
+          rows={8}
+          variant="outlined"
           label="**Nachricht "
           id="validation-outlined-input4"
         />
