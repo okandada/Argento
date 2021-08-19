@@ -1,9 +1,9 @@
 import React from "react";
-import Testform from "./testForm";
+import ContactUs from "./contact";
 export const Test = () => {
   return (
     <div>
-      <Testform />
+      <ContactUs />
     </div>
   );
 };

@@ -8,7 +8,6 @@ import NavbarMenu from "../src/Components/Navbar/NavbarMenu";
 import NavBarMobileMenu from "../src/Components/NavBarMobile/navBarMobile";
 import DatenSchutz from "./Components/Pages/datenSchutz";
 import UnsernShop from "./Components/Pages/UnsernShop";
-// import { UnsernShop2 } from "./Components/Pages/unsernShop2";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 import ImpressumPage from "./Components/Pages/Impressum";
@@ -76,14 +75,7 @@ function App() {
                   <UnsernShop setBackGroundCss={setBackGroundCss}></UnsernShop>
                 )}
               />
-              {/* <Route
-                path="/unsernShop2"
-                component={() => (
-                  <UnsernShop2
-                    setBackGroundCss={setBackGroundCss}
-                  ></UnsernShop2>
-                )}
-              /> */}
+
               <Route path="/test" component={() => <Test></Test>} />
               <Route
                 path="/impressum"

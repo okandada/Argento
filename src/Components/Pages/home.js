@@ -61,12 +61,9 @@ export const Home = (props) => {
       <Heading2 size="h2" Text=" Hilfen & Tipps zum Edelmeatllaukf"></Heading2>
 
       <HilfenTipsCard />
-      {/* <Heading size="h2" Text=" Newsletter"></Heading> */}
+
       <Heading2 size="h2" Text=" Newsletter"></Heading2>
-      {/* <div className="mobile">
-      <NewsLetterMob />
-      </div> */}
-      {/* <Container> */}
+
       <div className="container-text">
         <img
           src={NewsletterDesktop}
@@ -81,7 +78,6 @@ export const Home = (props) => {
           ></NewsLetter>
         </div>
       </div>
-      {/* </Container> */}
     </div>
   );
 };

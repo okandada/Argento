@@ -15,10 +15,12 @@
 .checkboxDiv {
   display: flex;
   margin-left: -9px;
+  align-items: flex-start;
 }
 .checkboxmobile {
   margin-left: -10px;
   display: flex;
+  align-items: flex-start;
 }
 .KontactHeading {
   font-size: 50px !important;
@@ -26,6 +28,7 @@
   margin-top: 5%;
   font-family: TGL0-1451Engschrift !important;
 }
+
 @media (max-width: 1024px) {
   .KontactHeading {
     font-size: 55px !important;
@@ -48,6 +51,6 @@
     font-size: 25px;
   }
   .multiline-textfield {
-    height: 315px;
+    /* height: 315px; */
   }
 }
