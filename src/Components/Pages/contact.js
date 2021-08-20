@@ -1,28 +1,32 @@
 import React, { useEffect } from "react";
 import { TextField } from "@material-ui/core";
-import Checkbox from "@material-ui/core/Checkbox";
 import { withStyles } from "@material-ui/core/styles";
 import "./home.css";
 import "./contact.css";
 import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { useForm } from "react-hook-form";
-import { useFormik } from "formik";
 import * as yup from "yup";
-import clsx from "clsx";
+import Checkbox from "@material-ui/core/Checkbox";
 import { makeStyles } from "@material-ui/core/styles";
+import { useFormik } from "formik";
+
 const useStyles = makeStyles({
   icon: {
     borderRadius: 0,
     width: 30,
     height: 30,
-    border: "1.7px solid white",
-
-    "input:disabled ~ &": {},
+    border: "1px solid white",
   },
-  checkboxError: {
-    color: "red",
+  textColor: {
+    borderRadius: 0,
+    width: 30,
+    height: 30,
+    border: "1px solid red",
+  },
+  defaultColor: {
+    color: "#a4a4a4",
+    marginTop: "7px",
   },
   checkedIcon: {
     backgroundColor: "#000",
@@ -39,6 +43,26 @@ const useStyles = makeStyles({
     },
   },
 });
+
+const validationSchema = yup.object({
+  email: yup
+    .string("Enter your email")
+    .email("Enter a valid email")
+    .required("Email is required"),
+  firstName: yup
+    .string("Enter your password")
+    .min(4, "Password should be of minimum 8 characters length")
+    .required("Password is required"),
+  lastName: yup
+    .string("Enter your password")
+    .min(4, "Password should be of minimum 8 characters length")
+    .required("Password is required"),
+  checkedB: yup
+    .boolean()
+    .required("The terms and conditions must be accepted.")
+    .oneOf([true], "The terms and conditions must be accepted."),
+});
+
 const CssTextField = withStyles({
   root: {
     // "& label.Mui-focused": {
@@ -61,62 +85,38 @@ const CssTextField = withStyles({
   },
 })(TextField);
 
-const ValidationTextField = withStyles({
-  root: {
-    "& input": {
-      color: "#ecbd46",
-    },
-  },
-})(TextField);
-
-const validationSchema = yup.object({
-  email: yup.string().email().required(),
-  vorname: yup
-    .string("Enter your vorname")
-    // .min(8, "Password should be of minimum 8 characters length")
-    .required("vorname is required"),
-  nachname: yup
-    .string("Enter your nachname")
-
-    .required("nachname is required"),
-  message: yup
-    .string("Enter your message")
-
-    .required("message is required"),
-  checkbox: yup.boolean().required().isTrue(),
-});
-
 export const ContactUs = (props) => {
   const classes = useStyles();
+  const [state, setState] = React.useState({
+    checkedB: false,
+  });
+
+  const handleChange = (event) => {
+    state.checkedB = event.target.checked;
+    formik.values.checkedB = event.target.checked;
+    setState({ ...state, [event.target.name]: event.target.checked });
+  };
   const formik = useFormik({
     initialValues: {
       email: "",
-      password: "",
-      vorname: "",
-      nachname: "",
+      firstName: "",
+      lastName: "",
       message: "",
-      checkbox: "",
+      checkedB: false,
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
+
+      // formik.resetForm
     },
+    ///
   });
+
+  ////
   useEffect(() => {
     props.setBackGroundCss("ContactbackgroundGradiant");
   });
-  const [checked, setChecked] = React.useState(false);
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-  };
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(watch("example"));
 
   return (
     <div style={{ marginBottom: "140px" }}>
@@ -126,61 +126,61 @@ export const ContactUs = (props) => {
         Heading="Kontakt"
         imageHeight={"220px"}
       />
+      <div className="KontactHeading">Kontaktformular</div>
+
       <form onSubmit={formik.handleSubmit}>
         <div>
-          <div className="KontactHeading">Kontaktformular</div>
           <div className="field3">
             <CssTextField
-              id="email"
-              name="email"
               label="E-Mail-Adresse"
               variant="outlined"
               className="newsletter-textfield"
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              error={formik.touched.email && Boolean(formik.errors.email)}
-              // helperText={formik.touched.email && formik.errors.email}
+              id="custom-css-outlined-input validation-outlined-input1 email"
               InputLabelProps={{
                 style: { color: "#ecbd46" },
               }}
+              name="email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              error={
+                formik.touched.email === undefined
+                  ? false
+                  : true && Boolean(formik.errors.email)
+              }
             />
-
             <div className=" desktop IpadQuer IpadPro">
               <span className="checkboxDiv ">
                 <Checkbox
-                  id="checkbox"
-                  name="checkbox"
+                  id="checkboxB"
                   variant="outlined"
-                  label={{
-                    label:
-                      "Ich bin mit den allgemeinen Datenschutzbestimmungen und den",
-                    className: errors.checkbox
-                      ? classes.checkboxError
-                      : undefined,
-                  }}
-                  Teilnahmebedingungen
-                  einverstanden
-                  value={formik.values.checkbox}
-                  onChange={formik.handleChange}
                   className={classes.root}
-                  disableRipple
-                  color="default"
-                  checkedIcon={
-                    <span className={clsx(classes.icon, classes.checkedIcon)} />
+                  icon={
+                    <span
+                      className={
+                        formik.errors.checkedB && formik.touched.checkedB
+                          ? classes.textColor
+                          : classes.icon
+                      }
+                    />
                   }
-                  icon={<span className={classes.icon} />}
-                  inputProps={{ "aria-label": "decorative checkbox" }}
-                  {...props}
+                  checked={state.checkedB}
+                  name="checkedB"
+                  onChange={handleChange}
+                  value={formik.values.checkedB}
+                  error={
+                    formik.touched.checkedB === undefined
+                      ? false
+                      : true && Boolean(formik.errors.checkedB)
+                  }
                 />
-                {/* <p style={{ color: "#a4a4a4", marginTop: "7px" }}>
+                <p className={classes.defaultColor}>
                   Ich bin mit den allgemeinen Datenschutzbestimmungen und den
                   Teilnahmebedingungen einverstanden
-                </p> */}
+                </p>
               </span>
             </div>
           </div>
         </div>
-
         <div className="contactField">
           <div className="field1">
             <CssTextField
@@ -188,14 +188,18 @@ export const ContactUs = (props) => {
               InputLabelProps={{
                 style: { color: "#ecbd46" },
               }}
-              id="vorname"
-              name="vorname"
-              label="vorname"
+              label="*Vorname "
               variant="outlined"
-              type="vorname"
-              value={formik.values.vorname}
+              id="validation-outlined-input2"
+              id="firstName"
+              name="firstName"
+              value={formik.values.firstName}
               onChange={formik.handleChange}
-              error={formik.touched.vorname && Boolean(formik.errors.vorname)}
+              error={
+                formik.touched.firstName === undefined
+                  ? false
+                  : true && Boolean(formik.errors.firstName)
+              }
             />
           </div>
           <div className="field2">
@@ -206,12 +210,16 @@ export const ContactUs = (props) => {
               }}
               label="*Nachname "
               variant="outlined"
-              id="nachname"
-              name="nachname"
-              type="nachname"
-              value={formik.values.nachname}
+              // error
+              id="validation-outlined-input3 lastName"
+              name="lastName"
+              value={formik.values.lastName}
               onChange={formik.handleChange}
-              error={formik.touched.nachname && Boolean(formik.errors.nachname)}
+              error={
+                formik.touched.lastName === undefined
+                  ? false
+                  : true && Boolean(formik.errors.lastName)
+              }
             />
           </div>
         </div>
@@ -224,36 +232,38 @@ export const ContactUs = (props) => {
               style: { color: "#ecbd46" },
             }}
             rows={8}
+            name="message"
             variant="outlined"
             label="**Nachricht "
             id="validation-outlined-input4"
           />
-
+          // mobile view
           <div className="mobile ">
-            <span className="checkboxmobile ">
+            <span className="checkboxDiv ">
               <Checkbox
-                id="checkbox"
-                name="checkbox"
+                id="checkboxB"
                 variant="outlined"
-                value={formik.values.checkbox}
-                onChange={formik.handleChange}
                 className={classes.root}
-                disableRipple
-                color="default"
-                checkedIcon={
-                  <span className={clsx(classes.icon, classes.checkedIcon)} />
+                icon={
+                  <span
+                    className={
+                      formik.errors.checkedB && formik.touched.checkedB
+                        ? classes.textColor
+                        : classes.icon
+                    }
+                  />
                 }
-                icon={<span className={classes.icon} />}
-                inputProps={{ "aria-label": "decorative checkbox" }}
-                {...props}
+                checked={state.checkedB}
+                name="checkedB"
+                onChange={handleChange}
+                value={formik.values.checkedB}
+                error={
+                  formik.touched.checkedB === undefined
+                    ? false
+                    : true && Boolean(formik.errors.checkedB)
+                }
               />
-              <p
-                style={{
-                  color: "#a4a4a4",
-                  marginTop: "7px",
-                  // paddingBottom: "33px",
-                }}
-              >
+              <p className={classes.defaultColor}>
                 Ich bin mit den allgemeinen Datenschutzbestimmungen und den
                 Teilnahmebedingungen einverstanden
               </p>
