@@ -30,6 +30,7 @@ const useStyles = makeStyles({
   },
   checkedIcon: {
     backgroundColor: "#000",
+    borderRadius: 0,
 
     "&:before": {
       display: "block",
