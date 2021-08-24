@@ -1,17 +1,15 @@
 .newsletter_button {
   margin-top: 156px;
   height: 42px;
+  width: 100% !important;
 }
 
 .nltextfield {
   width: fit-content !important;
   margin: 16px 0px !important;
   width: 100% !important;
-
-  border: 2px solid #ffffff !important;
 }
 .nltextfield:hover {
-  border: 2px solid #ffffff !important;
 }
 .NLtitle {
   font-size: 25px !important;
@@ -68,3 +66,9 @@
     margin-top: 13%;
   }
 }
+
+/* @media (max-width: 600px) {
+  .newsletter_button {
+    width: 90% !important;
+  }
+} */

@@ -53,7 +53,7 @@ img {
   width: 30%;
 }
 .field3 {
-  width: 30%;
+  width: 100%;
 }
 .field2 {
   width: 30%;
@@ -70,7 +70,7 @@ img {
     width: 40%;
   }
   .field3 {
-    width: 40%;
+    width: 100%;
   }
   .field2 {
     width: 40%;
@@ -85,7 +85,7 @@ img {
     width: 45%;
   }
   .field3 {
-    width: 45%;
+    width: 100%;
   }
   .field2 {
     width: 45%;

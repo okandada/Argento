@@ -13,39 +13,6 @@ import { useFormik } from "formik";
 import clsx from "clsx";
 
 const useStyles = makeStyles({
-  //   icon: {
-  //     borderRadius: 0,
-  //     width: 30,
-  //     height: 30,
-  //     border: "2px solid white",
-  //   },
-  //   textColor: {
-  //     borderRadius: 0,
-  //     width: 30,
-  //     height: 30,
-  //     border: "2px solid red",
-  //   },
-  //   defaultColor: {
-  //     color: "#a4a4a4",
-  //     marginTop: "7px",
-  //   },
-  //   checkedIcon: {
-  //     backgroundColor: "#000",
-  //     borderRadius: 0,
-
-  //     "&:before": {
-  //       display: "block",
-  //       width: 28,
-  //       height: 28,
-  //       backgroundImage:
-  //         "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath" +
-  //         " fill-rule='evenodd' clip-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 " +
-  //         "1.003 0 00-1.42 1.42l3 3c.18.18.43.29.71.29s.53-.11.71-.29l5-5A1.003 1.003 0 0012 5z' fill='%23fff'/%3E%3C/svg%3E\")",
-  //       content: '""',
-  //     },
-  //   },
-  // });
-
   icon: {
     borderRadius: 0,
     width: 30,
@@ -221,29 +188,7 @@ export const ContactUs = (props) => {
                   inputProps={{ "aria-label": "decorative checkbox" }}
                   {...props}
                 />
-                {/* <Checkbox
-                  id="checkboxB"
-                  variant="outlined"
-                  className={classes.root}
-                  icon={
-                    <span
-                      className={
-                        formik.errors.checkedB && formik.touched.checkedB
-                          ? classes.textColor
-                          : classes.icon
-                      }
-                    />
-                  }
-                  checked={state.checkedB}
-                  name="checkedB"
-                  onChange={handleChange}
-                  value={formik.values.checkedB}
-                  error={
-                    formik.touched.checkedB === undefined
-                      ? false
-                      : true && Boolean(formik.errors.checkedB)
-                  }
-                /> */}
+
                 <p className={classes.defaultColor}>
                   Ich bin mit den allgemeinen Datenschutzbestimmungen und den
                   Teilnahmebedingungen einverstanden
