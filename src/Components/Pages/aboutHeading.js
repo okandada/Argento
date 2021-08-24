@@ -2,8 +2,8 @@ import YellowStroke from "../../Images/Home/SVG/YellowStroke.svg";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import "../../App.css";
-export const Heading = (props) => {
-  const dashSize = props.DashSize ? props.DashSize : "13%";
+export const AboutHeadingSizeHandler = (props) => {
+  const headingDashSize = props.HeadingDashSize ? props.HeadingDashSize : "22%";
 
   return (
     <div>
@@ -18,8 +18,8 @@ export const Heading = (props) => {
       >
         {props.Text}
         <img
-          className="dash-width "
-          width={dashSize}
+          className="dash-width dashsizeAboutpage"
+          width={headingDashSize}
           style={{ paddingTop: "7px" }}
           src={YellowStroke}
           alt=""

@@ -7,8 +7,10 @@ import { Container } from "@material-ui/core";
 import "../../App.css";
 import "./aboutUs.css";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
-import { Heading } from "../Pages/heading";
+import { AboutHeadingSizeHandler } from "./aboutHeading";
+import { AboutUnsereHeadingHandler } from "./AboutUnsereHeading";
 import { withStyles } from "@material-ui/core/styles";
+import { Heading } from "./heading";
 const headingFOnt = withStyles({
   root: {
     "& input": {
@@ -33,12 +35,13 @@ export const About = (props) => {
 
       <AboutCarddiv>
         <Container className="container">
-          <Heading
+          <AboutHeadingSizeHandler
+            className="dashsizeAboutpage"
             size="caption"
-            DashSize={"22%"}
+            DashSize={""}
             padding="0px"
             Text=" Unser Team"
-          ></Heading>
+          ></AboutHeadingSizeHandler>
           <p className="pFont">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -59,12 +62,12 @@ export const About = (props) => {
         </Container>
       </AboutCarddiv>
       <div className="mobile imagShadowAbout">
-        <Heading
+        <AboutHeadingSizeHandler
           size="caption"
           DashSize={"20%"}
           padding="10px"
           Text=" Warum Argento Aurum"
-        ></Heading>
+        ></AboutHeadingSizeHandler>
       </div>
       <div>
         <p className="mobile pFont">
@@ -88,12 +91,12 @@ export const About = (props) => {
         </Container>
 
         <Container className="container mobileview extraTextHideMobileView">
-          <Heading
+          <AboutHeadingSizeHandler
             size="caption"
             padding="0px"
             DashSize={"25%"}
             Text=" Warum Argento Aurum"
-          ></Heading>
+          ></AboutHeadingSizeHandler>
           <p className="pFont">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -110,11 +113,11 @@ export const About = (props) => {
         </Container>
       </AboutCarddiv>
       <div style={{ marginTop: "10%" }}>
-        <Heading
+        <AboutUnsereHeadingHandler
           size="caption"
-          DashSize={"13%"}
+          DashSize={""}
           Text="Unsere Partner"
-        ></Heading>
+        ></AboutUnsereHeadingHandler>
       </div>
 
       <ImageGrid />

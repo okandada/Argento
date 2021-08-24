@@ -117,6 +117,12 @@ p {
 .MuiSvgIcon-root {
   color: white;
 }
+.dashsizeAboutpage {
+  width: 22% !important;
+}
+.AboutUnsereHeading {
+  width: 12% !important;
+}
 
 /* Home background shadow handeling on different screen sizes */
 .HomebackgroundGradiant {
@@ -520,6 +526,7 @@ p {
     display: block;
   }
 }
+
 @media (max-width: 1366px) {
   .desktop,
   .mobile,
@@ -528,6 +535,12 @@ p {
   }
   .IpadPro {
     display: block;
+  }
+  .dashsizeAboutpage {
+    width: 18% !important;
+  }
+  .AboutUnsereHeading {
+    width: 9% !important;
   }
 }
 @media (max-width: 1024px) {
@@ -549,7 +562,14 @@ p {
     margin-inline: 60px;
   }
 }
-
+@media (max-width: 800px) {
+  .dashsizeAboutpage {
+    width: 22% !important;
+  }
+  .AboutUnsereHeading {
+    width: 14% !important;
+  }
+}
 @media (max-width: 600px) {
   .img-container {
     padding-inline: revert;
@@ -562,6 +582,12 @@ p {
   }
   .mobile {
     display: block;
+  }
+  .dashsizeAboutpage {
+    width: 15% !important;
+  }
+  .AboutUnsereHeading {
+    width: 16% !important;
   }
 }
 @media (max-width: 768px) {
@@ -583,6 +609,12 @@ p {
   .mobilebg {
   }
 }
+@media (max-width: 450px) {
+  .AboutUnsereHeading {
+    width: 17% !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

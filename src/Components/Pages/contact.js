@@ -16,13 +16,13 @@ const useStyles = makeStyles({
     borderRadius: 0,
     width: 30,
     height: 30,
-    border: "1px solid white",
+    border: "2px solid white",
   },
   textColor: {
     borderRadius: 0,
     width: 30,
     height: 30,
-    border: "1px solid red",
+    border: "2px solid red",
   },
   defaultColor: {
     color: "#a4a4a4",
@@ -74,6 +74,7 @@ const CssTextField = withStyles({
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
         borderColor: "white",
+        border: "2px solid white",
       },
       "&:hover fieldset": {
         borderColor: "white",
@@ -132,6 +133,7 @@ export const ContactUs = (props) => {
         <div>
           <div className="field3">
             <CssTextField
+              autoComplete="off"
               label="E-Mail-Adresse"
               variant="outlined"
               className="newsletter-textfield"
@@ -184,6 +186,7 @@ export const ContactUs = (props) => {
         <div className="contactField">
           <div className="field1">
             <CssTextField
+              autoComplete="off"
               className="newsletter-textfield"
               InputLabelProps={{
                 style: { color: "#ecbd46" },
@@ -204,6 +207,7 @@ export const ContactUs = (props) => {
           </div>
           <div className="field2">
             <CssTextField
+              autoComplete="off"
               className="newsletter-textfield"
               InputLabelProps={{
                 style: { color: "#ecbd46" },

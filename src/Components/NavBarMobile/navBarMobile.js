@@ -6,6 +6,7 @@ import MobileMenu from "../../Images/Home/SVG/MobileMenu.svg";
 import logo from "../../Images/Home/Desktop/Fotos/logo.png";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+import Kreuz from "../../Images/Home/SVG/Kreuz.svg";
 const useStyles = makeStyles({
   MuiNavColor: {
     backgroundColor: "#000000",
@@ -92,8 +93,8 @@ export default function NavBarMobileMenu() {
             </Link>
 
             <img
-              style={{ width: "39px", height: "31px", objectFit: "contain" }}
-              src={MobileMenu}
+              style={{ width: "30px", height: "22px", objectFit: "contain" }}
+              src={Kreuz}
               alt=""
               onClick={handleClose}
             />
