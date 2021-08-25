@@ -189,7 +189,10 @@ export const ContactUs = (props) => {
                   {...props}
                 />
 
-                <p className={classes.defaultColor}>
+                <p
+                  className={classes.defaultColor}
+                  style={{ marginTop: "6px" }}
+                >
                   Ich bin mit den allgemeinen Datenschutzbestimmungen und den
                   Teilnahmebedingungen einverstanden
                 </p>
@@ -262,6 +265,12 @@ export const ContactUs = (props) => {
                 id="checkboxB"
                 variant="outlined"
                 className={classes.root}
+                disableRipple
+                color="default"
+                checkedIcon={
+                  <span className={clsx(classes.icon, classes.checkedIcon)} />
+                }
+                // icon={<span className={classes.icon} />}
                 icon={
                   <span
                     className={
@@ -280,8 +289,11 @@ export const ContactUs = (props) => {
                     ? false
                     : true && Boolean(formik.errors.checkedB)
                 }
+                inputProps={{ "aria-label": "decorative checkbox" }}
+                {...props}
               />
-              <p className={classes.defaultColor}>
+
+              <p className={classes.defaultColor} style={{ marginTop: "6px" }}>
                 Ich bin mit den allgemeinen Datenschutzbestimmungen und den
                 Teilnahmebedingungen einverstanden
               </p>

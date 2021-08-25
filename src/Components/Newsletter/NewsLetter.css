@@ -3,6 +3,10 @@
   height: 42px;
   width: 100% !important;
 }
+.nlButton {
+  background: #ffffff !important;
+  height: 50px !important;
+}
 
 .nltextfield {
   width: fit-content !important;
@@ -62,8 +66,10 @@
   }
 }
 @media (max-width: 640px) {
-  .newsletter_button {
-    margin-top: 13%;
+  .nlButton {
+    margin-top: -25px !important;
+    background: #ffffff;
+    height: 50px;
   }
 }
 

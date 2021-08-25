@@ -155,16 +155,17 @@ export default function NewsLetter(props) {
                 {...props}
               />
 
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle1" style={{ marginTop: "6px" }}>
                 Ich bin mit den allgemeinen Datenschutzbestimmungen und den
                 Teilnahmebedingungen einverstanden
               </Typography>
             </div>
             <div className="newsletter_button">
               <Button
+                className="nlButton"
                 type="submit"
                 // href="https://abcstorexzy.myshopify.com/products/gold1"
-                style={{ background: "#ffffff", height: "50px" }}
+
                 fullWidth={true}
               >
                 <Typography variant="button"> NewsLetter Anmeldung</Typography>

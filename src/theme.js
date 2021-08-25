@@ -157,8 +157,8 @@ theme.typography.button = {
     fontSize: "25px",
     fontWeight: "500",
   },
-  "@media (max-width:330px)": {
-    fontSize: "20px",
+  "@media (max-width:340px)": {
+    fontSize: "19px",
     fontWeight: "500",
   },
 };
