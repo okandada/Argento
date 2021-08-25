@@ -5,8 +5,8 @@ import Typography from "@material-ui/core/Typography";
 export default function AktueleAnkauf(props) {
   return (
     <div className="text-items">
-      <Typography variant="h4">{props.firstTitle}</Typography>
-      <Typography variant="subtitle1">{props.subTitle}</Typography>
+      <Typography variant="h4">{props.firsttitle}</Typography>
+      <Typography variant="subtitle1">{props.subtitle}</Typography>
       {/* <div className="sub-title">{props.subTitle}</div> */}
       <div className="price-field">
         <Typography variant="body2">{props.price}</Typography>

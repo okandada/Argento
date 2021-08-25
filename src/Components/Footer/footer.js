@@ -119,7 +119,7 @@ export default function Pricing() {
       </div>
       <React.Fragment>
         <Container maxWidth="md" component="footer" className={classes.footer}>
-          <Grid container spacing={4} justify="space-evenly">
+          <Grid container spacing={4} justifyContent="space-evenly">
             {footers.map((footer, index) => (
               <Grid item xs={6} sm={3} key={index} style={{ padding: "0px" }}>
                 <Typography variant="h4" gutterBottom>

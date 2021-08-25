@@ -17,7 +17,7 @@ import FooterDesktop from "../src/Components/Footer/footer";
 import Test2 from "./Components/Pages/test2";
 
 function App() {
-  const [backGroundCss, setBackGroundCss] = useState("HomebackgroundGradiant");
+  const [backGroundCss, setbackgroundcss] = useState("HomebackgroundGradiant");
 
   return (
     <ThemeProvider theme={theme}>
@@ -46,33 +46,33 @@ function App() {
                 path="/"
                 exact
                 component={() => (
-                  <Home setBackGroundCss={setBackGroundCss}></Home>
+                  <Home setbackgroundcss={setbackgroundcss}></Home>
                 )}
               />
               <Route
                 path="/about"
                 component={() => (
-                  <About setBackGroundCss={setBackGroundCss}></About>
+                  <About setbackgroundcss={setbackgroundcss}></About>
                 )}
               />
               <Route
                 path="/contact"
                 component={() => (
-                  <ContactUs setBackGroundCss={setBackGroundCss}></ContactUs>
+                  <ContactUs setbackgroundcss={setbackgroundcss}></ContactUs>
                 )}
               />
               <Route
                 path="/datenSchutz"
                 component={() => (
                   <DatenSchutz
-                    setBackGroundCss={setBackGroundCss}
+                    setbackgroundcss={setbackgroundcss}
                   ></DatenSchutz>
                 )}
               />
               <Route
                 path="/UnsernShop"
                 component={() => (
-                  <UnsernShop setBackGroundCss={setBackGroundCss}></UnsernShop>
+                  <UnsernShop setbackgroundcss={setbackgroundcss}></UnsernShop>
                 )}
               />
 
@@ -81,14 +81,14 @@ function App() {
                 path="/impressum"
                 component={() => (
                   <ImpressumPage
-                    setBackGroundCss={setBackGroundCss}
+                    setbackgroundcss={setbackgroundcss}
                   ></ImpressumPage>
                 )}
               />
               <Route
                 path="/test2"
                 component={() => (
-                  <Test2 setBackGroundCss={setBackGroundCss}></Test2>
+                  <Test2 setbackgroundcss={setbackgroundcss}></Test2>
                 )}
               />
             </Switch>

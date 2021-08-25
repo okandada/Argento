@@ -98,12 +98,12 @@ export default function NewsLetter(props) {
   return (
     <div className="text-items">
       <Typography variant="h4">
-        <span className="NLtitle ">{props.firstTitle}</span>
+        <span className="NLtitle ">{props.firsttitle}</span>
       </Typography>
-      <Typography variant="subtitle1">{props.subTitle}</Typography>
+      <Typography variant="subtitle1">{props.subtitle}</Typography>
       <form onSubmit={formik.handleSubmit}>
         <div>
-          <div className="field3">
+          <div className="email-field">
             <CssTextField
               autoComplete="off"
               label="E-Mail-Adresse"

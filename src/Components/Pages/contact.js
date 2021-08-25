@@ -121,7 +121,7 @@ export const ContactUs = (props) => {
 
   ////
   useEffect(() => {
-    props.setBackGroundCss("ContactbackgroundGradiant");
+    props.setbackgroundcss("ContactbackgroundGradiant");
   });
 
   return (
@@ -211,7 +211,7 @@ export const ContactUs = (props) => {
               label="*Vorname "
               variant="outlined"
               id="validation-outlined-input2"
-              id="firstName"
+              id="firstname"
               name="firstName"
               value={formik.values.firstName}
               onChange={formik.handleChange}
@@ -232,7 +232,7 @@ export const ContactUs = (props) => {
               label="*Nachname "
               variant="outlined"
               // error
-              id="validation-outlined-input3 lastName"
+              id="validation-outlined-input3 lastname"
               name="lastName"
               value={formik.values.lastName}
               onChange={formik.handleChange}
@@ -258,7 +258,7 @@ export const ContactUs = (props) => {
             label="**Nachricht "
             id="validation-outlined-input4"
           />
-          // mobile view
+
           <div className="mobile ">
             <span className="checkboxDiv ">
               <Checkbox

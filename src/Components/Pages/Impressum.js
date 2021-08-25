@@ -6,7 +6,7 @@ import BgImageComponent2 from "../BackgroundimageComponent/backgroundImage_2";
 
 export const ImpressumPage = (props) => {
   useEffect(() => {
-    props.setBackGroundCss("ImpressumbackgroundGradiant");
+    props.setbackgroundcss("ImpressumbackgroundGradiant");
   });
 
   return (

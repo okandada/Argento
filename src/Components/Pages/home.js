@@ -15,7 +15,7 @@ import BgImageComponent from "../../Components/BackgroundimageComponent/backGrou
 
 export const Home = (props) => {
   useEffect(() => {
-    props.setBackGroundCss("HomebackgroundGradiant");
+    props.setbackgroundcss("HomebackgroundGradiant");
   });
   return (
     <div>
@@ -42,15 +42,15 @@ export const Home = (props) => {
         />
         <div className="text-price">
           <AktueleAnkauf
-            firstTitle="Goldpreis in Euro"
-            subTitle="je Feinunze(31,103g)"
+            firsttitle="Goldpreis in Euro"
+            subtitle="je Feinunze(31,103g)"
             price="1.449.68 EUR"
             price_subtitle_left="-0.75%"
             price_subtitle_right="-10.28 Euro"
           ></AktueleAnkauf>
           <AktueleAnkauf
-            firstTitle="Goldpreis in Silber"
-            subTitle="je Feinunze (31,103g)"
+            firsttitle="Goldpreis in Silber"
+            subtitle="je Feinunze (31,103g)"
             price="21,21 EUR"
             price_subtitle_left="-0.75%"
             price_subtitle_right="-10.28 Euro"
@@ -73,8 +73,8 @@ export const Home = (props) => {
         />
         <div className="text-price">
           <NewsLetter
-            firstTitle="Abonniere unseren Newsletter"
-            subTitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
+            firsttitle="Abonniere unseren Newsletter"
+            subtitle="Erfahre als erster von neuen Produkten, Tipps und Ideen!"
           ></NewsLetter>
         </div>
       </div>

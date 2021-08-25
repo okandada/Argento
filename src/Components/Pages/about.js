@@ -9,21 +9,10 @@ import "./aboutUs.css";
 import BgImageComponent from "../../Components/BackgroundimageComponent/backGroundImage";
 import { AboutHeadingSizeHandler } from "./aboutHeading";
 import { AboutUnsereHeadingHandler } from "./AboutUnsereHeading";
-import { withStyles } from "@material-ui/core/styles";
-import { Heading } from "./heading";
-const headingFOnt = withStyles({
-  root: {
-    "& input": {
-      color: "#ecbd46",
-    },
-    fonts: {
-      size: "85px",
-    },
-  },
-});
+
 export const About = (props) => {
   useEffect(() => {
-    props.setBackGroundCss("AboutbackgroundGradiant");
+    props.setbackgroundcss("AboutbackgroundGradiant");
   });
   return (
     <div>

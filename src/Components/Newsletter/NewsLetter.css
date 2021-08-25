@@ -3,6 +3,9 @@
   height: 42px;
   width: 100% !important;
 }
+.email-field {
+  width: 100% !important;
+}
 .nlButton {
   background: #ffffff !important;
   height: 50px !important;
@@ -78,3 +81,9 @@
     width: 90% !important;
   }
 } */
+
+@media (max-width: 600px) {
+  .email-field {
+    width: 94% !important;
+  }
+}

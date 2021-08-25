@@ -69,7 +69,7 @@ export default function CardGrid(props) {
       responsive={responsive}
       container
       className={classes.gridContainer}
-      justify="center"
+      justifyContent="center"
     >
       {rows.map((row) => row)}
     </Carousel>

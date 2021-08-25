@@ -73,7 +73,7 @@ export default function HilfenTipsCard(props) {
       responsive={responsive}
       container
       className={classes.gridContainer}
-      justify="center"
+      justifyContent="center"
     >
       {data.slice(0, 5).map((elem) => (
         <Grid key={data.indexOf(elem.text)}>

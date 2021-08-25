@@ -35,9 +35,11 @@ const useStyles = makeStyles({
     // marginTop: "40px",
   },
 });
+
 export default function NavBarMobileMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const classes = useStyles();
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -83,7 +85,6 @@ export default function NavBarMobileMenu() {
             <Link to="/">
               <img
                 style={{
-                  // maxHeight: "195px",
                   maxHeight: "45px",
                   objectFit: "fill",
                 }}
@@ -109,7 +110,6 @@ export default function NavBarMobileMenu() {
             Home
           </MenuItem>
           <MenuItem
-            style={{}}
             component={Link}
             to="/contact"
             onClick={handleClose}

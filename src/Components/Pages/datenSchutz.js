@@ -4,7 +4,7 @@ import "./datenSchutz.css";
 
 export const DatenSchutz = (props) => {
   useEffect(() => {
-    props.setBackGroundCss("DatenSchutzbackgroundGradiant");
+    props.setbackgroundcss("DatenSchutzbackgroundGradiant");
   });
 
   return (

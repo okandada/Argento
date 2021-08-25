@@ -10,7 +10,7 @@ export default function ImageGrid() {
     <Grid container spacing={0}>
       <Grid
         container
-        justify="center"
+        justifyContent="center"
         style={{ paddingTop: "15px" }}
         spacing={2}
       >
