@@ -5,6 +5,12 @@
 .marginBottom {
   margin-bottom: 25px;
 }
+.buttonText {
+  font-family: barlow !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  font-stretch: semi-condensed !important;
+}
 
 .bull_1Styling {
   font-size: 40px;

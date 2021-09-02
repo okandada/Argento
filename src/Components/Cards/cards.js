@@ -6,6 +6,8 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { Button } from "@material-ui/core";
 import "./card.css";
+import { Link } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
@@ -13,6 +15,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+// const productsLinkResul = data.map((product) => (
+//   <div>
+//     <Link to={product.productlink} href={product.productlink}></Link>
+//   </div>
+// ));
+// console.log(productsLinkResul);
 
 export default function MediaCard(props) {
   const classes = useStyles();
@@ -26,37 +35,27 @@ export default function MediaCard(props) {
         <CardActionArea>
           <img alt="" width="100%" src={props.url} />
           <CardContent style={{ padding: "0", backgroundColor: "black" }}>
-            {/* <Typography gutterBottom> */}
             <div className="bull_1Styling">{bull_1}</div>
-            {/* </Typography> */}
+
             <div className="cardText">{bull_3}</div>
             <div className="cardText">{bull_4}</div>
-            {/* <Typography gutterBottom> */}
+
             <div className="bull_2Styling">{bull_2}</div>
-            {/* </Typography>
-            <Typography gutterBottom> */}
+
             <div className="cardText">
               zzgl. Versandkosten Lieferzeit: 4-7 Tage
             </div>
-            {/* </Typography> */}
           </CardContent>
         </CardActionArea>
 
         <Button
-          // to="https://abcstorexzy.myshopify.com/products/gold1"
-          href="https://abcstorexzy.myshopify.com/products/gold1"
+          href={props.productlink}
+          // href="https://abcstorexzy.myshopify.com/products/gold1"
+          // href="https://qm0eopnilbiv0t3c-59629076667.shopifypreview.com/collections/all"
           style={{ background: "#ffffff" }}
           fullWidth={true}
         >
-          <Typography
-            variant="button"
-            style={{
-              fontFamily: "barlow",
-              fontSize: "22px",
-              fontWeight: "600",
-              fontStretch: "semi-condensed",
-            }}
-          >
+          <Typography variant="button" className="buttonText">
             jetzt endecken
           </Typography>
         </Button>

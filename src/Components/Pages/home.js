@@ -85,19 +85,23 @@ export const Home = (props) => {
 const Images = [
   {
     url: BuyGoldDesktop1,
-
+    productlink: " https://argento-gold-store.myshopify.com/products/gold-2",
     text: "Unze Gold",
   },
   {
     url: BuyGoldDesktop2,
+    productlink:
+      "https://argento-gold-store.myshopify.com/products/white-gold-3",
     text: "Unze Gold",
   },
   {
     url: BuyGoldDesktop3,
+    productlink: "https://argento-gold-store.myshopify.com/products/gold-1",
     text: "hello",
   },
   {
     url: BuyGoldDesktop4,
+    productlink: "https://argento-gold-store.myshopify.com/products/silver",
     text: "hello",
   },
 ];

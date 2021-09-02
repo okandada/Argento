@@ -26,8 +26,8 @@ export default class test2 extends Component {
   componentDidMount() {
     const client = Client.buildClient({
       // domain: "okandada.myshopify.com",
-      domain: "abcstorexzy.myshopify.com",
-      storefrontAccessToken: "fbcf4074a7fa618e9117864b59654e48",
+      domain: "argento-gold-store.myshopify.com",
+      storefrontAccessToken: "f586f69afe35c9465052a3d44ac6a90c",
     });
 
     client.product.fetchAll().then((products) => {
@@ -58,7 +58,7 @@ export default class test2 extends Component {
                 <a
                   href={
                     // "https://okandada.myshopify.com/products/" + product.handle
-                    "https://abcstorexzy.myshopify.com/products/" +
+                    "https://argento-gold-store.myshopify.com/admin/products/" +
                     product.handle
                   }
                 >

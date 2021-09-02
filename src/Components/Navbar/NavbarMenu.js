@@ -70,11 +70,11 @@ export default function NavbarMenu() {
               </Button>
             </div>
             <div className="btn-5-m">
-              <Button>
+              <Button href="https://argento-gold-store.myshopify.com/cart">
                 <img
                   src={ShoppingCart}
-                  alt="/about"
-                  to="/about"
+                  // alt="/about"
+                  // to="/about"
                   className="cart-img"
                 />
               </Button>

@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     borderRadius: 0,
     width: 20,
     height: 20,
-    border: "2px solid red",
+    border: "2px solid #ff1744",
   },
   defaultColor: {
     color: "#a4a4a4",
@@ -36,8 +36,8 @@ const useStyles = makeStyles({
 
     "&:before": {
       display: "block",
-      width: 17,
-      height: 17,
+      width: 15,
+      height: 15,
       backgroundImage:
         "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath" +
         " fill-rule='evenodd' clip-rule='evenodd' d='M12 5c-.28 0-.53.11-.71.29L7 9.59l-2.29-2.3a1.003 " +

@@ -54,7 +54,11 @@ export default function CardGrid(props) {
         <Box border={1} {...defaultProps}>
           <Grid>
             {/* loading card component */}
-            <Card url={image.url} text={image.text} />
+            <Card
+              url={image.url}
+              text={image.text}
+              productlink={image.productlink}
+            />
           </Grid>
         </Box>
       </Box>
@@ -69,7 +73,7 @@ export default function CardGrid(props) {
       responsive={responsive}
       container
       className={classes.gridContainer}
-      justifyContent="center"
+      Content="center"
     >
       {rows.map((row) => row)}
     </Carousel>

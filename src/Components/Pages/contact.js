@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     borderRadius: 0,
     width: 30,
     height: 30,
-    border: "2px solid red",
+    border: "2px solid #ff1744",
   },
   defaultColor: {
     color: "#a4a4a4",
